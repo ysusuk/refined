@@ -91,7 +91,24 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="eu.timepit.refined.collection.Empty" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="eu.timepit.refined.collection.Count" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Count[PA,PC]extendsAnyRef"></a>
+      <a id="Count[PA,PC]:Count[PA,PC]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="collection$$Count.html"><span class="name">Count</span></a><span class="tparams">[<span name="PA">PA</span>, <span name="PC">PC</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.collection$@Count[PA,PC]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="eu.timepit.refined.collection.Empty" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="EmptyextendsAnyRef"></a>
       <a id="Empty:Empty"></a>
       <h4 class="signature">
@@ -138,6 +155,40 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.collection$@Forall[P]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="eu.timepit.refined.collection.MaxSize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MaxSize[N]=eu.timepit.refined.collection.Size[eu.timepit.refined.numeric.LessEqual[N]]"></a>
+      <a id="MaxSize[N]:MaxSize[N]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MaxSize</span><span class="tparams">[<span name="N">N</span>]</span><span class="result"> = <a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<a href="numeric$.html#LessEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Greater[N]]" class="extmbr" name="eu.timepit.refined.numeric.LessEqual">LessEqual</a>[<span class="extype" name="eu.timepit.refined.collection.MaxSize.N">N</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.collection$@MaxSize[N]=eu.timepit.refined.collection.Size[eu.timepit.refined.numeric.LessEqual[N]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="eu.timepit.refined.collection.MinSize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MinSize[N]=eu.timepit.refined.collection.Size[eu.timepit.refined.numeric.GreaterEqual[N]]"></a>
+      <a id="MinSize[N]:MinSize[N]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MinSize</span><span class="tparams">[<span name="N">N</span>]</span><span class="result"> = <a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<a href="numeric$.html#GreaterEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Less[N]]" class="extmbr" name="eu.timepit.refined.numeric.GreaterEqual">GreaterEqual</a>[<span class="extype" name="eu.timepit.refined.collection.MinSize.N">N</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.collection$@MinSize[N]=eu.timepit.refined.collection.Size[eu.timepit.refined.numeric.GreaterEqual[N]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -274,19 +325,36 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="eu.timepit.refined.collection#empty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="empty[T](implicitev:T=&gt;TraversableOnce[_]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Empty,T]"></a>
-      <a id="empty[T]((T)⇒TraversableOnce[_]):Predicate[Empty,T]"></a>
+    </li><li name="eu.timepit.refined.collection#countPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="countPredicate[PA,PC,A,T](implicitpa:eu.timepit.refined.Predicate[PA,A],implicitpc:eu.timepit.refined.Predicate[PC,Int],implicitev:T=&gt;TraversableOnce[A]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Count[PA,PC],T]"></a>
+      <a id="countPredicate[PA,PC,A,T](Predicate[PA,A],Predicate[PC,Int],(T)⇒TraversableOnce[A]):Predicate[Count[PA,PC],T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">empty</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ev">ev: (<span class="extype" name="eu.timepit.refined.collection.empty.T">T</span>) ⇒ <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[_]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="collection$$Empty.html" class="extype" name="eu.timepit.refined.collection.Empty">Empty</a>, <span class="extype" name="eu.timepit.refined.collection.empty.T">T</span>]</span>
+        <span class="name">countPredicate</span><span class="tparams">[<span name="PA">PA</span>, <span name="PC">PC</span>, <span name="A">A</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="pa">pa: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.collection.countPredicate.PA">PA</span>, <span class="extype" name="eu.timepit.refined.collection.countPredicate.A">A</span>]</span>, <span name="pc">pc: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.collection.countPredicate.PC">PC</span>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.collection.countPredicate.T">T</span>) ⇒ <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[<span class="extype" name="eu.timepit.refined.collection.countPredicate.A">A</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="collection$$Count.html" class="extype" name="eu.timepit.refined.collection.Count">Count</a>[<span class="extype" name="eu.timepit.refined.collection.countPredicate.PA">PA</span>, <span class="extype" name="eu.timepit.refined.collection.countPredicate.PC">PC</span>], <span class="extype" name="eu.timepit.refined.collection.countPredicate.T">T</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@empty[T](implicitev:T=&gt;TraversableOnce[_]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Empty,T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.collection$@countPredicate[PA,PC,A,T](implicitpa:eu.timepit.refined.Predicate[PA,A],implicitpc:eu.timepit.refined.Predicate[PC,Int],implicitev:T=&gt;TraversableOnce[A]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Count[PA,PC],T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="eu.timepit.refined.collection#emptyPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="emptyPredicate[T](implicitev:T=&gt;TraversableOnce[_]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Empty,T]"></a>
+      <a id="emptyPredicate[T]((T)⇒TraversableOnce[_]):Predicate[Empty,T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">emptyPredicate</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ev">ev: (<span class="extype" name="eu.timepit.refined.collection.emptyPredicate.T">T</span>) ⇒ <span class="extype" name="scala.TraversableOnce">TraversableOnce</span>[_]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="collection$$Empty.html" class="extype" name="eu.timepit.refined.collection.Empty">Empty</a>, <span class="extype" name="eu.timepit.refined.collection.emptyPredicate.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.collection$@emptyPredicate[T](implicitev:T=&gt;TraversableOnce[_]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Empty,T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
