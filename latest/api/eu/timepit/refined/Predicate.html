@@ -51,7 +51,10 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/src/main/scala/eu/timepit/refined/Predicate.scala" target="_blank">Predicate.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Type class for validating values of type <code>T</code> according to a type-level
+predicate <code>P</code>. The semantics of <code>P</code> are defined by the instance of this
+type class for <code>P</code>.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/src/main/scala/eu/timepit/refined/Predicate.scala" target="_blank">Predicate.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
@@ -115,7 +118,7 @@
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Checks if <code>t</code> satisfies the predicate <code>P</code>.</p>
     </li><li name="eu.timepit.refined.Predicate#show" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="show(t:T):String"></a>
       <a id="show(T):String"></a>
@@ -132,7 +135,7 @@
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Returns a string representation of this <a href="" class="extype" name="eu.timepit.refined.Predicate">Predicate</a> using <code>t</code>.</p>
     </li></ol>
             </div>
 
@@ -370,7 +373,7 @@
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Checks if <code>t</code> does not satisfy the predicate <code>P</code>.</p>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
@@ -455,7 +458,8 @@
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Returns <code>None</code> if <code>t</code> satisfies the predicate <code>P</code>, or an error message
+contained in <code>Some</code> otherwise.</p>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
