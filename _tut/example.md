@@ -1,8 +1,4 @@
----
-layout: page
-title: About
----
-
+bad option: '-diagrams'
 
 ```scala
 scala> 1 + 1
