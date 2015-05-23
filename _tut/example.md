@@ -1,5 +1,4 @@
-
-# Test
+bad option: '-diagrams'
 
 ```scala
 scala> 1 + 1
