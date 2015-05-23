@@ -1,4 +1,3 @@
-bad option: '-diagrams'
 ---
 layout: default
 title:  "Traverse"
