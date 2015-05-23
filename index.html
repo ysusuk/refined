@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Refined : Refinement types for Scala">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Refined</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/fthomas/refined">View on GitHub</a>
+
+          <h1 id="project_title">Refined</h1>
+          <h2 id="project_tagline">Refinement types for Scala</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/fthomas/refined/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/fthomas/refined/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="refined" class="anchor" href="#refined" aria-hidden="true"><span class="octicon octicon-link"></span></a>refined</h1>
+
+<p><a href="https://travis-ci.org/fthomas/refined"><img src="https://img.shields.io/travis/fthomas/refined.svg" alt="Build Status"></a>
+<a href="http://search.maven.org/#search%7Cga%7C1%7Ceu.timepit.refined"><img src="https://img.shields.io/maven-central/v/eu.timepit/refined_2.11.svg" alt="Download"></a>
+<a href="https://gitter.im/fthomas/refined?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://img.shields.io/badge/GITTER-join%20chat-brightgreen.svg" alt="Gitter"></a>
+<a href="https://coveralls.io/r/fthomas/refined"><img src="https://img.shields.io/coveralls/fthomas/refined/master.svg" alt="Coverage Status"></a>
+<a href="https://www.codacy.com/app/fthomas/refined"><img src="https://img.shields.io/codacy/e4f25ef2656e463e8fed3f4f9314abdb.svg" alt="Codacy Badge"></a></p>
+
+<h2>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h2>
+
+<p>This is a port of the <a href="http://nikita-volkov.github.io/refined">refined</a> Haskell library to Scala.
+The linked websites provides an excellent motivation why this kind of library
+is useful.</p>
+
+<p>This library consists of:</p>
+
+<ul>
+<li><p>Type-level predicates for refining other types, like <code>UpperCase</code>, <code>Positive</code>,
+<code>Greater[_0] And LessEqual[_2]</code>, or <code>Length[Greater[_5]]</code>. There are also higher
+order predicates for combining proper predicates like <code>And[_, _]</code>, <code>Or[_, _]</code>,
+<code>Not[_]</code>, <code>Forall[_]</code>, or <code>Size[_]</code>.</p></li>
+<li><p>A <code>Predicate</code> type class that is able to validate a concrete data type (like <code>Double</code>)
+against a type-level predicate (like <code>Positive</code>).</p></li>
+<li><p>Two functions <code>refine</code> and <code>refineLit</code> that take a predicate <code>P</code> and some value
+of type <code>T</code>, validates this value with a <code>Predicate[P, T]</code> and returns the value
+with type <code>T @@ P</code> if validation was successful or an error otherwise.
+(<code>@@</code> is <a href="https://github.com/milessabin/shapeless">shapeless'</a> type for tagging types :-))</p></li>
+</ul>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h2>
+
+<div class="highlight highlight-scala"><pre>scala<span class="pl-k">&gt;</span> refine[<span class="pl-en">Positive</span>](<span class="pl-c1">5</span>)
+res0<span class="pl-k">:</span> <span class="pl-en">Either</span>[<span class="pl-k">String</span>, <span class="pl-k">Int</span> <span class="pl-k">@@</span> <span class="pl-en">Positive</span>] <span class="pl-k">=</span> <span class="pl-en">Right</span>(<span class="pl-c1">5</span>)
+
+scala<span class="pl-k">&gt;</span> refine[<span class="pl-en">Positive</span>](<span class="pl-k">-</span><span class="pl-c1">5</span>)
+res1<span class="pl-k">:</span> <span class="pl-en">Either</span>[<span class="pl-k">String</span>, <span class="pl-k">Int</span> <span class="pl-k">@@</span> <span class="pl-en">Positive</span>] <span class="pl-k">=</span> <span class="pl-en">Left</span>(<span class="pl-en">Predicate</span> <span class="pl-v">failed</span>: (<span class="pl-k">-</span><span class="pl-c1">5</span> <span class="pl-k">&gt;</span> <span class="pl-c1">0</span>).)
+
+scala<span class="pl-k">&gt;</span> refineLit[<span class="pl-en">NonEmpty</span>](<span class="pl-s"><span class="pl-pds">"</span>Hello<span class="pl-pds">"</span></span>)
+res2<span class="pl-k">:</span> <span class="pl-k">String</span> <span class="pl-k">@@</span> <span class="pl-en">NonEmpty</span> <span class="pl-k">=</span> <span class="pl-en">Hello</span>
+
+scala<span class="pl-k">&gt;</span> refineLit[<span class="pl-en">NonEmpty</span>](<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>)
+&lt;<span class="pl-ent">console</span>&gt;<span class="pl-k">:</span><span class="pl-c1">27</span><span class="pl-k">:</span> <span class="pl-v">error</span>: <span class="pl-en">Predicate</span> isEmpty() did not fail.
+            refineLit[<span class="pl-en">NonEmpty</span>, <span class="pl-k">String</span>](<span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>)
+                                       ^
+
+scala<span class="pl-k">&gt;</span> <span class="pl-k">type</span> <span class="pl-en">ZeroToOne</span> <span class="pl-k">=</span> <span class="pl-en">Not</span>[<span class="pl-en">Less</span>[_0]] <span class="pl-en">And</span> <span class="pl-en">Not</span>[<span class="pl-en">Greater</span>[_1]]
+defined <span class="pl-k">type</span> <span class="pl-en">alias</span> <span class="pl-en">ZeroToOne</span>
+
+scala<span class="pl-k">&gt;</span> refineLit[<span class="pl-en">ZeroToOne</span>](<span class="pl-c1">1.8</span>)
+&lt;<span class="pl-ent">console</span>&gt;<span class="pl-k">:</span><span class="pl-c1">27</span><span class="pl-k">:</span> <span class="pl-v">error</span>: <span class="pl-en">Right</span> predicate of (<span class="pl-k">!</span>(<span class="pl-c1">1.8</span> <span class="pl-k">&lt;</span> <span class="pl-c1">0</span>) <span class="pl-k">&amp;&amp;</span> <span class="pl-k">!</span>(<span class="pl-c1">1.8</span> <span class="pl-k">&gt;</span> <span class="pl-c1">1</span>)) <span class="pl-v">failed</span>: <span class="pl-en">Predicate</span> (<span class="pl-c1">1.8</span> <span class="pl-k">&gt;</span> <span class="pl-c1">1</span>) did not fail.
+              refineLit[<span class="pl-en">ZeroToOne</span>, <span class="pl-k">Double</span>](<span class="pl-c1">1.8</span>)
+                                          ^
+
+scala<span class="pl-k">&gt;</span> refineLit[<span class="pl-en">AnyOf</span>[<span class="pl-en">Digit</span> <span class="pl-k">::</span> <span class="pl-en">Letter</span> <span class="pl-k">::</span> <span class="pl-en">Whitespace</span> <span class="pl-k">::</span> <span class="pl-en">HNil</span>]](<span class="pl-c1">'F'</span>)
+res3<span class="pl-k">:</span> <span class="pl-k">Char</span> <span class="pl-k">@@</span> <span class="pl-en">AnyOf</span>[<span class="pl-en">Digit</span> <span class="pl-k">::</span> <span class="pl-en">Letter</span> <span class="pl-k">::</span> <span class="pl-en">Whitespace</span> <span class="pl-k">::</span> <span class="pl-en">HNil</span>] <span class="pl-k">=</span> <span class="pl-en">F</span></pre></div>
+
+<p>Note that <code>refineLit</code> (which only supports literals) is implemented as macro
+and checks at compile time if the given literal conforms to the predicate.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>The latest version of the library is 0.0.2, which is built against Scala 2.11.</p>
+
+<p>If you're using SBT, add the following to your build file:</p>
+
+<pre><code>libraryDependencies += "eu.timepit" %% "refined" % "0.0.2"
+</code></pre>
+
+<p>Instructions for Maven and other build tools is available at <a href="http://search.maven.org/#search%7Cga%7C1%7Ceu.timepit.refined">search.maven.org</a>.</p>
+
+<h2>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>API documentation of the latest release is available at:
+<a href="http://fthomas.github.io/refined/latest/api/">http://fthomas.github.io/refined/latest/api/</a></p>
+
+<h2>
+<a id="provided-predicates" class="anchor" href="#provided-predicates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Provided predicates</h2>
+
+<p>The library comes with these predefined predicates:</p>
+
+<p><a href="https://github.com/fthomas/refined/blob/master/src/main/scala/eu/timepit/refined/boolean.scala"><code>boolean</code></a></p>
+
+<ul>
+<li>
+<code>True</code>: constant predicate that is always <code>true</code>
+</li>
+<li>
+<code>False</code>: constant predicate that is always <code>false</code>
+</li>
+<li>
+<code>Not[P]</code>: negation of the predicate <code>P</code>
+</li>
+<li>
+<code>And[A, B]</code>: conjunction of the predicates <code>A</code> and <code>B</code>
+</li>
+<li>
+<code>Or[A, B]</code>: disjunction of the predicates <code>A</code> and <code>B</code>
+</li>
+<li>
+<code>AllOf[PS]</code>: conjunction of all predicates in <code>PS</code>
+</li>
+<li>
+<code>AnyOf[PS]</code>: disjunction of all predicates in <code>PS</code>
+</li>
+</ul>
+
+<p><a href="https://github.com/fthomas/refined/blob/master/src/main/scala/eu/timepit/refined/char.scala"><code>char</code></a></p>
+
+<ul>
+<li>
+<code>Digit</code>: checks if a <code>Char</code> is a digit</li>
+<li>
+<code>Letter</code>: checks if a <code>Char</code> is a letter</li>
+<li>
+<code>LowerCase</code>: checks if a <code>Char</code> is a lower case character</li>
+<li>
+<code>UpperCase</code>: checks if a <code>Char</code> is an upper case character</li>
+<li>
+<code>Whitespace</code>: checks if a <code>Char</code> is white space</li>
+</ul>
+
+<p><a href="https://github.com/fthomas/refined/blob/master/src/main/scala/eu/timepit/refined/collection.scala"><code>collection</code></a></p>
+
+<ul>
+<li>
+<code>Count[PA, PC]</code>: counts the number of elements in a <code>TraversableOnce</code> which
+satisfy the predicate <code>PA</code> and passes the result to the predicate <code>PC</code>
+</li>
+<li>
+<code>Empty</code>: checks if a <code>TraversableOnce</code> is empty</li>
+<li>
+<code>NonEmpty</code>: checks if a <code>TraversableOnce</code> is not empty</li>
+<li>
+<code>Forall[P]</code>: checks if the predicate <code>P</code> holds for all elements of a
+<code>TraversableOnce</code>
+</li>
+<li>
+<code>Exists[P]</code>: checks if the predicate <code>P</code> holds for some elements of a
+<code>TraversableOnce</code>
+</li>
+<li>
+<code>Size[P]</code>: checks if the size of a <code>TraversableOnce</code> satisfies the predicate <code>P</code>
+</li>
+<li>
+<code>MinSize[N]</code>: checks if the size of a <code>TraversableOnce</code> is greater than
+or equal to <code>N</code>
+</li>
+<li>
+<code>MaxSize[N]</code>: checks if the size of a <code>TraversableOnce</code> is less than
+or equal to <code>N</code>
+</li>
+</ul>
+
+<p><a href="https://github.com/fthomas/refined/blob/master/src/main/scala/eu/timepit/refined/generic.scala"><code>generic</code></a></p>
+
+<ul>
+<li>
+<code>Equal[U]</code>: checks if a value is equal to <code>U</code>
+</li>
+</ul>
+
+<p><a href="https://github.com/fthomas/refined/blob/master/src/main/scala/eu/timepit/refined/numeric.scala"><code>numeric</code></a></p>
+
+<ul>
+<li>
+<code>Less[N]</code>: checks if a numeric value is less than <code>N</code>
+</li>
+<li>
+<code>LessEqual[N]</code>: checks if a numeric value is less than or equal to <code>N</code>
+</li>
+<li>
+<code>Greater[N]</code>: checks if a numeric value is greater than <code>N</code>
+</li>
+<li>
+<code>GreaterEqual[N]</code>: checks if a numeric value is greater than or equal to <code>N</code>
+</li>
+<li>
+<code>Positive</code>: checks if a numeric value is greater than 0</li>
+<li>
+<code>Negative</code>: checks if a numeric value is less than 0</li>
+<li>
+<code>Interval[L, H]</code>: checks if a numeric value is in the interval [<code>L</code>, <code>H</code>]</li>
+</ul>
+
+<p><a href="https://github.com/fthomas/refined/blob/master/src/main/scala/eu/timepit/refined/string.scala"><code>string</code></a></p>
+
+<ul>
+<li>
+<code>MatchesRegex[R]</code>: checks if a <code>String</code> matches the regular expression <code>R</code>
+</li>
+</ul>
+
+<h2>
+<a id="custom-predicates" class="anchor" href="#custom-predicates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Custom predicates</h2>
+
+<h2>
+<a id="related-projects" class="anchor" href="#related-projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Related projects</h2>
+
+<p>This library is heavily inspired by the <a href="http://nikita-volkov.github.io/refined">refined</a> library for
+Haskell. It even stole its name! Another Scala library that provides type-level
+validations is <a href="https://github.com/fwbrasil/bond">bond</a>.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>refined is licensed under the MIT license, available at <a href="http://opensource.org/licenses/MIT">http://opensource.org/licenses/MIT</a>
+and also in the <a href="https://github.com/fthomas/refined/blob/master/LICENSE">LICENSE</a> file.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Refined maintained by <a href="https://github.com/fthomas">fthomas</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
