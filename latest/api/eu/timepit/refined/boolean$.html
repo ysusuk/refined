@@ -176,6 +176,23 @@
       </a>
     </span>
       <p class="shortcomment cmt">Negation of the predicate <code>P</code>.</p>
+    </li><li name="eu.timepit.refined.boolean.OneOf" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OneOf[PS]extendsAnyRef"></a>
+      <a id="OneOf[PS]:OneOf[PS]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="boolean$$OneOf.html"><span class="name">OneOf</span></a><span class="tparams">[<span name="PS">PS</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@OneOf[PS]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Exclusive disjunction of all predicates in <code>PS</code>.</p>
     </li><li name="eu.timepit.refined.boolean.Or" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Or[A,B]extendsAnyRef"></a>
       <a id="Or[A,B]:Or[A,B]"></a>
@@ -210,6 +227,23 @@
       </a>
     </span>
       <p class="shortcomment cmt">Constant predicate that is always true.</p>
+    </li><li name="eu.timepit.refined.boolean.Xor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Xor[A,B]extendsAnyRef"></a>
+      <a id="Xor[A,B]:Xor[A,B]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="boolean$$Xor.html"><span class="name">Xor</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@Xor[A,B]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Exclusive disjunction of the predicates <code>A</code> and <code>B</code>.</p>
     </li></ol>
             </div>
 
@@ -586,6 +620,40 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="eu.timepit.refined.boolean#oneOfHConsPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="oneOfHConsPredicate[PH,PT&lt;:shapeless.HList,T](implicitph:eu.timepit.refined.Predicate[PH,T],implicitpt:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.OneOf[PT],T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.OneOf[shapeless.::[PH,PT]],T]"></a>
+      <a id="oneOfHConsPredicate[PH,PT&lt;:HList,T](Predicate[PH,T],Predicate[OneOf[PT],T]):Predicate[OneOf[::[PH,PT]],T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">oneOfHConsPredicate</span><span class="tparams">[<span name="PH">PH</span>, <span name="PT">PT &lt;: <span class="extype" name="shapeless.HList">HList</span></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ph">ph: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.boolean.oneOfHConsPredicate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.boolean.oneOfHConsPredicate.T">T</span>]</span>, <span name="pt">pt: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$OneOf.html" class="extype" name="eu.timepit.refined.boolean.OneOf">OneOf</a>[<span class="extype" name="eu.timepit.refined.boolean.oneOfHConsPredicate.PT">PT</span>], <span class="extype" name="eu.timepit.refined.boolean.oneOfHConsPredicate.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$OneOf.html" class="extype" name="eu.timepit.refined.boolean.OneOf">OneOf</a>[<span class="extype" name="shapeless.::">::</span>[<span class="extype" name="eu.timepit.refined.boolean.oneOfHConsPredicate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.boolean.oneOfHConsPredicate.PT">PT</span>]], <span class="extype" name="eu.timepit.refined.boolean.oneOfHConsPredicate.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@oneOfHConsPredicate[PH,PT&lt;:shapeless.HList,T](implicitph:eu.timepit.refined.Predicate[PH,T],implicitpt:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.OneOf[PT],T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.OneOf[shapeless.::[PH,PT]],T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="eu.timepit.refined.boolean#oneOfHNilPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="oneOfHNilPredicate[T]:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.OneOf[shapeless.HNil],T]"></a>
+      <a id="oneOfHNilPredicate[T]:Predicate[OneOf[HNil],T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">oneOfHNilPredicate</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$OneOf.html" class="extype" name="eu.timepit.refined.boolean.OneOf">OneOf</a>[<span class="extype" name="shapeless.HNil">HNil</span>], <span class="extype" name="eu.timepit.refined.boolean.oneOfHNilPredicate.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@oneOfHNilPredicate[T]:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.OneOf[shapeless.HNil],T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="eu.timepit.refined.boolean#orPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="orPredicate[A,B,T](implicitpa:eu.timepit.refined.Predicate[A,T],implicitpb:eu.timepit.refined.Predicate[B,T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.Or[A,B],T]"></a>
       <a id="orPredicate[A,B,T](Predicate[A,T],Predicate[B,T]):Predicate[Or[A,B],T]"></a>
@@ -723,6 +791,23 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="eu.timepit.refined.boolean#xorPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="xorPredicate[A,B,T](implicitpa:eu.timepit.refined.Predicate[A,T],implicitpb:eu.timepit.refined.Predicate[B,T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.Xor[A,B],T]"></a>
+      <a id="xorPredicate[A,B,T](Predicate[A,T],Predicate[B,T]):Predicate[Xor[A,B],T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">xorPredicate</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="pa">pa: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.boolean.xorPredicate.A">A</span>, <span class="extype" name="eu.timepit.refined.boolean.xorPredicate.T">T</span>]</span>, <span name="pb">pb: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.boolean.xorPredicate.B">B</span>, <span class="extype" name="eu.timepit.refined.boolean.xorPredicate.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$Xor.html" class="extype" name="eu.timepit.refined.boolean.Xor">Xor</a>[<span class="extype" name="eu.timepit.refined.boolean.xorPredicate.A">A</span>, <span class="extype" name="eu.timepit.refined.boolean.xorPredicate.B">B</span>], <span class="extype" name="eu.timepit.refined.boolean.xorPredicate.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@xorPredicate[A,B,T](implicitpa:eu.timepit.refined.Predicate[A,T],implicitpb:eu.timepit.refined.Predicate[B,T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.Xor[A,B],T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li></ol>
             </div>
 

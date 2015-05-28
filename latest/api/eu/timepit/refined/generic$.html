@@ -108,6 +108,40 @@
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a value is equal to <code>U</code>.</p>
+    </li><li name="eu.timepit.refined.generic.IsNull" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IsNullextendsAnyRef"></a>
+      <a id="IsNull:IsNull"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="generic$$IsNull.html"><span class="name">IsNull</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.generic$@IsNullextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Predicate that checks if a value is <code>null</code>.</p>
+    </li><li name="eu.timepit.refined.generic.NonNull" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NonNull=eu.timepit.refined.boolean.Not[eu.timepit.refined.generic.IsNull]"></a>
+      <a id="NonNull:NonNull"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NonNull</span><span class="result"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="generic$$IsNull.html" class="extype" name="eu.timepit.refined.generic.IsNull">IsNull</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.generic$@NonNull=eu.timepit.refined.boolean.Not[eu.timepit.refined.generic.IsNull]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Predicate that checks if a value is not <code>null</code>.</p>
     </li></ol>
             </div>
 
@@ -331,6 +365,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="eu.timepit.refined.generic#isNullPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isNullPredicate[T&lt;:AnyRef]:eu.timepit.refined.Predicate[eu.timepit.refined.generic.IsNull,T]"></a>
+      <a id="isNullPredicate[T&lt;:AnyRef]:Predicate[IsNull,T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isNullPredicate</span><span class="tparams">[<span name="T">T &lt;: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="generic$$IsNull.html" class="extype" name="eu.timepit.refined.generic.IsNull">IsNull</a>, <span class="extype" name="eu.timepit.refined.generic.isNullPredicate.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.generic$@isNullPredicate[T&lt;:AnyRef]:eu.timepit.refined.Predicate[eu.timepit.refined.generic.IsNull,T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
