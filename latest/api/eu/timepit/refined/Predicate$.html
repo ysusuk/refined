@@ -47,13 +47,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">Predicate</span>
+        <span class="name">Predicate</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/src/main/scala/eu/timepit/refined/Predicate.scala" target="_blank">Predicate.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
@@ -71,7 +71,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="eu.timepit.refined.Predicate"><span>Predicate</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="eu.timepit.refined.Predicate"><span>Predicate</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -148,36 +148,36 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.Predicate#alwaysFalse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="alwaysFalse[P,T]:eu.timepit.refined.Predicate[P,T]"></a>
-      <a id="alwaysFalse[P,T]:Predicate[P,T]"></a>
+    </li><li name="eu.timepit.refined.Predicate#alwaysInvalid" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="alwaysInvalid[P,T]:eu.timepit.refined.Predicate[P,T]"></a>
+      <a id="alwaysInvalid[P,T]:Predicate[P,T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">alwaysFalse</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.alwaysFalse.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.alwaysFalse.T">T</span>]</span>
+        <span class="name">alwaysInvalid</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.alwaysInvalid.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.alwaysInvalid.T">T</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@alwaysFalse[P,T]:eu.timepit.refined.Predicate[P,T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.Predicate$@alwaysInvalid[P,T]:eu.timepit.refined.Predicate[P,T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <p class="shortcomment cmt">Returns a <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a> that ignores its inputs and always yields <code>false</code>.</p>
-    </li><li name="eu.timepit.refined.Predicate#alwaysTrue" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="alwaysTrue[P,T]:eu.timepit.refined.Predicate[P,T]"></a>
-      <a id="alwaysTrue[P,T]:Predicate[P,T]"></a>
+    </li><li name="eu.timepit.refined.Predicate#alwaysValid" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="alwaysValid[P,T]:eu.timepit.refined.Predicate[P,T]"></a>
+      <a id="alwaysValid[P,T]:Predicate[P,T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">alwaysTrue</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.alwaysTrue.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.alwaysTrue.T">T</span>]</span>
+        <span class="name">alwaysValid</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.alwaysValid.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.alwaysValid.T">T</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@alwaysTrue[P,T]:eu.timepit.refined.Predicate[P,T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.Predicate$@alwaysValid[P,T]:eu.timepit.refined.Predicate[P,T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -331,7 +331,7 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="eu.timepit.refined.Predicate#instance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="instance[P,T](isValidF:T=&gt;Boolean,showF:T=&gt;String):eu.timepit.refined.Predicate[P,T]"></a>
+      <a id="instance[P,T](validateT:T=&gt;Boolean,showT:T=&gt;String):eu.timepit.refined.Predicate[P,T]"></a>
       <a id="instance[P,T]((T)⇒Boolean,(T)⇒String):Predicate[P,T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -339,10 +339,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">instance</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>]</span><span class="params">(<span name="isValidF">isValidF: (<span class="extype" name="eu.timepit.refined.Predicate.instance.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="showF">showF: (<span class="extype" name="eu.timepit.refined.Predicate.instance.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.instance.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.instance.T">T</span>]</span>
+        <span class="name">instance</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>]</span><span class="params">(<span name="validateT">validateT: (<span class="extype" name="eu.timepit.refined.Predicate.instance.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="showT">showT: (<span class="extype" name="eu.timepit.refined.Predicate.instance.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.instance.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.instance.T">T</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@instance[P,T](isValidF:T=&gt;Boolean,showF:T=&gt;String):eu.timepit.refined.Predicate[P,T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.Predicate$@instance[P,T](validateT:T=&gt;Boolean,showT:T=&gt;String):eu.timepit.refined.Predicate[P,T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -527,7 +527,11 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></h3>

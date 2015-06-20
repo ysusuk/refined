@@ -45,13 +45,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">generic</span>
+        <span class="name">generic</span><span class="result"> extends <a href="GenericPredicates.html" class="extype" name="eu.timepit.refined.GenericPredicates">GenericPredicates</a> with <a href="GenericInferenceRules.html" class="extype" name="eu.timepit.refined.GenericInferenceRules">GenericInferenceRules</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/src/main/scala/eu/timepit/refined/generic.scala" target="_blank">generic.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="GenericInferenceRules.html" class="extype" name="eu.timepit.refined.GenericInferenceRules">GenericInferenceRules</a>, <a href="GenericPredicates.html" class="extype" name="eu.timepit.refined.GenericPredicates">GenericPredicates</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
@@ -69,7 +69,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="eu.timepit.refined.generic"><span>generic</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="eu.timepit.refined.generic"><span>generic</span></li><li class="in" name="eu.timepit.refined.GenericInferenceRules"><span>GenericInferenceRules</span></li><li class="in" name="eu.timepit.refined.GenericPredicates"><span>GenericPredicates</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -108,40 +108,6 @@
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a value is equal to <code>U</code>.</p>
-    </li><li name="eu.timepit.refined.generic.IsNull" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="IsNullextendsAnyRef"></a>
-      <a id="IsNull:IsNull"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="generic$$IsNull.html"><span class="name">IsNull</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.generic$@IsNullextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Predicate that checks if a value is <code>null</code>.</p>
-    </li><li name="eu.timepit.refined.generic.NonNull" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="NonNull=eu.timepit.refined.boolean.Not[eu.timepit.refined.generic.IsNull]"></a>
-      <a id="NonNull:NonNull"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">NonNull</span><span class="result"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="generic$$IsNull.html" class="extype" name="eu.timepit.refined.generic.IsNull">IsNull</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.generic$@NonNull=eu.timepit.refined.boolean.Not[eu.timepit.refined.generic.IsNull]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Predicate that checks if a value is not <code>null</code>.</p>
     </li></ol>
             </div>
 
@@ -257,8 +223,8 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="eu.timepit.refined.generic#equalPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="equalPredicate[T,U&lt;:T](implicitwu:eu.timepit.refined.internal.WeakWitness.Aux[U]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.Equal[U],T]"></a>
+    </li><li name="eu.timepit.refined.GenericPredicates#equalPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equalPredicate[T,U&lt;:T](implicitwu:shapeless.Witness.Aux[U]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.Equal[U],T]"></a>
       <a id="equalPredicate[T,U&lt;:T](Aux[U]):Predicate[Equal[U],T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -266,14 +232,31 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equalPredicate</span><span class="tparams">[<span name="T">T</span>, <span name="U">U &lt;: <span class="extype" name="eu.timepit.refined.generic.equalPredicate.T">T</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wu">wu: <a href="internal/WeakWitness$.html#Aux[T0]=eu.timepit.refined.internal.WeakWitness{typeT=T0}" class="extmbr" name="eu.timepit.refined.internal.WeakWitness.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.generic.equalPredicate.U">U</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="generic$$Equal.html" class="extype" name="eu.timepit.refined.generic.Equal">Equal</a>[<span class="extype" name="eu.timepit.refined.generic.equalPredicate.U">U</span>], <span class="extype" name="eu.timepit.refined.generic.equalPredicate.T">T</span>]</span>
+        <span class="name">equalPredicate</span><span class="tparams">[<span name="T">T</span>, <span name="U">U &lt;: <span class="extype" name="eu.timepit.refined.GenericPredicates.equalPredicate.T">T</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wu">wu: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.GenericPredicates.equalPredicate.U">U</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="generic$$Equal.html" class="extype" name="eu.timepit.refined.generic.Equal">Equal</a>[<span class="extype" name="eu.timepit.refined.GenericPredicates.equalPredicate.U">U</span>], <span class="extype" name="eu.timepit.refined.GenericPredicates.equalPredicate.T">T</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.generic$@equalPredicate[T,U&lt;:T](implicitwu:eu.timepit.refined.internal.WeakWitness.Aux[U]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.Equal[U],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.generic$@equalPredicate[T,U&lt;:T](implicitwu:shapeless.Witness.Aux[U]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.Equal[U],T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="GenericPredicates.html" class="extype" name="eu.timepit.refined.GenericPredicates">GenericPredicates</a></dd></dl></div>
+    </li><li name="eu.timepit.refined.GenericInferenceRules#equalPredicateInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equalPredicateInference[T,U&lt;:T,P](implicitp:eu.timepit.refined.Predicate[P,T],implicitwu:shapeless.Witness.Aux[U]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.generic.Equal[U],P]"></a>
+      <a id="equalPredicateInference[T,U&lt;:T,P](Predicate[P,T],Aux[U]):==&gt;[Equal[U],P]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equalPredicateInference</span><span class="tparams">[<span name="T">T</span>, <span name="U">U &lt;: <span class="extype" name="eu.timepit.refined.GenericInferenceRules.equalPredicateInference.T">T</span></span>, <span name="P">P</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p">p: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.GenericInferenceRules.equalPredicateInference.P">P</span>, <span class="extype" name="eu.timepit.refined.GenericInferenceRules.equalPredicateInference.T">T</span>]</span>, <span name="wu">wu: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.GenericInferenceRules.equalPredicateInference.U">U</span>]</span>)</span><span class="result">: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<a href="generic$$Equal.html" class="extype" name="eu.timepit.refined.generic.Equal">Equal</a>[<span class="extype" name="eu.timepit.refined.GenericInferenceRules.equalPredicateInference.U">U</span>], <span class="extype" name="eu.timepit.refined.GenericInferenceRules.equalPredicateInference.P">P</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.generic$@equalPredicateInference[T,U&lt;:T,P](implicitp:eu.timepit.refined.Predicate[P,T],implicitwu:shapeless.Witness.Aux[U]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.generic.Equal[U],P]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="GenericInferenceRules.html" class="extype" name="eu.timepit.refined.GenericInferenceRules">GenericInferenceRules</a></dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
@@ -365,23 +348,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.generic#isNullPredicate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="isNullPredicate[T&lt;:AnyRef]:eu.timepit.refined.Predicate[eu.timepit.refined.generic.IsNull,T]"></a>
-      <a id="isNullPredicate[T&lt;:AnyRef]:Predicate[IsNull,T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isNullPredicate</span><span class="tparams">[<span name="T">T &lt;: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="generic$$IsNull.html" class="extype" name="eu.timepit.refined.generic.IsNull">IsNull</a>, <span class="extype" name="eu.timepit.refined.generic.isNullPredicate.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.generic$@isNullPredicate[T&lt;:AnyRef]:eu.timepit.refined.Predicate[eu.timepit.refined.generic.IsNull,T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -545,7 +511,11 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="eu.timepit.refined.GenericInferenceRules">
+              <h3>Inherited from <a href="GenericInferenceRules.html" class="extype" name="eu.timepit.refined.GenericInferenceRules">GenericInferenceRules</a></h3>
+            </div><div class="parent" name="eu.timepit.refined.GenericPredicates">
+              <h3>Inherited from <a href="GenericPredicates.html" class="extype" name="eu.timepit.refined.GenericPredicates">GenericPredicates</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
