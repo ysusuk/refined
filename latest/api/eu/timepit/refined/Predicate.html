@@ -52,9 +52,9 @@
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Type class for validating values of type <code>T</code> according to a type-level
-predicate <code>P</code>. The semantics of <code>P</code> are defined by the instance of this
-type class for <code>P</code>.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.T">T</span>]</dd><dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/src/main/scala/eu/timepit/refined/Predicate.scala" target="_blank">Predicate.scala</a></dd></dl><div class="toggleContainer block">
+predicate <code>P</code>. The semantics of <code>P</code> are defined by the instance(s) of
+this type class for <code>P</code>.
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.T">T</span>]</dd><dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/jvm/../shared/src/main/scala/eu/timepit/refined/Predicate.scala" target="_blank">Predicate.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
@@ -446,6 +446,24 @@ accumulate the string representations of sub-predicates.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="eu.timepit.refined.Predicate#refine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="refine(t:T):Either[String,shapeless.tag.@@[T,P]]"></a>
+      <a id="refine(T):Either[String,@@[T,P]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">refine</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.Predicate.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Either">Either</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="shapeless.tag.@@">@@</span>[<span class="extype" name="eu.timepit.refined.Predicate.T">T</span>, <span class="extype" name="eu.timepit.refined.Predicate.P">P</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.Predicate@refine(t:T):Either[String,shapeless.tag.@@[T,P]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns <code>t</code> tagged with the predicate <code>P</code> on the right if it satisfies
+it, or an error message on the left otherwise.</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -480,19 +498,19 @@ accumulate the string representations of sub-predicates.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.Predicate#validated" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="validated(t:T):Option[String]"></a>
-      <a id="validated(T):Option[String]"></a>
+    </li><li name="eu.timepit.refined.Predicate#validate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="validate(t:T):Option[String]"></a>
+      <a id="validate(T):Option[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">validated</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.Predicate.T">T</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">validate</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.Predicate.T">T</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate@validated(t:T):Option[String]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.Predicate@validate(t:T):Option[String]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
