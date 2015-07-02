@@ -513,7 +513,7 @@ this type class for <code>P</code>.
       </a>
     </span>
       
-    </li><li name="eu.timepit.refined.numeric" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.timepit.refined.numeric" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="numeric"></a>
       <a id="numeric:numeric"></a>
       <h4 class="signature">
@@ -529,7 +529,21 @@ this type class for <code>P</code>.
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Module for numeric predicates.</p><div class="fullcomment"><div class="comment cmt"><p>Module for numeric predicates. Predicates that take type parameters
+support both Shapeless' natural numbers (<code>Nat</code>) and numeric singleton
+types (which are made available by Shapeless' <code>Witness</code>) which include
+subtypes of <code>Int</code>, <code>Long</code>, <code>Double</code>, <code>Char</code> etc.
+</p></div><dl class="attributes block"> <div class="block">Example:
+               <ol><li class="cmt"><p></p><pre>scala&gt; <span class="kw">import</span> shapeless.nat._
+     | <span class="kw">import</span> shapeless.tag.@@
+     | <span class="kw">import</span> eu.timepit.refined.numeric._
+
+scala&gt; refineLit[Greater[_5]](<span class="num">10</span>)
+res1: <span class="std">Int</span> @@ Greater[_5] = <span class="num">10</span>
+
+scala&gt; refineLit[Greater[W.`<span class="num">1.5</span>`.T]](<span class="num">1.6</span>)
+res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>`.T] = <span class="num">1.6</span></pre></li></ol>
+            </div></dl></div>
     </li><li name="eu.timepit.refined#refine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="refine[P]:eu.timepit.refined.internal.Refine[P]"></a>
       <a id="refine[P]:Refine[P]"></a>

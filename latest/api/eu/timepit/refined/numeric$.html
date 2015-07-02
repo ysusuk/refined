@@ -49,7 +49,21 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/jvm/../shared/src/main/scala/eu/timepit/refined/numeric.scala" target="_blank">numeric.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Module for numeric predicates. Predicates that take type parameters
+support both Shapeless' natural numbers (<code>Nat</code>) and numeric singleton
+types (which are made available by Shapeless' <code>Witness</code>) which include
+subtypes of <code>Int</code>, <code>Long</code>, <code>Double</code>, <code>Char</code> etc.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/jvm/../shared/src/main/scala/eu/timepit/refined/numeric.scala" target="_blank">numeric.scala</a></dd><div class="block">Example:
+               <ol><li class="cmt"><p></p><pre>scala&gt; <span class="kw">import</span> shapeless.nat._
+     | <span class="kw">import</span> shapeless.tag.@@
+     | <span class="kw">import</span> eu.timepit.refined.numeric._
+
+scala&gt; refineLit[Greater[_5]](<span class="num">10</span>)
+res1: <span class="std">Int</span> @@ Greater[_5] = <span class="num">10</span>
+
+scala&gt; refineLit[Greater[W.`<span class="num">1.5</span>`.T]](<span class="num">1.6</span>)
+res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>`.T] = <span class="num">1.6</span></pre></li></ol>
+            </div></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="NumericInferenceRules.html" class="extype" name="eu.timepit.refined.NumericInferenceRules">NumericInferenceRules</a>, <a href="NumericPredicates.html" class="extype" name="eu.timepit.refined.NumericPredicates">NumericPredicates</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
