@@ -28,13 +28,13 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../lib/object_big.png" />
+        <img alt="Object" src="../../../lib/object_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="eu">eu</a>.<a href="../package.html" class="extype" name="eu.timepit">timepit</a>.<a href="package.html" class="extype" name="eu.timepit.refined">refined</a></p>
         <h1>numeric</h1><h3><span class="morelinks"><div>Related Doc:
             <a href="package.html" class="extype" name="eu.timepit.refined">package refined</a>
           </div></span></h3><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       </div>
@@ -51,21 +51,20 @@
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Module for numeric predicates. Predicates that take type parameters
 support both Shapeless' natural numbers (<code>Nat</code>) and numeric singleton
-types (which are made available by Shapeless' <code>Witness</code>) which include
-subtypes of <code>Int</code>, <code>Long</code>, <code>Double</code>, <code>Char</code> etc.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/jvm/../shared/src/main/scala/eu/timepit/refined/numeric.scala" target="_blank">numeric.scala</a></dd><div class="block">Example:
+types (which are made available by Shapeless' <code>Witness</code> - abbreviated
+as <a href="package.html#W:shapeless.Witness.type" class="extmbr" name="eu.timepit.refined#W">W</a> in refined) which include subtypes of <code>Int</code>, <code>Long</code>, <code>Double</code>,
+<code>Char</code> etc.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/shared/src/main/scala/eu/timepit/refined/numeric.scala" target="_blank">numeric.scala</a></dd><div class="block">Example:
                <ol><li class="cmt"><p></p><pre>scala&gt; <span class="kw">import</span> shapeless.nat._
      | <span class="kw">import</span> shapeless.tag.@@
      | <span class="kw">import</span> eu.timepit.refined.numeric._
-
 scala&gt; refineLit[Greater[_5]](<span class="num">10</span>)
 res1: <span class="std">Int</span> @@ Greater[_5] = <span class="num">10</span>
-
 scala&gt; refineLit[Greater[W.`<span class="num">1.5</span>`.T]](<span class="num">1.6</span>)
 res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>`.T] = <span class="num">1.6</span></pre></li></ol>
             </div></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="NumericInferenceRules.html" class="extype" name="eu.timepit.refined.NumericInferenceRules">NumericInferenceRules</a>, <a href="NumericPredicates.html" class="extype" name="eu.timepit.refined.NumericPredicates">NumericPredicates</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="NumericInferenceRules.html" class="extype" name="eu.timepit.refined.NumericInferenceRules">NumericInferenceRules</a>, <a href="NumericPredicates.html" class="extype" name="eu.timepit.refined.NumericPredicates">NumericPredicates</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
@@ -91,7 +90,6 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
               <li class="hideall out"><span>Hide All</span></li>
               <li class="showall in"><span>Show all</span></li>
             </ol>
-            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -114,11 +112,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="numeric$$Greater.html"><span class="name">Greater</span></a><span class="tparams">[<span name="N">N</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="numeric$$Greater.html"><span class="name">Greater</span></a><span class="tparams">[<span name="N">N</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@Greater[N]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a numeric value is greater than <code>N</code>.</p>
@@ -135,7 +133,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@GreaterEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Less[N]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a numeric value is greater than or equal to <code>N</code>.</p>
@@ -152,7 +150,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@Interval[L,H]=eu.timepit.refined.boolean.And[eu.timepit.refined.numeric.GreaterEqual[L],eu.timepit.refined.numeric.LessEqual[H]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a numeric value is in the interval <code>[L, H]</code>.</p>
@@ -165,11 +163,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="numeric$$Less.html"><span class="name">Less</span></a><span class="tparams">[<span name="N">N</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="numeric$$Less.html"><span class="name">Less</span></a><span class="tparams">[<span name="N">N</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@Less[N]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a numeric value is less than <code>N</code>.</p>
@@ -186,7 +184,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@LessEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Greater[N]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a numeric value is less than or equal to <code>N</code>.</p>
@@ -203,7 +201,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@Negative=eu.timepit.refined.numeric.Less[shapeless.nat._0]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a numeric value is negative (&lt; 0).</p>
@@ -220,7 +218,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@NonNegative=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Negative]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a numeric value is zero or positive (&gt;= 0).</p>
@@ -237,7 +235,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@NonPositive=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Positive]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a numeric value is zero or negative (&lt;= 0).</p>
@@ -254,7 +252,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@Positive=eu.timepit.refined.numeric.Greater[shapeless.nat._0]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a numeric value is positive (&gt; 0).</p>
@@ -274,11 +272,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -291,11 +289,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@##():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -308,11 +306,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -329,7 +327,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -342,11 +340,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@clone():Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -365,11 +363,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -386,7 +384,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@equalPredicateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitit:Integral[T]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.Equal[N],T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="NumericPredicates.html" class="extype" name="eu.timepit.refined.NumericPredicates">NumericPredicates</a></dd></dl></div>
@@ -399,11 +397,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -416,11 +414,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -443,7 +441,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -460,7 +458,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@greaterInference[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="NumericInferenceRules.html" class="extype" name="eu.timepit.refined.NumericInferenceRules">NumericInferenceRules</a></dd></dl></div>
@@ -477,7 +475,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@greaterInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="NumericInferenceRules.html" class="extype" name="eu.timepit.refined.NumericInferenceRules">NumericInferenceRules</a></dd></dl></div>
@@ -494,7 +492,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@greaterPredicate[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.numeric.Greater[N],T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="NumericPredicates.html" class="extype" name="eu.timepit.refined.NumericPredicates">NumericPredicates</a></dd></dl></div>
@@ -511,7 +509,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@greaterPredicateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.numeric.Greater[N],T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="NumericPredicates.html" class="extype" name="eu.timepit.refined.NumericPredicates">NumericPredicates</a></dd></dl></div>
@@ -524,11 +522,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -541,11 +539,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -562,7 +560,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@lessInference[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="NumericInferenceRules.html" class="extype" name="eu.timepit.refined.NumericInferenceRules">NumericInferenceRules</a></dd></dl></div>
@@ -579,7 +577,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@lessInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="NumericInferenceRules.html" class="extype" name="eu.timepit.refined.NumericInferenceRules">NumericInferenceRules</a></dd></dl></div>
@@ -596,7 +594,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@lessPredicate[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.numeric.Less[N],T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="NumericPredicates.html" class="extype" name="eu.timepit.refined.NumericPredicates">NumericPredicates</a></dd></dl></div>
@@ -613,7 +611,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@lessPredicateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.numeric.Less[N],T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="NumericPredicates.html" class="extype" name="eu.timepit.refined.NumericPredicates">NumericPredicates</a></dd></dl></div>
@@ -626,11 +624,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -643,11 +641,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -660,11 +658,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -681,7 +679,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -698,7 +696,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -711,11 +709,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -734,11 +732,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -757,11 +755,11 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.numeric$@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -785,9 +783,9 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
             </div><div class="parent" name="eu.timepit.refined.NumericPredicates">
               <h3>Inherited from <a href="NumericPredicates.html" class="extype" name="eu.timepit.refined.NumericPredicates">NumericPredicates</a></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
