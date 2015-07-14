@@ -45,13 +45,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">collection</span><span class="result"> extends <a href="CollectionPredicates.html" class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</a> with <a href="CollectionInferenceRules.html" class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</a></span>
+        <span class="name">collection</span><span class="result"> extends <span class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</span> with <span class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/shared/src/main/scala/eu/timepit/refined/collection.scala" target="_blank">collection.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="CollectionInferenceRules.html" class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</a>, <a href="CollectionPredicates.html" class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</span>, <span class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
@@ -419,7 +419,7 @@ predicate <code>P</code>.</p>
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionPredicates.html" class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionPredicates</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionPredicates#emptyPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="emptyPredicate[T](implicitev:T=&gt;TraversableOnce[_]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Empty,T]"></a>
       <a id="emptyPredicate[T]((T)⇒TraversableOnce[_]):Predicate[Empty,T]"></a>
@@ -436,7 +436,7 @@ predicate <code>P</code>.</p>
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionPredicates.html" class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionPredicates</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -472,7 +472,7 @@ predicate <code>P</code>.</p>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionInferenceRules#existsInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="existsInference[A,B](implicitp1:eu.timepit.refined.InferenceRuleAlias.==&gt;[A,B]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Exists[A],eu.timepit.refined.collection.Exists[B]]"></a>
+      <a id="existsInference[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Exists[A],eu.timepit.refined.collection.Exists[B]]"></a>
       <a id="existsInference[A,B](==&gt;[A,B]):==&gt;[Exists[A],Exists[B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -480,16 +480,16 @@ predicate <code>P</code>.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">existsInference</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.existsInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.existsInference.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.existsInference.A">A</span>], <a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.existsInference.B">B</span>]]</span>
+        <span class="name">existsInference</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.existsInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.existsInference.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.existsInference.A">A</span>], <a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.existsInference.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@existsInference[A,B](implicitp1:eu.timepit.refined.InferenceRuleAlias.==&gt;[A,B]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Exists[A],eu.timepit.refined.collection.Exists[B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.collection$@existsInference[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Exists[A],eu.timepit.refined.collection.Exists[B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionInferenceRules.html" class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInferenceRules</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionInferenceRules#existsNonEmptyInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="existsNonEmptyInference[P]:eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Exists[P],eu.timepit.refined.collection.NonEmpty]"></a>
+      <a id="existsNonEmptyInference[P]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Exists[P],eu.timepit.refined.collection.NonEmpty]"></a>
       <a id="existsNonEmptyInference[P]:==&gt;[Exists[P],NonEmpty]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -497,14 +497,14 @@ predicate <code>P</code>.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">existsNonEmptyInference</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.existsNonEmptyInference.P">P</span>], <a href="#NonEmpty=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Empty]" class="extmbr" name="eu.timepit.refined.collection.NonEmpty">NonEmpty</a>]</span>
+        <span class="name">existsNonEmptyInference</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.existsNonEmptyInference.P">P</span>], <a href="#NonEmpty=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Empty]" class="extmbr" name="eu.timepit.refined.collection.NonEmpty">NonEmpty</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@existsNonEmptyInference[P]:eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Exists[P],eu.timepit.refined.collection.NonEmpty]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.collection$@existsNonEmptyInference[P]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Exists[P],eu.timepit.refined.collection.NonEmpty]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionInferenceRules.html" class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInferenceRules</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -544,7 +544,7 @@ predicate <code>P</code>.</p>
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionPredicates.html" class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionPredicates</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionPredicates#forallPredicateView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="forallPredicateView[P,A,T](implicitp:eu.timepit.refined.Predicate[P,A],implicitev:T=&gt;TraversableOnce[A]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Forall[P],T]"></a>
       <a id="forallPredicateView[P,A,T](Predicate[P,A],(T)⇒TraversableOnce[A]):Predicate[Forall[P],T]"></a>
@@ -561,7 +561,7 @@ predicate <code>P</code>.</p>
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionPredicates.html" class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionPredicates</dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -597,7 +597,7 @@ predicate <code>P</code>.</p>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionInferenceRules#headExistsInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="headExistsInference[P]:eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Exists[P]]"></a>
+      <a id="headExistsInference[P]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Exists[P]]"></a>
       <a id="headExistsInference[P]:==&gt;[Head[P],Exists[P]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -605,16 +605,16 @@ predicate <code>P</code>.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">headExistsInference</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.headExistsInference.P">P</span>], <a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.headExistsInference.P">P</span>]]</span>
+        <span class="name">headExistsInference</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.headExistsInference.P">P</span>], <a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.headExistsInference.P">P</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@headExistsInference[P]:eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Exists[P]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.collection$@headExistsInference[P]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Exists[P]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionInferenceRules.html" class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInferenceRules</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionInferenceRules#headInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="headInference[A,B](implicitp1:eu.timepit.refined.InferenceRuleAlias.==&gt;[A,B]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Head[A],eu.timepit.refined.collection.Head[B]]"></a>
+      <a id="headInference[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Head[A],eu.timepit.refined.collection.Head[B]]"></a>
       <a id="headInference[A,B](==&gt;[A,B]):==&gt;[Head[A],Head[B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -622,14 +622,14 @@ predicate <code>P</code>.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">headInference</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.headInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.headInference.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.headInference.A">A</span>], <a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.headInference.B">B</span>]]</span>
+        <span class="name">headInference</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.headInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.headInference.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.headInference.A">A</span>], <a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.headInference.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@headInference[A,B](implicitp1:eu.timepit.refined.InferenceRuleAlias.==&gt;[A,B]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Head[A],eu.timepit.refined.collection.Head[B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.collection$@headInference[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Head[A],eu.timepit.refined.collection.Head[B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionInferenceRules.html" class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInferenceRules</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionPredicates#headPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="headPredicate[P,A,T[A]&lt;:Traversable[A]](implicitp:eu.timepit.refined.Predicate[P,A]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Head[P],T[A]]"></a>
       <a id="headPredicate[P,A,T[A]&lt;:Traversable[A]](Predicate[P,A]):Predicate[Head[P],T[A]]"></a>
@@ -646,7 +646,7 @@ predicate <code>P</code>.</p>
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionPredicates.html" class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionPredicates</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionPredicates#headPredicateView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="headPredicateView[P,A,T](implicitp:eu.timepit.refined.Predicate[P,A],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Head[P],T]"></a>
       <a id="headPredicateView[P,A,T](Predicate[P,A],(T)⇒Traversable[A]):Predicate[Head[P],T]"></a>
@@ -663,9 +663,9 @@ predicate <code>P</code>.</p>
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionPredicates.html" class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionPredicates</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionInferenceRules#indexExistsInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="indexExistsInference[N,P]:eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Index[N,P],eu.timepit.refined.collection.Exists[P]]"></a>
+      <a id="indexExistsInference[N,P]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Index[N,P],eu.timepit.refined.collection.Exists[P]]"></a>
       <a id="indexExistsInference[N,P]:==&gt;[Index[N,P],Exists[P]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -673,16 +673,16 @@ predicate <code>P</code>.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">indexExistsInference</span><span class="tparams">[<span name="N">N</span>, <span name="P">P</span>]</span><span class="result">: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<a href="collection$$Index.html" class="extype" name="eu.timepit.refined.collection.Index">Index</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexExistsInference.N">N</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexExistsInference.P">P</span>], <a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexExistsInference.P">P</span>]]</span>
+        <span class="name">indexExistsInference</span><span class="tparams">[<span name="N">N</span>, <span name="P">P</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="collection$$Index.html" class="extype" name="eu.timepit.refined.collection.Index">Index</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexExistsInference.N">N</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexExistsInference.P">P</span>], <a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexExistsInference.P">P</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@indexExistsInference[N,P]:eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Index[N,P],eu.timepit.refined.collection.Exists[P]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.collection$@indexExistsInference[N,P]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Index[N,P],eu.timepit.refined.collection.Exists[P]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionInferenceRules.html" class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInferenceRules</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionInferenceRules#indexInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="indexInference[N,A,B](implicitp1:eu.timepit.refined.InferenceRuleAlias.==&gt;[A,B]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Index[N,A],eu.timepit.refined.collection.Index[N,B]]"></a>
+      <a id="indexInference[N,A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Index[N,A],eu.timepit.refined.collection.Index[N,B]]"></a>
       <a id="indexInference[N,A,B](==&gt;[A,B]):==&gt;[Index[N,A],Index[N,B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -690,14 +690,14 @@ predicate <code>P</code>.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">indexInference</span><span class="tparams">[<span name="N">N</span>, <span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexInference.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<a href="collection$$Index.html" class="extype" name="eu.timepit.refined.collection.Index">Index</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexInference.N">N</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexInference.A">A</span>], <a href="collection$$Index.html" class="extype" name="eu.timepit.refined.collection.Index">Index</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexInference.N">N</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexInference.B">B</span>]]</span>
+        <span class="name">indexInference</span><span class="tparams">[<span name="N">N</span>, <span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexInference.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="collection$$Index.html" class="extype" name="eu.timepit.refined.collection.Index">Index</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexInference.N">N</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexInference.A">A</span>], <a href="collection$$Index.html" class="extype" name="eu.timepit.refined.collection.Index">Index</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexInference.N">N</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.indexInference.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@indexInference[N,A,B](implicitp1:eu.timepit.refined.InferenceRuleAlias.==&gt;[A,B]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Index[N,A],eu.timepit.refined.collection.Index[N,B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.collection$@indexInference[N,A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Index[N,A],eu.timepit.refined.collection.Index[N,B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionInferenceRules.html" class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInferenceRules</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionPredicates#indexPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="indexPredicate[N&lt;:Int,P,A,T](implicitp:eu.timepit.refined.Predicate[P,A],implicitev:T=&gt;PartialFunction[Int,A],implicitwn:shapeless.Witness.Aux[N]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Index[N,P],T]"></a>
       <a id="indexPredicate[N&lt;:Int,P,A,T](Predicate[P,A],(T)⇒PartialFunction[Int,A],Aux[N]):Predicate[Index[N,P],T]"></a>
@@ -714,7 +714,7 @@ predicate <code>P</code>.</p>
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionPredicates.html" class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionPredicates</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -733,7 +733,7 @@ predicate <code>P</code>.</p>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionInferenceRules#lastExistsInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lastExistsInference[P]:eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Exists[P]]"></a>
+      <a id="lastExistsInference[P]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Exists[P]]"></a>
       <a id="lastExistsInference[P]:==&gt;[Last[P],Exists[P]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -741,16 +741,16 @@ predicate <code>P</code>.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lastExistsInference</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.lastExistsInference.P">P</span>], <a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.lastExistsInference.P">P</span>]]</span>
+        <span class="name">lastExistsInference</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.lastExistsInference.P">P</span>], <a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.lastExistsInference.P">P</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@lastExistsInference[P]:eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Exists[P]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.collection$@lastExistsInference[P]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Exists[P]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionInferenceRules.html" class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInferenceRules</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionInferenceRules#lastInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lastInference[A,B](implicitp1:eu.timepit.refined.InferenceRuleAlias.==&gt;[A,B]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Last[A],eu.timepit.refined.collection.Last[B]]"></a>
+      <a id="lastInference[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Last[A],eu.timepit.refined.collection.Last[B]]"></a>
       <a id="lastInference[A,B](==&gt;[A,B]):==&gt;[Last[A],Last[B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -758,14 +758,14 @@ predicate <code>P</code>.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lastInference</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.lastInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.lastInference.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.lastInference.A">A</span>], <a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.lastInference.B">B</span>]]</span>
+        <span class="name">lastInference</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.lastInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.lastInference.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.lastInference.A">A</span>], <a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.lastInference.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@lastInference[A,B](implicitp1:eu.timepit.refined.InferenceRuleAlias.==&gt;[A,B]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Last[A],eu.timepit.refined.collection.Last[B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.collection$@lastInference[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Last[A],eu.timepit.refined.collection.Last[B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionInferenceRules.html" class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInferenceRules</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionPredicates#lastPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="lastPredicate[P,A,T[A]&lt;:Traversable[A]](implicitp:eu.timepit.refined.Predicate[P,A]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Last[P],T[A]]"></a>
       <a id="lastPredicate[P,A,T[A]&lt;:Traversable[A]](Predicate[P,A]):Predicate[Last[P],T[A]]"></a>
@@ -782,7 +782,7 @@ predicate <code>P</code>.</p>
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionPredicates.html" class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionPredicates</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionPredicates#lastPredicateView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="lastPredicateView[P,A,T](implicitp:eu.timepit.refined.Predicate[P,A],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Last[P],T]"></a>
       <a id="lastPredicateView[P,A,T](Predicate[P,A],(T)⇒Traversable[A]):Predicate[Last[P],T]"></a>
@@ -799,7 +799,7 @@ predicate <code>P</code>.</p>
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionPredicates.html" class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionPredicates</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -852,7 +852,7 @@ predicate <code>P</code>.</p>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionInferenceRules#sizeInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="sizeInference[A,B](implicitp1:eu.timepit.refined.InferenceRuleAlias.==&gt;[A,B]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Size[A],eu.timepit.refined.collection.Size[B]]"></a>
+      <a id="sizeInference[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Size[A],eu.timepit.refined.collection.Size[B]]"></a>
       <a id="sizeInference[A,B](==&gt;[A,B]):==&gt;[Size[A],Size[B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -860,14 +860,14 @@ predicate <code>P</code>.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sizeInference</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.sizeInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.sizeInference.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRuleAlias$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRuleAlias.==&gt;">==&gt;</a>[<a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.sizeInference.A">A</span>], <a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.sizeInference.B">B</span>]]</span>
+        <span class="name">sizeInference</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.sizeInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInferenceRules.sizeInference.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.sizeInference.A">A</span>], <a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<span class="extype" name="eu.timepit.refined.CollectionInferenceRules.sizeInference.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@sizeInference[A,B](implicitp1:eu.timepit.refined.InferenceRuleAlias.==&gt;[A,B]):eu.timepit.refined.InferenceRuleAlias.==&gt;[eu.timepit.refined.collection.Size[A],eu.timepit.refined.collection.Size[B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.collection$@sizeInference[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.collection.Size[A],eu.timepit.refined.collection.Size[B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionInferenceRules.html" class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInferenceRules</dd></dl></div>
     </li><li name="eu.timepit.refined.CollectionPredicates#sizePredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="sizePredicate[P,T](implicitp:eu.timepit.refined.Predicate[P,Int],implicitev:T=&gt;TraversableOnce[_]):eu.timepit.refined.Predicate[eu.timepit.refined.collection.Size[P],T]"></a>
       <a id="sizePredicate[P,T](Predicate[P,Int],(T)⇒TraversableOnce[_]):Predicate[Size[P],T]"></a>
@@ -884,7 +884,7 @@ predicate <code>P</code>.</p>
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CollectionPredicates.html" class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionPredicates</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -998,9 +998,9 @@ predicate <code>P</code>.</p>
 
         <div id="inheritedMembers">
         <div class="parent" name="eu.timepit.refined.CollectionInferenceRules">
-              <h3>Inherited from <a href="CollectionInferenceRules.html" class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</a></h3>
+              <h3>Inherited from <span class="extype" name="eu.timepit.refined.CollectionInferenceRules">CollectionInferenceRules</span></h3>
             </div><div class="parent" name="eu.timepit.refined.CollectionPredicates">
-              <h3>Inherited from <a href="CollectionPredicates.html" class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</a></h3>
+              <h3>Inherited from <span class="extype" name="eu.timepit.refined.CollectionPredicates">CollectionPredicates</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
