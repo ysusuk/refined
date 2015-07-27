@@ -90,7 +90,24 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="eu.timepit.refined.generic.Equal" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="eu.timepit.refined.generic.ConstructorNames" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ConstructorNames[P]extendsAnyRef"></a>
+      <a id="ConstructorNames[P]:ConstructorNames[P]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="generic$$ConstructorNames.html"><span class="name">ConstructorNames</span></a><span class="tparams">[<span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.generic$@ConstructorNames[P]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Predicate that checks if the constructor names of a sum type satisfy <code>P</code>.</p>
+    </li><li name="eu.timepit.refined.generic.Equal" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Equal[U]extendsAnyRef"></a>
       <a id="Equal[U]:Equal[U]"></a>
       <h4 class="signature">
@@ -107,6 +124,23 @@
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a value is equal to <code>U</code>.</p>
+    </li><li name="eu.timepit.refined.generic.FieldNames" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FieldNames[P]extendsAnyRef"></a>
+      <a id="FieldNames[P]:FieldNames[P]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="generic$$FieldNames.html"><span class="name">FieldNames</span></a><span class="tparams">[<span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.generic$@FieldNames[P]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Predicate that checks if the field names of a product type satisfy <code>P</code>.</p>
     </li><li name="eu.timepit.refined.generic.Subtype" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Subtype[U]extendsAnyRef"></a>
       <a id="Subtype[U]:Subtype[U]"></a>
@@ -239,6 +273,23 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="eu.timepit.refined.GenericPredicates#ctorNamesPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ctorNamesPredicate[T,P,R0&lt;:shapeless.Coproduct,R1&lt;:shapeless.HList,K&lt;:shapeless.HList](implicitlg:shapeless.LabelledGeneric.Aux[T,R0],implicitcthl:shapeless.ops.coproduct.ToHList.Aux[R0,R1],implicitkeys:shapeless.ops.record.Keys.Aux[R1,K],implicitktl:shapeless.ops.hlist.ToList[K,Symbol],implicitp:eu.timepit.refined.Predicate[P,List[String]]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.ConstructorNames[P],T]"></a>
+      <a id="ctorNamesPredicate[T,P,R0&lt;:Coproduct,R1&lt;:HList,K&lt;:HList](Aux[T,R0],Aux[R0,R1],Aux[R1,K],ToList[K,Symbol],Predicate[P,List[String]]):Predicate[ConstructorNames[P],T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ctorNamesPredicate</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>, <span name="R0">R0 &lt;: <span class="extype" name="shapeless.Coproduct">Coproduct</span></span>, <span name="R1">R1 &lt;: <span class="extype" name="shapeless.HList">HList</span></span>, <span name="K">K &lt;: <span class="extype" name="shapeless.HList">HList</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="lg">lg: <span class="extype" name="shapeless.LabelledGeneric.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.GenericPredicates.ctorNamesPredicate.T">T</span>, <span class="extype" name="eu.timepit.refined.GenericPredicates.ctorNamesPredicate.R0">R0</span>]</span>, <span name="cthl">cthl: <span class="extype" name="shapeless.ops.coproduct.ToHList.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.GenericPredicates.ctorNamesPredicate.R0">R0</span>, <span class="extype" name="eu.timepit.refined.GenericPredicates.ctorNamesPredicate.R1">R1</span>]</span>, <span name="keys">keys: <span class="extype" name="shapeless.ops.record.Keys.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.GenericPredicates.ctorNamesPredicate.R1">R1</span>, <span class="extype" name="eu.timepit.refined.GenericPredicates.ctorNamesPredicate.K">K</span>]</span>, <span name="ktl">ktl: <span class="extype" name="shapeless.ops.hlist.ToList">ToList</span>[<span class="extype" name="eu.timepit.refined.GenericPredicates.ctorNamesPredicate.K">K</span>, <span class="extype" name="scala.Symbol">Symbol</span>]</span>, <span name="p">p: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.GenericPredicates.ctorNamesPredicate.P">P</span>, <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="generic$$ConstructorNames.html" class="extype" name="eu.timepit.refined.generic.ConstructorNames">ConstructorNames</a>[<span class="extype" name="eu.timepit.refined.GenericPredicates.ctorNamesPredicate.P">P</span>], <span class="extype" name="eu.timepit.refined.GenericPredicates.ctorNamesPredicate.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.generic$@ctorNamesPredicate[T,P,R0&lt;:shapeless.Coproduct,R1&lt;:shapeless.HList,K&lt;:shapeless.HList](implicitlg:shapeless.LabelledGeneric.Aux[T,R0],implicitcthl:shapeless.ops.coproduct.ToHList.Aux[R0,R1],implicitkeys:shapeless.ops.record.Keys.Aux[R1,K],implicitktl:shapeless.ops.hlist.ToList[K,Symbol],implicitp:eu.timepit.refined.Predicate[P,List[String]]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.ConstructorNames[P],T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GenericPredicates</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -307,6 +358,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="eu.timepit.refined.GenericPredicates#fieldNamesPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fieldNamesPredicate[T,P,R&lt;:shapeless.HList,K&lt;:shapeless.HList](implicitlg:shapeless.LabelledGeneric.Aux[T,R],implicitkeys:shapeless.ops.record.Keys.Aux[R,K],implicitktl:shapeless.ops.hlist.ToList[K,Symbol],implicitp:eu.timepit.refined.Predicate[P,List[String]]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.FieldNames[P],T]"></a>
+      <a id="fieldNamesPredicate[T,P,R&lt;:HList,K&lt;:HList](Aux[T,R],Aux[R,K],ToList[K,Symbol],Predicate[P,List[String]]):Predicate[FieldNames[P],T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldNamesPredicate</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>, <span name="R">R &lt;: <span class="extype" name="shapeless.HList">HList</span></span>, <span name="K">K &lt;: <span class="extype" name="shapeless.HList">HList</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="lg">lg: <span class="extype" name="shapeless.LabelledGeneric.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.GenericPredicates.fieldNamesPredicate.T">T</span>, <span class="extype" name="eu.timepit.refined.GenericPredicates.fieldNamesPredicate.R">R</span>]</span>, <span name="keys">keys: <span class="extype" name="shapeless.ops.record.Keys.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.GenericPredicates.fieldNamesPredicate.R">R</span>, <span class="extype" name="eu.timepit.refined.GenericPredicates.fieldNamesPredicate.K">K</span>]</span>, <span name="ktl">ktl: <span class="extype" name="shapeless.ops.hlist.ToList">ToList</span>[<span class="extype" name="eu.timepit.refined.GenericPredicates.fieldNamesPredicate.K">K</span>, <span class="extype" name="scala.Symbol">Symbol</span>]</span>, <span name="p">p: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.GenericPredicates.fieldNamesPredicate.P">P</span>, <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="generic$$FieldNames.html" class="extype" name="eu.timepit.refined.generic.FieldNames">FieldNames</a>[<span class="extype" name="eu.timepit.refined.GenericPredicates.fieldNamesPredicate.P">P</span>], <span class="extype" name="eu.timepit.refined.GenericPredicates.fieldNamesPredicate.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.generic$@fieldNamesPredicate[T,P,R&lt;:shapeless.HList,K&lt;:shapeless.HList](implicitlg:shapeless.LabelledGeneric.Aux[T,R],implicitkeys:shapeless.ops.record.Keys.Aux[R,K],implicitktl:shapeless.ops.hlist.ToList[K,Symbol],implicitp:eu.timepit.refined.Predicate[P,List[String]]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.FieldNames[P],T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GenericPredicates</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>

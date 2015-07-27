@@ -47,19 +47,19 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">RefineM</span><span class="tparams">[<span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <span class="name">RefineM</span><span class="tparams">[<span name="P">P</span>, <span name="F">F<span class="tparams">[<span name="_">_</span>, <span name="_">_</span>]</span></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Helper class that allows the type <code>T</code> to be inferred from calls like
-<code><a href="../package.html#refineM[P]:eu.timepit.refined.internal.RefineM[P]" class="extmbr" name="eu.timepit.refined#refineM">refineM</a>[P](t)</code>.
+<code><a href="../package.html#refineMV[P]:eu.timepit.refined.internal.RefineM[P,eu.timepit.refined.Refined]" class="extmbr" name="eu.timepit.refined#refineMV">refineMV</a>[P](t)</code>.
 </p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/shared/src/main/scala/eu/timepit/refined/internal/RefineM.scala" target="_blank">RefineM.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph1" viewBox="0.00 0.00 148.00 118.00" height="118pt" width="148pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 114)" class="graph" id="graph0"><polygon points="-4,4 -4,-114 144,-114 144,4 -4,4" stroke="none" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this class" id="graph1_0"><g id="a_this class|graph1_0"><a xlink:title="eu.timepit.refined.internal.RefineM (this class)" xlink:href="#inheritance-diagram"><polygon points="116.5,-49 23.5,-49 23.5,-24 116.5,-24 116.5,-49" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-43.5" x="34" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-33.5" x="55" text-anchor="start">RefineM[P]</text></a></g></g><!-- node1 --><g class="node class" id="graph1_1"><g id="a_class|graph1_1"><a xlink:title="scala.AnyRef"><polygon points="108,-110 32,-110 32,-85 108,-85 108,-110" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-104.5" x="42" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-94.5" x="63" text-anchor="start">AnyRef</text></a></g></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph1_1_0"><g id="a_inheritance|graph1_1_0"><a xlink:title="RefineM[P] is a subtype of AnyRef"><path d="M70,-79.6874C70,-69.9173 70,-57.8534 70,-49.1323" stroke="#d4d4d4" fill="none"></path><polygon points="68.2501,-79.8435 70,-84.8435 71.7501,-79.8435 68.2501,-79.8435" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph1" viewBox="0.00 0.00 162.00 118.00" height="118pt" width="162pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 114)" class="graph" id="graph0"><polygon points="-4,4 -4,-114 158,-114 158,4 -4,4" stroke="none" fill="white"></polygon><g class="cluster" id="clust1"></g><g class="cluster" id="clust2"></g><!-- node0 --><g class="node this class" id="graph1_0"><g id="a_this class|graph1_0"><a xlink:title="eu.timepit.refined.internal.RefineM (this class)" xlink:href="#inheritance-diagram"><polygon points="129.5,-49 24.5,-49 24.5,-24 129.5,-24 129.5,-49" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-43.5" x="35" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-33.5" x="56" text-anchor="start">RefineM[P, F]</text></a></g></g><!-- node1 --><g class="node class" id="graph1_1"><g id="a_class|graph1_1"><a xlink:title="scala.AnyRef"><polygon points="115,-110 39,-110 39,-85 115,-85 115,-110" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-104.5" x="49" preserveAspectRatio="xMinYMin meet" height="15px" width="15px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-94.5" x="70" text-anchor="start">AnyRef</text></a></g></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph1_1_0"><g id="a_inheritance|graph1_1_0"><a xlink:title="RefineM[P, F] is a subtype of AnyRef"><path d="M77,-79.6874C77,-69.9173 77,-57.8534 77,-49.1323" stroke="#d4d4d4" fill="none"></path><polygon points="75.2501,-79.8435 77,-84.8435 78.7501,-79.8435 75.2501,-79.8435" stroke="#d4d4d4" fill="none"></polygon></a></g></g></g></svg></div>
               </div></div>
         
 
@@ -97,8 +97,8 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="eu.timepit.refined.internal.RefineM#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;():eu.timepit.refined.internal.RefineM[P]"></a>
-      <a id="&lt;init&gt;:RefineM[P]"></a>
+      <a id="&lt;init&gt;():eu.timepit.refined.internal.RefineM[P,F]"></a>
+      <a id="&lt;init&gt;:RefineM[P,F]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
@@ -108,7 +108,7 @@
         <span class="name">RefineM</span><span class="params">()</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.internal.RefineM@&lt;init&gt;():eu.timepit.refined.internal.RefineM[P]" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.internal.RefineM@&lt;init&gt;():eu.timepit.refined.internal.RefineM[P,F]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -174,18 +174,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="eu.timepit.refined.internal.RefineM#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply[T](t:T)(implicitp:eu.timepit.refined.Predicate[P,T]):eu.timepit.refined.Refined[T,P]"></a>
-      <a id="apply[T](T)(Predicate[P,T]):Refined[T,P]"></a>
+      <a id="apply[T](t:T)(implicitp:eu.timepit.refined.Predicate[P,T],implicitw:eu.timepit.refined.internal.Wrapper[F]):F[T,P]"></a>
+      <a id="apply[T](T)(Predicate[P,T],Wrapper[F]):F[T,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">macro </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.internal.RefineM.apply.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="p">p: <a href="../Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.internal.RefineM.P">P</span>, <span class="extype" name="eu.timepit.refined.internal.RefineM.apply.T">T</span>]</span>)</span><span class="result">: <a href="../Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>[<span class="extype" name="eu.timepit.refined.internal.RefineM.apply.T">T</span>, <span class="extype" name="eu.timepit.refined.internal.RefineM.P">P</span>]</span>
+        <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.internal.RefineM.apply.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="p">p: <a href="../Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.internal.RefineM.P">P</span>, <span class="extype" name="eu.timepit.refined.internal.RefineM.apply.T">T</span>]</span>, <span name="w">w: <a href="Wrapper.html" class="extype" name="eu.timepit.refined.internal.Wrapper">Wrapper</a>[<span class="extype" name="eu.timepit.refined.internal.RefineM.F">F</span>]</span>)</span><span class="result">: <span class="extype" name="eu.timepit.refined.internal.RefineM.F">F</span>[<span class="extype" name="eu.timepit.refined.internal.RefineM.apply.T">T</span>, <span class="extype" name="eu.timepit.refined.internal.RefineM.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.internal.RefineM@apply[T](t:T)(implicitp:eu.timepit.refined.Predicate[P,T]):eu.timepit.refined.Refined[T,P]" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.internal.RefineM@apply[T](t:T)(implicitp:eu.timepit.refined.Predicate[P,T],implicitw:eu.timepit.refined.internal.Wrapper[F]):F[T,P]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
