@@ -360,18 +360,17 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Creates a <code>scala.util.matching.Regex</code> from a validated string.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a <code>scala.util.matching.Regex</code> from a validated string.
-</p></div><dl class="attributes block"> <div class="block">Example:
-               <ol><li class="cmt"><p></p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.implicits._
+      <p class="shortcomment cmt">Creates a <code>scala.util.matching.Regex</code> from a validated string.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a <code>scala.util.matching.Regex</code> from a validated string.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.implicits._
      | <span class="kw">import</span> eu.timepit.refined.util.string.regex
+
 scala&gt; regex(<span class="lit">".*"</span>)
 res1: scala.util.matching.Regex = .*
+
 scala&gt; regex(<span class="lit">"{"</span>)
 &lt;console<span class="kw">&gt;:</span><span class="num">41</span>: error: Predicate isValidRegex(<span class="lit">"{"</span>) failed: Illegal repetition
 {
        regex(<span class="lit">"{"</span>)
-             ^</pre></li></ol>
-            </div></dl></div>
+             ^</pre></div></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -526,6 +525,40 @@ scala&gt; regex(<span class="lit">"{"</span>)
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="eu.timepit.refined.util.string#xml" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="xml(s:shapeless.tag.@@[String,eu.timepit.refined.string.Xml]):scala.xml.Elem"></a>
+      <a id="xml(@@[String,Xml]):Elem"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">xml</span><span class="params">(<span name="s">s: <span class="extype" name="shapeless.tag.@@">@@</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../string$$Xml.html" class="extype" name="eu.timepit.refined.string.Xml">Xml</a>]</span>)</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.util.string$@xml(s:shapeless.tag.@@[String,eu.timepit.refined.string.Xml]):scala.xml.Elem" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Creates a <code>scala.xml.Elem</code> from a validated string.</p>
+    </li><li name="eu.timepit.refined.util.string#xpath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="xpath(s:shapeless.tag.@@[String,eu.timepit.refined.string.XPath]):javax.xml.xpath.XPathExpression"></a>
+      <a id="xpath(@@[String,XPath]):XPathExpression"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">xpath</span><span class="params">(<span name="s">s: <span class="extype" name="shapeless.tag.@@">@@</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../string$$XPath.html" class="extype" name="eu.timepit.refined.string.XPath">XPath</a>]</span>)</span><span class="result">: <span class="extype" name="javax.xml.xpath.XPathExpression">XPathExpression</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.util.string$@xpath(s:shapeless.tag.@@[String,eu.timepit.refined.string.XPath]):javax.xml.xpath.XPathExpression" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Creates a <code>javax.xml.xpath.XPathExpression</code> from a validated string.</p>
     </li></ol>
             </div>
 
