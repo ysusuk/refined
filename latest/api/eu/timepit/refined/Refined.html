@@ -28,10 +28,12 @@
         </head>
         <body class="type">
       <div id="definition">
-        <img alt="Class" src="../../../lib/class_big.png" />
+        <a href="Refined$.html" title="See companion object"><img alt="Class/Object" src="../../../lib/class_to_object_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="eu">eu</a>.<a href="../package.html" class="extype" name="eu.timepit">timepit</a>.<a href="package.html" class="extype" name="eu.timepit.refined">refined</a></p>
-        <h1>Refined</h1><h3><span class="morelinks"><div>Related Doc:
-            <a href="package.html" class="extype" name="eu.timepit.refined">package refined</a>
+        <h1><a href="Refined$.html" title="See companion object">Refined</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="Refined$.html" title="See companion object">object Refined</a>
+            | <a href="package.html" class="extype" name="eu.timepit.refined">package refined</a>
           </div></span></h3><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.Refined" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
@@ -45,11 +47,14 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">Refined</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="params">(<span name="get">get: <span class="extype" name="eu.timepit.refined.Refined.T">T</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyVal" class="extype" target="_top">AnyVal</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <span class="name">Refined</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyVal" class="extype" target="_top">AnyVal</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/shared/src/main/scala/eu/timepit/refined/Refined.scala" target="_blank">Refined.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Wraps a value of type <code>T</code> that satisfies the predicate <code>P</code>. Instances of
+this class can be created with <code><a href="package.html#refineV[P]:eu.timepit.refined.internal.RefineAux[eu.timepit.refined.Refined,P]" class="extmbr" name="eu.timepit.refined#refineV">refineV</a></code> and <code><a href="package.html#refineMV[P]:eu.timepit.refined.internal.RefineMAux[eu.timepit.refined.Refined,P]" class="extmbr" name="eu.timepit.refined#refineMV">refineMV</a></code> which
+verify that the wrapped value satisfies <code>P</code>.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/shared/src/main/scala/eu/timepit/refined/Refined.scala" target="_blank">Refined.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Equals" class="extype" target="_top">Equals</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyVal" class="extype" target="_top">AnyVal</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
@@ -90,27 +95,7 @@
 
       <div id="template">
         <div id="allMembers">
-        <div id="constructors" class="members">
-              <h3>Instance Constructors</h3>
-              <ol><li name="eu.timepit.refined.Refined#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(get:T):eu.timepit.refined.Refined[T,P]"></a>
-      <a id="&lt;init&gt;:Refined[T,P]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">new</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Refined</span><span class="params">(<span name="get">get: <span class="extype" name="eu.timepit.refined.Refined.T">T</span></span>)</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Refined@&lt;init&gt;(get:T):eu.timepit.refined.Refined[T,P]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li></ol>
-            </div>
+        
 
         
 

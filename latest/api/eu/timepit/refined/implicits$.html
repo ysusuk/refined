@@ -163,18 +163,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="eu.timepit.refined.implicits#autoInfer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="autoInfer[T,A,B,F[_,_]](ta:F[T,A])(implicitir:eu.timepit.refined.InferenceRule.==&gt;[A,B],implicitw:eu.timepit.refined.internal.Wrapper[F]):F[T,B]"></a>
-      <a id="autoInfer[T,A,B,F[_,_]](F[T,A])(==&gt;[A,B],Wrapper[F]):F[T,B]"></a>
+      <a id="autoInfer[F[_,_],T,A,B](ta:F[T,A])(implicitir:eu.timepit.refined.InferenceRule.==&gt;[A,B],implicitrt:eu.timepit.refined.RefType[F]):F[T,B]"></a>
+      <a id="autoInfer[F[_,_],T,A,B](F[T,A])(==&gt;[A,B],RefType[F]):F[T,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit macro </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">autoInfer</span><span class="tparams">[<span name="T">T</span>, <span name="A">A</span>, <span name="B">B</span>, <span name="F">F<span class="tparams">[<span name="_">_</span>, <span name="_">_</span>]</span></span>]</span><span class="params">(<span name="ta">ta: <span class="extype" name="eu.timepit.refined.implicits.autoInfer.F">F</span>[<span class="extype" name="eu.timepit.refined.implicits.autoInfer.T">T</span>, <span class="extype" name="eu.timepit.refined.implicits.autoInfer.A">A</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ir">ir: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.implicits.autoInfer.A">A</span>, <span class="extype" name="eu.timepit.refined.implicits.autoInfer.B">B</span>]</span>, <span name="w">w: <a href="internal/Wrapper.html" class="extype" name="eu.timepit.refined.internal.Wrapper">Wrapper</a>[<span class="extype" name="eu.timepit.refined.implicits.autoInfer.F">F</span>]</span>)</span><span class="result">: <span class="extype" name="eu.timepit.refined.implicits.autoInfer.F">F</span>[<span class="extype" name="eu.timepit.refined.implicits.autoInfer.T">T</span>, <span class="extype" name="eu.timepit.refined.implicits.autoInfer.B">B</span>]</span>
+        <span class="name">autoInfer</span><span class="tparams">[<span name="F">F<span class="tparams">[<span name="_">_</span>, <span name="_">_</span>]</span></span>, <span name="T">T</span>, <span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="ta">ta: <span class="extype" name="eu.timepit.refined.implicits.autoInfer.F">F</span>[<span class="extype" name="eu.timepit.refined.implicits.autoInfer.T">T</span>, <span class="extype" name="eu.timepit.refined.implicits.autoInfer.A">A</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ir">ir: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.implicits.autoInfer.A">A</span>, <span class="extype" name="eu.timepit.refined.implicits.autoInfer.B">B</span>]</span>, <span name="rt">rt: <a href="RefType.html" class="extype" name="eu.timepit.refined.RefType">RefType</a>[<span class="extype" name="eu.timepit.refined.implicits.autoInfer.F">F</span>]</span>)</span><span class="result">: <span class="extype" name="eu.timepit.refined.implicits.autoInfer.F">F</span>[<span class="extype" name="eu.timepit.refined.implicits.autoInfer.T">T</span>, <span class="extype" name="eu.timepit.refined.implicits.autoInfer.B">B</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.implicits$@autoInfer[T,A,B,F[_,_]](ta:F[T,A])(implicitir:eu.timepit.refined.InferenceRule.==&gt;[A,B],implicitw:eu.timepit.refined.internal.Wrapper[F]):F[T,B]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.implicits$@autoInfer[F[_,_],T,A,B](ta:F[T,A])(implicitir:eu.timepit.refined.InferenceRule.==&gt;[A,B],implicitrt:eu.timepit.refined.RefType[F]):F[T,B]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -184,46 +184,46 @@
 inference rule is invalid, compilation fails.
 </p></div></div>
     </li><li name="eu.timepit.refined.implicits#autoRefineT" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="autoRefineT[T,P](t:T)(implicitp:eu.timepit.refined.Predicate[P,T],implicitw:eu.timepit.refined.internal.Wrapper[shapeless.tag.@@]):shapeless.tag.@@[T,P]"></a>
-      <a id="autoRefineT[T,P](T)(Predicate[P,T],Wrapper[@@]):@@[T,P]"></a>
+      <a id="autoRefineT[T,P](t:T)(implicitp:eu.timepit.refined.Predicate[P,T],implicitrt:eu.timepit.refined.RefType[shapeless.tag.@@]):shapeless.tag.@@[T,P]"></a>
+      <a id="autoRefineT[T,P](T)(Predicate[P,T],RefType[@@]):@@[T,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit macro </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">autoRefineT</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.implicits.autoRefineT.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="p">p: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.implicits.autoRefineT.P">P</span>, <span class="extype" name="eu.timepit.refined.implicits.autoRefineT.T">T</span>]</span>, <span name="w">w: <a href="internal/Wrapper.html" class="extype" name="eu.timepit.refined.internal.Wrapper">Wrapper</a>[<span class="extype" name="shapeless.tag.@@">@@</span>]</span>)</span><span class="result">: <span class="extype" name="shapeless.tag.@@">@@</span>[<span class="extype" name="eu.timepit.refined.implicits.autoRefineT.T">T</span>, <span class="extype" name="eu.timepit.refined.implicits.autoRefineT.P">P</span>]</span>
+        <span class="name">autoRefineT</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.implicits.autoRefineT.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="p">p: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.implicits.autoRefineT.P">P</span>, <span class="extype" name="eu.timepit.refined.implicits.autoRefineT.T">T</span>]</span>, <span name="rt">rt: <a href="RefType.html" class="extype" name="eu.timepit.refined.RefType">RefType</a>[<span class="extype" name="shapeless.tag.@@">@@</span>]</span>)</span><span class="result">: <span class="extype" name="shapeless.tag.@@">@@</span>[<span class="extype" name="eu.timepit.refined.implicits.autoRefineT.T">T</span>, <span class="extype" name="eu.timepit.refined.implicits.autoRefineT.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.implicits$@autoRefineT[T,P](t:T)(implicitp:eu.timepit.refined.Predicate[P,T],implicitw:eu.timepit.refined.internal.Wrapper[shapeless.tag.@@]):shapeless.tag.@@[T,P]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.implicits$@autoRefineT[T,P](t:T)(implicitp:eu.timepit.refined.Predicate[P,T],implicitrt:eu.timepit.refined.RefType[shapeless.tag.@@]):shapeless.tag.@@[T,P]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Implicitly tags (at compile-time) a value of type <code>T</code> with <code>P</code> if <code>t</code>
 satisfies the predicate <code>P</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly tags (at compile-time) a value of type <code>T</code> with <code>P</code> if <code>t</code>
 satisfies the predicate <code>P</code>. If it does not satisfy the predicate,
-compilation fails.</p><p>This is an implicit version of <code><a href="package.html#refineMT[P]:eu.timepit.refined.internal.RefineMAux[P,shapeless.tag.@@]" class="extmbr" name="eu.timepit.refined#refineMT">refineMT</a></code>.
+compilation fails.</p><p>This is an implicit version of <code><a href="package.html#refineMT[P]:eu.timepit.refined.internal.RefineMAux[shapeless.tag.@@,P]" class="extmbr" name="eu.timepit.refined#refineMT">refineMT</a></code>.
 </p></div></div>
     </li><li name="eu.timepit.refined.implicits#autoRefineV" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="autoRefineV[T,P](t:T)(implicitp:eu.timepit.refined.Predicate[P,T],implicitw:eu.timepit.refined.internal.Wrapper[eu.timepit.refined.Refined]):eu.timepit.refined.Refined[T,P]"></a>
-      <a id="autoRefineV[T,P](T)(Predicate[P,T],Wrapper[Refined]):Refined[T,P]"></a>
+      <a id="autoRefineV[T,P](t:T)(implicitp:eu.timepit.refined.Predicate[P,T],implicitrt:eu.timepit.refined.RefType[eu.timepit.refined.Refined]):eu.timepit.refined.Refined[T,P]"></a>
+      <a id="autoRefineV[T,P](T)(Predicate[P,T],RefType[Refined]):Refined[T,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit macro </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">autoRefineV</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.implicits.autoRefineV.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="p">p: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.implicits.autoRefineV.P">P</span>, <span class="extype" name="eu.timepit.refined.implicits.autoRefineV.T">T</span>]</span>, <span name="w">w: <a href="internal/Wrapper.html" class="extype" name="eu.timepit.refined.internal.Wrapper">Wrapper</a>[<a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>]</span>)</span><span class="result">: <a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>[<span class="extype" name="eu.timepit.refined.implicits.autoRefineV.T">T</span>, <span class="extype" name="eu.timepit.refined.implicits.autoRefineV.P">P</span>]</span>
+        <span class="name">autoRefineV</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.implicits.autoRefineV.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="p">p: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.implicits.autoRefineV.P">P</span>, <span class="extype" name="eu.timepit.refined.implicits.autoRefineV.T">T</span>]</span>, <span name="rt">rt: <a href="RefType.html" class="extype" name="eu.timepit.refined.RefType">RefType</a>[<a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>]</span>)</span><span class="result">: <a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>[<span class="extype" name="eu.timepit.refined.implicits.autoRefineV.T">T</span>, <span class="extype" name="eu.timepit.refined.implicits.autoRefineV.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.implicits$@autoRefineV[T,P](t:T)(implicitp:eu.timepit.refined.Predicate[P,T],implicitw:eu.timepit.refined.internal.Wrapper[eu.timepit.refined.Refined]):eu.timepit.refined.Refined[T,P]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.implicits$@autoRefineV[T,P](t:T)(implicitp:eu.timepit.refined.Predicate[P,T],implicitrt:eu.timepit.refined.RefType[eu.timepit.refined.Refined]):eu.timepit.refined.Refined[T,P]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Implicitly wraps (at compile-time) a value of type <code>T</code> in
 <code><a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>[T, P]</code> if <code>t</code> satisfies the predicate <code>P</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly wraps (at compile-time) a value of type <code>T</code> in
 <code><a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>[T, P]</code> if <code>t</code> satisfies the predicate <code>P</code>. If it does not
-satisfy the predicate, compilation fails.</p><p>This is an implicit version of <code><a href="package.html#refineMV[P]:eu.timepit.refined.internal.RefineMAux[P,eu.timepit.refined.Refined]" class="extmbr" name="eu.timepit.refined#refineMV">refineMV</a></code>.
+satisfy the predicate, compilation fails.</p><p>This is an implicit version of <code><a href="package.html#refineMV[P]:eu.timepit.refined.internal.RefineMAux[eu.timepit.refined.Refined,P]" class="extmbr" name="eu.timepit.refined#refineMV">refineMV</a></code>.
 </p></div></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>

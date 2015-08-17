@@ -127,7 +127,24 @@ predicate <code>P</code>.</p><div class="fullcomment"><div class="comment cmt"><
 predicate <code>P</code>. The semantics of <code>P</code> are defined by the instance(s) of
 this type class for <code>P</code>.
 </p></div></div>
-    </li><li name="eu.timepit.refined.Refined" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.timepit.refined.RefType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RefType[F[_,_]]extendsSerializable"></a>
+      <a id="RefType[F[_,_]]:RefType[F]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RefType.html"><span class="name">RefType</span></a><span class="tparams">[<span name="F">F<span class="tparams">[<span name="_">_</span>, <span name="_">_</span>]</span></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.package@RefType[F[_,_]]extendsSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="eu.timepit.refined.Refined" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Refined[T,P]extendsAnyValwithProductwithSerializable"></a>
       <a id="Refined[T,P]:Refined[T,P]"></a>
       <h4 class="signature">
@@ -136,14 +153,17 @@ this type class for <code>P</code>.
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Refined.html"><span class="name">Refined</span></a><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="params">(<span name="get">get: <span class="extype" name="eu.timepit.refined.Refined.T">T</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyVal" class="extype" target="_top">AnyVal</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="Refined.html"><span class="name">Refined</span></a><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyVal" class="extype" target="_top">AnyVal</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.package@Refined[T,P]extendsAnyValwithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Wraps a value of type <code>T</code> that satisfies the predicate <code>P</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a value of type <code>T</code> that satisfies the predicate <code>P</code>. Instances of
+this class can be created with <code><a href="#refineV[P]:eu.timepit.refined.internal.RefineAux[eu.timepit.refined.Refined,P]" class="extmbr" name="eu.timepit.refined#refineV">refineV</a></code> and <code><a href="#refineMV[P]:eu.timepit.refined.internal.RefineMAux[eu.timepit.refined.Refined,P]" class="extmbr" name="eu.timepit.refined#refineMV">refineMV</a></code> which
+verify that the wrapped value satisfies <code>P</code>.
+</p></div></div>
     </li></ol>
             </div>
 
@@ -198,6 +218,40 @@ this type class for <code>P</code>.
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.package@Predicate" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="eu.timepit.refined.RefType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RefType"></a>
+      <a id="RefType:RefType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="RefType$.html"><span class="name">RefType</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.package@RefType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="eu.timepit.refined.Refined" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Refined"></a>
+      <a id="Refined:Refined"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Refined$.html"><span class="name">Refined</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.package@Refined" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -351,18 +405,18 @@ res1: <span class="std">Int</span> @@ Greater[_5] = <span class="num">10</span>
 scala&gt; refineMT[Greater[W.`<span class="num">1.5</span>`.T]](<span class="num">1.6</span>)
 res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>`.T] = <span class="num">1.6</span></pre></div></div>
     </li><li name="eu.timepit.refined#refineMT" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="refineMT[P]:eu.timepit.refined.internal.RefineMAux[P,shapeless.tag.@@]"></a>
-      <a id="refineMT[P]:RefineMAux[P,@@]"></a>
+      <a id="refineMT[P]:eu.timepit.refined.internal.RefineMAux[shapeless.tag.@@,P]"></a>
+      <a id="refineMT[P]:RefineMAux[@@,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">refineMT</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineMAux.html" class="extype" name="eu.timepit.refined.internal.RefineMAux">RefineMAux</a>[<span class="extype" name="eu.timepit.refined.refineMT.P">P</span>, <span class="extype" name="shapeless.tag.@@">@@</span>]</span>
+        <span class="name">refineMT</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineMAux.html" class="extype" name="eu.timepit.refined.internal.RefineMAux">RefineMAux</a>[<span class="extype" name="shapeless.tag.@@">@@</span>, <span class="extype" name="eu.timepit.refined.refineMT.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.package@refineMT[P]:eu.timepit.refined.internal.RefineMAux[P,shapeless.tag.@@]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.package@refineMT[P]:eu.timepit.refined.internal.RefineMAux[shapeless.tag.@@,P]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -378,18 +432,18 @@ res1: <span class="std">Int</span> @@ Positive = <span class="num">10</span></pr
 example.
 </p></div></div>
     </li><li name="eu.timepit.refined#refineMV" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="refineMV[P]:eu.timepit.refined.internal.RefineMAux[P,eu.timepit.refined.Refined]"></a>
-      <a id="refineMV[P]:RefineMAux[P,Refined]"></a>
+      <a id="refineMV[P]:eu.timepit.refined.internal.RefineMAux[eu.timepit.refined.Refined,P]"></a>
+      <a id="refineMV[P]:RefineMAux[Refined,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">refineMV</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineMAux.html" class="extype" name="eu.timepit.refined.internal.RefineMAux">RefineMAux</a>[<span class="extype" name="eu.timepit.refined.refineMV.P">P</span>, <a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>]</span>
+        <span class="name">refineMV</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineMAux.html" class="extype" name="eu.timepit.refined.internal.RefineMAux">RefineMAux</a>[<a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>, <span class="extype" name="eu.timepit.refined.refineMV.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.package@refineMV[P]:eu.timepit.refined.internal.RefineMAux[P,eu.timepit.refined.Refined]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.package@refineMV[P]:eu.timepit.refined.internal.RefineMAux[eu.timepit.refined.Refined,P]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -404,18 +458,18 @@ has an <code>apply</code> method on it, allowing <code>refineMV</code> to be cal
 the given example.
 </p></div></div>
     </li><li name="eu.timepit.refined#refineT" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="refineT[P]:eu.timepit.refined.internal.RefineAux[P,shapeless.tag.@@]"></a>
-      <a id="refineT[P]:RefineAux[P,@@]"></a>
+      <a id="refineT[P]:eu.timepit.refined.internal.RefineAux[shapeless.tag.@@,P]"></a>
+      <a id="refineT[P]:RefineAux[@@,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">refineT</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineAux.html" class="extype" name="eu.timepit.refined.internal.RefineAux">RefineAux</a>[<span class="extype" name="eu.timepit.refined.refineT.P">P</span>, <span class="extype" name="shapeless.tag.@@">@@</span>]</span>
+        <span class="name">refineT</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineAux.html" class="extype" name="eu.timepit.refined.internal.RefineAux">RefineAux</a>[<span class="extype" name="shapeless.tag.@@">@@</span>, <span class="extype" name="eu.timepit.refined.refineT.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.package@refineT[P]:eu.timepit.refined.internal.RefineAux[P,shapeless.tag.@@]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.package@refineT[P]:eu.timepit.refined.internal.RefineAux[shapeless.tag.@@,P]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -431,18 +485,18 @@ res1: Either[<span class="std">String</span>, <span class="std">Int</span> @@ Po
 example.
 </p></div></div>
     </li><li name="eu.timepit.refined#refineV" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="refineV[P]:eu.timepit.refined.internal.RefineAux[P,eu.timepit.refined.Refined]"></a>
-      <a id="refineV[P]:RefineAux[P,Refined]"></a>
+      <a id="refineV[P]:eu.timepit.refined.internal.RefineAux[eu.timepit.refined.Refined,P]"></a>
+      <a id="refineV[P]:RefineAux[Refined,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">refineV</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineAux.html" class="extype" name="eu.timepit.refined.internal.RefineAux">RefineAux</a>[<span class="extype" name="eu.timepit.refined.refineV.P">P</span>, <a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>]</span>
+        <span class="name">refineV</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineAux.html" class="extype" name="eu.timepit.refined.internal.RefineAux">RefineAux</a>[<a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>, <span class="extype" name="eu.timepit.refined.refineV.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.package@refineV[P]:eu.timepit.refined.internal.RefineAux[P,eu.timepit.refined.Refined]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.package@refineV[P]:eu.timepit.refined.internal.RefineAux[eu.timepit.refined.Refined,P]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -498,18 +552,18 @@ given example.
         <div id="values" class="values members">
               <h3>Deprecated Value Members</h3>
               <ol><li name="eu.timepit.refined#refine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="refine[P]:eu.timepit.refined.internal.RefineAux[P,shapeless.tag.@@]"></a>
-      <a id="refine[P]:RefineAux[P,@@]"></a>
+      <a id="refine[P]:eu.timepit.refined.internal.RefineAux[shapeless.tag.@@,P]"></a>
+      <a id="refine[P]:RefineAux[@@,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 0.2.0) refine is deprecated in favor of refineT">refine</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineAux.html" class="extype" name="eu.timepit.refined.internal.RefineAux">RefineAux</a>[<span class="extype" name="eu.timepit.refined.refine.P">P</span>, <span class="extype" name="shapeless.tag.@@">@@</span>]</span>
+        <span class="name deprecated" title="Deprecated: (Since version 0.2.0) refine is deprecated in favor of refineT">refine</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineAux.html" class="extype" name="eu.timepit.refined.internal.RefineAux">RefineAux</a>[<span class="extype" name="shapeless.tag.@@">@@</span>, <span class="extype" name="eu.timepit.refined.refine.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.package@refine[P]:eu.timepit.refined.internal.RefineAux[P,shapeless.tag.@@]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.package@refine[P]:eu.timepit.refined.internal.RefineAux[shapeless.tag.@@,P]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -518,18 +572,18 @@ given example.
               
         </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 0.2.0)</i> refine is deprecated in favor of refineT</p></dd></dl></div>
     </li><li name="eu.timepit.refined#refineLit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="refineLit[P]:eu.timepit.refined.internal.RefineMAux[P,shapeless.tag.@@]"></a>
-      <a id="refineLit[P]:RefineMAux[P,@@]"></a>
+      <a id="refineLit[P]:eu.timepit.refined.internal.RefineMAux[shapeless.tag.@@,P]"></a>
+      <a id="refineLit[P]:RefineMAux[@@,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 0.2.0) refineLit is deprecated in favor of refineMT">refineLit</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineMAux.html" class="extype" name="eu.timepit.refined.internal.RefineMAux">RefineMAux</a>[<span class="extype" name="eu.timepit.refined.refineLit.P">P</span>, <span class="extype" name="shapeless.tag.@@">@@</span>]</span>
+        <span class="name deprecated" title="Deprecated: (Since version 0.2.0) refineLit is deprecated in favor of refineMT">refineLit</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineMAux.html" class="extype" name="eu.timepit.refined.internal.RefineMAux">RefineMAux</a>[<span class="extype" name="shapeless.tag.@@">@@</span>, <span class="extype" name="eu.timepit.refined.refineLit.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.package@refineLit[P]:eu.timepit.refined.internal.RefineMAux[P,shapeless.tag.@@]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.package@refineLit[P]:eu.timepit.refined.internal.RefineMAux[shapeless.tag.@@,P]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -538,18 +592,18 @@ given example.
               
         </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 0.2.0)</i> refineLit is deprecated in favor of refineMT</p></dd></dl></div>
     </li><li name="eu.timepit.refined#refineM" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="refineM[P]:eu.timepit.refined.internal.RefineMAux[P,eu.timepit.refined.Refined]"></a>
-      <a id="refineM[P]:RefineMAux[P,Refined]"></a>
+      <a id="refineM[P]:eu.timepit.refined.internal.RefineMAux[eu.timepit.refined.Refined,P]"></a>
+      <a id="refineM[P]:RefineMAux[Refined,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 0.2.0) refineM is deprecated in favor of refineMV">refineM</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineMAux.html" class="extype" name="eu.timepit.refined.internal.RefineMAux">RefineMAux</a>[<span class="extype" name="eu.timepit.refined.refineM.P">P</span>, <a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>]</span>
+        <span class="name deprecated" title="Deprecated: (Since version 0.2.0) refineM is deprecated in favor of refineMV">refineM</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineMAux.html" class="extype" name="eu.timepit.refined.internal.RefineMAux">RefineMAux</a>[<a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>, <span class="extype" name="eu.timepit.refined.refineM.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.package@refineM[P]:eu.timepit.refined.internal.RefineMAux[P,eu.timepit.refined.Refined]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.package@refineM[P]:eu.timepit.refined.internal.RefineMAux[eu.timepit.refined.Refined,P]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
