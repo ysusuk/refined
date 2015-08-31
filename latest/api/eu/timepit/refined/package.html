@@ -127,7 +127,7 @@ predicate <code>P</code>.</p><div class="fullcomment"><div class="comment cmt"><
 predicate <code>P</code>. The semantics of <code>P</code> are defined by the instance(s) of
 this type class for <code>P</code>.
 </p></div></div>
-    </li><li name="eu.timepit.refined.RefType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="eu.timepit.refined.RefType" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="RefType[F[_,_]]extendsSerializable"></a>
       <a id="RefType[F[_,_]]:RefType[F]"></a>
       <h4 class="signature">
@@ -143,7 +143,13 @@ this type class for <code>P</code>.
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Type class that allows <code>F</code> to be used as result type of a refinement.</p><div class="fullcomment"><div class="comment cmt"><p>Type class that allows <code>F</code> to be used as result type of a refinement.
+The first type parameter of <code>F</code> is the type that is being refined by
+its second type parameter which is the type-level predicate that
+denotes the refinement. Consequently, <code>F[T, P]</code> is a phantom type
+that only contains a value of type <code>T</code>.</p><p>The library provides instances of <code>RefType</code> for</p><ul><li>the <code><a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a></code> value class</li><li>and <code>shapeless.tag.@@</code> which is a subtype of its first parameter
+   (i.e. <code>(T @@ P) &lt;: T</code>)
+</li></ul></div></div>
     </li><li name="eu.timepit.refined.Refined" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Refined[T,P]extendsAnyValwithProductwithSerializable"></a>
       <a id="Refined[T,P]:Refined[T,P]"></a>
@@ -256,7 +262,7 @@ verify that the wrapped value satisfies <code>P</code>.
       </a>
     </span>
       
-    </li><li name="eu.timepit.refined#W" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.timepit.refined#W" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="W:shapeless.Witness.type"></a>
       <a id="W:Witness.type"></a>
       <h4 class="signature">
@@ -272,7 +278,15 @@ verify that the wrapped value satisfies <code>P</code>.
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">An abbreviation for <code>shapeless.Witness</code>.</p>
+      <p class="shortcomment cmt">Alias for <code>shapeless.Witness</code> that provides concise syntax for
+literal singleton types.</p><div class="fullcomment"><div class="comment cmt"><p>Alias for <code>shapeless.Witness</code> that provides concise syntax for
+literal singleton types.</p><p>Example: </p><pre>scala&gt; <span class="kw">val</span> d: W.`<span class="num">3.14</span>`.T = <span class="num">3.14</span>
+d: <span class="std">Double</span>(<span class="num">3.14</span>) = <span class="num">3.14</span>
+
+scala&gt; <span class="kw">val</span> s: W.`<span class="lit">"abc"</span>`.T = <span class="lit">"abc"</span>
+s: <span class="std">String</span>(<span class="lit">"abc"</span>) = abc</pre><p>See <a href="https://github.com/milessabin/shapeless/wiki/Feature-overview:-shapeless-2.0.0#singleton-typed-literals" target="_blank">https://github.com/milessabin/shapeless/wiki/Feature-overview:-shapeless-2.0.0#singleton-typed-literals</a>
+for more information about shapeless' support for singleton types.
+</p></div></div>
     </li><li name="eu.timepit.refined.boolean" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="boolean"></a>
       <a id="boolean:boolean"></a>
@@ -420,16 +434,9 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Macro that returns <code>t</code> with type <code>T @@ P</code> if it satisfies the predicate
-<code>P</code>, or fails to compile.</p><div class="fullcomment"><div class="comment cmt"><p>Macro that returns <code>t</code> with type <code>T @@ P</code> if it satisfies the predicate
-<code>P</code>, or fails to compile.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined._
-     | <span class="kw">import</span> eu.timepit.refined.numeric._
-     | <span class="kw">import</span> shapeless.tag.@@
-
-scala&gt; refineMT[Positive](<span class="num">10</span>)
-res1: <span class="std">Int</span> @@ Positive = <span class="num">10</span></pre><p>Note: <code>M</code> stands for <b>m</b>acro and <code>T</code> stands for <b>t</b>ag.</p><p>Note: The return type is <code><a href="internal/RefineMAux.html" class="extype" name="eu.timepit.refined.internal.RefineMAux">internal.RefineMAux</a>[P, @@]</code>, which has an
-<code>apply</code> method on it, allowing <code>refineMT</code> to be called like in the given
-example.
+      <p class="shortcomment cmt">Alias for <code><a href="RefType.html#refineM[P]:eu.timepit.refined.internal.RefineMAux[F,P]" class="extmbr" name="eu.timepit.refined.RefType#refineM">RefType.refineM</a>[P]</code> with <code>shapeless.tag.@@</code> as type
+parameter for <code><a href="RefType.html" class="extype" name="eu.timepit.refined.RefType">RefType</a></code>.</p><div class="fullcomment"><div class="comment cmt"><p>Alias for <code><a href="RefType.html#refineM[P]:eu.timepit.refined.internal.RefineMAux[F,P]" class="extmbr" name="eu.timepit.refined.RefType#refineM">RefType.refineM</a>[P]</code> with <code>shapeless.tag.@@</code> as type
+parameter for <code><a href="RefType.html" class="extype" name="eu.timepit.refined.RefType">RefType</a></code>.</p><p>Note: <code>M</code> stands for <b>m</b>acro and <code>T</code> stands for <b>t</b>ag.
 </p></div></div>
     </li><li name="eu.timepit.refined#refineMV" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="refineMV[P]:eu.timepit.refined.internal.RefineMAux[eu.timepit.refined.Refined,P]"></a>
@@ -447,15 +454,9 @@ example.
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Macro that returns <code>t</code> wrapped in <code><a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>[T, P]</code> if it satisfies
-the predicate <code>P</code>, or fails to compile.</p><div class="fullcomment"><div class="comment cmt"><p>Macro that returns <code>t</code> wrapped in <code><a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>[T, P]</code> if it satisfies
-the predicate <code>P</code>, or fails to compile.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined._
-     | <span class="kw">import</span> eu.timepit.refined.numeric._
-
-scala&gt; refineMV[Positive](<span class="num">10</span>)
-res1: Refined[<span class="std">Int</span>, Positive] = Refined(<span class="num">10</span>)</pre><p>Note: <code>M</code> stands for <b>m</b>acro and <code>V</code> stands for <b>v</b>alue class.</p><p>Note: The return type is <code><a href="internal/RefineMAux.html" class="extype" name="eu.timepit.refined.internal.RefineMAux">internal.RefineMAux</a>[P, Refined]</code>, which
-has an <code>apply</code> method on it, allowing <code>refineMV</code> to be called like in
-the given example.
+      <p class="shortcomment cmt">Alias for <code><a href="RefType.html#refineM[P]:eu.timepit.refined.internal.RefineMAux[F,P]" class="extmbr" name="eu.timepit.refined.RefType#refineM">RefType.refineM</a>[P]</code> with <code><a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a></code> as type
+parameter for <code><a href="RefType.html" class="extype" name="eu.timepit.refined.RefType">RefType</a></code>.</p><div class="fullcomment"><div class="comment cmt"><p>Alias for <code><a href="RefType.html#refineM[P]:eu.timepit.refined.internal.RefineMAux[F,P]" class="extmbr" name="eu.timepit.refined.RefType#refineM">RefType.refineM</a>[P]</code> with <code><a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a></code> as type
+parameter for <code><a href="RefType.html" class="extype" name="eu.timepit.refined.RefType">RefType</a></code>.</p><p>Note: <code>M</code> stands for <b>m</b>acro and <code>V</code> stands for <b>v</b>alue class.
 </p></div></div>
     </li><li name="eu.timepit.refined#refineT" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="refineT[P]:eu.timepit.refined.internal.RefineAux[shapeless.tag.@@,P]"></a>
@@ -473,16 +474,9 @@ the given example.
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Returns <code>t</code> with type <code>T @@ P</code> on the right if it satisfies the
-predicate <code>P</code>, or an error message on the left otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>t</code> with type <code>T @@ P</code> on the right if it satisfies the
-predicate <code>P</code>, or an error message on the left otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined._
-     | <span class="kw">import</span> eu.timepit.refined.numeric._
-     | <span class="kw">import</span> shapeless.tag.@@
-
-scala&gt; refineT[Positive](<span class="num">10</span>)
-res1: Either[<span class="std">String</span>, <span class="std">Int</span> @@ Positive] = Right(<span class="num">10</span>)</pre><p>Note: <code>T</code> stands for <b>t</b>ag.</p><p>Note: The return type is <code><a href="internal/RefineAux.html" class="extype" name="eu.timepit.refined.internal.RefineAux">internal.RefineAux</a>[P, @@]</code>, which has an
-<code>apply</code> method on it, allowing <code>refineT</code> to be called like in the given
-example.
+      <p class="shortcomment cmt">Alias for <code><a href="RefType.html#refine[P]:eu.timepit.refined.internal.RefineAux[F,P]" class="extmbr" name="eu.timepit.refined.RefType#refine">RefType.refine</a>[P]</code> with <code>shapeless.tag.@@</code> as type
+parameter for <code><a href="RefType.html" class="extype" name="eu.timepit.refined.RefType">RefType</a></code>.</p><div class="fullcomment"><div class="comment cmt"><p>Alias for <code><a href="RefType.html#refine[P]:eu.timepit.refined.internal.RefineAux[F,P]" class="extmbr" name="eu.timepit.refined.RefType#refine">RefType.refine</a>[P]</code> with <code>shapeless.tag.@@</code> as type
+parameter for <code><a href="RefType.html" class="extype" name="eu.timepit.refined.RefType">RefType</a></code>.</p><p>Note: <code>T</code> stands for <b>t</b>ag.
 </p></div></div>
     </li><li name="eu.timepit.refined#refineV" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="refineV[P]:eu.timepit.refined.internal.RefineAux[eu.timepit.refined.Refined,P]"></a>
@@ -500,15 +494,9 @@ example.
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Returns <code>t</code> wrapped in <code><a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>[T, P]</code> on the right if it satisfies
-the predicate <code>P</code>, or an error message on the left otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>t</code> wrapped in <code><a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>[T, P]</code> on the right if it satisfies
-the predicate <code>P</code>, or an error message on the left otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined._
-     | <span class="kw">import</span> eu.timepit.refined.numeric._
-
-scala&gt; refineV[Positive](<span class="num">10</span>)
-res1: Either[<span class="std">String</span>, Refined[<span class="std">Int</span>, Positive]] = Right(Refined(<span class="num">10</span>))</pre><p>Note: <code>V</code> stands for <b>v</b>alue class.</p><p>Note: The return type is <code><a href="internal/RefineAux.html" class="extype" name="eu.timepit.refined.internal.RefineAux">internal.RefineAux</a>[P, Refined]</code>, which has
-an <code>apply</code> method on it, allowing <code>refineV</code> to be called like in the
-given example.
+      <p class="shortcomment cmt">Alias for <code><a href="RefType.html#refine[P]:eu.timepit.refined.internal.RefineAux[F,P]" class="extmbr" name="eu.timepit.refined.RefType#refine">RefType.refine</a>[P]</code> with <code><a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a></code> as type
+parameter for <code><a href="RefType.html" class="extype" name="eu.timepit.refined.RefType">RefType</a></code>.</p><div class="fullcomment"><div class="comment cmt"><p>Alias for <code><a href="RefType.html#refine[P]:eu.timepit.refined.internal.RefineAux[F,P]" class="extmbr" name="eu.timepit.refined.RefType#refine">RefType.refine</a>[P]</code> with <code><a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a></code> as type
+parameter for <code><a href="RefType.html" class="extype" name="eu.timepit.refined.RefType">RefType</a></code>.</p><p>Note: <code>V</code> stands for <b>v</b>alue class.
 </p></div></div>
     </li><li name="eu.timepit.refined.string" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="string"></a>
@@ -549,70 +537,7 @@ given example.
 
         
 
-        <div id="values" class="values members">
-              <h3>Deprecated Value Members</h3>
-              <ol><li name="eu.timepit.refined#refine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="refine[P]:eu.timepit.refined.internal.RefineAux[shapeless.tag.@@,P]"></a>
-      <a id="refine[P]:RefineAux[@@,P]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 0.2.0) refine is deprecated in favor of refineT">refine</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineAux.html" class="extype" name="eu.timepit.refined.internal.RefineAux">RefineAux</a>[<span class="extype" name="shapeless.tag.@@">@@</span>, <span class="extype" name="eu.timepit.refined.refine.P">P</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.package@refine[P]:eu.timepit.refined.internal.RefineAux[shapeless.tag.@@,P]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 0.2.0)</i> refine is deprecated in favor of refineT</p></dd></dl></div>
-    </li><li name="eu.timepit.refined#refineLit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="refineLit[P]:eu.timepit.refined.internal.RefineMAux[shapeless.tag.@@,P]"></a>
-      <a id="refineLit[P]:RefineMAux[@@,P]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 0.2.0) refineLit is deprecated in favor of refineMT">refineLit</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineMAux.html" class="extype" name="eu.timepit.refined.internal.RefineMAux">RefineMAux</a>[<span class="extype" name="shapeless.tag.@@">@@</span>, <span class="extype" name="eu.timepit.refined.refineLit.P">P</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.package@refineLit[P]:eu.timepit.refined.internal.RefineMAux[shapeless.tag.@@,P]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 0.2.0)</i> refineLit is deprecated in favor of refineMT</p></dd></dl></div>
-    </li><li name="eu.timepit.refined#refineM" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="refineM[P]:eu.timepit.refined.internal.RefineMAux[eu.timepit.refined.Refined,P]"></a>
-      <a id="refineM[P]:RefineMAux[Refined,P]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 0.2.0) refineM is deprecated in favor of refineMV">refineM</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="internal/RefineMAux.html" class="extype" name="eu.timepit.refined.internal.RefineMAux">RefineMAux</a>[<a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a>, <span class="extype" name="eu.timepit.refined.refineM.P">P</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.package@refineM[P]:eu.timepit.refined.internal.RefineMAux[eu.timepit.refined.Refined,P]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 0.2.0)</i> refineM is deprecated in favor of refineMV</p></dd></dl></div>
-    </li></ol>
-            </div>
+        
         </div>
 
         <div id="inheritedMembers">

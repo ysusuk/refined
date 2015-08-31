@@ -370,19 +370,36 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericPredicates#equalPredicateNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equalPredicateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitit:Integral[T]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.Equal[N],T]"></a>
-      <a id="equalPredicateNat[N&lt;:Nat,T](ToInt[N],Integral[T]):Predicate[Equal[N],T]"></a>
+    </li><li name="eu.timepit.refined.NumericInferenceRules#equalPredicateInferenceNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equalPredicateInferenceNat[P,T,N&lt;:shapeless.Nat](implicitp:eu.timepit.refined.Predicate[P,T],implicitnt:Numeric[T],implicittn:shapeless.ops.nat.ToInt[N]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.generic.Equal[N],P]"></a>
+      <a id="equalPredicateInferenceNat[P,T,N&lt;:Nat](Predicate[P,T],Numeric[T],ToInt[N]):==&gt;[Equal[N],P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equalPredicateNat</span><span class="tparams">[<span name="N">N &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="tn">tn: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.equalPredicateNat.N">N</span>]</span>, <span name="it">it: <span class="extype" name="scala.Integral">Integral</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.equalPredicateNat.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="generic$$Equal.html" class="extype" name="eu.timepit.refined.generic.Equal">Equal</a>[<span class="extype" name="eu.timepit.refined.NumericPredicates.equalPredicateNat.N">N</span>], <span class="extype" name="eu.timepit.refined.NumericPredicates.equalPredicateNat.T">T</span>]</span>
+        <span class="name">equalPredicateInferenceNat</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>, <span name="N">N &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p">p: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.equalPredicateInferenceNat.P">P</span>, <span class="extype" name="eu.timepit.refined.NumericInferenceRules.equalPredicateInferenceNat.T">T</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.equalPredicateInferenceNat.T">T</span>]</span>, <span name="tn">tn: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.equalPredicateInferenceNat.N">N</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="generic$$Equal.html" class="extype" name="eu.timepit.refined.generic.Equal">Equal</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.equalPredicateInferenceNat.N">N</span>], <span class="extype" name="eu.timepit.refined.NumericInferenceRules.equalPredicateInferenceNat.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@equalPredicateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitit:Integral[T]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.Equal[N],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@equalPredicateInferenceNat[P,T,N&lt;:shapeless.Nat](implicitp:eu.timepit.refined.Predicate[P,T],implicitnt:Numeric[T],implicittn:shapeless.ops.nat.ToInt[N]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.generic.Equal[N],P]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInferenceRules</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericPredicates#equalPredicateNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equalPredicateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.Equal[N],T]"></a>
+      <a id="equalPredicateNat[N&lt;:Nat,T](ToInt[N],Numeric[T]):Predicate[Equal[N],T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equalPredicateNat</span><span class="tparams">[<span name="N">N &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="tn">tn: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.equalPredicateNat.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.equalPredicateNat.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="generic$$Equal.html" class="extype" name="eu.timepit.refined.generic.Equal">Equal</a>[<span class="extype" name="eu.timepit.refined.NumericPredicates.equalPredicateNat.N">N</span>], <span class="extype" name="eu.timepit.refined.NumericPredicates.equalPredicateNat.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@equalPredicateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.Equal[N],T]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

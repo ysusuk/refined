@@ -51,7 +51,13 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/shared/src/main/scala/eu/timepit/refined/RefType.scala" target="_blank">RefType.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Type class that allows <code>F</code> to be used as result type of a refinement.
+The first type parameter of <code>F</code> is the type that is being refined by
+its second type parameter which is the type-level predicate that
+denotes the refinement. Consequently, <code>F[T, P]</code> is a phantom type
+that only contains a value of type <code>T</code>.</p><p>The library provides instances of <code>RefType</code> for</p><ul><li>the <code><a href="Refined.html" class="extype" name="eu.timepit.refined.Refined">Refined</a></code> value class</li><li>and <code>shapeless.tag.@@</code> which is a subtype of its first parameter
+   (i.e. <code>(T @@ P) &lt;: T</code>)
+</li></ul></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/shared/src/main/scala/eu/timepit/refined/RefType.scala" target="_blank">RefType.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
@@ -438,7 +444,7 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="eu.timepit.refined.RefType#refine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.timepit.refined.RefType#refine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="refine[P]:eu.timepit.refined.internal.RefineAux[F,P]"></a>
       <a id="refine[P]:RefineAux[F,P]"></a>
       <h4 class="signature">
@@ -454,8 +460,19 @@
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="eu.timepit.refined.RefType#refineM" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Returns a value of type <code>T</code> wrapped in <code>F[T, P]</code> on the right if
+it satisfies the predicate <code>P</code>, or an error message on the left
+otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a value of type <code>T</code> wrapped in <code>F[T, P]</code> on the right if
+it satisfies the predicate <code>P</code>, or an error message on the left
+otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined._
+     | <span class="kw">import</span> eu.timepit.refined.numeric._
+
+scala&gt; RefType[Refined].refine[Positive](<span class="num">10</span>)
+res1: Either[<span class="std">String</span>, Refined[<span class="std">Int</span>, Positive]] = Right(Refined(<span class="num">10</span>))</pre><p>Note: The return type is <code><a href="internal/RefineAux.html" class="extype" name="eu.timepit.refined.internal.RefineAux">internal.RefineAux</a>[F, P]</code>, which has
+an <code>apply</code> method on it, allowing <code>refine</code> to be called like in the
+given example.
+</p></div></div>
+    </li><li name="eu.timepit.refined.RefType#refineM" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="refineM[P]:eu.timepit.refined.internal.RefineMAux[F,P]"></a>
       <a id="refineM[P]:RefineMAux[F,P]"></a>
       <h4 class="signature">
@@ -471,7 +488,16 @@
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Macro that returns a value of type <code>T</code> wrapped in <code>F[T, P]</code> if it
+satisfies the predicate <code>P</code>, or fails to compile otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Macro that returns a value of type <code>T</code> wrapped in <code>F[T, P]</code> if it
+satisfies the predicate <code>P</code>, or fails to compile otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined._
+     | <span class="kw">import</span> eu.timepit.refined.numeric._
+
+scala&gt; RefType[Refined].refineM[Positive](<span class="num">10</span>)
+res1: Refined[<span class="std">Int</span>, Positive] = Refined(<span class="num">10</span>)</pre><p>Note: <code>M</code> stands for <b>m</b>acro.</p><p>Note: The return type is <code><a href="internal/RefineMAux.html" class="extype" name="eu.timepit.refined.internal.RefineMAux">internal.RefineMAux</a>[F, P]</code>, which has
+an <code>apply</code> method on it, allowing <code>refineM</code> to be called like in the
+given example.
+</p></div></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
