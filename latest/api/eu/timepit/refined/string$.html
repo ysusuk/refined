@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -45,13 +45,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">string</span><span class="result"> extends <span class="extype" name="eu.timepit.refined.StringPredicates">StringPredicates</span> with <span class="extype" name="eu.timepit.refined.StringInferenceRules">StringInferenceRules</span></span>
+        <span class="name">string</span><span class="result"> extends <span class="extype" name="eu.timepit.refined.StringValidate">StringValidate</span> with <span class="extype" name="eu.timepit.refined.StringInference">StringInference</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/shared/src/main/scala/eu/timepit/refined/string.scala" target="_blank">string.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.StringInferenceRules">StringInferenceRules</span>, <span class="extype" name="eu.timepit.refined.StringPredicates">StringPredicates</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.StringInference">StringInference</span>, <span class="extype" name="eu.timepit.refined.StringValidate">StringValidate</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
@@ -69,7 +69,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="eu.timepit.refined.string"><span>string</span></li><li class="in" name="eu.timepit.refined.StringInferenceRules"><span>StringInferenceRules</span></li><li class="in" name="eu.timepit.refined.StringPredicates"><span>StringPredicates</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="eu.timepit.refined.string"><span>string</span></li><li class="in" name="eu.timepit.refined.StringInference"><span>StringInference</span></li><li class="in" name="eu.timepit.refined.StringValidate"><span>StringValidate</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -90,155 +90,155 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="eu.timepit.refined.string.EndsWith" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="EndsWith[S]extendsAnyRef"></a>
+              <ol><li name="eu.timepit.refined.string.EndsWith" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EndsWith[S]extendsProductwithSerializable"></a>
       <a id="EndsWith[S]:EndsWith[S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="string$$EndsWith.html"><span class="name">EndsWith</span></a><span class="tparams">[<span name="S">S</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="string$$EndsWith.html"><span class="name">EndsWith</span></a><span class="tparams">[<span name="S">S</span>]</span><span class="params">(<span name="s">s: <span class="extype" name="eu.timepit.refined.string.EndsWith.S">S</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@EndsWith[S]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@EndsWith[S]extendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a <code>String</code> ends with the suffix <code>S</code>.</p>
-    </li><li name="eu.timepit.refined.string.MatchesRegex" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="MatchesRegex[R]extendsAnyRef"></a>
-      <a id="MatchesRegex[R]:MatchesRegex[R]"></a>
+    </li><li name="eu.timepit.refined.string.MatchesRegex" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MatchesRegex[S]extendsProductwithSerializable"></a>
+      <a id="MatchesRegex[S]:MatchesRegex[S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="string$$MatchesRegex.html"><span class="name">MatchesRegex</span></a><span class="tparams">[<span name="R">R</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="string$$MatchesRegex.html"><span class="name">MatchesRegex</span></a><span class="tparams">[<span name="S">S</span>]</span><span class="params">(<span name="s">s: <span class="extype" name="eu.timepit.refined.string.MatchesRegex.S">S</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@MatchesRegex[R]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@MatchesRegex[S]extendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Predicate that checks if a <code>String</code> matches the regular expression <code>R</code>.</p>
-    </li><li name="eu.timepit.refined.string.Regex" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="RegexextendsAnyRef"></a>
+      <p class="shortcomment cmt">Predicate that checks if a <code>String</code> matches the regular expression <code>S</code>.</p>
+    </li><li name="eu.timepit.refined.string.Regex" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RegexextendsProductwithSerializable"></a>
       <a id="Regex:Regex"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="string$$Regex.html"><span class="name">Regex</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="string$$Regex.html"><span class="name">Regex</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@RegexextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@RegexextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a <code>String</code> is a valid regular expression.</p>
-    </li><li name="eu.timepit.refined.string.StartsWith" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="StartsWith[S]extendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.string.StartsWith" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StartsWith[S]extendsProductwithSerializable"></a>
       <a id="StartsWith[S]:StartsWith[S]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="string$$StartsWith.html"><span class="name">StartsWith</span></a><span class="tparams">[<span name="S">S</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="string$$StartsWith.html"><span class="name">StartsWith</span></a><span class="tparams">[<span name="S">S</span>]</span><span class="params">(<span name="s">s: <span class="extype" name="eu.timepit.refined.string.StartsWith.S">S</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@StartsWith[S]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@StartsWith[S]extendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a <code>String</code> starts with the prefix <code>S</code>.</p>
-    </li><li name="eu.timepit.refined.string.Uri" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="UriextendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.string.Uri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UriextendsProductwithSerializable"></a>
       <a id="Uri:Uri"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="string$$Uri.html"><span class="name">Uri</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="string$$Uri.html"><span class="name">Uri</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@UriextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@UriextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a <code>String</code> is a valid URI.</p>
-    </li><li name="eu.timepit.refined.string.Url" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="UrlextendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.string.Url" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UrlextendsProductwithSerializable"></a>
       <a id="Url:Url"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="string$$Url.html"><span class="name">Url</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="string$$Url.html"><span class="name">Url</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@UrlextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@UrlextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a <code>String</code> is a valid URL.</p>
-    </li><li name="eu.timepit.refined.string.Uuid" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="UuidextendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.string.Uuid" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UuidextendsProductwithSerializable"></a>
       <a id="Uuid:Uuid"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="string$$Uuid.html"><span class="name">Uuid</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="string$$Uuid.html"><span class="name">Uuid</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@UuidextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@UuidextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a <code>String</code> is a valid UUID.</p>
-    </li><li name="eu.timepit.refined.string.XPath" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="XPathextendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.string.XPath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="XPathextendsProductwithSerializable"></a>
       <a id="XPath:XPath"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="string$$XPath.html"><span class="name">XPath</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="string$$XPath.html"><span class="name">XPath</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@XPathextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@XPathextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a <code>String</code> is a valid XPath expression.</p>
-    </li><li name="eu.timepit.refined.string.Xml" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="XmlextendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.string.Xml" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="XmlextendsProductwithSerializable"></a>
       <a id="Xml:Xml"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="string$$Xml.html"><span class="name">Xml</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="string$$Xml.html"><span class="name">Xml</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@XmlextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@XmlextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -341,8 +341,8 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="eu.timepit.refined.StringInferenceRules#endsWithInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="endsWithInference[A&lt;:String,B&lt;:String](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.string.EndsWith[A],eu.timepit.refined.string.EndsWith[B]]"></a>
+    </li><li name="eu.timepit.refined.StringInference#endsWithInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="endsWithInference[A&lt;:String,B&lt;:String](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.string.EndsWith[A],eu.timepit.refined.string.EndsWith[B]]"></a>
       <a id="endsWithInference[A&lt;:String,B&lt;:String](Aux[A],Aux[B]):==&gt;[EndsWith[A],EndsWith[B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -350,31 +350,31 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">endsWithInference</span><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="B">B &lt;: <span class="extype" name="scala.Predef.String">String</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringInferenceRules.endsWithInference.A">A</span>]</span>, <span name="wb">wb: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringInferenceRules.endsWithInference.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="string$$EndsWith.html" class="extype" name="eu.timepit.refined.string.EndsWith">EndsWith</a>[<span class="extype" name="eu.timepit.refined.StringInferenceRules.endsWithInference.A">A</span>], <a href="string$$EndsWith.html" class="extype" name="eu.timepit.refined.string.EndsWith">EndsWith</a>[<span class="extype" name="eu.timepit.refined.StringInferenceRules.endsWithInference.B">B</span>]]</span>
+        <span class="name">endsWithInference</span><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="B">B &lt;: <span class="extype" name="scala.Predef.String">String</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringInference.endsWithInference.A">A</span>]</span>, <span name="wb">wb: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringInference.endsWithInference.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="string$$EndsWith.html" class="extype" name="eu.timepit.refined.string.EndsWith">EndsWith</a>[<span class="extype" name="eu.timepit.refined.StringInference.endsWithInference.A">A</span>], <a href="string$$EndsWith.html" class="extype" name="eu.timepit.refined.string.EndsWith">EndsWith</a>[<span class="extype" name="eu.timepit.refined.StringInference.endsWithInference.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@endsWithInference[A&lt;:String,B&lt;:String](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.string.EndsWith[A],eu.timepit.refined.string.EndsWith[B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@endsWithInference[A&lt;:String,B&lt;:String](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.string.EndsWith[A],eu.timepit.refined.string.EndsWith[B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringInferenceRules</dd></dl></div>
-    </li><li name="eu.timepit.refined.StringPredicates#endsWithPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="endsWithPredicate[R&lt;:String](implicitwr:shapeless.Witness.Aux[R]):eu.timepit.refined.Predicate[eu.timepit.refined.string.EndsWith[R],String]"></a>
-      <a id="endsWithPredicate[R&lt;:String](Aux[R]):Predicate[EndsWith[R],String]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.StringValidate#endsWithValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="endsWithValidate[S&lt;:String](implicitws:shapeless.Witness.Aux[S]):eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.EndsWith[S]]"></a>
+      <a id="endsWithValidate[S&lt;:String](Aux[S]):Plain[String,EndsWith[S]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">endsWithPredicate</span><span class="tparams">[<span name="R">R &lt;: <span class="extype" name="scala.Predef.String">String</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wr">wr: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringPredicates.endsWithPredicate.R">R</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="string$$EndsWith.html" class="extype" name="eu.timepit.refined.string.EndsWith">EndsWith</a>[<span class="extype" name="eu.timepit.refined.StringPredicates.endsWithPredicate.R">R</span>], <span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">endsWithValidate</span><span class="tparams">[<span name="S">S &lt;: <span class="extype" name="scala.Predef.String">String</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ws">ws: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringValidate.endsWithValidate.S">S</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="scala.Predef.String">String</span>, <a href="string$$EndsWith.html" class="extype" name="eu.timepit.refined.string.EndsWith">EndsWith</a>[<span class="extype" name="eu.timepit.refined.StringValidate.endsWithValidate.S">S</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@endsWithPredicate[R&lt;:String](implicitwr:shapeless.Witness.Aux[R]):eu.timepit.refined.Predicate[eu.timepit.refined.string.EndsWith[R],String]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@endsWithValidate[S&lt;:String](implicitws:shapeless.Witness.Aux[S]):eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.EndsWith[S]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringValidate</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -483,23 +483,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.StringPredicates#matchesRegexPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="matchesRegexPredicate[R&lt;:String](implicitwr:shapeless.Witness.Aux[R]):eu.timepit.refined.Predicate[eu.timepit.refined.string.MatchesRegex[R],String]"></a>
-      <a id="matchesRegexPredicate[R&lt;:String](Aux[R]):Predicate[MatchesRegex[R],String]"></a>
+    </li><li name="eu.timepit.refined.StringValidate#matchesRegexValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="matchesRegexValidate[S&lt;:String](implicitws:shapeless.Witness.Aux[S]):eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.MatchesRegex[S]]"></a>
+      <a id="matchesRegexValidate[S&lt;:String](Aux[S]):Plain[String,MatchesRegex[S]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">matchesRegexPredicate</span><span class="tparams">[<span name="R">R &lt;: <span class="extype" name="scala.Predef.String">String</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wr">wr: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringPredicates.matchesRegexPredicate.R">R</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="string$$MatchesRegex.html" class="extype" name="eu.timepit.refined.string.MatchesRegex">MatchesRegex</a>[<span class="extype" name="eu.timepit.refined.StringPredicates.matchesRegexPredicate.R">R</span>], <span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">matchesRegexValidate</span><span class="tparams">[<span name="S">S &lt;: <span class="extype" name="scala.Predef.String">String</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ws">ws: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringValidate.matchesRegexValidate.S">S</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="scala.Predef.String">String</span>, <a href="string$$MatchesRegex.html" class="extype" name="eu.timepit.refined.string.MatchesRegex">MatchesRegex</a>[<span class="extype" name="eu.timepit.refined.StringValidate.matchesRegexValidate.S">S</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@matchesRegexPredicate[R&lt;:String](implicitwr:shapeless.Witness.Aux[R]):eu.timepit.refined.Predicate[eu.timepit.refined.string.MatchesRegex[R],String]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@matchesRegexValidate[S&lt;:String](implicitws:shapeless.Witness.Aux[S]):eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.MatchesRegex[S]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringValidate</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -551,25 +551,25 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="eu.timepit.refined.StringPredicates#regexPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="regexPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.string.Regex,String]"></a>
-      <a id="regexPredicate:Predicate[Regex,String]"></a>
+    </li><li name="eu.timepit.refined.StringValidate#regexValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="regexValidate:eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.Regex]"></a>
+      <a id="regexValidate:Plain[String,Regex]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">regexPredicate</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="string$$Regex.html" class="extype" name="eu.timepit.refined.string.Regex">Regex</a>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">regexValidate</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="scala.Predef.String">String</span>, <a href="string$$Regex.html" class="extype" name="eu.timepit.refined.string.Regex">Regex</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@regexPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.string.Regex,String]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@regexValidate:eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.Regex]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringPredicates</dd></dl></div>
-    </li><li name="eu.timepit.refined.StringInferenceRules#startsWithInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="startsWithInference[A&lt;:String,B&lt;:String](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.string.StartsWith[A],eu.timepit.refined.string.StartsWith[B]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.StringInference#startsWithInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="startsWithInference[A&lt;:String,B&lt;:String](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.string.StartsWith[A],eu.timepit.refined.string.StartsWith[B]]"></a>
       <a id="startsWithInference[A&lt;:String,B&lt;:String](Aux[A],Aux[B]):==&gt;[StartsWith[A],StartsWith[B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -577,31 +577,31 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">startsWithInference</span><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="B">B &lt;: <span class="extype" name="scala.Predef.String">String</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringInferenceRules.startsWithInference.A">A</span>]</span>, <span name="wb">wb: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringInferenceRules.startsWithInference.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="string$$StartsWith.html" class="extype" name="eu.timepit.refined.string.StartsWith">StartsWith</a>[<span class="extype" name="eu.timepit.refined.StringInferenceRules.startsWithInference.A">A</span>], <a href="string$$StartsWith.html" class="extype" name="eu.timepit.refined.string.StartsWith">StartsWith</a>[<span class="extype" name="eu.timepit.refined.StringInferenceRules.startsWithInference.B">B</span>]]</span>
+        <span class="name">startsWithInference</span><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="B">B &lt;: <span class="extype" name="scala.Predef.String">String</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringInference.startsWithInference.A">A</span>]</span>, <span name="wb">wb: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringInference.startsWithInference.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="string$$StartsWith.html" class="extype" name="eu.timepit.refined.string.StartsWith">StartsWith</a>[<span class="extype" name="eu.timepit.refined.StringInference.startsWithInference.A">A</span>], <a href="string$$StartsWith.html" class="extype" name="eu.timepit.refined.string.StartsWith">StartsWith</a>[<span class="extype" name="eu.timepit.refined.StringInference.startsWithInference.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@startsWithInference[A&lt;:String,B&lt;:String](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.string.StartsWith[A],eu.timepit.refined.string.StartsWith[B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@startsWithInference[A&lt;:String,B&lt;:String](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.string.StartsWith[A],eu.timepit.refined.string.StartsWith[B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringInferenceRules</dd></dl></div>
-    </li><li name="eu.timepit.refined.StringPredicates#startsWithPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="startsWithPredicate[R&lt;:String](implicitwr:shapeless.Witness.Aux[R]):eu.timepit.refined.Predicate[eu.timepit.refined.string.StartsWith[R],String]"></a>
-      <a id="startsWithPredicate[R&lt;:String](Aux[R]):Predicate[StartsWith[R],String]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.StringValidate#startsWithValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="startsWithValidate[S&lt;:String](implicitws:shapeless.Witness.Aux[S]):eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.StartsWith[S]]"></a>
+      <a id="startsWithValidate[S&lt;:String](Aux[S]):Plain[String,StartsWith[S]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">startsWithPredicate</span><span class="tparams">[<span name="R">R &lt;: <span class="extype" name="scala.Predef.String">String</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wr">wr: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringPredicates.startsWithPredicate.R">R</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="string$$StartsWith.html" class="extype" name="eu.timepit.refined.string.StartsWith">StartsWith</a>[<span class="extype" name="eu.timepit.refined.StringPredicates.startsWithPredicate.R">R</span>], <span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">startsWithValidate</span><span class="tparams">[<span name="S">S &lt;: <span class="extype" name="scala.Predef.String">String</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ws">ws: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.StringValidate.startsWithValidate.S">S</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="scala.Predef.String">String</span>, <a href="string$$StartsWith.html" class="extype" name="eu.timepit.refined.string.StartsWith">StartsWith</a>[<span class="extype" name="eu.timepit.refined.StringValidate.startsWithValidate.S">S</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@startsWithPredicate[R&lt;:String](implicitwr:shapeless.Witness.Aux[R]):eu.timepit.refined.Predicate[eu.timepit.refined.string.StartsWith[R],String]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@startsWithValidate[S&lt;:String](implicitws:shapeless.Witness.Aux[S]):eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.StartsWith[S]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringValidate</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -636,57 +636,57 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.StringPredicates#uriPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="uriPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.string.Uri,String]"></a>
-      <a id="uriPredicate:Predicate[Uri,String]"></a>
+    </li><li name="eu.timepit.refined.StringValidate#uriValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uriValidate:eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.Uri]"></a>
+      <a id="uriValidate:Plain[String,Uri]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">uriPredicate</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="string$$Uri.html" class="extype" name="eu.timepit.refined.string.Uri">Uri</a>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">uriValidate</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="scala.Predef.String">String</span>, <a href="string$$Uri.html" class="extype" name="eu.timepit.refined.string.Uri">Uri</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@uriPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.string.Uri,String]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@uriValidate:eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.Uri]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringPredicates</dd></dl></div>
-    </li><li name="eu.timepit.refined.StringPredicates#urlPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="urlPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.string.Url,String]"></a>
-      <a id="urlPredicate:Predicate[Url,String]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.StringValidate#urlValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="urlValidate:eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.Url]"></a>
+      <a id="urlValidate:Plain[String,Url]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">urlPredicate</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="string$$Url.html" class="extype" name="eu.timepit.refined.string.Url">Url</a>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">urlValidate</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="scala.Predef.String">String</span>, <a href="string$$Url.html" class="extype" name="eu.timepit.refined.string.Url">Url</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@urlPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.string.Url,String]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@urlValidate:eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.Url]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringPredicates</dd></dl></div>
-    </li><li name="eu.timepit.refined.StringPredicates#uuidPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="uuidPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.string.Uuid,String]"></a>
-      <a id="uuidPredicate:Predicate[Uuid,String]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.StringValidate#uuidValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uuidValidate:eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.Uuid]"></a>
+      <a id="uuidValidate:Plain[String,Uuid]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">uuidPredicate</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="string$$Uuid.html" class="extype" name="eu.timepit.refined.string.Uuid">Uuid</a>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">uuidValidate</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="scala.Predef.String">String</span>, <a href="string$$Uuid.html" class="extype" name="eu.timepit.refined.string.Uuid">Uuid</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@uuidPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.string.Uuid,String]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@uuidValidate:eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.Uuid]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringValidate</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -756,40 +756,40 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="eu.timepit.refined.StringPredicates#xmlPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="xmlPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.string.Xml,String]"></a>
-      <a id="xmlPredicate:Predicate[Xml,String]"></a>
+    </li><li name="eu.timepit.refined.StringValidate#xmlValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="xmlValidate:eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.Xml]"></a>
+      <a id="xmlValidate:Plain[String,Xml]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">xmlPredicate</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="string$$Xml.html" class="extype" name="eu.timepit.refined.string.Xml">Xml</a>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">xmlValidate</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="scala.Predef.String">String</span>, <a href="string$$Xml.html" class="extype" name="eu.timepit.refined.string.Xml">Xml</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@xmlPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.string.Xml,String]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@xmlValidate:eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.Xml]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringPredicates</dd></dl></div>
-    </li><li name="eu.timepit.refined.StringPredicates#xpathPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="xpathPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.string.XPath,String]"></a>
-      <a id="xpathPredicate:Predicate[XPath,String]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.StringValidate#xpathValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="xpathValidate:eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.XPath]"></a>
+      <a id="xpathValidate:Plain[String,XPath]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">xpathPredicate</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="string$$XPath.html" class="extype" name="eu.timepit.refined.string.XPath">XPath</a>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">xpathValidate</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="scala.Predef.String">String</span>, <a href="string$$XPath.html" class="extype" name="eu.timepit.refined.string.XPath">XPath</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.string$@xpathPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.string.XPath,String]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.string$@xpathValidate:eu.timepit.refined.api.Validate.Plain[String,eu.timepit.refined.string.XPath]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>StringValidate</dd></dl></div>
     </li></ol>
             </div>
 
@@ -799,10 +799,10 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="eu.timepit.refined.StringInferenceRules">
-              <h3>Inherited from <span class="extype" name="eu.timepit.refined.StringInferenceRules">StringInferenceRules</span></h3>
-            </div><div class="parent" name="eu.timepit.refined.StringPredicates">
-              <h3>Inherited from <span class="extype" name="eu.timepit.refined.StringPredicates">StringPredicates</span></h3>
+        <div class="parent" name="eu.timepit.refined.StringInference">
+              <h3>Inherited from <span class="extype" name="eu.timepit.refined.StringInference">StringInference</span></h3>
+            </div><div class="parent" name="eu.timepit.refined.StringValidate">
+              <h3>Inherited from <span class="extype" name="eu.timepit.refined.StringValidate">StringValidate</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">

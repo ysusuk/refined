@@ -1,22 +1,22 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>Predicate - eu.timepit.refined.Predicate</title>
-          <meta name="description" content="Predicate - eu.timepit.refined.Predicate" />
-          <meta name="keywords" content="Predicate eu.timepit.refined.Predicate" />
+          <title>Validate - eu.timepit.refined.api.Validate</title>
+          <meta name="description" content="Validate - eu.timepit.refined.api.Validate" />
+          <meta name="keywords" content="Validate eu.timepit.refined.api.Validate" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
-      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../../lib/template.js"></script>
-      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
-            var url = '../../../index.html';
-            var hash = 'eu.timepit.refined.Predicate$';
+            var url = '../../../../index.html';
+            var hash = 'eu.timepit.refined.api.Validate';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -26,17 +26,17 @@
    	  </script>
     
         </head>
-        <body class="value">
+        <body class="type">
       <div id="definition">
-        <a href="Predicate.html" title="See companion trait"><img alt="Object/Trait" src="../../../lib/object_to_trait_big.png" /></a>
-        <p id="owner"><a href="../../package.html" class="extype" name="eu">eu</a>.<a href="../package.html" class="extype" name="eu.timepit">timepit</a>.<a href="package.html" class="extype" name="eu.timepit.refined">refined</a></p>
-        <h1><a href="Predicate.html" title="See companion trait">Predicate</a></h1><h3><span class="morelinks"><div>
+        <a href="Validate$.html" title="See companion object"><img alt="Trait/Object" src="../../../../lib/trait_to_object_big.png" /></a>
+        <p id="owner"><a href="../../../package.html" class="extype" name="eu">eu</a>.<a href="../../package.html" class="extype" name="eu.timepit">timepit</a>.<a href="../package.html" class="extype" name="eu.timepit.refined">refined</a>.<a href="package.html" class="extype" name="eu.timepit.refined.api">api</a></p>
+        <h1><a href="Validate$.html" title="See companion object">Validate</a></h1><h3><span class="morelinks"><div>
             Related Docs:
-            <a href="Predicate.html" title="See companion trait">trait Predicate</a>
-            | <a href="package.html" class="extype" name="eu.timepit.refined">package refined</a>
+            <a href="Validate$.html" title="See companion object">object Validate</a>
+            | <a href="package.html" class="extype" name="eu.timepit.refined.api">package api</a>
           </div></span></h3><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       </div>
@@ -44,14 +44,17 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">object</span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">Predicate</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <span class="name">Validate</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/shared/src/main/scala/eu/timepit/refined/Predicate.scala" target="_blank">Predicate.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Type class for validating values of type <code>T</code> according to a type-level
+predicate <code>P</code>. The semantics of <code>P</code> are defined by the instance(s) of
+this type class for <code>P</code>.
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="eu.timepit.refined.api.Validate">Validate</a>[<span class="extype" name="eu.timepit.refined.api.Validate.T">T</span>, <span class="extype" name="eu.timepit.refined.api.Validate.P">P</span>]</dd><dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/shared/src/main/scala/eu/timepit/refined/api/Validate.scala" target="_blank">Validate.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
@@ -71,7 +74,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="eu.timepit.refined.Predicate"><span>Predicate</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="eu.timepit.refined.api.Validate"><span>Validate</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -90,12 +93,86 @@
         <div id="allMembers">
         
 
-        
-
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="eu.timepit.refined.api.Validate.R" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="R"></a>
+      <a id="R:R"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">R</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@R" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="eu.timepit.refined.api.Validate.Res" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Res=eu.timepit.refined.api.Result[Validate.this.R]"></a>
+      <a id="Res:Res"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Res</span><span class="result"> = <a href="Result.html" class="extype" name="eu.timepit.refined.api.Result">Result</a>[<a href="#R" class="extmbr" name="eu.timepit.refined.api.Validate.R">R</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@Res=eu.timepit.refined.api.Result[Validate.this.R]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
 
         <div id="values" class="values members">
-              <h3>Value Members</h3>
+              <h3>Abstract Value Members</h3>
+              <ol><li name="eu.timepit.refined.api.Validate#showExpr" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="showExpr(t:T):String"></a>
+      <a id="showExpr(T):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">showExpr</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.api.Validate.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@showExpr(t:T):String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a string representation of this <a href="" class="extype" name="eu.timepit.refined.api.Validate">Validate</a> using <code>t</code>.</p>
+    </li><li name="eu.timepit.refined.api.Validate#validate" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="validate(t:T):Validate.this.Res"></a>
+      <a id="validate(T):Res"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">validate</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.api.Validate.T">T</span></span>)</span><span class="result">: <a href="#Res=eu.timepit.refined.api.Result[Validate.this.R]" class="extmbr" name="eu.timepit.refined.api.Validate.Res">Res</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@validate(t:T):Validate.this.Res" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -108,8 +185,8 @@
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -125,8 +202,8 @@
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@##():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -142,62 +219,30 @@
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.Predicate#alwaysInvalid" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="alwaysInvalid[P,T]:eu.timepit.refined.Predicate[P,T]"></a>
-      <a id="alwaysInvalid[P,T]:Predicate[P,T]"></a>
+    </li><li name="eu.timepit.refined.api.Validate#accumulateShowExpr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="accumulateShowExpr(t:T):List[String]"></a>
+      <a id="accumulateShowExpr(T):List[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">alwaysInvalid</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.alwaysInvalid.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.alwaysInvalid.T">T</span>]</span>
+        <span class="name">accumulateShowExpr</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.api.Validate.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@alwaysInvalid[P,T]:eu.timepit.refined.Predicate[P,T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@accumulateShowExpr(t:T):List[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Returns a <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a> that ignores its inputs and always yields <code>false</code>.</p>
-    </li><li name="eu.timepit.refined.Predicate#alwaysValid" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="alwaysValid[P,T]:eu.timepit.refined.Predicate[P,T]"></a>
-      <a id="alwaysValid[P,T]:Predicate[P,T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">alwaysValid</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.alwaysValid.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.alwaysValid.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@alwaysValid[P,T]:eu.timepit.refined.Predicate[P,T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Returns a <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a> that ignores its inputs and always yields <code>true</code>.</p>
-    </li><li name="eu.timepit.refined.Predicate#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply[P,T](implicitp:eu.timepit.refined.Predicate[P,T]):eu.timepit.refined.Predicate[P,T]"></a>
-      <a id="apply[P,T](Predicate[P,T]):Predicate[P,T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p">p: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.apply.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.apply.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.apply.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.apply.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@apply[P,T](implicitp:eu.timepit.refined.Predicate[P,T]):eu.timepit.refined.Predicate[P,T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
+      <p class="shortcomment cmt">Returns the result of <a href="#showExpr(t:T):String" class="extmbr" name="eu.timepit.refined.api.Validate#showExpr">showExpr</a> in a <code>List</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the result of <a href="#showExpr(t:T):String" class="extmbr" name="eu.timepit.refined.api.Validate#showExpr">showExpr</a> in a <code>List</code>. Can be overridden to
+accumulate the string representations of sub-predicates.
+</p></div></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -210,8 +255,8 @@
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -227,34 +272,17 @@
         <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@clone():Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="eu.timepit.refined.Predicate#constant" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="constant[P,T](isValidV:Boolean,showV:String):eu.timepit.refined.Predicate[P,T]"></a>
-      <a id="constant[P,T](Boolean,String):Predicate[P,T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">constant</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>]</span><span class="params">(<span name="isValidV">isValidV: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="showV">showV: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.constant.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.constant.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@constant[P,T](isValidV:Boolean,showV:String):eu.timepit.refined.Predicate[P,T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Constructs a constant <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a> from its parameters.</p>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -267,8 +295,8 @@
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -284,8 +312,8 @@
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -301,36 +329,17 @@
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="symbol">classOf[java.lang.Throwable]</span>
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="eu.timepit.refined.Predicate#fromPartial" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="fromPartial[P,T,U](pf:T=&gt;U,name:String):eu.timepit.refined.Predicate[P,T]"></a>
-      <a id="fromPartial[P,T,U]((T)⇒U,String):Predicate[P,T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">fromPartial</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>, <span name="U">U</span>]</span><span class="params">(<span name="pf">pf: (<span class="extype" name="eu.timepit.refined.Predicate.fromPartial.T">T</span>) ⇒ <span class="extype" name="eu.timepit.refined.Predicate.fromPartial.U">U</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.fromPartial.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.fromPartial.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@fromPartial[P,T,U](pf:T=&gt;U,name:String):eu.timepit.refined.Predicate[P,T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Constructs a <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a> from the partial function <code>pf</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Constructs a <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a> from the partial function <code>pf</code>. All <code>T</code>s for
-which <code>pf</code> throws an exception are considered invalid according to <code>P</code>.
-</p></div></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -343,8 +352,8 @@ which <code>pf</code> throws an exception are considered invalid according to <c
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -360,28 +369,32 @@ which <code>pf</code> throws an exception are considered invalid according to <c
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.Predicate#instance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="instance[P,T](isValidF:T=&gt;Boolean,showF:T=&gt;String,constant:Boolean):eu.timepit.refined.Predicate[P,T]"></a>
-      <a id="instance[P,T]((T)⇒Boolean,(T)⇒String,Boolean):Predicate[P,T]"></a>
+    </li><li name="eu.timepit.refined.api.Validate#isConstant" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isConstant:Boolean"></a>
+      <a id="isConstant:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">instance</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>]</span><span class="params">(<span name="isValidF">isValidF: (<span class="extype" name="eu.timepit.refined.Predicate.instance.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="showF">showF: (<span class="extype" name="eu.timepit.refined.Predicate.instance.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="constant">constant: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.Predicate.instance.P">P</span>, <span class="extype" name="eu.timepit.refined.Predicate.instance.T">T</span>]</span>
+        <span class="name">isConstant</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@instance[P,T](isValidF:T=&gt;Boolean,showF:T=&gt;String,constant:Boolean):eu.timepit.refined.Predicate[P,T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@isConstant:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Constructs a <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a> from its parameters.</p>
+      <p class="shortcomment cmt">Denotes whether this <a href="" class="extype" name="eu.timepit.refined.api.Validate">Validate</a> is constant (which is false by
+default).</p><div class="fullcomment"><div class="comment cmt"><p>Denotes whether this <a href="" class="extype" name="eu.timepit.refined.api.Validate">Validate</a> is constant (which is false by
+default). A constant <a href="" class="extype" name="eu.timepit.refined.api.Validate">Validate</a> ignores the argument passed to
+<a href="#validate(t:T):Validate.this.Res" class="extmbr" name="eu.timepit.refined.api.Validate#validate">validate</a>.
+</p></div></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -394,11 +407,28 @@ which <code>pf</code> throws an exception are considered invalid according to <c
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="eu.timepit.refined.api.Validate#isValid" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isValid(t:T):Boolean"></a>
+      <a id="isValid(T):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isValid</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.api.Validate.T">T</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@isValid(t:T):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Checks if <code>t</code> satisfies the predicate <code>P</code>.</p>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -411,11 +441,28 @@ which <code>pf</code> throws an exception are considered invalid according to <c
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="eu.timepit.refined.api.Validate#notValid" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="notValid(t:T):Boolean"></a>
+      <a id="notValid(T):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notValid</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.api.Validate.T">T</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@notValid(t:T):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Checks if <code>t</code> does not satisfy the predicate <code>P</code>.</p>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
@@ -428,8 +475,8 @@ which <code>pf</code> throws an exception are considered invalid according to <c
         <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -445,11 +492,28 @@ which <code>pf</code> throws an exception are considered invalid according to <c
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="eu.timepit.refined.api.Validate#showResult" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="showResult(t:T,r:Validate.this.Res):String"></a>
+      <a id="showResult(T,Res):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">showResult</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.api.Validate.T">T</span></span>, <span name="r">r: <a href="#Res=eu.timepit.refined.api.Result[Validate.this.R]" class="extmbr" name="eu.timepit.refined.api.Validate.Res">Res</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@showResult(t:T,r:Validate.this.Res):String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -462,8 +526,8 @@ which <code>pf</code> throws an exception are considered invalid according to <c
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -479,8 +543,8 @@ which <code>pf</code> throws an exception are considered invalid according to <c
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -496,8 +560,8 @@ which <code>pf</code> throws an exception are considered invalid according to <c
         <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -519,8 +583,8 @@ which <code>pf</code> throws an exception are considered invalid according to <c
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -542,8 +606,8 @@ which <code>pf</code> throws an exception are considered invalid according to <c
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.Predicate$@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      <a href="../../../../index.html#eu.timepit.refined.api.Validate@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>

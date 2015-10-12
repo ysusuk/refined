@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -45,7 +45,7 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">numeric</span><span class="result"> extends <span class="extype" name="eu.timepit.refined.NumericPredicates">NumericPredicates</span> with <span class="extype" name="eu.timepit.refined.NumericInferenceRules">NumericInferenceRules</span></span>
+        <span class="name">numeric</span><span class="result"> extends <span class="extype" name="eu.timepit.refined.NumericValidate">NumericValidate</span> with <span class="extype" name="eu.timepit.refined.NumericInference">NumericInference</span></span>
       </span>
       </h4>
       
@@ -63,7 +63,7 @@ res1: <span class="std">Int</span> @@ Greater[_5] = <span class="num">10</span>
 scala&gt; refineMT[Greater[W.`<span class="num">1.5</span>`.T]](<span class="num">1.6</span>)
 res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>`.T] = <span class="num">1.6</span></pre></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/shared/src/main/scala/eu/timepit/refined/numeric.scala" target="_blank">numeric.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.NumericInferenceRules">NumericInferenceRules</span>, <span class="extype" name="eu.timepit.refined.NumericPredicates">NumericPredicates</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.NumericInference">NumericInference</span>, <span class="extype" name="eu.timepit.refined.NumericValidate">NumericValidate</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
@@ -81,7 +81,7 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="eu.timepit.refined.numeric"><span>numeric</span></li><li class="in" name="eu.timepit.refined.NumericInferenceRules"><span>NumericInferenceRules</span></li><li class="in" name="eu.timepit.refined.NumericPredicates"><span>NumericPredicates</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="eu.timepit.refined.numeric"><span>numeric</span></li><li class="in" name="eu.timepit.refined.NumericInference"><span>NumericInference</span></li><li class="in" name="eu.timepit.refined.NumericValidate"><span>NumericValidate</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -102,19 +102,19 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="eu.timepit.refined.numeric.Greater" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Greater[N]extendsAnyRef"></a>
+              <ol><li name="eu.timepit.refined.numeric.Greater" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Greater[N]extendsProductwithSerializable"></a>
       <a id="Greater[N]:Greater[N]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="numeric$$Greater.html"><span class="name">Greater</span></a><span class="tparams">[<span name="N">N</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="numeric$$Greater.html"><span class="name">Greater</span></a><span class="tparams">[<span name="N">N</span>]</span><span class="params">(<span name="n">n: <span class="extype" name="eu.timepit.refined.numeric.Greater.N">N</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@Greater[N]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@Greater[N]extendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -153,19 +153,19 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a numeric value is in the interval <code>[L, H]</code>.</p>
-    </li><li name="eu.timepit.refined.numeric.Less" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Less[N]extendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.numeric.Less" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Less[N]extendsProductwithSerializable"></a>
       <a id="Less[N]:Less[N]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="numeric$$Less.html"><span class="name">Less</span></a><span class="tparams">[<span name="N">N</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="numeric$$Less.html"><span class="name">Less</span></a><span class="tparams">[<span name="N">N</span>]</span><span class="params">(<span name="n">n: <span class="extype" name="eu.timepit.refined.numeric.Less.N">N</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@Less[N]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@Less[N]extendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -370,40 +370,6 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericInferenceRules#equalPredicateInferenceNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equalPredicateInferenceNat[P,T,N&lt;:shapeless.Nat](implicitp:eu.timepit.refined.Predicate[P,T],implicitnt:Numeric[T],implicittn:shapeless.ops.nat.ToInt[N]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.generic.Equal[N],P]"></a>
-      <a id="equalPredicateInferenceNat[P,T,N&lt;:Nat](Predicate[P,T],Numeric[T],ToInt[N]):==&gt;[Equal[N],P]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equalPredicateInferenceNat</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>, <span name="N">N &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p">p: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.equalPredicateInferenceNat.P">P</span>, <span class="extype" name="eu.timepit.refined.NumericInferenceRules.equalPredicateInferenceNat.T">T</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.equalPredicateInferenceNat.T">T</span>]</span>, <span name="tn">tn: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.equalPredicateInferenceNat.N">N</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="generic$$Equal.html" class="extype" name="eu.timepit.refined.generic.Equal">Equal</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.equalPredicateInferenceNat.N">N</span>], <span class="extype" name="eu.timepit.refined.NumericInferenceRules.equalPredicateInferenceNat.P">P</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@equalPredicateInferenceNat[P,T,N&lt;:shapeless.Nat](implicitp:eu.timepit.refined.Predicate[P,T],implicitnt:Numeric[T],implicittn:shapeless.ops.nat.ToInt[N]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.generic.Equal[N],P]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInferenceRules</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericPredicates#equalPredicateNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equalPredicateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.Equal[N],T]"></a>
-      <a id="equalPredicateNat[N&lt;:Nat,T](ToInt[N],Numeric[T]):Predicate[Equal[N],T]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equalPredicateNat</span><span class="tparams">[<span name="N">N &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="tn">tn: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.equalPredicateNat.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.equalPredicateNat.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="generic$$Equal.html" class="extype" name="eu.timepit.refined.generic.Equal">Equal</a>[<span class="extype" name="eu.timepit.refined.NumericPredicates.equalPredicateNat.N">N</span>], <span class="extype" name="eu.timepit.refined.NumericPredicates.equalPredicateNat.T">T</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@equalPredicateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.generic.Equal[N],T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericPredicates</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
@@ -461,8 +427,8 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericInferenceRules#greaterInferenceNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="greaterInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]"></a>
+    </li><li name="eu.timepit.refined.NumericInference#greaterInferenceNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="greaterInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]"></a>
       <a id="greaterInferenceNat[A&lt;:Nat,B&lt;:Nat](ToInt[A],ToInt[B]):==&gt;[Greater[A],Greater[B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -470,16 +436,16 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">greaterInferenceNat</span><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="B">B &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ta">ta: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceNat.A">A</span>]</span>, <span name="tb">tb: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceNat.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceNat.A">A</span>], <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceNat.B">B</span>]]</span>
+        <span class="name">greaterInferenceNat</span><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="B">B &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ta">ta: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceNat.A">A</span>]</span>, <span name="tb">tb: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceNat.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceNat.A">A</span>], <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceNat.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInferenceRules</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericInferenceRules#greaterInferenceWit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="greaterInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericInference#greaterInferenceWit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="greaterInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]"></a>
       <a id="greaterInferenceWit[C,A&lt;:C,B&lt;:C](Aux[A],Aux[B],Numeric[C]):==&gt;[Greater[A],Greater[B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -487,16 +453,16 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">greaterInferenceWit</span><span class="tparams">[<span name="C">C</span>, <span name="A">A &lt;: <span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceWit.C">C</span></span>, <span name="B">B &lt;: <span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceWit.C">C</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceWit.A">A</span>]</span>, <span name="wb">wb: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceWit.B">B</span>]</span>, <span name="nc">nc: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceWit.C">C</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceWit.A">A</span>], <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceWit.B">B</span>]]</span>
+        <span class="name">greaterInferenceWit</span><span class="tparams">[<span name="C">C</span>, <span name="A">A &lt;: <span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.C">C</span></span>, <span name="B">B &lt;: <span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.C">C</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.A">A</span>]</span>, <span name="wb">wb: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.B">B</span>]</span>, <span name="nc">nc: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.C">C</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.A">A</span>], <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInferenceRules</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericInferenceRules#greaterInferenceWitNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="greaterInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericInference#greaterInferenceWitNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="greaterInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]"></a>
       <a id="greaterInferenceWitNat[C,A&lt;:C,B&lt;:Nat](Aux[A],ToInt[B],Numeric[C]):==&gt;[Greater[A],Greater[B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -504,48 +470,48 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">greaterInferenceWitNat</span><span class="tparams">[<span name="C">C</span>, <span name="A">A &lt;: <span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceWitNat.C">C</span></span>, <span name="B">B &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceWitNat.A">A</span>]</span>, <span name="tb">tb: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceWitNat.B">B</span>]</span>, <span name="nc">nc: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceWitNat.C">C</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceWitNat.A">A</span>], <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.greaterInferenceWitNat.B">B</span>]]</span>
+        <span class="name">greaterInferenceWitNat</span><span class="tparams">[<span name="C">C</span>, <span name="A">A &lt;: <span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWitNat.C">C</span></span>, <span name="B">B &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWitNat.A">A</span>]</span>, <span name="tb">tb: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWitNat.B">B</span>]</span>, <span name="nc">nc: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWitNat.C">C</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWitNat.A">A</span>], <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWitNat.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInferenceRules</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericPredicates#greaterPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="greaterPredicate[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.numeric.Greater[N],T]"></a>
-      <a id="greaterPredicate[T,N&lt;:T](Aux[N],Numeric[T]):Predicate[Greater[N],T]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericValidate#greaterValidateNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="greaterValidateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Greater[N]]"></a>
+      <a id="greaterValidateNat[N&lt;:Nat,T](ToInt[N],Aux[N],Numeric[T]):Plain[T,Greater[N]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">greaterPredicate</span><span class="tparams">[<span name="T">T</span>, <span name="N">N &lt;: <span class="extype" name="eu.timepit.refined.NumericPredicates.greaterPredicate.T">T</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wn">wn: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.greaterPredicate.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.greaterPredicate.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericPredicates.greaterPredicate.N">N</span>], <span class="extype" name="eu.timepit.refined.NumericPredicates.greaterPredicate.T">T</span>]</span>
+        <span class="name">greaterValidateNat</span><span class="tparams">[<span name="N">N &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="tn">tn: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateNat.N">N</span>]</span>, <span name="wn">wn: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateNat.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateNat.T">T</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateNat.T">T</span>, <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateNat.N">N</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterPredicate[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.numeric.Greater[N],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterValidateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Greater[N]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericPredicates</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericPredicates#greaterPredicateNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="greaterPredicateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.numeric.Greater[N],T]"></a>
-      <a id="greaterPredicateNat[N&lt;:Nat,T](ToInt[N],Numeric[T]):Predicate[Greater[N],T]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericValidate#greaterValidateWit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="greaterValidateWit[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Greater[N]]"></a>
+      <a id="greaterValidateWit[T,N&lt;:T](Aux[N],Numeric[T]):Plain[T,Greater[N]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">greaterPredicateNat</span><span class="tparams">[<span name="N">N &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="tn">tn: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.greaterPredicateNat.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.greaterPredicateNat.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericPredicates.greaterPredicateNat.N">N</span>], <span class="extype" name="eu.timepit.refined.NumericPredicates.greaterPredicateNat.T">T</span>]</span>
+        <span class="name">greaterValidateWit</span><span class="tparams">[<span name="T">T</span>, <span name="N">N &lt;: <span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateWit.T">T</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wn">wn: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateWit.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateWit.T">T</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateWit.T">T</span>, <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateWit.N">N</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterPredicateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.numeric.Greater[N],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterValidateWit[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Greater[N]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericValidate</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -580,8 +546,8 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericInferenceRules#lessInferenceNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lessInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]"></a>
+    </li><li name="eu.timepit.refined.NumericInference#lessInferenceNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lessInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]"></a>
       <a id="lessInferenceNat[A&lt;:Nat,B&lt;:Nat](ToInt[A],ToInt[B]):==&gt;[Less[A],Less[B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -589,16 +555,16 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lessInferenceNat</span><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="B">B &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ta">ta: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceNat.A">A</span>]</span>, <span name="tb">tb: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceNat.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceNat.A">A</span>], <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceNat.B">B</span>]]</span>
+        <span class="name">lessInferenceNat</span><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="B">B &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ta">ta: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceNat.A">A</span>]</span>, <span name="tb">tb: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceNat.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceNat.A">A</span>], <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceNat.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@lessInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@lessInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInferenceRules</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericInferenceRules#lessInferenceWit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lessInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericInference#lessInferenceWit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lessInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]"></a>
       <a id="lessInferenceWit[C,A&lt;:C,B&lt;:C](Aux[A],Aux[B],Numeric[C]):==&gt;[Less[A],Less[B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -606,16 +572,16 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lessInferenceWit</span><span class="tparams">[<span name="C">C</span>, <span name="A">A &lt;: <span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceWit.C">C</span></span>, <span name="B">B &lt;: <span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceWit.C">C</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceWit.A">A</span>]</span>, <span name="wb">wb: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceWit.B">B</span>]</span>, <span name="nc">nc: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceWit.C">C</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceWit.A">A</span>], <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceWit.B">B</span>]]</span>
+        <span class="name">lessInferenceWit</span><span class="tparams">[<span name="C">C</span>, <span name="A">A &lt;: <span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.C">C</span></span>, <span name="B">B &lt;: <span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.C">C</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.A">A</span>]</span>, <span name="wb">wb: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.B">B</span>]</span>, <span name="nc">nc: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.C">C</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.A">A</span>], <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@lessInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@lessInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInferenceRules</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericInferenceRules#lessInferenceWitNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lessInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericInference#lessInferenceWitNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lessInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]"></a>
       <a id="lessInferenceWitNat[C,A&lt;:C,B&lt;:Nat](Aux[A],ToInt[B],Numeric[C]):==&gt;[Less[A],Less[B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -623,48 +589,48 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lessInferenceWitNat</span><span class="tparams">[<span name="C">C</span>, <span name="A">A &lt;: <span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceWitNat.C">C</span></span>, <span name="B">B &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceWitNat.A">A</span>]</span>, <span name="tb">tb: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceWitNat.B">B</span>]</span>, <span name="nc">nc: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceWitNat.C">C</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceWitNat.A">A</span>], <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInferenceRules.lessInferenceWitNat.B">B</span>]]</span>
+        <span class="name">lessInferenceWitNat</span><span class="tparams">[<span name="C">C</span>, <span name="A">A &lt;: <span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWitNat.C">C</span></span>, <span name="B">B &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWitNat.A">A</span>]</span>, <span name="tb">tb: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWitNat.B">B</span>]</span>, <span name="nc">nc: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWitNat.C">C</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWitNat.A">A</span>], <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWitNat.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@lessInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@lessInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInferenceRules</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericPredicates#lessPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lessPredicate[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.numeric.Less[N],T]"></a>
-      <a id="lessPredicate[T,N&lt;:T](Aux[N],Numeric[T]):Predicate[Less[N],T]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericValidate#lessValidateNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lessValidateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Less[N]]"></a>
+      <a id="lessValidateNat[N&lt;:Nat,T](ToInt[N],Aux[N],Numeric[T]):Plain[T,Less[N]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lessPredicate</span><span class="tparams">[<span name="T">T</span>, <span name="N">N &lt;: <span class="extype" name="eu.timepit.refined.NumericPredicates.lessPredicate.T">T</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wn">wn: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.lessPredicate.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.lessPredicate.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericPredicates.lessPredicate.N">N</span>], <span class="extype" name="eu.timepit.refined.NumericPredicates.lessPredicate.T">T</span>]</span>
+        <span class="name">lessValidateNat</span><span class="tparams">[<span name="N">N &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="tn">tn: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateNat.N">N</span>]</span>, <span name="wn">wn: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateNat.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateNat.T">T</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateNat.T">T</span>, <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateNat.N">N</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@lessPredicate[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.numeric.Less[N],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@lessValidateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Less[N]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericPredicates</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericPredicates#lessPredicateNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lessPredicateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.numeric.Less[N],T]"></a>
-      <a id="lessPredicateNat[N&lt;:Nat,T](ToInt[N],Numeric[T]):Predicate[Less[N],T]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericValidate#lessValidateWit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lessValidateWit[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Less[N]]"></a>
+      <a id="lessValidateWit[T,N&lt;:T](Aux[N],Numeric[T]):Plain[T,Less[N]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lessPredicateNat</span><span class="tparams">[<span name="N">N &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="tn">tn: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.lessPredicateNat.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericPredicates.lessPredicateNat.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericPredicates.lessPredicateNat.N">N</span>], <span class="extype" name="eu.timepit.refined.NumericPredicates.lessPredicateNat.T">T</span>]</span>
+        <span class="name">lessValidateWit</span><span class="tparams">[<span name="T">T</span>, <span name="N">N &lt;: <span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateWit.T">T</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wn">wn: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateWit.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateWit.T">T</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateWit.T">T</span>, <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateWit.N">N</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@lessPredicateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitnt:Numeric[T]):eu.timepit.refined.Predicate[eu.timepit.refined.numeric.Less[N],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.numeric$@lessValidateWit[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Less[N]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericValidate</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -828,10 +794,10 @@ res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="eu.timepit.refined.NumericInferenceRules">
-              <h3>Inherited from <span class="extype" name="eu.timepit.refined.NumericInferenceRules">NumericInferenceRules</span></h3>
-            </div><div class="parent" name="eu.timepit.refined.NumericPredicates">
-              <h3>Inherited from <span class="extype" name="eu.timepit.refined.NumericPredicates">NumericPredicates</span></h3>
+        <div class="parent" name="eu.timepit.refined.NumericInference">
+              <h3>Inherited from <span class="extype" name="eu.timepit.refined.NumericInference">NumericInference</span></h3>
+            </div><div class="parent" name="eu.timepit.refined.NumericValidate">
+              <h3>Inherited from <span class="extype" name="eu.timepit.refined.NumericValidate">NumericValidate</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">

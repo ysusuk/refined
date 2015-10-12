@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -45,13 +45,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">char</span><span class="result"> extends <span class="extype" name="eu.timepit.refined.CharPredicates">CharPredicates</span></span>
+        <span class="name">char</span><span class="result"> extends <span class="extype" name="eu.timepit.refined.CharValidate">CharValidate</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/shared/src/main/scala/eu/timepit/refined/char.scala" target="_blank">char.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.CharPredicates">CharPredicates</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.CharValidate">CharValidate</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
@@ -69,7 +69,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="eu.timepit.refined.char"><span>char</span></li><li class="in" name="eu.timepit.refined.CharPredicates"><span>CharPredicates</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="eu.timepit.refined.char"><span>char</span></li><li class="in" name="eu.timepit.refined.CharValidate"><span>CharValidate</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -90,36 +90,36 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="eu.timepit.refined.char.Digit" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="DigitextendsAnyRef"></a>
+              <ol><li name="eu.timepit.refined.char.Digit" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DigitextendsProductwithSerializable"></a>
       <a id="Digit:Digit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="char$$Digit.html"><span class="name">Digit</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="char$$Digit.html"><span class="name">Digit</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.char$@DigitextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.char$@DigitextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a <code>Char</code> is a digit.</p>
-    </li><li name="eu.timepit.refined.char.Letter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="LetterextendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.char.Letter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LetterextendsProductwithSerializable"></a>
       <a id="Letter:Letter"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="char$$Letter.html"><span class="name">Letter</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="char$$Letter.html"><span class="name">Letter</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.char$@LetterextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.char$@LetterextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -141,53 +141,53 @@
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a <code>Char</code> is a letter or digit.</p>
-    </li><li name="eu.timepit.refined.char.LowerCase" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="LowerCaseextendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.char.LowerCase" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LowerCaseextendsProductwithSerializable"></a>
       <a id="LowerCase:LowerCase"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="char$$LowerCase.html"><span class="name">LowerCase</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="char$$LowerCase.html"><span class="name">LowerCase</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.char$@LowerCaseextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.char$@LowerCaseextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a <code>Char</code> is a lower case character.</p>
-    </li><li name="eu.timepit.refined.char.UpperCase" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="UpperCaseextendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.char.UpperCase" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UpperCaseextendsProductwithSerializable"></a>
       <a id="UpperCase:UpperCase"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="char$$UpperCase.html"><span class="name">UpperCase</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="char$$UpperCase.html"><span class="name">UpperCase</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.char$@UpperCaseextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.char$@UpperCaseextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a <code>Char</code> is an upper case character.</p>
-    </li><li name="eu.timepit.refined.char.Whitespace" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="WhitespaceextendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.char.Whitespace" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WhitespaceextendsProductwithSerializable"></a>
       <a id="Whitespace:Whitespace"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="char$$Whitespace.html"><span class="name">Whitespace</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="char$$Whitespace.html"><span class="name">Whitespace</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.char$@WhitespaceextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.char$@WhitespaceextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -290,23 +290,23 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="eu.timepit.refined.CharPredicates#digitPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="digitPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.char.Digit,Char]"></a>
-      <a id="digitPredicate:Predicate[Digit,Char]"></a>
+    </li><li name="eu.timepit.refined.CharValidate#digitValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="digitValidate:eu.timepit.refined.api.Validate.Plain[Char,eu.timepit.refined.char.Digit]"></a>
+      <a id="digitValidate:Plain[Char,Digit]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">digitPredicate</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="char$$Digit.html" class="extype" name="eu.timepit.refined.char.Digit">Digit</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Char" class="extype" target="_top">Char</a>]</span>
+        <span class="name">digitValidate</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Char" class="extype" target="_top">Char</a>, <a href="char$$Digit.html" class="extype" name="eu.timepit.refined.char.Digit">Digit</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.char$@digitPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.char.Digit,Char]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.char$@digitValidate:eu.timepit.refined.api.Validate.Plain[Char,eu.timepit.refined.char.Digit]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CharPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CharValidate</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -415,40 +415,40 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.CharPredicates#letterPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="letterPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.char.Letter,Char]"></a>
-      <a id="letterPredicate:Predicate[Letter,Char]"></a>
+    </li><li name="eu.timepit.refined.CharValidate#letterValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="letterValidate:eu.timepit.refined.api.Validate.Plain[Char,eu.timepit.refined.char.Letter]"></a>
+      <a id="letterValidate:Plain[Char,Letter]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">letterPredicate</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="char$$Letter.html" class="extype" name="eu.timepit.refined.char.Letter">Letter</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Char" class="extype" target="_top">Char</a>]</span>
+        <span class="name">letterValidate</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Char" class="extype" target="_top">Char</a>, <a href="char$$Letter.html" class="extype" name="eu.timepit.refined.char.Letter">Letter</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.char$@letterPredicate:eu.timepit.refined.Predicate[eu.timepit.refined.char.Letter,Char]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.char$@letterValidate:eu.timepit.refined.api.Validate.Plain[Char,eu.timepit.refined.char.Letter]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CharPredicates</dd></dl></div>
-    </li><li name="eu.timepit.refined.CharPredicates#lowerCasePredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lowerCasePredicate:eu.timepit.refined.Predicate[eu.timepit.refined.char.LowerCase,Char]"></a>
-      <a id="lowerCasePredicate:Predicate[LowerCase,Char]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CharValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.CharValidate#lowerCaseValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lowerCaseValidate:eu.timepit.refined.api.Validate.Plain[Char,eu.timepit.refined.char.LowerCase]"></a>
+      <a id="lowerCaseValidate:Plain[Char,LowerCase]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lowerCasePredicate</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="char$$LowerCase.html" class="extype" name="eu.timepit.refined.char.LowerCase">LowerCase</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Char" class="extype" target="_top">Char</a>]</span>
+        <span class="name">lowerCaseValidate</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Char" class="extype" target="_top">Char</a>, <a href="char$$LowerCase.html" class="extype" name="eu.timepit.refined.char.LowerCase">LowerCase</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.char$@lowerCasePredicate:eu.timepit.refined.Predicate[eu.timepit.refined.char.LowerCase,Char]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.char$@lowerCaseValidate:eu.timepit.refined.api.Validate.Plain[Char,eu.timepit.refined.char.LowerCase]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CharPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CharValidate</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -534,23 +534,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.CharPredicates#upperCasePredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="upperCasePredicate:eu.timepit.refined.Predicate[eu.timepit.refined.char.UpperCase,Char]"></a>
-      <a id="upperCasePredicate:Predicate[UpperCase,Char]"></a>
+    </li><li name="eu.timepit.refined.CharValidate#upperCaseValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="upperCaseValidate:eu.timepit.refined.api.Validate.Plain[Char,eu.timepit.refined.char.UpperCase]"></a>
+      <a id="upperCaseValidate:Plain[Char,UpperCase]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">upperCasePredicate</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="char$$UpperCase.html" class="extype" name="eu.timepit.refined.char.UpperCase">UpperCase</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Char" class="extype" target="_top">Char</a>]</span>
+        <span class="name">upperCaseValidate</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Char" class="extype" target="_top">Char</a>, <a href="char$$UpperCase.html" class="extype" name="eu.timepit.refined.char.UpperCase">UpperCase</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.char$@upperCasePredicate:eu.timepit.refined.Predicate[eu.timepit.refined.char.UpperCase,Char]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.char$@upperCaseValidate:eu.timepit.refined.api.Validate.Plain[Char,eu.timepit.refined.char.UpperCase]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CharPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CharValidate</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -620,23 +620,23 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="eu.timepit.refined.CharPredicates#whitespacePredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="whitespacePredicate:eu.timepit.refined.Predicate[eu.timepit.refined.char.Whitespace,Char]"></a>
-      <a id="whitespacePredicate:Predicate[Whitespace,Char]"></a>
+    </li><li name="eu.timepit.refined.CharValidate#whitespaceValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="whitespaceValidate:eu.timepit.refined.api.Validate.Plain[Char,eu.timepit.refined.char.Whitespace]"></a>
+      <a id="whitespaceValidate:Plain[Char,Whitespace]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">whitespacePredicate</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="char$$Whitespace.html" class="extype" name="eu.timepit.refined.char.Whitespace">Whitespace</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Char" class="extype" target="_top">Char</a>]</span>
+        <span class="name">whitespaceValidate</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Char" class="extype" target="_top">Char</a>, <a href="char$$Whitespace.html" class="extype" name="eu.timepit.refined.char.Whitespace">Whitespace</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.char$@whitespacePredicate:eu.timepit.refined.Predicate[eu.timepit.refined.char.Whitespace,Char]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.char$@whitespaceValidate:eu.timepit.refined.api.Validate.Plain[Char,eu.timepit.refined.char.Whitespace]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CharPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CharValidate</dd></dl></div>
     </li></ol>
             </div>
 
@@ -646,8 +646,8 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="eu.timepit.refined.CharPredicates">
-              <h3>Inherited from <span class="extype" name="eu.timepit.refined.CharPredicates">CharPredicates</span></h3>
+        <div class="parent" name="eu.timepit.refined.CharValidate">
+              <h3>Inherited from <span class="extype" name="eu.timepit.refined.CharValidate">CharValidate</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">

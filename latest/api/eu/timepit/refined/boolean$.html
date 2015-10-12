@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -45,13 +45,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">boolean</span><span class="result"> extends <span class="extype" name="eu.timepit.refined.BooleanPredicates">BooleanPredicates</span> with <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0">BooleanInferenceRules0</span></span>
+        <span class="name">boolean</span><span class="result"> extends <span class="extype" name="eu.timepit.refined.BooleanValidate">BooleanValidate</span> with <span class="extype" name="eu.timepit.refined.BooleanInference0">BooleanInference0</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/shared/src/main/scala/eu/timepit/refined/boolean.scala" target="_blank">boolean.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.BooleanInferenceRules0">BooleanInferenceRules0</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules1">BooleanInferenceRules1</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates">BooleanPredicates</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.BooleanInference0">BooleanInference0</span>, <span class="extype" name="eu.timepit.refined.BooleanInference1">BooleanInference1</span>, <span class="extype" name="eu.timepit.refined.BooleanInference2">BooleanInference2</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate">BooleanValidate</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
@@ -69,7 +69,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="eu.timepit.refined.boolean"><span>boolean</span></li><li class="in" name="eu.timepit.refined.BooleanInferenceRules0"><span>BooleanInferenceRules0</span></li><li class="in" name="eu.timepit.refined.BooleanInferenceRules1"><span>BooleanInferenceRules1</span></li><li class="in" name="eu.timepit.refined.BooleanPredicates"><span>BooleanPredicates</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="eu.timepit.refined.boolean"><span>boolean</span></li><li class="in" name="eu.timepit.refined.BooleanInference0"><span>BooleanInference0</span></li><li class="in" name="eu.timepit.refined.BooleanInference1"><span>BooleanInference1</span></li><li class="in" name="eu.timepit.refined.BooleanInference2"><span>BooleanInference2</span></li><li class="in" name="eu.timepit.refined.BooleanValidate"><span>BooleanValidate</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -90,155 +90,155 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="eu.timepit.refined.boolean.AllOf" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="AllOf[PS]extendsAnyRef"></a>
+              <ol><li name="eu.timepit.refined.boolean.AllOf" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AllOf[PS]extendsProductwithSerializable"></a>
       <a id="AllOf[PS]:AllOf[PS]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="boolean$$AllOf.html"><span class="name">AllOf</span></a><span class="tparams">[<span name="PS">PS</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="boolean$$AllOf.html"><span class="name">AllOf</span></a><span class="tparams">[<span name="PS">PS</span>]</span><span class="params">(<span name="ps">ps: <span class="extype" name="eu.timepit.refined.boolean.AllOf.PS">PS</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@AllOf[PS]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@AllOf[PS]extendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Conjunction of all predicates in <code>PS</code>.</p>
-    </li><li name="eu.timepit.refined.boolean.And" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="And[A,B]extendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.boolean.And" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="And[A,B]extendsProductwithSerializable"></a>
       <a id="And[A,B]:And[A,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="boolean$$And.html"><span class="name">And</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="boolean$$And.html"><span class="name">And</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="a">a: <span class="extype" name="eu.timepit.refined.boolean.And.A">A</span></span>, <span name="b">b: <span class="extype" name="eu.timepit.refined.boolean.And.B">B</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@And[A,B]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@And[A,B]extendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Conjunction of the predicates <code>A</code> and <code>B</code>.</p>
-    </li><li name="eu.timepit.refined.boolean.AnyOf" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="AnyOf[PS]extendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.boolean.AnyOf" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AnyOf[PS]extendsProductwithSerializable"></a>
       <a id="AnyOf[PS]:AnyOf[PS]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="boolean$$AnyOf.html"><span class="name">AnyOf</span></a><span class="tparams">[<span name="PS">PS</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="boolean$$AnyOf.html"><span class="name">AnyOf</span></a><span class="tparams">[<span name="PS">PS</span>]</span><span class="params">(<span name="ps">ps: <span class="extype" name="eu.timepit.refined.boolean.AnyOf.PS">PS</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@AnyOf[PS]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@AnyOf[PS]extendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Disjunction of all predicates in <code>PS</code>.</p>
-    </li><li name="eu.timepit.refined.boolean.False" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="FalseextendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.boolean.False" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FalseextendsProductwithSerializable"></a>
       <a id="False:False"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="boolean$$False.html"><span class="name">False</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="boolean$$False.html"><span class="name">False</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@FalseextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@FalseextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Constant predicate that is always <code>false</code>.</p>
-    </li><li name="eu.timepit.refined.boolean.Not" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Not[P]extendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.boolean.Not" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Not[P]extendsProductwithSerializable"></a>
       <a id="Not[P]:Not[P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="boolean$$Not.html"><span class="name">Not</span></a><span class="tparams">[<span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="boolean$$Not.html"><span class="name">Not</span></a><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="eu.timepit.refined.boolean.Not.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@Not[P]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@Not[P]extendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Negation of the predicate <code>P</code>.</p>
-    </li><li name="eu.timepit.refined.boolean.OneOf" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="OneOf[PS]extendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.boolean.OneOf" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OneOf[PS]extendsProductwithSerializable"></a>
       <a id="OneOf[PS]:OneOf[PS]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="boolean$$OneOf.html"><span class="name">OneOf</span></a><span class="tparams">[<span name="PS">PS</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="boolean$$OneOf.html"><span class="name">OneOf</span></a><span class="tparams">[<span name="PS">PS</span>]</span><span class="params">(<span name="ps">ps: <span class="extype" name="eu.timepit.refined.boolean.OneOf.PS">PS</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@OneOf[PS]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@OneOf[PS]extendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Exclusive disjunction of all predicates in <code>PS</code>.</p>
-    </li><li name="eu.timepit.refined.boolean.Or" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Or[A,B]extendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.boolean.Or" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Or[A,B]extendsProductwithSerializable"></a>
       <a id="Or[A,B]:Or[A,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="boolean$$Or.html"><span class="name">Or</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="boolean$$Or.html"><span class="name">Or</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="a">a: <span class="extype" name="eu.timepit.refined.boolean.Or.A">A</span></span>, <span name="b">b: <span class="extype" name="eu.timepit.refined.boolean.Or.B">B</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@Or[A,B]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@Or[A,B]extendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Disjunction of the predicates <code>A</code> and <code>B</code>.</p>
-    </li><li name="eu.timepit.refined.boolean.True" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="TrueextendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.boolean.True" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TrueextendsProductwithSerializable"></a>
       <a id="True:True"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="boolean$$True.html"><span class="name">True</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="boolean$$True.html"><span class="name">True</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@TrueextendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@TrueextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Constant predicate that is always <code>true</code>.</p>
-    </li><li name="eu.timepit.refined.boolean.Xor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Xor[A,B]extendsAnyRef"></a>
+    </li><li name="eu.timepit.refined.boolean.Xor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Xor[A,B]extendsProductwithSerializable"></a>
       <a id="Xor[A,B]:Xor[A,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="boolean$$Xor.html"><span class="name">Xor</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="boolean$$Xor.html"><span class="name">Xor</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="a">a: <span class="extype" name="eu.timepit.refined.boolean.Xor.A">A</span></span>, <span name="b">b: <span class="extype" name="eu.timepit.refined.boolean.Xor.B">B</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@Xor[A,B]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@Xor[A,B]extendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -301,91 +301,91 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanPredicates#allOfHConsPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="allOfHConsPredicate[PH,PT&lt;:shapeless.HList,T](implicitph:eu.timepit.refined.Predicate[PH,T],implicitpt:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.AllOf[PT],T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.AllOf[shapeless.::[PH,PT]],T]"></a>
-      <a id="allOfHConsPredicate[PH,PT&lt;:HList,T](Predicate[PH,T],Predicate[AllOf[PT],T]):Predicate[AllOf[::[PH,PT]],T]"></a>
+    </li><li name="eu.timepit.refined.BooleanValidate#allOfHConsValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="allOfHConsValidate[T,PH,RH,PT&lt;:shapeless.HList,RT&lt;:shapeless.HList](implicitvh:eu.timepit.refined.api.Validate.Aux[T,PH,RH],implicitvt:eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.AllOf[PT],eu.timepit.refined.boolean.AllOf[RT]]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.AllOf[shapeless.::[PH,PT]],eu.timepit.refined.boolean.AllOf[shapeless.::[vh.Res,RT]]]"></a>
+      <a id="allOfHConsValidate[T,PH,RH,PT&lt;:HList,RT&lt;:HList](Aux[T,PH,RH],Aux[T,AllOf[PT],AllOf[RT]]):Aux[T,AllOf[::[PH,PT]],AllOf[::[(vh)#Res,RT]]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">allOfHConsPredicate</span><span class="tparams">[<span name="PH">PH</span>, <span name="PT">PT &lt;: <span class="extype" name="shapeless.HList">HList</span></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ph">ph: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.allOfHConsPredicate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.allOfHConsPredicate.T">T</span>]</span>, <span name="pt">pt: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$AllOf.html" class="extype" name="eu.timepit.refined.boolean.AllOf">AllOf</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.allOfHConsPredicate.PT">PT</span>], <span class="extype" name="eu.timepit.refined.BooleanPredicates.allOfHConsPredicate.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$AllOf.html" class="extype" name="eu.timepit.refined.boolean.AllOf">AllOf</a>[<span class="extype" name="shapeless.::">::</span>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.allOfHConsPredicate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.allOfHConsPredicate.PT">PT</span>]], <span class="extype" name="eu.timepit.refined.BooleanPredicates.allOfHConsPredicate.T">T</span>]</span>
+        <span class="name">allOfHConsValidate</span><span class="tparams">[<span name="T">T</span>, <span name="PH">PH</span>, <span name="RH">RH</span>, <span name="PT">PT &lt;: <span class="extype" name="shapeless.HList">HList</span></span>, <span name="RT">RT &lt;: <span class="extype" name="shapeless.HList">HList</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="vh">vh: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.allOfHConsValidate.T">T</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.allOfHConsValidate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.allOfHConsValidate.RH">RH</span>]</span>, <span name="vt">vt: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.allOfHConsValidate.T">T</span>, <a href="boolean$$AllOf.html" class="extype" name="eu.timepit.refined.boolean.AllOf">AllOf</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.allOfHConsValidate.PT">PT</span>], <a href="boolean$$AllOf.html" class="extype" name="eu.timepit.refined.boolean.AllOf">AllOf</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.allOfHConsValidate.RT">RT</span>]]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.allOfHConsValidate.T">T</span>, <a href="boolean$$AllOf.html" class="extype" name="eu.timepit.refined.boolean.AllOf">AllOf</a>[<span class="extype" name="shapeless.::">::</span>[<span class="extype" name="eu.timepit.refined.BooleanValidate.allOfHConsValidate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.allOfHConsValidate.PT">PT</span>]], <a href="boolean$$AllOf.html" class="extype" name="eu.timepit.refined.boolean.AllOf">AllOf</a>[<span class="extype" name="shapeless.::">::</span>[(<span class="extype" name="eu.timepit.refined.BooleanValidate.allOfHConsValidate.vh">vh</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.allOfHConsValidate.RT">RT</span>]]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@allOfHConsPredicate[PH,PT&lt;:shapeless.HList,T](implicitph:eu.timepit.refined.Predicate[PH,T],implicitpt:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.AllOf[PT],T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.AllOf[shapeless.::[PH,PT]],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@allOfHConsValidate[T,PH,RH,PT&lt;:shapeless.HList,RT&lt;:shapeless.HList](implicitvh:eu.timepit.refined.api.Validate.Aux[T,PH,RH],implicitvt:eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.AllOf[PT],eu.timepit.refined.boolean.AllOf[RT]]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.AllOf[shapeless.::[PH,PT]],eu.timepit.refined.boolean.AllOf[shapeless.::[vh.Res,RT]]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanPredicates</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanPredicates#allOfHNilPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="allOfHNilPredicate[T]:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.AllOf[shapeless.HNil],T]"></a>
-      <a id="allOfHNilPredicate[T]:Predicate[AllOf[HNil],T]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanValidate#allOfHNilValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="allOfHNilValidate[T]:eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.boolean.AllOf[shapeless.HNil]]"></a>
+      <a id="allOfHNilValidate[T]:Plain[T,AllOf[HNil]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">allOfHNilPredicate</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$AllOf.html" class="extype" name="eu.timepit.refined.boolean.AllOf">AllOf</a>[<span class="extype" name="shapeless.HNil">HNil</span>], <span class="extype" name="eu.timepit.refined.BooleanPredicates.allOfHNilPredicate.T">T</span>]</span>
+        <span class="name">allOfHNilValidate</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.allOfHNilValidate.T">T</span>, <a href="boolean$$AllOf.html" class="extype" name="eu.timepit.refined.boolean.AllOf">AllOf</a>[<span class="extype" name="shapeless.HNil">HNil</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@allOfHNilPredicate[T]:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.AllOf[shapeless.HNil],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@allOfHNilValidate[T]:eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.boolean.AllOf[shapeless.HNil]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanPredicates</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanPredicates#andPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="andPredicate[A,B,T](implicitpa:eu.timepit.refined.Predicate[A,T],implicitpb:eu.timepit.refined.Predicate[B,T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.And[A,B],T]"></a>
-      <a id="andPredicate[A,B,T](Predicate[A,T],Predicate[B,T]):Predicate[And[A,B],T]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanValidate#andValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="andValidate[T,A,RA,B,RB](implicitva:eu.timepit.refined.api.Validate.Aux[T,A,RA],implicitvb:eu.timepit.refined.api.Validate.Aux[T,B,RB]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.And[A,B],eu.timepit.refined.boolean.And[va.Res,vb.Res]]"></a>
+      <a id="andValidate[T,A,RA,B,RB](Aux[T,A,RA],Aux[T,B,RB]):Aux[T,And[A,B],And[(va)#Res,(vb)#Res]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">andPredicate</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="pa">pa: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.andPredicate.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.andPredicate.T">T</span>]</span>, <span name="pb">pb: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.andPredicate.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.andPredicate.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.andPredicate.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.andPredicate.B">B</span>], <span class="extype" name="eu.timepit.refined.BooleanPredicates.andPredicate.T">T</span>]</span>
+        <span class="name">andValidate</span><span class="tparams">[<span name="T">T</span>, <span name="A">A</span>, <span name="RA">RA</span>, <span name="B">B</span>, <span name="RB">RB</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="va">va: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.andValidate.T">T</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.andValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.andValidate.RA">RA</span>]</span>, <span name="vb">vb: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.andValidate.T">T</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.andValidate.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.andValidate.RB">RB</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.andValidate.T">T</span>, <a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.andValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.andValidate.B">B</span>], <a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[(<span class="extype" name="eu.timepit.refined.BooleanValidate.andValidate.va">va</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>, (<span class="extype" name="eu.timepit.refined.BooleanValidate.andValidate.vb">vb</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@andPredicate[A,B,T](implicitpa:eu.timepit.refined.Predicate[A,T],implicitpb:eu.timepit.refined.Predicate[B,T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.And[A,B],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@andValidate[T,A,RA,B,RB](implicitva:eu.timepit.refined.api.Validate.Aux[T,A,RA],implicitvb:eu.timepit.refined.api.Validate.Aux[T,B,RB]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.And[A,B],eu.timepit.refined.boolean.And[va.Res,vb.Res]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanPredicates</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanPredicates#anyOfHConsPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="anyOfHConsPredicate[PH,PT&lt;:shapeless.HList,T](implicitph:eu.timepit.refined.Predicate[PH,T],implicitpt:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.AnyOf[PT],T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.AnyOf[shapeless.::[PH,PT]],T]"></a>
-      <a id="anyOfHConsPredicate[PH,PT&lt;:HList,T](Predicate[PH,T],Predicate[AnyOf[PT],T]):Predicate[AnyOf[::[PH,PT]],T]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanValidate#anyOfHConsValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="anyOfHConsValidate[T,PH,RH,PT&lt;:shapeless.HList,RT&lt;:shapeless.HList](implicitvh:eu.timepit.refined.api.Validate.Aux[T,PH,RH],implicitvt:eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.AnyOf[PT],eu.timepit.refined.boolean.AnyOf[RT]]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.AnyOf[shapeless.::[PH,PT]],eu.timepit.refined.boolean.AnyOf[shapeless.::[vh.Res,RT]]]"></a>
+      <a id="anyOfHConsValidate[T,PH,RH,PT&lt;:HList,RT&lt;:HList](Aux[T,PH,RH],Aux[T,AnyOf[PT],AnyOf[RT]]):Aux[T,AnyOf[::[PH,PT]],AnyOf[::[(vh)#Res,RT]]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">anyOfHConsPredicate</span><span class="tparams">[<span name="PH">PH</span>, <span name="PT">PT &lt;: <span class="extype" name="shapeless.HList">HList</span></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ph">ph: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.anyOfHConsPredicate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.anyOfHConsPredicate.T">T</span>]</span>, <span name="pt">pt: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$AnyOf.html" class="extype" name="eu.timepit.refined.boolean.AnyOf">AnyOf</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.anyOfHConsPredicate.PT">PT</span>], <span class="extype" name="eu.timepit.refined.BooleanPredicates.anyOfHConsPredicate.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$AnyOf.html" class="extype" name="eu.timepit.refined.boolean.AnyOf">AnyOf</a>[<span class="extype" name="shapeless.::">::</span>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.anyOfHConsPredicate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.anyOfHConsPredicate.PT">PT</span>]], <span class="extype" name="eu.timepit.refined.BooleanPredicates.anyOfHConsPredicate.T">T</span>]</span>
+        <span class="name">anyOfHConsValidate</span><span class="tparams">[<span name="T">T</span>, <span name="PH">PH</span>, <span name="RH">RH</span>, <span name="PT">PT &lt;: <span class="extype" name="shapeless.HList">HList</span></span>, <span name="RT">RT &lt;: <span class="extype" name="shapeless.HList">HList</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="vh">vh: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.anyOfHConsValidate.T">T</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.anyOfHConsValidate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.anyOfHConsValidate.RH">RH</span>]</span>, <span name="vt">vt: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.anyOfHConsValidate.T">T</span>, <a href="boolean$$AnyOf.html" class="extype" name="eu.timepit.refined.boolean.AnyOf">AnyOf</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.anyOfHConsValidate.PT">PT</span>], <a href="boolean$$AnyOf.html" class="extype" name="eu.timepit.refined.boolean.AnyOf">AnyOf</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.anyOfHConsValidate.RT">RT</span>]]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.anyOfHConsValidate.T">T</span>, <a href="boolean$$AnyOf.html" class="extype" name="eu.timepit.refined.boolean.AnyOf">AnyOf</a>[<span class="extype" name="shapeless.::">::</span>[<span class="extype" name="eu.timepit.refined.BooleanValidate.anyOfHConsValidate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.anyOfHConsValidate.PT">PT</span>]], <a href="boolean$$AnyOf.html" class="extype" name="eu.timepit.refined.boolean.AnyOf">AnyOf</a>[<span class="extype" name="shapeless.::">::</span>[(<span class="extype" name="eu.timepit.refined.BooleanValidate.anyOfHConsValidate.vh">vh</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.anyOfHConsValidate.RT">RT</span>]]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@anyOfHConsPredicate[PH,PT&lt;:shapeless.HList,T](implicitph:eu.timepit.refined.Predicate[PH,T],implicitpt:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.AnyOf[PT],T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.AnyOf[shapeless.::[PH,PT]],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@anyOfHConsValidate[T,PH,RH,PT&lt;:shapeless.HList,RT&lt;:shapeless.HList](implicitvh:eu.timepit.refined.api.Validate.Aux[T,PH,RH],implicitvt:eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.AnyOf[PT],eu.timepit.refined.boolean.AnyOf[RT]]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.AnyOf[shapeless.::[PH,PT]],eu.timepit.refined.boolean.AnyOf[shapeless.::[vh.Res,RT]]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanPredicates</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanPredicates#anyOfHNilPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="anyOfHNilPredicate[T]:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.AnyOf[shapeless.HNil],T]"></a>
-      <a id="anyOfHNilPredicate[T]:Predicate[AnyOf[HNil],T]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanValidate#anyOfHNilValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="anyOfHNilValidate[T]:eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.boolean.AnyOf[shapeless.HNil]]"></a>
+      <a id="anyOfHNilValidate[T]:Plain[T,AnyOf[HNil]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">anyOfHNilPredicate</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$AnyOf.html" class="extype" name="eu.timepit.refined.boolean.AnyOf">AnyOf</a>[<span class="extype" name="shapeless.HNil">HNil</span>], <span class="extype" name="eu.timepit.refined.BooleanPredicates.anyOfHNilPredicate.T">T</span>]</span>
+        <span class="name">anyOfHNilValidate</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.anyOfHNilValidate.T">T</span>, <a href="boolean$$AnyOf.html" class="extype" name="eu.timepit.refined.boolean.AnyOf">AnyOf</a>[<span class="extype" name="shapeless.HNil">HNil</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@anyOfHNilPredicate[T]:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.AnyOf[shapeless.HNil],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@anyOfHNilValidate[T]:eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.boolean.AnyOf[shapeless.HNil]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanValidate</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -426,8 +426,8 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#conjunctionAssociativity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="conjunctionAssociativity[A,B,C]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.And[eu.timepit.refined.boolean.And[A,B],C],eu.timepit.refined.boolean.And[A,eu.timepit.refined.boolean.And[B,C]]]"></a>
+    </li><li name="eu.timepit.refined.BooleanInference0#conjunctionAssociativity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="conjunctionAssociativity[A,B,C]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.And[eu.timepit.refined.boolean.And[A,B],C],eu.timepit.refined.boolean.And[A,eu.timepit.refined.boolean.And[B,C]]]"></a>
       <a id="conjunctionAssociativity[A,B,C]:==&gt;[And[And[A,B],C],And[A,And[B,C]]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -435,16 +435,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">conjunctionAssociativity</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionAssociativity.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionAssociativity.B">B</span>], <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionAssociativity.C">C</span>], <a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionAssociativity.A">A</span>, <a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionAssociativity.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionAssociativity.C">C</span>]]]</span>
+        <span class="name">conjunctionAssociativity</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionAssociativity.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionAssociativity.B">B</span>], <span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionAssociativity.C">C</span>], <a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionAssociativity.A">A</span>, <a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionAssociativity.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionAssociativity.C">C</span>]]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@conjunctionAssociativity[A,B,C]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.And[eu.timepit.refined.boolean.And[A,B],C],eu.timepit.refined.boolean.And[A,eu.timepit.refined.boolean.And[B,C]]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@conjunctionAssociativity[A,B,C]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.And[eu.timepit.refined.boolean.And[A,B],C],eu.timepit.refined.boolean.And[A,eu.timepit.refined.boolean.And[B,C]]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#conjunctionCommutativity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="conjunctionCommutativity[A,B]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.And[A,B],eu.timepit.refined.boolean.And[B,A]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference0#conjunctionCommutativity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="conjunctionCommutativity[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.And[A,B],eu.timepit.refined.boolean.And[B,A]]"></a>
       <a id="conjunctionCommutativity[A,B]:==&gt;[And[A,B],And[B,A]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -452,16 +452,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">conjunctionCommutativity</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionCommutativity.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionCommutativity.B">B</span>], <a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionCommutativity.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionCommutativity.A">A</span>]]</span>
+        <span class="name">conjunctionCommutativity</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionCommutativity.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionCommutativity.B">B</span>], <a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionCommutativity.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionCommutativity.A">A</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@conjunctionCommutativity[A,B]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.And[A,B],eu.timepit.refined.boolean.And[B,A]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@conjunctionCommutativity[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.And[A,B],eu.timepit.refined.boolean.And[B,A]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules1#conjunctionEliminationL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="conjunctionEliminationL[A,B,C](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,C]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.And[A,B],C]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference2#conjunctionEliminationL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="conjunctionEliminationL[A,B,C](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.And[A,B],C]"></a>
       <a id="conjunctionEliminationL[A,B,C](==&gt;[A,C]):==&gt;[And[A,B],C]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -469,16 +469,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">conjunctionEliminationL</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules1.conjunctionEliminationL.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules1.conjunctionEliminationL.C">C</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules1.conjunctionEliminationL.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules1.conjunctionEliminationL.B">B</span>], <span class="extype" name="eu.timepit.refined.BooleanInferenceRules1.conjunctionEliminationL.C">C</span>]</span>
+        <span class="name">conjunctionEliminationL</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInference2.conjunctionEliminationL.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference2.conjunctionEliminationL.C">C</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInference2.conjunctionEliminationL.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference2.conjunctionEliminationL.B">B</span>], <span class="extype" name="eu.timepit.refined.BooleanInference2.conjunctionEliminationL.C">C</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@conjunctionEliminationL[A,B,C](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,C]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.And[A,B],C]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@conjunctionEliminationL[A,B,C](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.And[A,B],C]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules1</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#conjunctionEliminationR" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="conjunctionEliminationR[A,B,C](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[B,C]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.And[A,B],C]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference2</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference0#conjunctionEliminationR" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="conjunctionEliminationR[A,B,C](implicitp1:eu.timepit.refined.api.Inference.==&gt;[B,C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.And[A,B],C]"></a>
       <a id="conjunctionEliminationR[A,B,C](==&gt;[B,C]):==&gt;[And[A,B],C]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -486,16 +486,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">conjunctionEliminationR</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionEliminationR.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionEliminationR.C">C</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionEliminationR.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionEliminationR.B">B</span>], <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.conjunctionEliminationR.C">C</span>]</span>
+        <span class="name">conjunctionEliminationR</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionEliminationR.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionEliminationR.C">C</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionEliminationR.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionEliminationR.B">B</span>], <span class="extype" name="eu.timepit.refined.BooleanInference0.conjunctionEliminationR.C">C</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@conjunctionEliminationR[A,B,C](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[B,C]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.And[A,B],C]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@conjunctionEliminationR[A,B,C](implicitp1:eu.timepit.refined.api.Inference.==&gt;[B,C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.And[A,B],C]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#deMorgansLaw1" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="deMorgansLaw1[A,B]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.And[A,B]],eu.timepit.refined.boolean.Or[eu.timepit.refined.boolean.Not[A],eu.timepit.refined.boolean.Not[B]]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference0#deMorgansLaw1" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="deMorgansLaw1[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.And[A,B]],eu.timepit.refined.boolean.Or[eu.timepit.refined.boolean.Not[A],eu.timepit.refined.boolean.Not[B]]]"></a>
       <a id="deMorgansLaw1[A,B]:==&gt;[Not[And[A,B]],Or[Not[A],Not[B]]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -503,16 +503,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">deMorgansLaw1</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.deMorgansLaw1.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.deMorgansLaw1.B">B</span>]], <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.deMorgansLaw1.A">A</span>], <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.deMorgansLaw1.B">B</span>]]]</span>
+        <span class="name">deMorgansLaw1</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.deMorgansLaw1.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.deMorgansLaw1.B">B</span>]], <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.deMorgansLaw1.A">A</span>], <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.deMorgansLaw1.B">B</span>]]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@deMorgansLaw1[A,B]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.And[A,B]],eu.timepit.refined.boolean.Or[eu.timepit.refined.boolean.Not[A],eu.timepit.refined.boolean.Not[B]]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@deMorgansLaw1[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.And[A,B]],eu.timepit.refined.boolean.Or[eu.timepit.refined.boolean.Not[A],eu.timepit.refined.boolean.Not[B]]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#deMorgansLaw2" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="deMorgansLaw2[A,B]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Or[A,B]],eu.timepit.refined.boolean.And[eu.timepit.refined.boolean.Not[A],eu.timepit.refined.boolean.Not[B]]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference0#deMorgansLaw2" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="deMorgansLaw2[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Or[A,B]],eu.timepit.refined.boolean.And[eu.timepit.refined.boolean.Not[A],eu.timepit.refined.boolean.Not[B]]]"></a>
       <a id="deMorgansLaw2[A,B]:==&gt;[Not[Or[A,B]],And[Not[A],Not[B]]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -520,16 +520,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">deMorgansLaw2</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.deMorgansLaw2.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.deMorgansLaw2.B">B</span>]], <a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.deMorgansLaw2.A">A</span>], <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.deMorgansLaw2.B">B</span>]]]</span>
+        <span class="name">deMorgansLaw2</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.deMorgansLaw2.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.deMorgansLaw2.B">B</span>]], <a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.deMorgansLaw2.A">A</span>], <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.deMorgansLaw2.B">B</span>]]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@deMorgansLaw2[A,B]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Or[A,B]],eu.timepit.refined.boolean.And[eu.timepit.refined.boolean.Not[A],eu.timepit.refined.boolean.Not[B]]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@deMorgansLaw2[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Or[A,B]],eu.timepit.refined.boolean.And[eu.timepit.refined.boolean.Not[A],eu.timepit.refined.boolean.Not[B]]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#disjunctionAssociativity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="disjunctionAssociativity[A,B,C]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Or[eu.timepit.refined.boolean.Or[A,B],C],eu.timepit.refined.boolean.Or[A,eu.timepit.refined.boolean.Or[B,C]]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference0#disjunctionAssociativity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="disjunctionAssociativity[A,B,C]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Or[eu.timepit.refined.boolean.Or[A,B],C],eu.timepit.refined.boolean.Or[A,eu.timepit.refined.boolean.Or[B,C]]]"></a>
       <a id="disjunctionAssociativity[A,B,C]:==&gt;[Or[Or[A,B],C],Or[A,Or[B,C]]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -537,16 +537,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">disjunctionAssociativity</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionAssociativity.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionAssociativity.B">B</span>], <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionAssociativity.C">C</span>], <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionAssociativity.A">A</span>, <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionAssociativity.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionAssociativity.C">C</span>]]]</span>
+        <span class="name">disjunctionAssociativity</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionAssociativity.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionAssociativity.B">B</span>], <span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionAssociativity.C">C</span>], <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionAssociativity.A">A</span>, <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionAssociativity.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionAssociativity.C">C</span>]]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@disjunctionAssociativity[A,B,C]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Or[eu.timepit.refined.boolean.Or[A,B],C],eu.timepit.refined.boolean.Or[A,eu.timepit.refined.boolean.Or[B,C]]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@disjunctionAssociativity[A,B,C]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Or[eu.timepit.refined.boolean.Or[A,B],C],eu.timepit.refined.boolean.Or[A,eu.timepit.refined.boolean.Or[B,C]]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#disjunctionCommutativity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="disjunctionCommutativity[A,B]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Or[A,B],eu.timepit.refined.boolean.Or[B,A]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference0#disjunctionCommutativity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="disjunctionCommutativity[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Or[A,B],eu.timepit.refined.boolean.Or[B,A]]"></a>
       <a id="disjunctionCommutativity[A,B]:==&gt;[Or[A,B],Or[B,A]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -554,16 +554,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">disjunctionCommutativity</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionCommutativity.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionCommutativity.B">B</span>], <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionCommutativity.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionCommutativity.A">A</span>]]</span>
+        <span class="name">disjunctionCommutativity</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionCommutativity.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionCommutativity.B">B</span>], <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionCommutativity.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionCommutativity.A">A</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@disjunctionCommutativity[A,B]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Or[A,B],eu.timepit.refined.boolean.Or[B,A]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@disjunctionCommutativity[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Or[A,B],eu.timepit.refined.boolean.Or[B,A]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#disjunctionIntroductionL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="disjunctionIntroductionL[A,B]:eu.timepit.refined.InferenceRule.==&gt;[A,eu.timepit.refined.boolean.Or[A,B]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference0#disjunctionIntroductionL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="disjunctionIntroductionL[A,B]:eu.timepit.refined.api.Inference.==&gt;[A,eu.timepit.refined.boolean.Or[A,B]]"></a>
       <a id="disjunctionIntroductionL[A,B]:==&gt;[A,Or[A,B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -571,16 +571,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">disjunctionIntroductionL</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionIntroductionL.A">A</span>, <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionIntroductionL.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionIntroductionL.B">B</span>]]</span>
+        <span class="name">disjunctionIntroductionL</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionIntroductionL.A">A</span>, <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionIntroductionL.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionIntroductionL.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@disjunctionIntroductionL[A,B]:eu.timepit.refined.InferenceRule.==&gt;[A,eu.timepit.refined.boolean.Or[A,B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@disjunctionIntroductionL[A,B]:eu.timepit.refined.api.Inference.==&gt;[A,eu.timepit.refined.boolean.Or[A,B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#disjunctionIntroductionR" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="disjunctionIntroductionR[A,B]:eu.timepit.refined.InferenceRule.==&gt;[B,eu.timepit.refined.boolean.Or[A,B]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference0#disjunctionIntroductionR" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="disjunctionIntroductionR[A,B]:eu.timepit.refined.api.Inference.==&gt;[B,eu.timepit.refined.boolean.Or[A,B]]"></a>
       <a id="disjunctionIntroductionR[A,B]:==&gt;[B,Or[A,B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -588,16 +588,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">disjunctionIntroductionR</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionIntroductionR.B">B</span>, <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionIntroductionR.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.disjunctionIntroductionR.B">B</span>]]</span>
+        <span class="name">disjunctionIntroductionR</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionIntroductionR.B">B</span>, <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionIntroductionR.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.disjunctionIntroductionR.B">B</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@disjunctionIntroductionR[A,B]:eu.timepit.refined.InferenceRule.==&gt;[B,eu.timepit.refined.boolean.Or[A,B]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@disjunctionIntroductionR[A,B]:eu.timepit.refined.api.Inference.==&gt;[B,eu.timepit.refined.boolean.Or[A,B]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#doubleNegationElimination" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="doubleNegationElimination[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Not[A]],B]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference0#doubleNegationElimination" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doubleNegationElimination[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Not[A]],B]"></a>
       <a id="doubleNegationElimination[A,B](==&gt;[A,B]):==&gt;[Not[Not[A]],B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -605,16 +605,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">doubleNegationElimination</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.doubleNegationElimination.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.doubleNegationElimination.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.doubleNegationElimination.A">A</span>]], <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.doubleNegationElimination.B">B</span>]</span>
+        <span class="name">doubleNegationElimination</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.doubleNegationElimination.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.doubleNegationElimination.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.doubleNegationElimination.A">A</span>]], <span class="extype" name="eu.timepit.refined.BooleanInference0.doubleNegationElimination.B">B</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@doubleNegationElimination[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Not[A]],B]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@doubleNegationElimination[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Not[A]],B]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#doubleNegationIntroduction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="doubleNegationIntroduction[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[A,eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Not[B]]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference0#doubleNegationIntroduction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doubleNegationIntroduction[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[A,eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Not[B]]]"></a>
       <a id="doubleNegationIntroduction[A,B](==&gt;[A,B]):==&gt;[A,Not[Not[B]]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -622,14 +622,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">doubleNegationIntroduction</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.doubleNegationIntroduction.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.doubleNegationIntroduction.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.doubleNegationIntroduction.A">A</span>, <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.doubleNegationIntroduction.B">B</span>]]]</span>
+        <span class="name">doubleNegationIntroduction</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.doubleNegationIntroduction.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.doubleNegationIntroduction.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.doubleNegationIntroduction.A">A</span>, <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.doubleNegationIntroduction.B">B</span>]]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@doubleNegationIntroduction[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[A,eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Not[B]]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@doubleNegationIntroduction[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[A,eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Not[B]]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -664,23 +664,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanPredicates#falsePredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="falsePredicate[T]:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.False,T]"></a>
-      <a id="falsePredicate[T]:Predicate[False,T]"></a>
+    </li><li name="eu.timepit.refined.BooleanValidate#falseValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="falseValidate[T]:eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.boolean.False]"></a>
+      <a id="falseValidate[T]:Plain[T,False]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">falsePredicate</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$False.html" class="extype" name="eu.timepit.refined.boolean.False">False</a>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.falsePredicate.T">T</span>]</span>
+        <span class="name">falseValidate</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.falseValidate.T">T</span>, <a href="boolean$$False.html" class="extype" name="eu.timepit.refined.boolean.False">False</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@falsePredicate[T]:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.False,T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@falseValidate[T]:eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.boolean.False]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanValidate</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -738,8 +738,8 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules1#hypotheticalSyllogism" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hypotheticalSyllogism[A,B,C](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B],implicitp2:eu.timepit.refined.InferenceRule.==&gt;[B,C]):eu.timepit.refined.InferenceRule.==&gt;[A,C]"></a>
+    </li><li name="eu.timepit.refined.BooleanInference2#hypotheticalSyllogism" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hypotheticalSyllogism[A,B,C](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B],implicitp2:eu.timepit.refined.api.Inference.==&gt;[B,C]):eu.timepit.refined.api.Inference.==&gt;[A,C]"></a>
       <a id="hypotheticalSyllogism[A,B,C](==&gt;[A,B],==&gt;[B,C]):==&gt;[A,C]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -747,14 +747,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hypotheticalSyllogism</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules1.hypotheticalSyllogism.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules1.hypotheticalSyllogism.B">B</span>]</span>, <span name="p2">p2: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules1.hypotheticalSyllogism.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules1.hypotheticalSyllogism.C">C</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules1.hypotheticalSyllogism.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules1.hypotheticalSyllogism.C">C</span>]</span>
+        <span class="name">hypotheticalSyllogism</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInference2.hypotheticalSyllogism.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference2.hypotheticalSyllogism.B">B</span>]</span>, <span name="p2">p2: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInference2.hypotheticalSyllogism.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInference2.hypotheticalSyllogism.C">C</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInference2.hypotheticalSyllogism.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference2.hypotheticalSyllogism.C">C</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@hypotheticalSyllogism[A,B,C](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B],implicitp2:eu.timepit.refined.InferenceRule.==&gt;[B,C]):eu.timepit.refined.InferenceRule.==&gt;[A,C]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@hypotheticalSyllogism[A,B,C](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B],implicitp2:eu.timepit.refined.api.Inference.==&gt;[B,C]):eu.timepit.refined.api.Inference.==&gt;[A,C]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules1</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference2</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -772,8 +772,8 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#minimalTautology" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="minimalTautology[A]:eu.timepit.refined.InferenceRule.==&gt;[A,A]"></a>
+    </li><li name="eu.timepit.refined.BooleanInference0#minimalTautology" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="minimalTautology[A]:eu.timepit.refined.api.Inference.==&gt;[A,A]"></a>
       <a id="minimalTautology[A]:==&gt;[A,A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -781,16 +781,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">minimalTautology</span><span class="tparams">[<span name="A">A</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.minimalTautology.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.minimalTautology.A">A</span>]</span>
+        <span class="name">minimalTautology</span><span class="tparams">[<span name="A">A</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.minimalTautology.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.minimalTautology.A">A</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@minimalTautology[A]:eu.timepit.refined.InferenceRule.==&gt;[A,A]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@minimalTautology[A]:eu.timepit.refined.api.Inference.==&gt;[A,A]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#modusTollens" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="modusTollens[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Not[B],eu.timepit.refined.boolean.Not[A]]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference1#modusTollens" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="modusTollens[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Not[B],eu.timepit.refined.boolean.Not[A]]"></a>
       <a id="modusTollens[A,B](==&gt;[A,B]):==&gt;[Not[B],Not[A]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -798,14 +798,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">modusTollens</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.modusTollens.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.modusTollens.B">B</span>]</span>)</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.modusTollens.B">B</span>], <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.modusTollens.A">A</span>]]</span>
+        <span class="name">modusTollens</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.BooleanInference1.modusTollens.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference1.modusTollens.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInference1.modusTollens.B">B</span>], <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanInference1.modusTollens.A">A</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@modusTollens[A,B](implicitp1:eu.timepit.refined.InferenceRule.==&gt;[A,B]):eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Not[B],eu.timepit.refined.boolean.Not[A]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@modusTollens[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Not[B],eu.timepit.refined.boolean.Not[A]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference1</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -823,23 +823,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanPredicates#notPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="notPredicate[P,T](implicitp:eu.timepit.refined.Predicate[P,T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.Not[P],T]"></a>
-      <a id="notPredicate[P,T](Predicate[P,T]):Predicate[Not[P],T]"></a>
+    </li><li name="eu.timepit.refined.BooleanValidate#notValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notValidate[T,P,R](implicitv:eu.timepit.refined.api.Validate.Aux[T,P,R]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.Not[P],eu.timepit.refined.boolean.Not[v.Res]]"></a>
+      <a id="notValidate[T,P,R](Aux[T,P,R]):Aux[T,Not[P],Not[(v)#Res]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notPredicate</span><span class="tparams">[<span name="P">P</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p">p: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.notPredicate.P">P</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.notPredicate.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.notPredicate.P">P</span>], <span class="extype" name="eu.timepit.refined.BooleanPredicates.notPredicate.T">T</span>]</span>
+        <span class="name">notValidate</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>, <span name="R">R</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.notValidate.T">T</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.notValidate.P">P</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.notValidate.R">R</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.notValidate.T">T</span>, <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.notValidate.P">P</span>], <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[(<span class="extype" name="eu.timepit.refined.BooleanValidate.notValidate.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@notPredicate[P,T](implicitp:eu.timepit.refined.Predicate[P,T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.Not[P],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@notValidate[T,P,R](implicitv:eu.timepit.refined.api.Validate.Aux[T,P,R]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.Not[P],eu.timepit.refined.boolean.Not[v.Res]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanValidate</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
@@ -874,57 +874,57 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanPredicates#oneOfHConsPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="oneOfHConsPredicate[PH,PT&lt;:shapeless.HList,T](implicitph:eu.timepit.refined.Predicate[PH,T],implicitpt:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.OneOf[PT],T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.OneOf[shapeless.::[PH,PT]],T]"></a>
-      <a id="oneOfHConsPredicate[PH,PT&lt;:HList,T](Predicate[PH,T],Predicate[OneOf[PT],T]):Predicate[OneOf[::[PH,PT]],T]"></a>
+    </li><li name="eu.timepit.refined.BooleanValidate#oneOfHConsValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="oneOfHConsValidate[T,PH,RH,PT&lt;:shapeless.HList,RT&lt;:shapeless.HList](implicitvh:eu.timepit.refined.api.Validate.Aux[T,PH,RH],implicitvt:eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.OneOf[PT],eu.timepit.refined.boolean.OneOf[RT]],implicittoList:shapeless.ops.hlist.ToList[RT,eu.timepit.refined.api.Result[_]]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.OneOf[shapeless.::[PH,PT]],eu.timepit.refined.boolean.OneOf[shapeless.::[vh.Res,RT]]]"></a>
+      <a id="oneOfHConsValidate[T,PH,RH,PT&lt;:HList,RT&lt;:HList](Aux[T,PH,RH],Aux[T,OneOf[PT],OneOf[RT]],ToList[RT,Result[_]]):Aux[T,OneOf[::[PH,PT]],OneOf[::[(vh)#Res,RT]]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">oneOfHConsPredicate</span><span class="tparams">[<span name="PH">PH</span>, <span name="PT">PT &lt;: <span class="extype" name="shapeless.HList">HList</span></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ph">ph: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.oneOfHConsPredicate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.oneOfHConsPredicate.T">T</span>]</span>, <span name="pt">pt: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$OneOf.html" class="extype" name="eu.timepit.refined.boolean.OneOf">OneOf</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.oneOfHConsPredicate.PT">PT</span>], <span class="extype" name="eu.timepit.refined.BooleanPredicates.oneOfHConsPredicate.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$OneOf.html" class="extype" name="eu.timepit.refined.boolean.OneOf">OneOf</a>[<span class="extype" name="shapeless.::">::</span>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.oneOfHConsPredicate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.oneOfHConsPredicate.PT">PT</span>]], <span class="extype" name="eu.timepit.refined.BooleanPredicates.oneOfHConsPredicate.T">T</span>]</span>
+        <span class="name">oneOfHConsValidate</span><span class="tparams">[<span name="T">T</span>, <span name="PH">PH</span>, <span name="RH">RH</span>, <span name="PT">PT &lt;: <span class="extype" name="shapeless.HList">HList</span></span>, <span name="RT">RT &lt;: <span class="extype" name="shapeless.HList">HList</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="vh">vh: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.oneOfHConsValidate.T">T</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.oneOfHConsValidate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.oneOfHConsValidate.RH">RH</span>]</span>, <span name="vt">vt: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.oneOfHConsValidate.T">T</span>, <a href="boolean$$OneOf.html" class="extype" name="eu.timepit.refined.boolean.OneOf">OneOf</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.oneOfHConsValidate.PT">PT</span>], <a href="boolean$$OneOf.html" class="extype" name="eu.timepit.refined.boolean.OneOf">OneOf</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.oneOfHConsValidate.RT">RT</span>]]</span>, <span name="toList">toList: <span class="extype" name="shapeless.ops.hlist.ToList">ToList</span>[<span class="extype" name="eu.timepit.refined.BooleanValidate.oneOfHConsValidate.RT">RT</span>, <a href="api/Result.html" class="extype" name="eu.timepit.refined.api.Result">Result</a>[_]]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.oneOfHConsValidate.T">T</span>, <a href="boolean$$OneOf.html" class="extype" name="eu.timepit.refined.boolean.OneOf">OneOf</a>[<span class="extype" name="shapeless.::">::</span>[<span class="extype" name="eu.timepit.refined.BooleanValidate.oneOfHConsValidate.PH">PH</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.oneOfHConsValidate.PT">PT</span>]], <a href="boolean$$OneOf.html" class="extype" name="eu.timepit.refined.boolean.OneOf">OneOf</a>[<span class="extype" name="shapeless.::">::</span>[(<span class="extype" name="eu.timepit.refined.BooleanValidate.oneOfHConsValidate.vh">vh</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.oneOfHConsValidate.RT">RT</span>]]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@oneOfHConsPredicate[PH,PT&lt;:shapeless.HList,T](implicitph:eu.timepit.refined.Predicate[PH,T],implicitpt:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.OneOf[PT],T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.OneOf[shapeless.::[PH,PT]],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@oneOfHConsValidate[T,PH,RH,PT&lt;:shapeless.HList,RT&lt;:shapeless.HList](implicitvh:eu.timepit.refined.api.Validate.Aux[T,PH,RH],implicitvt:eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.OneOf[PT],eu.timepit.refined.boolean.OneOf[RT]],implicittoList:shapeless.ops.hlist.ToList[RT,eu.timepit.refined.api.Result[_]]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.OneOf[shapeless.::[PH,PT]],eu.timepit.refined.boolean.OneOf[shapeless.::[vh.Res,RT]]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanPredicates</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanPredicates#oneOfHNilPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="oneOfHNilPredicate[T]:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.OneOf[shapeless.HNil],T]"></a>
-      <a id="oneOfHNilPredicate[T]:Predicate[OneOf[HNil],T]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanValidate#oneOfHNilValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="oneOfHNilValidate[T]:eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.boolean.OneOf[shapeless.HNil]]"></a>
+      <a id="oneOfHNilValidate[T]:Plain[T,OneOf[HNil]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">oneOfHNilPredicate</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$OneOf.html" class="extype" name="eu.timepit.refined.boolean.OneOf">OneOf</a>[<span class="extype" name="shapeless.HNil">HNil</span>], <span class="extype" name="eu.timepit.refined.BooleanPredicates.oneOfHNilPredicate.T">T</span>]</span>
+        <span class="name">oneOfHNilValidate</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.oneOfHNilValidate.T">T</span>, <a href="boolean$$OneOf.html" class="extype" name="eu.timepit.refined.boolean.OneOf">OneOf</a>[<span class="extype" name="shapeless.HNil">HNil</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@oneOfHNilPredicate[T]:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.OneOf[shapeless.HNil],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@oneOfHNilValidate[T]:eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.boolean.OneOf[shapeless.HNil]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanPredicates</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanPredicates#orPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="orPredicate[A,B,T](implicitpa:eu.timepit.refined.Predicate[A,T],implicitpb:eu.timepit.refined.Predicate[B,T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.Or[A,B],T]"></a>
-      <a id="orPredicate[A,B,T](Predicate[A,T],Predicate[B,T]):Predicate[Or[A,B],T]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanValidate#orValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="orValidate[T,A,RA,B,RB](implicitva:eu.timepit.refined.api.Validate.Aux[T,A,RA],implicitvb:eu.timepit.refined.api.Validate.Aux[T,B,RB]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.Or[A,B],eu.timepit.refined.boolean.Or[va.Res,vb.Res]]"></a>
+      <a id="orValidate[T,A,RA,B,RB](Aux[T,A,RA],Aux[T,B,RB]):Aux[T,Or[A,B],Or[(va)#Res,(vb)#Res]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">orPredicate</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="pa">pa: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.orPredicate.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.orPredicate.T">T</span>]</span>, <span name="pb">pb: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.orPredicate.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.orPredicate.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.orPredicate.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.orPredicate.B">B</span>], <span class="extype" name="eu.timepit.refined.BooleanPredicates.orPredicate.T">T</span>]</span>
+        <span class="name">orValidate</span><span class="tparams">[<span name="T">T</span>, <span name="A">A</span>, <span name="RA">RA</span>, <span name="B">B</span>, <span name="RB">RB</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="va">va: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.orValidate.T">T</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.orValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.orValidate.RA">RA</span>]</span>, <span name="vb">vb: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.orValidate.T">T</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.orValidate.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.orValidate.RB">RB</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.orValidate.T">T</span>, <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.orValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.orValidate.B">B</span>], <a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[(<span class="extype" name="eu.timepit.refined.BooleanValidate.orValidate.va">va</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>, (<span class="extype" name="eu.timepit.refined.BooleanValidate.orValidate.vb">vb</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@orPredicate[A,B,T](implicitpa:eu.timepit.refined.Predicate[A,T],implicitpb:eu.timepit.refined.Predicate[B,T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.Or[A,B],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@orValidate[T,A,RA,B,RB](implicitva:eu.timepit.refined.api.Validate.Aux[T,A,RA],implicitvb:eu.timepit.refined.api.Validate.Aux[T,B,RB]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.Or[A,B],eu.timepit.refined.boolean.Or[va.Res,vb.Res]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanValidate</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -959,23 +959,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanPredicates#truePredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="truePredicate[T]:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.True,T]"></a>
-      <a id="truePredicate[T]:Predicate[True,T]"></a>
+    </li><li name="eu.timepit.refined.BooleanValidate#trueValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="trueValidate[T]:eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.boolean.True]"></a>
+      <a id="trueValidate[T]:Plain[T,True]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">truePredicate</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$True.html" class="extype" name="eu.timepit.refined.boolean.True">True</a>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.truePredicate.T">T</span>]</span>
+        <span class="name">trueValidate</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.trueValidate.T">T</span>, <a href="boolean$$True.html" class="extype" name="eu.timepit.refined.boolean.True">True</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@truePredicate[T]:eu.timepit.refined.Predicate[eu.timepit.refined.boolean.True,T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@trueValidate[T]:eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.boolean.True]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanValidate</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -1045,8 +1045,8 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanInferenceRules0#xorCommutativity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="xorCommutativity[A,B]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Xor[A,B],eu.timepit.refined.boolean.Xor[B,A]]"></a>
+    </li><li name="eu.timepit.refined.BooleanInference0#xorCommutativity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="xorCommutativity[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Xor[A,B],eu.timepit.refined.boolean.Xor[B,A]]"></a>
       <a id="xorCommutativity[A,B]:==&gt;[Xor[A,B],Xor[B,A]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1054,31 +1054,31 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">xorCommutativity</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="InferenceRule$.html#==&gt;[P,C]=eu.timepit.refined.InferenceRule[P,C]" class="extmbr" name="eu.timepit.refined.InferenceRule.==&gt;">==&gt;</a>[<a href="boolean$$Xor.html" class="extype" name="eu.timepit.refined.boolean.Xor">Xor</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.xorCommutativity.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.xorCommutativity.B">B</span>], <a href="boolean$$Xor.html" class="extype" name="eu.timepit.refined.boolean.Xor">Xor</a>[<span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.xorCommutativity.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0.xorCommutativity.A">A</span>]]</span>
+        <span class="name">xorCommutativity</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="boolean$$Xor.html" class="extype" name="eu.timepit.refined.boolean.Xor">Xor</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.xorCommutativity.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.xorCommutativity.B">B</span>], <a href="boolean$$Xor.html" class="extype" name="eu.timepit.refined.boolean.Xor">Xor</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.xorCommutativity.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.xorCommutativity.A">A</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@xorCommutativity[A,B]:eu.timepit.refined.InferenceRule.==&gt;[eu.timepit.refined.boolean.Xor[A,B],eu.timepit.refined.boolean.Xor[B,A]]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@xorCommutativity[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Xor[A,B],eu.timepit.refined.boolean.Xor[B,A]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInferenceRules0</dd></dl></div>
-    </li><li name="eu.timepit.refined.BooleanPredicates#xorPredicate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="xorPredicate[A,B,T](implicitpa:eu.timepit.refined.Predicate[A,T],implicitpb:eu.timepit.refined.Predicate[B,T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.Xor[A,B],T]"></a>
-      <a id="xorPredicate[A,B,T](Predicate[A,T],Predicate[B,T]):Predicate[Xor[A,B],T]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanValidate#xorValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="xorValidate[T,A,RA,B,RB](implicitva:eu.timepit.refined.api.Validate.Aux[T,A,RA],implicitvb:eu.timepit.refined.api.Validate.Aux[T,B,RB]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.Xor[A,B],eu.timepit.refined.boolean.Xor[va.Res,vb.Res]]"></a>
+      <a id="xorValidate[T,A,RA,B,RB](Aux[T,A,RA],Aux[T,B,RB]):Aux[T,Xor[A,B],Xor[(va)#Res,(vb)#Res]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">xorPredicate</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="pa">pa: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.xorPredicate.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.xorPredicate.T">T</span>]</span>, <span name="pb">pb: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.xorPredicate.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.xorPredicate.T">T</span>]</span>)</span><span class="result">: <a href="Predicate.html" class="extype" name="eu.timepit.refined.Predicate">Predicate</a>[<a href="boolean$$Xor.html" class="extype" name="eu.timepit.refined.boolean.Xor">Xor</a>[<span class="extype" name="eu.timepit.refined.BooleanPredicates.xorPredicate.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanPredicates.xorPredicate.B">B</span>], <span class="extype" name="eu.timepit.refined.BooleanPredicates.xorPredicate.T">T</span>]</span>
+        <span class="name">xorValidate</span><span class="tparams">[<span name="T">T</span>, <span name="A">A</span>, <span name="RA">RA</span>, <span name="B">B</span>, <span name="RB">RB</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="va">va: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.xorValidate.T">T</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.xorValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.xorValidate.RA">RA</span>]</span>, <span name="vb">vb: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.xorValidate.T">T</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.xorValidate.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.xorValidate.RB">RB</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.xorValidate.T">T</span>, <a href="boolean$$Xor.html" class="extype" name="eu.timepit.refined.boolean.Xor">Xor</a>[<span class="extype" name="eu.timepit.refined.BooleanValidate.xorValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate.xorValidate.B">B</span>], <a href="boolean$$Xor.html" class="extype" name="eu.timepit.refined.boolean.Xor">Xor</a>[(<span class="extype" name="eu.timepit.refined.BooleanValidate.xorValidate.va">va</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>, (<span class="extype" name="eu.timepit.refined.BooleanValidate.xorValidate.vb">vb</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.boolean$@xorPredicate[A,B,T](implicitpa:eu.timepit.refined.Predicate[A,T],implicitpb:eu.timepit.refined.Predicate[B,T]):eu.timepit.refined.Predicate[eu.timepit.refined.boolean.Xor[A,B],T]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@xorValidate[T,A,RA,B,RB](implicitva:eu.timepit.refined.api.Validate.Aux[T,A,RA],implicitvb:eu.timepit.refined.api.Validate.Aux[T,B,RB]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.Xor[A,B],eu.timepit.refined.boolean.Xor[va.Res,vb.Res]]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanPredicates</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanValidate</dd></dl></div>
     </li></ol>
             </div>
 
@@ -1088,12 +1088,14 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="eu.timepit.refined.BooleanInferenceRules0">
-              <h3>Inherited from <span class="extype" name="eu.timepit.refined.BooleanInferenceRules0">BooleanInferenceRules0</span></h3>
-            </div><div class="parent" name="eu.timepit.refined.BooleanInferenceRules1">
-              <h3>Inherited from <span class="extype" name="eu.timepit.refined.BooleanInferenceRules1">BooleanInferenceRules1</span></h3>
-            </div><div class="parent" name="eu.timepit.refined.BooleanPredicates">
-              <h3>Inherited from <span class="extype" name="eu.timepit.refined.BooleanPredicates">BooleanPredicates</span></h3>
+        <div class="parent" name="eu.timepit.refined.BooleanInference0">
+              <h3>Inherited from <span class="extype" name="eu.timepit.refined.BooleanInference0">BooleanInference0</span></h3>
+            </div><div class="parent" name="eu.timepit.refined.BooleanInference1">
+              <h3>Inherited from <span class="extype" name="eu.timepit.refined.BooleanInference1">BooleanInference1</span></h3>
+            </div><div class="parent" name="eu.timepit.refined.BooleanInference2">
+              <h3>Inherited from <span class="extype" name="eu.timepit.refined.BooleanInference2">BooleanInference2</span></h3>
+            </div><div class="parent" name="eu.timepit.refined.BooleanValidate">
+              <h3>Inherited from <span class="extype" name="eu.timepit.refined.BooleanValidate">BooleanValidate</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
