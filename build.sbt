@@ -24,6 +24,7 @@ val commonImports = s"""
 val shapelessVersion = "2.2.5"
 val scalaCheckVersion = "1.12.5"
 val scalazVersion = "7.1.5"
+val slickVersion = "3.1.0"
 
 /// project definitions
 
@@ -34,7 +35,8 @@ lazy val root = project.in(file("."))
     docs,
     scalacheckJVM,
     scalacheckJS,
-    scalaz)
+    scalaz,
+    slick)
   .settings(commonSettings)
   .settings(noPublishSettings)
   .settings(releaseSettings)
@@ -100,6 +102,14 @@ lazy val scalaz = project
     """
   )
   .dependsOn(coreJVM  % "compile->compile;test->test")
+
+lazy val slick = project
+  .settings(moduleName := s"$projectName-slick")
+  .settings(submoduleSettings)
+  .settings(
+    libraryDependencies += "com.typesafe.slick" %% "slick" % slickVersion
+  )
+  .dependsOn(coreJVM)
 
 /// settings definitions
 
@@ -282,6 +292,7 @@ addCommandAlias("validate", Seq(
   "coreJVM/test",
   "scalacheckJVM/test",
   "scalaz/test",
+  "slick/test",
   "scalastyle",
   "test:scalastyle",
   "doc",
