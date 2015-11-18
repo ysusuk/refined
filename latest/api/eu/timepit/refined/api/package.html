@@ -134,15 +134,15 @@ premise <code>P</code> or not.</p>
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Type class that allows <code>F</code> to be used as result type of a refinement.</p><div class="fullcomment"><div class="comment cmt"><p>Type class that allows <code>F</code> to be used as result type of a refinement.
-The first type parameter of <code>F</code> is the type that is being refined by
-its second type parameter which is the type-level predicate that
+      <p class="shortcomment cmt">Type class that allows <code>F</code> to be used as carrier type of a refinement.</p><div class="fullcomment"><div class="comment cmt"><p>Type class that allows <code>F</code> to be used as carrier type of a refinement.
+The first type parameter of <code>F</code> is the base type that is being refined
+by its second type parameter which is the type-level predicate that
 denotes the refinement. Consequently, <code>F[T, P]</code> is a phantom type
-that only contains a value of type <code>T</code>.</p><p>The library provides instances of <code>RefType</code> for</p><ul><li>the <code><a href="Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a></code> value class</li><li>and <code>shapeless.tag.@@</code> which is a subtype of its first parameter
+that only contains a value of type <code>T</code>.</p><p>The library provides instances of <code><a href="RefType.html" class="extype" name="eu.timepit.refined.api.RefType">RefType</a></code> for</p><ul><li>the <code><a href="Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a></code> value class</li><li>and <code>shapeless.tag.@@</code> which is a subtype of its first parameter
    (i.e. <code>(T @@ P) &lt;: T</code>)
 </li></ul></div></div>
     </li><li name="eu.timepit.refined.api.Refined" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Refined[T,P]extendsProductwithSerializable"></a>
+      <a id="Refined[T,P]extendsAnyValwithProductwithSerializable"></a>
       <a id="Refined[T,P]:Refined[T,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -150,15 +150,15 @@ that only contains a value of type <code>T</code>.</p><p>The library provides in
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Refined.html"><span class="name">Refined</span></a><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="Refined.html"><span class="name">Refined</span></a><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyVal" class="extype" target="_top">AnyVal</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.api.package@Refined[T,P]extendsProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.api.package@Refined[T,P]extendsAnyValwithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Wraps a value of type <code>T</code> that satisfies the predicate <code>P</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a value of type <code>T</code> that satisfies the predicate <code>P</code>. Instances of
-this class can be created with <code><a href="../package.html#refineV[P]:eu.timepit.refined.internal.RefineAux[eu.timepit.refined.api.Refined,P]" class="extmbr" name="eu.timepit.refined#refineV">refineV</a></code> and <code><a href="../package.html#refineMV[P]:eu.timepit.refined.internal.RefineMAux[eu.timepit.refined.api.Refined,P]" class="extmbr" name="eu.timepit.refined#refineMV">refineMV</a></code> which
+this class can be created with <code><a href="../package.html#refineV[P]:eu.timepit.refined.internal.RefinePartiallyApplied[eu.timepit.refined.api.Refined,P]" class="extmbr" name="eu.timepit.refined#refineV">refineV</a></code> and <code><a href="../package.html#refineMV[P]:eu.timepit.refined.internal.RefineMPartiallyApplied[eu.timepit.refined.api.Refined,P]" class="extmbr" name="eu.timepit.refined#refineMV">refineMV</a></code> which
 verify that the wrapped value satisfies <code>P</code>.
 </p></div></div>
     </li><li name="eu.timepit.refined.api.Result" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">

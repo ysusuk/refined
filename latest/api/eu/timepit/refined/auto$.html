@@ -204,7 +204,7 @@ inference is invalid, compilation fails.
       <p class="shortcomment cmt">Implicitly tags (at compile-time) a value of type <code>T</code> with <code>P</code> if <code>t</code>
 satisfies the predicate <code>P</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly tags (at compile-time) a value of type <code>T</code> with <code>P</code> if <code>t</code>
 satisfies the predicate <code>P</code>. If it does not satisfy the predicate,
-compilation fails.</p><p>This is an implicit version of <code><a href="package.html#refineMT[P]:eu.timepit.refined.internal.RefineMAux[shapeless.tag.@@,P]" class="extmbr" name="eu.timepit.refined#refineMT">refineMT</a></code>.
+compilation fails.</p><p>This is an implicit version of <code><a href="package.html#refineMT[P]:eu.timepit.refined.internal.RefineMPartiallyApplied[shapeless.tag.@@,P]" class="extmbr" name="eu.timepit.refined#refineMT">refineMT</a></code>.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="auto.html" class="extype" name="eu.timepit.refined.auto">auto</a></dd></dl></div>
     </li><li name="eu.timepit.refined.auto#autoRefineV" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="autoRefineV[T,P](t:T)(implicitv:eu.timepit.refined.api.Validate[T,P],implicitrt:eu.timepit.refined.api.RefType[eu.timepit.refined.api.Refined]):eu.timepit.refined.api.Refined[T,P]"></a>
@@ -225,7 +225,7 @@ compilation fails.</p><p>This is an implicit version of <code><a href="package.h
       <p class="shortcomment cmt">Implicitly wraps (at compile-time) a value of type <code>T</code> in
 <code><a href="api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">api.Refined</a>[T, P]</code> if <code>t</code> satisfies the predicate <code>P</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly wraps (at compile-time) a value of type <code>T</code> in
 <code><a href="api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">api.Refined</a>[T, P]</code> if <code>t</code> satisfies the predicate <code>P</code>. If it does
-not satisfy the predicate, compilation fails.</p><p>This is an implicit version of <code><a href="package.html#refineMV[P]:eu.timepit.refined.internal.RefineMAux[eu.timepit.refined.api.Refined,P]" class="extmbr" name="eu.timepit.refined#refineMV">refineMV</a></code>.
+not satisfy the predicate, compilation fails.</p><p>This is an implicit version of <code><a href="package.html#refineMV[P]:eu.timepit.refined.internal.RefineMPartiallyApplied[eu.timepit.refined.api.Refined,P]" class="extmbr" name="eu.timepit.refined#refineMV">refineMV</a></code>.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="auto.html" class="extype" name="eu.timepit.refined.auto">auto</a></dd></dl></div>
     </li><li name="eu.timepit.refined.auto#autoUnwrap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="autoUnwrap[F[_,_],T,P](tp:F[T,P])(implicitrt:eu.timepit.refined.api.RefType[F]):T"></a>

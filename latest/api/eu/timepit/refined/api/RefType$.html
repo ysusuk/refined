@@ -183,7 +183,35 @@
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Returns a <code>RefType</code> for the given type <code>F</code> from the implicit scope.</p>
+    </li><li name="eu.timepit.refined.api.RefType#applyRef" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="applyRef[FTP]:eu.timepit.refined.internal.ApplyRefPartiallyApplied[FTP]"></a>
+      <a id="applyRef[FTP]:ApplyRefPartiallyApplied[FTP]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">applyRef</span><span class="tparams">[<span name="FTP">FTP</span>]</span><span class="result">: <a href="../internal/ApplyRefPartiallyApplied.html" class="extype" name="eu.timepit.refined.internal.ApplyRefPartiallyApplied">ApplyRefPartiallyApplied</a>[<span class="extype" name="eu.timepit.refined.api.RefType.applyRef.FTP">FTP</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.api.RefType$@applyRef[FTP]:eu.timepit.refined.internal.ApplyRefPartiallyApplied[FTP]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a value of type <code>T</code> refined as <code>FTP</code> on the right if it
+satisfies the predicate in <code>FTP</code>, or an error message on the left
+otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a value of type <code>T</code> refined as <code>FTP</code> on the right if it
+satisfies the predicate in <code>FTP</code>, or an error message on the left
+otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api._
+     | <span class="kw">import</span> eu.timepit.refined.numeric._
+
+scala&gt; RefType.applyRef[<span class="std">Int</span> Refined Positive](<span class="num">10</span>)
+res1: Either[<span class="std">String</span>, Refined[<span class="std">Int</span>, Positive]] = Right(Refined(<span class="num">10</span>))</pre><p>Note: The return type is <code><a href="../internal/ApplyRefPartiallyApplied.html" class="extype" name="eu.timepit.refined.internal.ApplyRefPartiallyApplied">internal.ApplyRefPartiallyApplied</a>[FTP]</code>,
+which has an <code>apply</code> method on it, allowing <code>applyRef</code> to be called
+like in the given example.
+</p></div></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>

@@ -124,6 +124,23 @@
       </a>
     </span>
       <p class="shortcomment cmt">Predicate that checks if a value is equal to <code>U</code>.</p>
+    </li><li name="eu.timepit.refined.generic.Eval" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Eval[S]extendsProductwithSerializable"></a>
+      <a id="Eval[S]:Eval[S]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="generic$$Eval.html"><span class="name">Eval</span></a><span class="tparams">[<span name="S">S</span>]</span><span class="params">(<span name="s">s: <span class="extype" name="eu.timepit.refined.generic.Eval.S">S</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.generic$@Eval[S]extendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Predicate that checks if a value applied to the predicate <code>S</code> yields <code>true</code>.</p>
     </li><li name="eu.timepit.refined.generic.FieldNames" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="FieldNames[P]extendsProductwithSerializable"></a>
       <a id="FieldNames[P]:FieldNames[P]"></a>
@@ -392,6 +409,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="eu.timepit.refined.GenericValidate#evalValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="evalValidate[T,S&lt;:String](implicitws:shapeless.Witness.Aux[S]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.generic.Eval[S]]"></a>
+      <a id="evalValidate[T,S&lt;:String](Aux[S]):Plain[T,Eval[S]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">evalValidate</span><span class="tparams">[<span name="T">T</span>, <span name="S">S &lt;: <span class="extype" name="scala.Predef.String">String</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ws">ws: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.GenericValidate.evalValidate.S">S</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.GenericValidate.evalValidate.T">T</span>, <a href="generic$$Eval.html" class="extype" name="eu.timepit.refined.generic.Eval">Eval</a>[<span class="extype" name="eu.timepit.refined.GenericValidate.evalValidate.S">S</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.generic$@evalValidate[T,S&lt;:String](implicitws:shapeless.Witness.Aux[S]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.generic.Eval[S]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>GenericValidate</dd></dl></div>
     </li><li name="eu.timepit.refined.GenericValidate#fieldNamesValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fieldNamesValidate[T,R&lt;:shapeless.HList,K&lt;:shapeless.HList,NP,NR](implicitlg:shapeless.LabelledGeneric.Aux[T,R],implicitkeys:shapeless.ops.record.Keys.Aux[R,K],implicitktl:shapeless.ops.hlist.ToList[K,Symbol],implicitv:eu.timepit.refined.api.Validate.Aux[List[String],NP,NR]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.generic.FieldNames[NP],eu.timepit.refined.generic.FieldNames[v.Res]]"></a>
       <a id="fieldNamesValidate[T,R&lt;:HList,K&lt;:HList,NP,NR](Aux[T,R],Aux[R,K],ToList[K,Symbol],Aux[List[String],NP,NR]):Aux[T,FieldNames[NP],FieldNames[(v)#Res]]"></a>

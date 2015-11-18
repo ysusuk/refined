@@ -90,25 +90,27 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="eu.timepit.refined.util.time.DayOfMonth" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="DayOfMonth=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval[Int(1),Int(31)]]"></a>
-      <a id="DayOfMonth:DayOfMonth"></a>
+              <ol><li name="eu.timepit.refined.util.time.Day" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Day=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval.Closed[Int(1),Int(31)]]"></a>
+      <a id="Day:Day"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">DayOfMonth</span><span class="result"> = <a href="../api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>, <a href="../numeric$.html#Interval[L,H]=eu.timepit.refined.boolean.And[eu.timepit.refined.numeric.GreaterEqual[L],eu.timepit.refined.numeric.LessEqual[H]]" class="extmbr" name="eu.timepit.refined.numeric.Interval">Interval</a>[Int(1), Int(31)]]</span>
+        <span class="name">Day</span><span class="result"> = <a href="../api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>, <a href="../numeric$$Interval$.html#Closed[L,H]=eu.timepit.refined.boolean.And[eu.timepit.refined.numeric.GreaterEqual[L],eu.timepit.refined.numeric.LessEqual[H]]" class="extmbr" name="eu.timepit.refined.numeric.Interval.Closed">Closed</a>[Int(1), Int(31)]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.util.time$@DayOfMonth=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval[Int(1),Int(31)]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.util.time$@Day=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval.Closed[Int(1),Int(31)]]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">An <code>Int</code> in the range from 1 to 31.</p>
+      <p class="shortcomment cmt">An <code>Int</code> in the range from 1 to 31 representing the day-of-month.</p><div class="fullcomment"><div class="comment cmt"><p>An <code>Int</code> in the range from 1 to 31 representing the day-of-month.
+Note that the days from 29 to 31 are not valid for all months.
+</p></div></div>
     </li><li name="eu.timepit.refined.util.time.Hour" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Hour=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval[Int(0),Int(23)]]"></a>
+      <a id="Hour=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval.Closed[Int(0),Int(23)]]"></a>
       <a id="Hour:Hour"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -116,16 +118,33 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Hour</span><span class="result"> = <a href="../api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>, <a href="../numeric$.html#Interval[L,H]=eu.timepit.refined.boolean.And[eu.timepit.refined.numeric.GreaterEqual[L],eu.timepit.refined.numeric.LessEqual[H]]" class="extmbr" name="eu.timepit.refined.numeric.Interval">Interval</a>[Int(0), Int(23)]]</span>
+        <span class="name">Hour</span><span class="result"> = <a href="../api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>, <a href="../numeric$$Interval$.html#Closed[L,H]=eu.timepit.refined.boolean.And[eu.timepit.refined.numeric.GreaterEqual[L],eu.timepit.refined.numeric.LessEqual[H]]" class="extmbr" name="eu.timepit.refined.numeric.Interval.Closed">Closed</a>[Int(0), Int(23)]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.util.time$@Hour=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval[Int(0),Int(23)]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.util.time$@Hour=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval.Closed[Int(0),Int(23)]]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">An <code>Int</code> in the range from 0 to 23.</p>
+      <p class="shortcomment cmt">An <code>Int</code> in the range from 0 to 23 representing the hour-of-day.</p>
+    </li><li name="eu.timepit.refined.util.time.Millis" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Millis=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval.Closed[Int(0),Int(999)]]"></a>
+      <a id="Millis:Millis"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Millis</span><span class="result"> = <a href="../api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>, <a href="../numeric$$Interval$.html#Closed[L,H]=eu.timepit.refined.boolean.And[eu.timepit.refined.numeric.GreaterEqual[L],eu.timepit.refined.numeric.LessEqual[H]]" class="extmbr" name="eu.timepit.refined.numeric.Interval.Closed">Closed</a>[Int(0), Int(999)]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.util.time$@Millis=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval.Closed[Int(0),Int(999)]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An <code>Int</code> in the range from 0 to 999 representing the millisecond-of-second.</p>
     </li><li name="eu.timepit.refined.util.time.Minute" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Minute=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval[Int(0),Int(59)]]"></a>
+      <a id="Minute=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval.Closed[Int(0),Int(59)]]"></a>
       <a id="Minute:Minute"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -133,16 +152,16 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Minute</span><span class="result"> = <a href="../api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>, <a href="../numeric$.html#Interval[L,H]=eu.timepit.refined.boolean.And[eu.timepit.refined.numeric.GreaterEqual[L],eu.timepit.refined.numeric.LessEqual[H]]" class="extmbr" name="eu.timepit.refined.numeric.Interval">Interval</a>[Int(0), Int(59)]]</span>
+        <span class="name">Minute</span><span class="result"> = <a href="../api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>, <a href="../numeric$$Interval$.html#Closed[L,H]=eu.timepit.refined.boolean.And[eu.timepit.refined.numeric.GreaterEqual[L],eu.timepit.refined.numeric.LessEqual[H]]" class="extmbr" name="eu.timepit.refined.numeric.Interval.Closed">Closed</a>[Int(0), Int(59)]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.util.time$@Minute=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval[Int(0),Int(59)]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.util.time$@Minute=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval.Closed[Int(0),Int(59)]]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">An <code>Int</code> in the range from 0 to 59.</p>
+      <p class="shortcomment cmt">An <code>Int</code> in the range from 0 to 59 representing the minute-of-hour.</p>
     </li><li name="eu.timepit.refined.util.time.Month" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Month=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval[Int(1),Int(12)]]"></a>
+      <a id="Month=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval.Closed[Int(1),Int(12)]]"></a>
       <a id="Month:Month"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -150,16 +169,16 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Month</span><span class="result"> = <a href="../api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>, <a href="../numeric$.html#Interval[L,H]=eu.timepit.refined.boolean.And[eu.timepit.refined.numeric.GreaterEqual[L],eu.timepit.refined.numeric.LessEqual[H]]" class="extmbr" name="eu.timepit.refined.numeric.Interval">Interval</a>[Int(1), Int(12)]]</span>
+        <span class="name">Month</span><span class="result"> = <a href="../api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>, <a href="../numeric$$Interval$.html#Closed[L,H]=eu.timepit.refined.boolean.And[eu.timepit.refined.numeric.GreaterEqual[L],eu.timepit.refined.numeric.LessEqual[H]]" class="extmbr" name="eu.timepit.refined.numeric.Interval.Closed">Closed</a>[Int(1), Int(12)]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.util.time$@Month=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval[Int(1),Int(12)]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.util.time$@Month=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval.Closed[Int(1),Int(12)]]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">An <code>Int</code> in the range from 1 to 12.</p>
+      <p class="shortcomment cmt">An <code>Int</code> in the range from 1 to 12 representing the month-of-year.</p>
     </li><li name="eu.timepit.refined.util.time.Second" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Second=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval[Int(0),Int(59)]]"></a>
+      <a id="Second=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval.Closed[Int(0),Int(59)]]"></a>
       <a id="Second:Second"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -167,14 +186,14 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Second</span><span class="result"> = <a href="../api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>, <a href="../numeric$.html#Interval[L,H]=eu.timepit.refined.boolean.And[eu.timepit.refined.numeric.GreaterEqual[L],eu.timepit.refined.numeric.LessEqual[H]]" class="extmbr" name="eu.timepit.refined.numeric.Interval">Interval</a>[Int(0), Int(59)]]</span>
+        <span class="name">Second</span><span class="result"> = <a href="../api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>, <a href="../numeric$$Interval$.html#Closed[L,H]=eu.timepit.refined.boolean.And[eu.timepit.refined.numeric.GreaterEqual[L],eu.timepit.refined.numeric.LessEqual[H]]" class="extmbr" name="eu.timepit.refined.numeric.Interval.Closed">Closed</a>[Int(0), Int(59)]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.util.time$@Second=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval[Int(0),Int(59)]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.util.time$@Second=eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Interval.Closed[Int(0),Int(59)]]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">An <code>Int</code> in the range from 0 to 59.</p>
+      <p class="shortcomment cmt">An <code>Int</code> in the range from 0 to 59 representing the second-of-minute.</p>
     </li></ol>
             </div>
 

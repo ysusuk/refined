@@ -66,46 +66,118 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="eu.timepit.refined.internal.RefineAux" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="RefineAux[F[_,_],P]extendsAnyRef"></a>
-      <a id="RefineAux[F[_,_],P]:RefineAux[F,P]"></a>
+              <ol><li name="eu.timepit.refined.internal.ApplyRefPartiallyApplied" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ApplyRefPartiallyApplied[FTP]extendsAnyRef"></a>
+      <a id="ApplyRefPartiallyApplied[FTP]:ApplyRefPartiallyApplied[FTP]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="RefineAux.html"><span class="name">RefineAux</span></a><span class="tparams">[<span name="F">F<span class="tparams">[<span name="_">_</span>, <span name="_">_</span>]</span></span>, <span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="ApplyRefPartiallyApplied.html"><span class="name">ApplyRefPartiallyApplied</span></a><span class="tparams">[<span name="FTP">FTP</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.internal.package@RefineAux[F[_,_],P]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.internal.package@ApplyRefPartiallyApplied[FTP]extendsAnyRef" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Helper class that allows the type <code>T</code> to be inferred from calls like
-<code><a href="../api/RefType.html#refine[P]:eu.timepit.refined.internal.RefineAux[F,P]" class="extmbr" name="eu.timepit.refined.api.RefType#refine">api.RefType.refine</a>[P](t)</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Helper class that allows the type <code>T</code> to be inferred from calls like
-<code><a href="../api/RefType.html#refine[P]:eu.timepit.refined.internal.RefineAux[F,P]" class="extmbr" name="eu.timepit.refined.api.RefType#refine">api.RefType.refine</a>[P](t)</code>.</p><p>See <a href="http://tpolecat.github.io/2015/07/30/infer.html" target="_blank">http://tpolecat.github.io/2015/07/30/infer.html</a> for a detailed
+      <p class="shortcomment cmt">Helper class that allows the types <code>F</code>, <code>T</code>, and <code>P</code> to be inferred
+from calls like <code><a href="../api/RefType$.html#applyRef[FTP]:eu.timepit.refined.internal.ApplyRefPartiallyApplied[FTP]" class="extmbr" name="eu.timepit.refined.api.RefType#applyRef">api.RefType.applyRef</a>[F[T, P]](t)</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Helper class that allows the types <code>F</code>, <code>T</code>, and <code>P</code> to be inferred
+from calls like <code><a href="../api/RefType$.html#applyRef[FTP]:eu.timepit.refined.internal.ApplyRefPartiallyApplied[FTP]" class="extmbr" name="eu.timepit.refined.api.RefType#applyRef">api.RefType.applyRef</a>[F[T, P]](t)</code>.</p><p>See <a href="http://tpolecat.github.io/2015/07/30/infer.html" target="_blank">http://tpolecat.github.io/2015/07/30/infer.html</a> for a detailed
 explanation of this trick.
 </p></div></div>
-    </li><li name="eu.timepit.refined.internal.RefineMAux" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="RefineMAux[F[_,_],P]extendsAnyRef"></a>
-      <a id="RefineMAux[F[_,_],P]:RefineMAux[F,P]"></a>
+    </li><li name="eu.timepit.refined.internal.InferM" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InferMextendsMacroUtils"></a>
+      <a id="InferM:InferM"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="InferM.html"><span class="name">InferM</span></a><span class="result"> extends <a href="MacroUtils.html" class="extype" name="eu.timepit.refined.internal.MacroUtils">MacroUtils</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.internal.package@InferMextendsMacroUtils" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="eu.timepit.refined.internal.MacroUtils" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MacroUtilsextendsAnyRef"></a>
+      <a id="MacroUtils:MacroUtils"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="MacroUtils.html"><span class="name">MacroUtils</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.internal.package@MacroUtilsextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="eu.timepit.refined.internal.RefineM" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RefineMextendsMacroUtils"></a>
+      <a id="RefineM:RefineM"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="RefineM.html"><span class="name">RefineM</span></a><span class="result"> extends <a href="MacroUtils.html" class="extype" name="eu.timepit.refined.internal.MacroUtils">MacroUtils</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.internal.package@RefineMextendsMacroUtils" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="eu.timepit.refined.internal.RefineMPartiallyApplied" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RefineMPartiallyApplied[F[_,_],P]extendsAnyRef"></a>
+      <a id="RefineMPartiallyApplied[F[_,_],P]:RefineMPartiallyApplied[F,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="RefineMAux.html"><span class="name">RefineMAux</span></a><span class="tparams">[<span name="F">F<span class="tparams">[<span name="_">_</span>, <span name="_">_</span>]</span></span>, <span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="RefineMPartiallyApplied.html"><span class="name">RefineMPartiallyApplied</span></a><span class="tparams">[<span name="F">F<span class="tparams">[<span name="_">_</span>, <span name="_">_</span>]</span></span>, <span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.internal.package@RefineMAux[F[_,_],P]extendsAnyRef" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.internal.package@RefineMPartiallyApplied[F[_,_],P]extendsAnyRef" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Helper class that allows the type <code>T</code> to be inferred from calls like
-<code><a href="../api/RefType.html#refineM[P]:eu.timepit.refined.internal.RefineMAux[F,P]" class="extmbr" name="eu.timepit.refined.api.RefType#refineM">api.RefType.refineM</a>[P](t)</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Helper class that allows the type <code>T</code> to be inferred from calls like
-<code><a href="../api/RefType.html#refineM[P]:eu.timepit.refined.internal.RefineMAux[F,P]" class="extmbr" name="eu.timepit.refined.api.RefType#refineM">api.RefType.refineM</a>[P](t)</code>.</p><p>See <a href="http://tpolecat.github.io/2015/07/30/infer.html" target="_blank">http://tpolecat.github.io/2015/07/30/infer.html</a> for a detailed
+<code><a href="../api/RefType.html#refineM[P]:eu.timepit.refined.internal.RefineMPartiallyApplied[F,P]" class="extmbr" name="eu.timepit.refined.api.RefType#refineM">api.RefType.refineM</a>[P](t)</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Helper class that allows the type <code>T</code> to be inferred from calls like
+<code><a href="../api/RefType.html#refineM[P]:eu.timepit.refined.internal.RefineMPartiallyApplied[F,P]" class="extmbr" name="eu.timepit.refined.api.RefType#refineM">api.RefType.refineM</a>[P](t)</code>.</p><p>See <a href="http://tpolecat.github.io/2015/07/30/infer.html" target="_blank">http://tpolecat.github.io/2015/07/30/infer.html</a> for a detailed
+explanation of this trick.
+</p></div></div>
+    </li><li name="eu.timepit.refined.internal.RefinePartiallyApplied" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RefinePartiallyApplied[F[_,_],P]extendsAnyRef"></a>
+      <a id="RefinePartiallyApplied[F[_,_],P]:RefinePartiallyApplied[F,P]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="RefinePartiallyApplied.html"><span class="name">RefinePartiallyApplied</span></a><span class="tparams">[<span name="F">F<span class="tparams">[<span name="_">_</span>, <span name="_">_</span>]</span></span>, <span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.internal.package@RefinePartiallyApplied[F[_,_],P]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Helper class that allows the type <code>T</code> to be inferred from calls like
+<code><a href="../api/RefType.html#refine[P]:eu.timepit.refined.internal.RefinePartiallyApplied[F,P]" class="extmbr" name="eu.timepit.refined.api.RefType#refine">api.RefType.refine</a>[P](t)</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Helper class that allows the type <code>T</code> to be inferred from calls like
+<code><a href="../api/RefType.html#refine[P]:eu.timepit.refined.internal.RefinePartiallyApplied[F,P]" class="extmbr" name="eu.timepit.refined.api.RefType#refine">api.RefType.refine</a>[P](t)</code>.</p><p>See <a href="http://tpolecat.github.io/2015/07/30/infer.html" target="_blank">http://tpolecat.github.io/2015/07/30/infer.html</a> for a detailed
 explanation of this trick.
 </p></div></div>
     </li></ol>
@@ -132,57 +204,6 @@ explanation of this trick.
       </a>
     </span>
       <p class="shortcomment cmt">This object was generated by sbt-buildinfo.</p>
-    </li><li name="eu.timepit.refined.internal.InferM" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="InferM"></a>
-      <a id="InferM:InferM"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="InferM$.html"><span class="name">InferM</span></a>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.internal.package@InferM" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="eu.timepit.refined.internal.MacroUtils" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="MacroUtils"></a>
-      <a id="MacroUtils:MacroUtils"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="MacroUtils$.html"><span class="name">MacroUtils</span></a>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.internal.package@MacroUtils" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="eu.timepit.refined.internal.RefineMAux" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="RefineMAux"></a>
-      <a id="RefineMAux:RefineMAux"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="RefineMAux$.html"><span class="name">RefineMAux</span></a>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.internal.package@RefineMAux" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
     </li><li name="eu.timepit.refined.internal.Resources" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Resources"></a>
       <a id="Resources:Resources"></a>
