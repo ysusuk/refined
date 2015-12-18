@@ -482,8 +482,8 @@ otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.t
 
 scala&gt; RefType[Refined].refine[Positive](<span class="num">10</span>)
 res1: Either[<span class="std">String</span>, Refined[<span class="std">Int</span>, Positive]] = Right(Refined(<span class="num">10</span>))</pre><p>Note: The return type is <code><a href="../internal/RefinePartiallyApplied.html" class="extype" name="eu.timepit.refined.internal.RefinePartiallyApplied">internal.RefinePartiallyApplied</a>[F, P]</code>,
-which has an <code>apply</code> method on it, allowing <code>refine</code> to be called
-like in the given example.
+which has an <code>apply</code> method on it, allowing the type <code>T</code> to be
+inferred from its argument.
 </p></div></div>
     </li><li name="eu.timepit.refined.api.RefType#refineM" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="refineM[P]:eu.timepit.refined.internal.RefineMPartiallyApplied[F,P]"></a>
@@ -508,8 +508,35 @@ it satisfies the predicate <code>P</code>, or fails to compile otherwise.</p><p>
 
 scala&gt; RefType[Refined].refineM[Positive](<span class="num">10</span>)
 res1: Refined[<span class="std">Int</span>, Positive] = Refined(<span class="num">10</span>)</pre><p>Note: <code>M</code> stands for <b>m</b>acro.</p><p>Note: The return type is <code><a href="../internal/RefineMPartiallyApplied.html" class="extype" name="eu.timepit.refined.internal.RefineMPartiallyApplied">internal.RefineMPartiallyApplied</a>[F, P]</code>,
-which has an <code>apply</code> method on it, allowing <code>refineM</code> to be called
-like in the given example.
+which has an <code>apply</code> method on it, allowing the type <code>T</code> to be
+inferred from its argument.
+</p></div></div>
+    </li><li name="eu.timepit.refined.api.RefType#refineMF" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="refineMF[T,P]:eu.timepit.refined.internal.RefineMFullyApplied[F,T,P]"></a>
+      <a id="refineMF[T,P]:RefineMFullyApplied[F,T,P]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">refineMF</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="result">: <a href="../internal/RefineMFullyApplied.html" class="extype" name="eu.timepit.refined.internal.RefineMFullyApplied">RefineMFullyApplied</a>[<span class="extype" name="eu.timepit.refined.api.RefType.F">F</span>, <span class="extype" name="eu.timepit.refined.api.RefType.refineMF.T">T</span>, <span class="extype" name="eu.timepit.refined.api.RefType.refineMF.P">P</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.api.RefType@refineMF[T,P]:eu.timepit.refined.internal.RefineMFullyApplied[F,T,P]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Macro that returns a value of type <code>T</code> refined as <code>F[T, P]</code> if
+it satisfies the predicate <code>P</code>, or fails to compile otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Macro that returns a value of type <code>T</code> refined as <code>F[T, P]</code> if
+it satisfies the predicate <code>P</code>, or fails to compile otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined._
+     | <span class="kw">import</span> eu.timepit.refined.numeric._
+
+scala&gt; RefType[Refined].refineMF[<span class="std">Long</span>, Positive](<span class="num">10</span>)
+res1: Refined[<span class="std">Long</span>, Positive] = Refined(<span class="num">10</span>)</pre><p>Note: <code>M</code> stands for <b>m</b>acro and <code>F</code> for <b>f</b>ully applied.</p><p>Note: The return type is <code><a href="../internal/RefineMFullyApplied.html" class="extype" name="eu.timepit.refined.internal.RefineMFullyApplied">internal.RefineMFullyApplied</a>[F, T, P]</code>,
+which has an <code>apply</code> method on it, allowing <code>refineMF</code> to be called
+like in the given example. In contrast to <code><a href="#refineM[P]:eu.timepit.refined.internal.RefineMPartiallyApplied[F,P]" class="extmbr" name="eu.timepit.refined.api.RefType#refineM">refineM</a></code>, the type
+<code>T</code> needs to be specified before <code>apply</code> can be called.
 </p></div></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
