@@ -17,4 +17,7 @@ final class ApplyRefPartiallyApplied[FTP] {
     ev: FTP =:= F[T, P], rt: RefType[F], v: Validate[T, P]
   ): Either[String, F[T, P]] =
     rt.refine[P](t)
+
+  def refineM[F[_, _], T, P](implicit ev: FTP =:= F[T, P]): RefineMFullyApplied[F, T, P] =
+    new RefineMFullyApplied
 }
