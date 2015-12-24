@@ -174,7 +174,10 @@ lazy val compileSettings = Seq(
     compilerPlugin("org.scalamacros" % "paradise" % macroParadiseVersion cross CrossVersion.full),
     "org.typelevel" %%% "macro-compat" % macroCompatVersion,
     "com.chuusai" %%% "shapeless" % shapelessVersion,
-    "org.scalacheck" %%% "scalacheck" % scalaCheckVersion % "test"
+    "org.scalacheck" %%% "scalacheck" % scalaCheckVersion % "test",
+    "info.hupel" %% "libisabelle" % "0.2.1",
+    "info.hupel" %% "libisabelle-setup" % "0.2.1",
+    "info.hupel" %% "pide-interface" % "0.2.1"
   ),
 
   wartremoverErrors in (Compile, compile) ++= Warts.unsafe diff Seq(
