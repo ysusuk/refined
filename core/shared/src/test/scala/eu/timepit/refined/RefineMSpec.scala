@@ -80,4 +80,10 @@ class RefineMSpec extends Properties("refineM") {
     illTyped("refineMV[NonEmpty](List(1, 2, 3))", "compile-time refinement.*")
     illTyped("refineMT[NonEmpty](List(1, 2, 3))", "compile-time refinement.*")
   }
+
+  property("refineM collections") = wellTyped {
+    val a: List[Int] Refined NonEmpty = List(1, 2, 3)
+    val b: Set[Int] Refined NonEmpty = Set(1, 2, 3)
+  }
+
 }
