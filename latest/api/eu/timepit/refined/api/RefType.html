@@ -100,19 +100,19 @@ that only contains a value of type <code>T</code>.</p><p>The library provides in
 
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="eu.timepit.refined.api.RefType#unsafeRewrapM" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="unsafeRewrapM[T,A,B](c:scala.reflect.macros.blackbox.Context)(ta:c.Expr[F[T,A]])(implicitevidence$3:c.WeakTypeTag[T],implicitevidence$4:c.WeakTypeTag[A],implicitevidence$5:c.WeakTypeTag[B]):c.Expr[F[T,B]]"></a>
-      <a id="unsafeRewrapM[T,A,B](Context)(scala.reflect.macros.blackbox.Context.Expr[F[T,A]])(scala.reflect.macros.blackbox.Context.WeakTypeTag[T],scala.reflect.macros.blackbox.Context.WeakTypeTag[A],scala.reflect.macros.blackbox.Context.WeakTypeTag[B]):scala.reflect.macros.blackbox.Context.Expr[F[T,B]]"></a>
+              <ol><li name="eu.timepit.refined.api.RefType#unsafeRewrap" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="unsafeRewrap[T,A,B](ta:F[T,A]):F[T,B]"></a>
+      <a id="unsafeRewrap[T,A,B](F[T,A]):F[T,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">unsafeRewrapM</span><span class="tparams">[<span name="T">T</span>, <span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="c">c: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.reflect.macros.blackbox.Context" class="extype" target="_top">Context</a></span>)</span><span class="params">(<span name="ta">ta: <span class="extype" name="scala.reflect.macros.Aliases.Expr">scala.reflect.macros.blackbox.Context.Expr</span>[<span class="extype" name="eu.timepit.refined.api.RefType.F">F</span>[<span class="extype" name="eu.timepit.refined.api.RefType.unsafeRewrapM.T">T</span>, <span class="extype" name="eu.timepit.refined.api.RefType.unsafeRewrapM.A">A</span>]]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.macros.Aliases.WeakTypeTag">scala.reflect.macros.blackbox.Context.WeakTypeTag</span>[<span class="extype" name="eu.timepit.refined.api.RefType.unsafeRewrapM.T">T</span>]</span>, <span name="arg1">arg1: <span class="extype" name="scala.reflect.macros.Aliases.WeakTypeTag">scala.reflect.macros.blackbox.Context.WeakTypeTag</span>[<span class="extype" name="eu.timepit.refined.api.RefType.unsafeRewrapM.A">A</span>]</span>, <span name="arg2">arg2: <span class="extype" name="scala.reflect.macros.Aliases.WeakTypeTag">scala.reflect.macros.blackbox.Context.WeakTypeTag</span>[<span class="extype" name="eu.timepit.refined.api.RefType.unsafeRewrapM.B">B</span>]</span>)</span><span class="result">: <span class="extype" name="scala.reflect.macros.Aliases.Expr">scala.reflect.macros.blackbox.Context.Expr</span>[<span class="extype" name="eu.timepit.refined.api.RefType.F">F</span>[<span class="extype" name="eu.timepit.refined.api.RefType.unsafeRewrapM.T">T</span>, <span class="extype" name="eu.timepit.refined.api.RefType.unsafeRewrapM.B">B</span>]]</span>
+        <span class="name">unsafeRewrap</span><span class="tparams">[<span name="T">T</span>, <span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="ta">ta: <span class="extype" name="eu.timepit.refined.api.RefType.F">F</span>[<span class="extype" name="eu.timepit.refined.api.RefType.unsafeRewrap.T">T</span>, <span class="extype" name="eu.timepit.refined.api.RefType.unsafeRewrap.A">A</span>]</span>)</span><span class="result">: <span class="extype" name="eu.timepit.refined.api.RefType.F">F</span>[<span class="extype" name="eu.timepit.refined.api.RefType.unsafeRewrap.T">T</span>, <span class="extype" name="eu.timepit.refined.api.RefType.unsafeRewrap.B">B</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.api.RefType@unsafeRewrapM[T,A,B](c:scala.reflect.macros.blackbox.Context)(ta:c.Expr[F[T,A]])(implicitevidence$3:c.WeakTypeTag[T],implicitevidence$4:c.WeakTypeTag[A],implicitevidence$5:c.WeakTypeTag[B]):c.Expr[F[T,B]]" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.api.RefType@unsafeRewrap[T,A,B](ta:F[T,A]):F[T,B]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -130,23 +130,6 @@ that only contains a value of type <code>T</code>.</p><p>The library provides in
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#eu.timepit.refined.api.RefType@unsafeWrap[T,P](t:T):F[T,P]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li><li name="eu.timepit.refined.api.RefType#unsafeWrapM" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="unsafeWrapM[T,P](c:scala.reflect.macros.blackbox.Context)(t:c.Expr[T])(implicitevidence$1:c.WeakTypeTag[T],implicitevidence$2:c.WeakTypeTag[P]):c.Expr[F[T,P]]"></a>
-      <a id="unsafeWrapM[T,P](Context)(scala.reflect.macros.blackbox.Context.Expr[T])(scala.reflect.macros.blackbox.Context.WeakTypeTag[T],scala.reflect.macros.blackbox.Context.WeakTypeTag[P]):scala.reflect.macros.blackbox.Context.Expr[F[T,P]]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">unsafeWrapM</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="params">(<span name="c">c: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.reflect.macros.blackbox.Context" class="extype" target="_top">Context</a></span>)</span><span class="params">(<span name="t">t: <span class="extype" name="scala.reflect.macros.Aliases.Expr">scala.reflect.macros.blackbox.Context.Expr</span>[<span class="extype" name="eu.timepit.refined.api.RefType.unsafeWrapM.T">T</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.macros.Aliases.WeakTypeTag">scala.reflect.macros.blackbox.Context.WeakTypeTag</span>[<span class="extype" name="eu.timepit.refined.api.RefType.unsafeWrapM.T">T</span>]</span>, <span name="arg1">arg1: <span class="extype" name="scala.reflect.macros.Aliases.WeakTypeTag">scala.reflect.macros.blackbox.Context.WeakTypeTag</span>[<span class="extype" name="eu.timepit.refined.api.RefType.unsafeWrapM.P">P</span>]</span>)</span><span class="result">: <span class="extype" name="scala.reflect.macros.Aliases.Expr">scala.reflect.macros.blackbox.Context.Expr</span>[<span class="extype" name="eu.timepit.refined.api.RefType.F">F</span>[<span class="extype" name="eu.timepit.refined.api.RefType.unsafeWrapM.T">T</span>, <span class="extype" name="eu.timepit.refined.api.RefType.unsafeWrapM.P">P</span>]]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.api.RefType@unsafeWrapM[T,P](c:scala.reflect.macros.blackbox.Context)(t:c.Expr[T])(implicitevidence$1:c.WeakTypeTag[T],implicitevidence$2:c.WeakTypeTag[P]):c.Expr[F[T,P]]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

@@ -165,18 +165,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="eu.timepit.refined.auto#autoInfer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="autoInfer[F[_,_],T,A,B](ta:F[T,A])(implicitir:eu.timepit.refined.api.Inference.==&gt;[A,B],implicitrt:eu.timepit.refined.api.RefType[F]):F[T,B]"></a>
-      <a id="autoInfer[F[_,_],T,A,B](F[T,A])(==&gt;[A,B],RefType[F]):F[T,B]"></a>
+      <a id="autoInfer[F[_,_],T,A,B](ta:F[T,A])(implicitrt:eu.timepit.refined.api.RefType[F],implicitir:eu.timepit.refined.api.Inference.==&gt;[A,B]):F[T,B]"></a>
+      <a id="autoInfer[F[_,_],T,A,B](F[T,A])(RefType[F],==&gt;[A,B]):F[T,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit macro </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">autoInfer</span><span class="tparams">[<span name="F">F<span class="tparams">[<span name="_">_</span>, <span name="_">_</span>]</span></span>, <span name="T">T</span>, <span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="ta">ta: <span class="extype" name="eu.timepit.refined.auto.autoInfer.F">F</span>[<span class="extype" name="eu.timepit.refined.auto.autoInfer.T">T</span>, <span class="extype" name="eu.timepit.refined.auto.autoInfer.A">A</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ir">ir: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.auto.autoInfer.A">A</span>, <span class="extype" name="eu.timepit.refined.auto.autoInfer.B">B</span>]</span>, <span name="rt">rt: <a href="api/RefType.html" class="extype" name="eu.timepit.refined.api.RefType">RefType</a>[<span class="extype" name="eu.timepit.refined.auto.autoInfer.F">F</span>]</span>)</span><span class="result">: <span class="extype" name="eu.timepit.refined.auto.autoInfer.F">F</span>[<span class="extype" name="eu.timepit.refined.auto.autoInfer.T">T</span>, <span class="extype" name="eu.timepit.refined.auto.autoInfer.B">B</span>]</span>
+        <span class="name">autoInfer</span><span class="tparams">[<span name="F">F<span class="tparams">[<span name="_">_</span>, <span name="_">_</span>]</span></span>, <span name="T">T</span>, <span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="ta">ta: <span class="extype" name="eu.timepit.refined.auto.autoInfer.F">F</span>[<span class="extype" name="eu.timepit.refined.auto.autoInfer.T">T</span>, <span class="extype" name="eu.timepit.refined.auto.autoInfer.A">A</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="rt">rt: <a href="api/RefType.html" class="extype" name="eu.timepit.refined.api.RefType">RefType</a>[<span class="extype" name="eu.timepit.refined.auto.autoInfer.F">F</span>]</span>, <span name="ir">ir: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.auto.autoInfer.A">A</span>, <span class="extype" name="eu.timepit.refined.auto.autoInfer.B">B</span>]</span>)</span><span class="result">: <span class="extype" name="eu.timepit.refined.auto.autoInfer.F">F</span>[<span class="extype" name="eu.timepit.refined.auto.autoInfer.T">T</span>, <span class="extype" name="eu.timepit.refined.auto.autoInfer.B">B</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.auto$@autoInfer[F[_,_],T,A,B](ta:F[T,A])(implicitir:eu.timepit.refined.api.Inference.==&gt;[A,B],implicitrt:eu.timepit.refined.api.RefType[F]):F[T,B]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.auto$@autoInfer[F[_,_],T,A,B](ta:F[T,A])(implicitrt:eu.timepit.refined.api.RefType[F],implicitir:eu.timepit.refined.api.Inference.==&gt;[A,B]):F[T,B]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -186,18 +186,18 @@
 inference is invalid, compilation fails.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="auto.html" class="extype" name="eu.timepit.refined.auto">auto</a></dd></dl></div>
     </li><li name="eu.timepit.refined.auto#autoRefineT" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="autoRefineT[T,P](t:T)(implicitv:eu.timepit.refined.api.Validate[T,P],implicitrt:eu.timepit.refined.api.RefType[shapeless.tag.@@]):shapeless.tag.@@[T,P]"></a>
-      <a id="autoRefineT[T,P](T)(Validate[T,P],RefType[@@]):@@[T,P]"></a>
+      <a id="autoRefineT[T,P](t:T)(implicitrt:eu.timepit.refined.api.RefType[shapeless.tag.@@],implicitv:eu.timepit.refined.api.Validate[T,P]):shapeless.tag.@@[T,P]"></a>
+      <a id="autoRefineT[T,P](T)(RefType[@@],Validate[T,P]):@@[T,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit macro </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">autoRefineT</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.auto.autoRefineT.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate.html" class="extype" name="eu.timepit.refined.api.Validate">Validate</a>[<span class="extype" name="eu.timepit.refined.auto.autoRefineT.T">T</span>, <span class="extype" name="eu.timepit.refined.auto.autoRefineT.P">P</span>]</span>, <span name="rt">rt: <a href="api/RefType.html" class="extype" name="eu.timepit.refined.api.RefType">RefType</a>[<span class="extype" name="shapeless.tag.@@">@@</span>]</span>)</span><span class="result">: <span class="extype" name="shapeless.tag.@@">@@</span>[<span class="extype" name="eu.timepit.refined.auto.autoRefineT.T">T</span>, <span class="extype" name="eu.timepit.refined.auto.autoRefineT.P">P</span>]</span>
+        <span class="name">autoRefineT</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.auto.autoRefineT.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="rt">rt: <a href="api/RefType.html" class="extype" name="eu.timepit.refined.api.RefType">RefType</a>[<span class="extype" name="shapeless.tag.@@">@@</span>]</span>, <span name="v">v: <a href="api/Validate.html" class="extype" name="eu.timepit.refined.api.Validate">Validate</a>[<span class="extype" name="eu.timepit.refined.auto.autoRefineT.T">T</span>, <span class="extype" name="eu.timepit.refined.auto.autoRefineT.P">P</span>]</span>)</span><span class="result">: <span class="extype" name="shapeless.tag.@@">@@</span>[<span class="extype" name="eu.timepit.refined.auto.autoRefineT.T">T</span>, <span class="extype" name="eu.timepit.refined.auto.autoRefineT.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.auto$@autoRefineT[T,P](t:T)(implicitv:eu.timepit.refined.api.Validate[T,P],implicitrt:eu.timepit.refined.api.RefType[shapeless.tag.@@]):shapeless.tag.@@[T,P]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.auto$@autoRefineT[T,P](t:T)(implicitrt:eu.timepit.refined.api.RefType[shapeless.tag.@@],implicitv:eu.timepit.refined.api.Validate[T,P]):shapeless.tag.@@[T,P]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -207,18 +207,18 @@ satisfies the predicate <code>P</code>. If it does not satisfy the predicate,
 compilation fails.</p><p>This is an implicit version of <code><a href="package.html#refineMT[P]:eu.timepit.refined.internal.RefineMPartiallyApplied[shapeless.tag.@@,P]" class="extmbr" name="eu.timepit.refined#refineMT">refineMT</a></code>.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="auto.html" class="extype" name="eu.timepit.refined.auto">auto</a></dd></dl></div>
     </li><li name="eu.timepit.refined.auto#autoRefineV" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="autoRefineV[T,P](t:T)(implicitv:eu.timepit.refined.api.Validate[T,P],implicitrt:eu.timepit.refined.api.RefType[eu.timepit.refined.api.Refined]):eu.timepit.refined.api.Refined[T,P]"></a>
-      <a id="autoRefineV[T,P](T)(Validate[T,P],RefType[Refined]):Refined[T,P]"></a>
+      <a id="autoRefineV[T,P](t:T)(implicitrt:eu.timepit.refined.api.RefType[eu.timepit.refined.api.Refined],implicitv:eu.timepit.refined.api.Validate[T,P]):eu.timepit.refined.api.Refined[T,P]"></a>
+      <a id="autoRefineV[T,P](T)(RefType[Refined],Validate[T,P]):Refined[T,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit macro </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">autoRefineV</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.auto.autoRefineV.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate.html" class="extype" name="eu.timepit.refined.api.Validate">Validate</a>[<span class="extype" name="eu.timepit.refined.auto.autoRefineV.T">T</span>, <span class="extype" name="eu.timepit.refined.auto.autoRefineV.P">P</span>]</span>, <span name="rt">rt: <a href="api/RefType.html" class="extype" name="eu.timepit.refined.api.RefType">RefType</a>[<a href="api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>]</span>)</span><span class="result">: <a href="api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>[<span class="extype" name="eu.timepit.refined.auto.autoRefineV.T">T</span>, <span class="extype" name="eu.timepit.refined.auto.autoRefineV.P">P</span>]</span>
+        <span class="name">autoRefineV</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="eu.timepit.refined.auto.autoRefineV.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="rt">rt: <a href="api/RefType.html" class="extype" name="eu.timepit.refined.api.RefType">RefType</a>[<a href="api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>]</span>, <span name="v">v: <a href="api/Validate.html" class="extype" name="eu.timepit.refined.api.Validate">Validate</a>[<span class="extype" name="eu.timepit.refined.auto.autoRefineV.T">T</span>, <span class="extype" name="eu.timepit.refined.auto.autoRefineV.P">P</span>]</span>)</span><span class="result">: <a href="api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">Refined</a>[<span class="extype" name="eu.timepit.refined.auto.autoRefineV.T">T</span>, <span class="extype" name="eu.timepit.refined.auto.autoRefineV.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.auto$@autoRefineV[T,P](t:T)(implicitv:eu.timepit.refined.api.Validate[T,P],implicitrt:eu.timepit.refined.api.RefType[eu.timepit.refined.api.Refined]):eu.timepit.refined.api.Refined[T,P]" title="Permalink" target="_top">
+      <a href="../../../index.html#eu.timepit.refined.auto$@autoRefineV[T,P](t:T)(implicitrt:eu.timepit.refined.api.RefType[eu.timepit.refined.api.Refined],implicitv:eu.timepit.refined.api.Validate[T,P]):eu.timepit.refined.api.Refined[T,P]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

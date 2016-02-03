@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>util - eu.timepit.refined.util</title>
-          <meta name="description" content="util - eu.timepit.refined.util" />
-          <meta name="keywords" content="util eu.timepit.refined.util" />
+          <title>macros - eu.timepit.refined.macros</title>
+          <meta name="description" content="macros - eu.timepit.refined.macros" />
+          <meta name="keywords" content="macros eu.timepit.refined.macros" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
-            var hash = 'eu.timepit.refined.util.package';
+            var hash = 'eu.timepit.refined.macros.package';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -30,8 +30,8 @@
       <div id="definition">
         <img alt="Package" src="../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="eu">eu</a>.<a href="../../package.html" class="extype" name="eu.timepit">timepit</a>.<a href="../package.html" class="extype" name="eu.timepit.refined">refined</a></p>
-        <h1>util</h1><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.util.package" title="Permalink" target="_top">
+        <h1>macros</h1><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.macros.package" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
@@ -43,7 +43,7 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <span class="name">util</span>
+        <span class="name">macros</span>
       </span>
       </h4>
       
@@ -64,51 +64,65 @@
         <div id="allMembers">
         
 
-        
-
-        
-
-        <div id="values" class="values members">
-              <h3>Value Members</h3>
-              <ol><li name="eu.timepit.refined.util.string" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="string"></a>
-      <a id="string:string"></a>
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="eu.timepit.refined.macros.InferMacro" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InferMacroextendsMacroUtils"></a>
+      <a id="InferMacro:InferMacro"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">object</span>
+        <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="string$.html"><span class="name">string</span></a>
+        <a href="InferMacro.html"><span class="name">InferMacro</span></a><span class="result"> extends <a href="MacroUtils.html" class="extype" name="eu.timepit.refined.macros.MacroUtils">MacroUtils</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.util.package@string" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.macros.package@InferMacroextendsMacroUtils" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Module for statically checking constructors of types that can be
-instantiated with <code>String</code>s.</p><div class="fullcomment"><div class="comment cmt"><p>Module for statically checking constructors of types that can be
-instantiated with <code>String</code>s.
-</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="https://github.com/fthomas/refined/blob/master/docs/util_string.md" target="_blank">https://github.com/fthomas/refined/blob/master/docs/util_string.md</a></p></span></dd></dl></div>
-    </li><li name="eu.timepit.refined.util.time" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="time"></a>
-      <a id="time:time"></a>
+      
+    </li><li name="eu.timepit.refined.macros.MacroUtils" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MacroUtilsextendsAnyRef"></a>
+      <a id="MacroUtils:MacroUtils"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">object</span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="time$.html"><span class="name">time</span></a>
+        <a href="MacroUtils.html"><span class="name">MacroUtils</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.util.package@time" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.macros.package@MacroUtilsextendsAnyRef" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Module for date and time related refined types.</p>
+      
+    </li><li name="eu.timepit.refined.macros.RefineMacro" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RefineMacroextendsMacroUtils"></a>
+      <a id="RefineMacro:RefineMacro"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="RefineMacro.html"><span class="name">RefineMacro</span></a><span class="result"> extends <a href="MacroUtils.html" class="extype" name="eu.timepit.refined.macros.MacroUtils">MacroUtils</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#eu.timepit.refined.macros.package@RefineMacroextendsMacroUtils" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li></ol>
             </div>
+
+        
+
+        
 
         
 
