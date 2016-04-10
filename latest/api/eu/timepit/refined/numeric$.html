@@ -53,15 +53,15 @@
 support both shapeless' natural numbers (<code>Nat</code>) and numeric singleton
 types (which are made available by shapeless' <code>Witness</code> - abbreviated
 as <a href="package.html#W:shapeless.Witness.type" class="extmbr" name="eu.timepit.refined#W">W</a> in refined) which include subtypes of <code>Int</code>, <code>Long</code>, <code>Double</code>,
-<code>Char</code> etc.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> shapeless.nat._
-     | <span class="kw">import</span> shapeless.tag.@@
+<code>Char</code> etc.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api.Refined
      | <span class="kw">import</span> eu.timepit.refined.numeric._
+     | <span class="kw">import</span> shapeless.nat._
 
-scala&gt; refineMT[Greater[_5]](<span class="num">10</span>)
-res1: <span class="std">Int</span> @@ Greater[_5] = <span class="num">10</span>
+scala&gt; refineMV[Greater[_5]](<span class="num">10</span>)
+res1: <span class="std">Int</span> Refined Greater[_5] = <span class="num">10</span>
 
-scala&gt; refineMT[Greater[W.`<span class="num">1.5</span>`.T]](<span class="num">1.6</span>)
-res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>`.T] = <span class="num">1.6</span></pre></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/core/shared/src/main/scala/eu/timepit/refined/numeric.scala" target="_blank">numeric.scala</a></dd></dl><div class="toggleContainer block">
+scala&gt; refineMV[Greater[W.`<span class="num">1.5</span>`.T]](<span class="num">1.6</span>)
+res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</span>`.T] = <span class="num">1.6</span></pre></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/core/shared/src/main/scala/eu/timepit/refined/numeric.scala" target="_blank">numeric.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.NumericInference">NumericInference</span>, <span class="extype" name="eu.timepit.refined.NumericValidate">NumericValidate</span>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>

@@ -86,27 +86,7 @@
         <div id="allMembers">
         
 
-        <div id="types" class="types members">
-              <h3>Type Members</h3>
-              <ol><li name="eu.timepit.refined.auto" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="autoextendsAnyRef"></a>
-      <a id="auto:auto"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="auto.html"><span class="name">auto</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.package@autoextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      
-    </li></ol>
-            </div>
+        
 
         
 
@@ -167,7 +147,7 @@ literals directly in a position where a type is expected.
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="auto$.html"><span class="name">auto</span></a><span class="result"> extends <a href="auto.html" class="extype" name="eu.timepit.refined.auto">auto</a></span>
+        <a href="auto$.html"><span class="name">auto</span></a>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.package@auto" title="Permalink" target="_top">
@@ -191,7 +171,7 @@ literals directly in a position where a type is expected.
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Module for logical predicates.</p>
     </li><li name="eu.timepit.refined.char" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="char"></a>
       <a id="char:char"></a>
@@ -225,7 +205,7 @@ literals directly in a position where a type is expected.
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Module for collection predicates.</p>
     </li><li name="eu.timepit.refined.generic" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="generic"></a>
       <a id="generic:generic"></a>
@@ -242,7 +222,7 @@ literals directly in a position where a type is expected.
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Module for generic predicates.</p>
     </li><li name="eu.timepit.refined.internal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="internal"></a>
       <a id="internal:internal"></a>
@@ -297,15 +277,15 @@ literals directly in a position where a type is expected.
 support both shapeless' natural numbers (<code>Nat</code>) and numeric singleton
 types (which are made available by shapeless' <code>Witness</code> - abbreviated
 as <a href="#W:shapeless.Witness.type" class="extmbr" name="eu.timepit.refined#W">W</a> in refined) which include subtypes of <code>Int</code>, <code>Long</code>, <code>Double</code>,
-<code>Char</code> etc.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> shapeless.nat._
-     | <span class="kw">import</span> shapeless.tag.@@
+<code>Char</code> etc.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api.Refined
      | <span class="kw">import</span> eu.timepit.refined.numeric._
+     | <span class="kw">import</span> shapeless.nat._
 
-scala&gt; refineMT[Greater[_5]](<span class="num">10</span>)
-res1: <span class="std">Int</span> @@ Greater[_5] = <span class="num">10</span>
+scala&gt; refineMV[Greater[_5]](<span class="num">10</span>)
+res1: <span class="std">Int</span> Refined Greater[_5] = <span class="num">10</span>
 
-scala&gt; refineMT[Greater[W.`<span class="num">1.5</span>`.T]](<span class="num">1.6</span>)
-res2: <span class="std">Double</span> @@ Greater[W.`<span class="num">1.5</span>`.T] = <span class="num">1.6</span></pre></div></div>
+scala&gt; refineMV[Greater[W.`<span class="num">1.5</span>`.T]](<span class="num">1.6</span>)
+res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</span>`.T] = <span class="num">1.6</span></pre></div></div>
     </li><li name="eu.timepit.refined#refineMT" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="refineMT[P]:eu.timepit.refined.internal.RefineMPartiallyApplied[shapeless.tag.@@,P]"></a>
       <a id="refineMT[P]:RefineMPartiallyApplied[@@,P]"></a>
@@ -428,30 +408,7 @@ of <code>Char</code>s.
 
         
 
-        <div id="values" class="values members">
-              <h3>Deprecated Value Members</h3>
-              <ol><li name="eu.timepit.refined.implicits" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="implicits"></a>
-      <a id="implicits:implicits"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="implicits$.html"><span class="name deprecated" title="Deprecated: (Since version 0.2.4) The 'implicits' object has been deprecated in favor of the 'auto' object.">implicits</span></a><span class="result"> extends <a href="auto.html" class="extype" name="eu.timepit.refined.auto">auto</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.package@implicits" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 0.2.4)</i> The 'implicits' object has been deprecated in favor of the 'auto' object.</p></dd></dl></div>
-    </li></ol>
-            </div>
+        
         </div>
 
         <div id="inheritedMembers">

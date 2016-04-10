@@ -49,7 +49,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/core/shared/src/main/scala/eu/timepit/refined/boolean.scala" target="_blank">boolean.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Module for logical predicates.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/core/shared/src/main/scala/eu/timepit/refined/boolean.scala" target="_blank">boolean.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.BooleanInference0">BooleanInference0</span>, <span class="extype" name="eu.timepit.refined.BooleanInference1">BooleanInference1</span>, <span class="extype" name="eu.timepit.refined.BooleanInference2">BooleanInference2</span>, <span class="extype" name="eu.timepit.refined.BooleanValidate">BooleanValidate</span>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
@@ -158,6 +158,40 @@
       </a>
     </span>
       <p class="shortcomment cmt">Constant predicate that is always <code>false</code>.</p>
+    </li><li name="eu.timepit.refined.boolean.Nand" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Nand[A,B]=eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.And[A,B]]"></a>
+      <a id="Nand[A,B]:Nand[A,B]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Nand</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="boolean$$And.html" class="extype" name="eu.timepit.refined.boolean.And">And</a>[<span class="extype" name="eu.timepit.refined.boolean.Nand.A">A</span>, <span class="extype" name="eu.timepit.refined.boolean.Nand.B">B</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@Nand[A,B]=eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.And[A,B]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Negated conjunction of the predicates <code>A</code> and <code>B</code>.</p>
+    </li><li name="eu.timepit.refined.boolean.Nor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Nor[A,B]=eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Or[A,B]]"></a>
+      <a id="Nor[A,B]:Nor[A,B]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Nor</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="boolean$$Or.html" class="extype" name="eu.timepit.refined.boolean.Or">Or</a>[<span class="extype" name="eu.timepit.refined.boolean.Nor.A">A</span>, <span class="extype" name="eu.timepit.refined.boolean.Nor.B">B</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@Nor[A,B]=eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Or[A,B]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Negated disjunction of the predicates <code>A</code> and <code>B</code>.</p>
     </li><li name="eu.timepit.refined.boolean.Not" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Not[P]extendsProductwithSerializable"></a>
       <a id="Not[P]:Not[P]"></a>
@@ -806,6 +840,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference1</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference0#nandCommutativity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nandCommutativity[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Nand[A,B],eu.timepit.refined.boolean.Nand[B,A]]"></a>
+      <a id="nandCommutativity[A,B]:==&gt;[Nand[A,B],Nand[B,A]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nandCommutativity</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="#Nand[A,B]=eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.And[A,B]]" class="extmbr" name="eu.timepit.refined.boolean.Nand">Nand</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.nandCommutativity.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.nandCommutativity.B">B</span>], <a href="#Nand[A,B]=eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.And[A,B]]" class="extmbr" name="eu.timepit.refined.boolean.Nand">Nand</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.nandCommutativity.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.nandCommutativity.A">A</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@nandCommutativity[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Nand[A,B],eu.timepit.refined.boolean.Nand[B,A]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -823,6 +874,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="eu.timepit.refined.BooleanInference0#norCommutativity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="norCommutativity[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Nor[A,B],eu.timepit.refined.boolean.Nor[B,A]]"></a>
+      <a id="norCommutativity[A,B]:==&gt;[Nor[A,B],Nor[B,A]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">norCommutativity</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="#Nor[A,B]=eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Or[A,B]]" class="extmbr" name="eu.timepit.refined.boolean.Nor">Nor</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.norCommutativity.A">A</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.norCommutativity.B">B</span>], <a href="#Nor[A,B]=eu.timepit.refined.boolean.Not[eu.timepit.refined.boolean.Or[A,B]]" class="extmbr" name="eu.timepit.refined.boolean.Nor">Nor</a>[<span class="extype" name="eu.timepit.refined.BooleanInference0.norCommutativity.B">B</span>, <span class="extype" name="eu.timepit.refined.BooleanInference0.norCommutativity.A">A</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#eu.timepit.refined.boolean$@norCommutativity[A,B]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.boolean.Nor[A,B],eu.timepit.refined.boolean.Nor[B,A]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>BooleanInference0</dd></dl></div>
     </li><li name="eu.timepit.refined.BooleanValidate#notValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notValidate[T,P,R](implicitv:eu.timepit.refined.api.Validate.Aux[T,P,R]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.boolean.Not[P],eu.timepit.refined.boolean.Not[v.Res]]"></a>
       <a id="notValidate[T,P,R](Aux[T,P,R]):Aux[T,Not[P],Not[(v)#Res]]"></a>

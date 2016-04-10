@@ -28,12 +28,10 @@
         </head>
         <body class="value">
       <div id="definition">
-        <a href="auto.html" title="See companion trait"><img alt="Object/Trait" src="../../../lib/object_to_trait_big.png" /></a>
+        <img alt="Object" src="../../../lib/object_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="eu">eu</a>.<a href="../package.html" class="extype" name="eu.timepit">timepit</a>.<a href="package.html" class="extype" name="eu.timepit.refined">refined</a></p>
-        <h1><a href="auto.html" title="See companion trait">auto</a></h1><h3><span class="morelinks"><div>
-            Related Docs:
-            <a href="auto.html" title="See companion trait">trait auto</a>
-            | <a href="package.html" class="extype" name="eu.timepit.refined">package refined</a>
+        <h1>auto</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="eu.timepit.refined">package refined</a>
           </div></span></h3><span class="permalink">
       <a href="../../../index.html#eu.timepit.refined.auto$" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" alt="Permalink" />
@@ -47,13 +45,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">auto</span><span class="result"> extends <a href="auto.html" class="extype" name="eu.timepit.refined.auto">auto</a></span>
+        <span class="name">auto</span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/core/shared/src/main/scala/eu/timepit/refined/auto.scala" target="_blank">auto.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="auto.html" class="extype" name="eu.timepit.refined.auto">auto</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
@@ -71,7 +69,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="eu.timepit.refined.auto"><span>auto</span></li><li class="in" name="eu.timepit.refined.auto"><span>auto</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="eu.timepit.refined.auto"><span>auto</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -184,7 +182,7 @@
 <code>F[T, B]</code> if there is a valid inference <code>A ==&gt; B</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly converts (at compile-time) a value of type <code>F[T, A]</code> to
 <code>F[T, B]</code> if there is a valid inference <code>A ==&gt; B</code>. If the
 inference is invalid, compilation fails.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="auto.html" class="extype" name="eu.timepit.refined.auto">auto</a></dd></dl></div>
+</p></div></div>
     </li><li name="eu.timepit.refined.auto#autoRefineT" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="autoRefineT[T,P](t:T)(implicitrt:eu.timepit.refined.api.RefType[shapeless.tag.@@],implicitv:eu.timepit.refined.api.Validate[T,P]):shapeless.tag.@@[T,P]"></a>
       <a id="autoRefineT[T,P](T)(RefType[@@],Validate[T,P]):@@[T,P]"></a>
@@ -205,7 +203,7 @@ inference is invalid, compilation fails.
 satisfies the predicate <code>P</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly tags (at compile-time) a value of type <code>T</code> with <code>P</code> if <code>t</code>
 satisfies the predicate <code>P</code>. If it does not satisfy the predicate,
 compilation fails.</p><p>This is an implicit version of <code><a href="package.html#refineMT[P]:eu.timepit.refined.internal.RefineMPartiallyApplied[shapeless.tag.@@,P]" class="extmbr" name="eu.timepit.refined#refineMT">refineMT</a></code>.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="auto.html" class="extype" name="eu.timepit.refined.auto">auto</a></dd></dl></div>
+</p></div></div>
     </li><li name="eu.timepit.refined.auto#autoRefineV" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="autoRefineV[T,P](t:T)(implicitrt:eu.timepit.refined.api.RefType[eu.timepit.refined.api.Refined],implicitv:eu.timepit.refined.api.Validate[T,P]):eu.timepit.refined.api.Refined[T,P]"></a>
       <a id="autoRefineV[T,P](T)(RefType[Refined],Validate[T,P]):Refined[T,P]"></a>
@@ -226,7 +224,7 @@ compilation fails.</p><p>This is an implicit version of <code><a href="package.h
 <code><a href="api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">api.Refined</a>[T, P]</code> if <code>t</code> satisfies the predicate <code>P</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly wraps (at compile-time) a value of type <code>T</code> in
 <code><a href="api/Refined.html" class="extype" name="eu.timepit.refined.api.Refined">api.Refined</a>[T, P]</code> if <code>t</code> satisfies the predicate <code>P</code>. If it does
 not satisfy the predicate, compilation fails.</p><p>This is an implicit version of <code><a href="package.html#refineMV[P]:eu.timepit.refined.internal.RefineMPartiallyApplied[eu.timepit.refined.api.Refined,P]" class="extmbr" name="eu.timepit.refined#refineMV">refineMV</a></code>.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="auto.html" class="extype" name="eu.timepit.refined.auto">auto</a></dd></dl></div>
+</p></div></div>
     </li><li name="eu.timepit.refined.auto#autoUnwrap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="autoUnwrap[F[_,_],T,P](tp:F[T,P])(implicitrt:eu.timepit.refined.api.RefType[F]):T"></a>
       <a id="autoUnwrap[F[_,_],T,P](F[T,P])(RefType[F]):T"></a>
@@ -248,7 +246,7 @@ not satisfy the predicate, compilation fails.</p><p>This is an implicit version 
 <code><a href="api/RefType.html" class="extype" name="eu.timepit.refined.api.RefType">api.RefType</a></code> instance of <code>F</code>. This allows a <code>F[T, P]</code> to be
 used as it were a subtype of <code>T</code>.</p><p>Note: This conversion is not needed if <code>F[T, _] &lt;: T</code> holds (which
 is the case for <code>shapeless.tag.@@</code>, for example).
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="auto.html" class="extype" name="eu.timepit.refined.auto">auto</a></dd></dl></div>
+</p></div></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -543,9 +541,7 @@ is the case for <code>shapeless.tag.@@</code>, for example).
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="eu.timepit.refined.auto">
-              <h3>Inherited from <a href="auto.html" class="extype" name="eu.timepit.refined.auto">auto</a></h3>
-            </div><div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.AnyRef">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
