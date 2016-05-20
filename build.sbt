@@ -218,7 +218,7 @@ lazy val compileSettings = Seq(
     "org.scala-lang" % "scala-compiler" % scalaVersion.value,
     compilerPlugin("org.scalamacros" % "paradise" % macroParadiseVersion cross CrossVersion.full),
     "org.typelevel" %%% "macro-compat" % macroCompatVersion,
-    "com.github.julien-truffaut"  %%  "monocle-core" % "1.1.1",
+    "com.github.julien-truffaut"  %%  "monocle-core" % "1.2.1",
     "com.chuusai" %%% "shapeless" % shapelessVersion,
     "org.scalacheck" %%% "scalacheck" % scalaCheckVersion % "test"
   ),
