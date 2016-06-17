@@ -494,11 +494,11 @@ that only contains a value of type <code>T</code>.</p><p>The library provides in
 it satisfies the predicate <code>P</code>, or an error message on the left
 otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a value of type <code>T</code> refined as <code>F[T, P]</code> on the right if
 it satisfies the predicate <code>P</code>, or an error message on the left
-otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api._
-     | <span class="kw">import</span> eu.timepit.refined.numeric._
+otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api.{ Refined, RefType }
+     | <span class="kw">import</span> eu.timepit.refined.numeric.Positive
 
 scala&gt; RefType[Refined].refine[Positive](<span class="num">10</span>)
-res1: Either[<span class="std">String</span>, Refined[<span class="std">Int</span>, Positive]] = Right(<span class="num">10</span>)</pre><p>Note: The return type is <code><a href="../internal/RefinePartiallyApplied.html" class="extype" name="eu.timepit.refined.internal.RefinePartiallyApplied">internal.RefinePartiallyApplied</a>[F, P]</code>,
+res0: Either[<span class="std">String</span>, Refined[<span class="std">Int</span>, Positive]] = Right(<span class="num">10</span>)</pre><p>Note: The return type is <code><a href="../internal/RefinePartiallyApplied.html" class="extype" name="eu.timepit.refined.internal.RefinePartiallyApplied">internal.RefinePartiallyApplied</a>[F, P]</code>,
 which has an <code>apply</code> method on it, allowing the type <code>T</code> to be
 inferred from its argument.
 </p></div></div>
@@ -520,11 +520,11 @@ inferred from its argument.
     </span>
       <p class="shortcomment cmt">Macro that returns a value of type <code>T</code> refined as <code>F[T, P]</code> if
 it satisfies the predicate <code>P</code>, or fails to compile otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Macro that returns a value of type <code>T</code> refined as <code>F[T, P]</code> if
-it satisfies the predicate <code>P</code>, or fails to compile otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined._
-     | <span class="kw">import</span> eu.timepit.refined.numeric._
+it satisfies the predicate <code>P</code>, or fails to compile otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api.{ Refined, RefType }
+     | <span class="kw">import</span> eu.timepit.refined.numeric.Positive
 
 scala&gt; RefType[Refined].refineM[Positive](<span class="num">10</span>)
-res1: Refined[<span class="std">Int</span>, Positive] = <span class="num">10</span></pre><p>Note: <code>M</code> stands for <b>m</b>acro.</p><p>Note: The return type is <code><a href="../internal/RefineMPartiallyApplied.html" class="extype" name="eu.timepit.refined.internal.RefineMPartiallyApplied">internal.RefineMPartiallyApplied</a>[F, P]</code>,
+res0: Refined[<span class="std">Int</span>, Positive] = <span class="num">10</span></pre><p>Note: <code>M</code> stands for <b>m</b>acro.</p><p>Note: The return type is <code><a href="../internal/RefineMPartiallyApplied.html" class="extype" name="eu.timepit.refined.internal.RefineMPartiallyApplied">internal.RefineMPartiallyApplied</a>[F, P]</code>,
 which has an <code>apply</code> method on it, allowing the type <code>T</code> to be
 inferred from its argument.
 </p></div></div>
@@ -546,11 +546,11 @@ inferred from its argument.
     </span>
       <p class="shortcomment cmt">Macro that returns a value of type <code>T</code> refined as <code>F[T, P]</code> if
 it satisfies the predicate <code>P</code>, or fails to compile otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Macro that returns a value of type <code>T</code> refined as <code>F[T, P]</code> if
-it satisfies the predicate <code>P</code>, or fails to compile otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined._
-     | <span class="kw">import</span> eu.timepit.refined.numeric._
+it satisfies the predicate <code>P</code>, or fails to compile otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api.{ Refined, RefType }
+     | <span class="kw">import</span> eu.timepit.refined.numeric.Positive
 
 scala&gt; RefType[Refined].refineMF[<span class="std">Long</span>, Positive](<span class="num">10</span>)
-res1: Refined[<span class="std">Long</span>, Positive] = <span class="num">10</span></pre><p>Note: <code>M</code> stands for <b>m</b>acro and <code>F</code> for <b>f</b>ully applied.</p><p>Note: The return type is <code><a href="../internal/RefineMFullyApplied.html" class="extype" name="eu.timepit.refined.internal.RefineMFullyApplied">internal.RefineMFullyApplied</a>[F, T, P]</code>,
+res0: Refined[<span class="std">Long</span>, Positive] = <span class="num">10</span></pre><p>Note: <code>M</code> stands for <b>m</b>acro and <code>F</code> for <b>f</b>ully applied.</p><p>Note: The return type is <code><a href="../internal/RefineMFullyApplied.html" class="extype" name="eu.timepit.refined.internal.RefineMFullyApplied">internal.RefineMFullyApplied</a>[F, T, P]</code>,
 which has an <code>apply</code> method on it, allowing <code>refineMF</code> to be called
 like in the given example. In contrast to <code><a href="#refineM[P]:eu.timepit.refined.internal.RefineMPartiallyApplied[F,P]" class="extmbr" name="eu.timepit.refined.api.RefType#refineM">refineM</a></code>, the type
 <code>T</code> needs to be specified before <code>apply</code> can be called.

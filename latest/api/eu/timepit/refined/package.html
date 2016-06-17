@@ -154,7 +154,8 @@ literals directly in a position where a type is expected.
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Module that provides automatic refinements and automatic conversions
+between refined types (refinement subtyping) at compile-time.</p>
     </li><li name="eu.timepit.refined.boolean" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="boolean"></a>
       <a id="boolean:boolean"></a>
@@ -276,16 +277,17 @@ literals directly in a position where a type is expected.
       <p class="shortcomment cmt">Module for numeric predicates.</p><div class="fullcomment"><div class="comment cmt"><p>Module for numeric predicates. Predicates that take type parameters
 support both shapeless' natural numbers (<code>Nat</code>) and numeric singleton
 types (which are made available by shapeless' <code>Witness</code> - abbreviated
-as <a href="#W:shapeless.Witness.type" class="extmbr" name="eu.timepit.refined#W">W</a> in refined) which include subtypes of <code>Int</code>, <code>Long</code>, <code>Double</code>,
-<code>Char</code> etc.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api.Refined
-     | <span class="kw">import</span> eu.timepit.refined.numeric._
-     | <span class="kw">import</span> shapeless.nat._
+as <code><a href="#W:shapeless.Witness.type" class="extmbr" name="eu.timepit.refined#W">W</a></code> in refined) which include subtypes of <code>Int</code>, <code>Long</code>,
+<code>Double</code>, <code>Char</code> etc.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api.Refined
+     | <span class="kw">import</span> eu.timepit.refined.numeric.Greater
+     | <span class="kw">import</span> shapeless.nat._5
 
 scala&gt; refineMV[Greater[_5]](<span class="num">10</span>)
 res1: <span class="std">Int</span> Refined Greater[_5] = <span class="num">10</span>
 
 scala&gt; refineMV[Greater[W.`<span class="num">1.5</span>`.T]](<span class="num">1.6</span>)
-res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</span>`.T] = <span class="num">1.6</span></pre></div></div>
+res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</span>`.T] = <span class="num">1.6</span></pre><p>Note: <code><a href="generic$$Equal.html" class="extype" name="eu.timepit.refined.generic.Equal">generic.Equal</a></code> can also be used for numeric types.
+</p></div></div>
     </li><li name="eu.timepit.refined#refineMT" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="refineMT[P]:eu.timepit.refined.internal.RefineMPartiallyApplied[shapeless.tag.@@,P]"></a>
       <a id="refineMT[P]:RefineMPartiallyApplied[@@,P]"></a>

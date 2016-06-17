@@ -83,7 +83,7 @@
       </a>
     </span>
       
-    </li><li name="eu.timepit.refined.api.Inference" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.timepit.refined.api.Inference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Inference[P,C]extendsProductwithSerializable"></a>
       <a id="Inference[P,C]:Inference[P,C]"></a>
       <h4 class="signature">
@@ -100,7 +100,11 @@
       </a>
     </span>
       <p class="shortcomment cmt">Evidence that states if the conclusion <code>C</code> can be inferred from the
-premise <code>P</code> or not.</p>
+premise <code>P</code> or not.</p><div class="fullcomment"><div class="comment cmt"><p>Evidence that states if the conclusion <code>C</code> can be inferred from the
+premise <code>P</code> or not.</p><p>This type class is used to implement refinement subtyping. If a valid
+<code>Inference[P, C]</code> exists, the type <code>F[T, P]</code> is considered a subtype
+of <code>F[T, C]</code>.
+</p></div></div>
     </li><li name="eu.timepit.refined.api.Passed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Passed[A]extendsResult[A]withProductwithSerializable"></a>
       <a id="Passed[A]:Passed[A]"></a>
@@ -142,18 +146,18 @@ that only contains a value of type <code>T</code>.</p><p>The library provides in
    (i.e. <code>(T @@ P) &lt;: T</code>)
 </li></ul></div></div>
     </li><li name="eu.timepit.refined.api.Refined" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Refined[T,P]extendsAnyValwithProductwithSerializable"></a>
+      <a id="Refined[T,P]extendsAnyValwithSerializable"></a>
       <a id="Refined[T,P]:Refined[T,P]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
-        <span class="kind">case class</span>
+        <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Refined.html"><span class="name">Refined</span></a><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyVal" class="extype" target="_top">AnyVal</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="Refined.html"><span class="name">Refined</span></a><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyVal" class="extype" target="_top">AnyVal</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#eu.timepit.refined.api.package@Refined[T,P]extendsAnyValwithProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../../../index.html#eu.timepit.refined.api.package@Refined[T,P]extendsAnyValwithSerializable" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>

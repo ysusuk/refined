@@ -204,11 +204,12 @@
 satisfies the predicate in <code>FTP</code>, or an error message on the left
 otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a value of type <code>T</code> refined as <code>FTP</code> on the right if it
 satisfies the predicate in <code>FTP</code>, or an error message on the left
-otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api._
-     | <span class="kw">import</span> eu.timepit.refined.numeric._
+otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api.{ Refined, RefType }
+     | <span class="kw">import</span> eu.timepit.refined.numeric.Positive
 
-scala&gt; RefType.applyRef[<span class="std">Int</span> Refined Positive](<span class="num">10</span>)
-res1: Either[<span class="std">String</span>, <span class="std">Int</span> Refined Positive] = Right(<span class="num">10</span>)</pre><p>Note: The return type is <code><a href="../internal/ApplyRefPartiallyApplied.html" class="extype" name="eu.timepit.refined.internal.ApplyRefPartiallyApplied">internal.ApplyRefPartiallyApplied</a>[FTP]</code>,
+scala&gt; <span class="kw">type</span> PosInt = <span class="std">Int</span> Refined Positive
+scala&gt; RefType.applyRef[PosInt](<span class="num">10</span>)
+res0: Either[<span class="std">String</span>, PosInt] = Right(<span class="num">10</span>)</pre><p>Note: The return type is <code><a href="../internal/ApplyRefPartiallyApplied.html" class="extype" name="eu.timepit.refined.internal.ApplyRefPartiallyApplied">internal.ApplyRefPartiallyApplied</a>[FTP]</code>,
 which has an <code>apply</code> method on it, allowing <code>applyRef</code> to be called
 like in the given example.
 </p></div></div>
@@ -230,12 +231,12 @@ like in the given example.
     </span>
       <p class="shortcomment cmt">Macro that returns a value of type <code>T</code> refined as <code>FTP</code> if  it
 satisfies the predicate in <code>FTP</code>, or fails to compile otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Macro that returns a value of type <code>T</code> refined as <code>FTP</code> if  it
-satisfies the predicate in <code>FTP</code>, or fails to compile otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api._
-     | <span class="kw">import</span> eu.timepit.refined.numeric._
+satisfies the predicate in <code>FTP</code>, or fails to compile otherwise.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api.{ Refined, RefType }
+     | <span class="kw">import</span> eu.timepit.refined.numeric.Positive
 
 scala&gt; <span class="kw">type</span> PosInt = <span class="std">Int</span> Refined Positive
 scala&gt; RefType.applyRefM[PosInt](<span class="num">10</span>)
-res1: PosInt = <span class="num">10</span></pre><p>Note: <code>M</code> stands for <b>m</b>acro.</p><p>Note: The return type is <code><a href="../internal/ApplyRefMPartiallyApplied.html" class="extype" name="eu.timepit.refined.internal.ApplyRefMPartiallyApplied">internal.ApplyRefMPartiallyApplied</a>[FTP]</code>,
+res0: PosInt = <span class="num">10</span></pre><p>Note: <code>M</code> stands for <b>m</b>acro.</p><p>Note: The return type is <code><a href="../internal/ApplyRefMPartiallyApplied.html" class="extype" name="eu.timepit.refined.internal.ApplyRefMPartiallyApplied">internal.ApplyRefMPartiallyApplied</a>[FTP]</code>,
 which has an <code>apply</code> method on it, allowing <code>applyRefM</code> to be called
 like in the given example.
 </p></div></div>

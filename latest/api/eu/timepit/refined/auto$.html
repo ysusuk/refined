@@ -49,7 +49,9 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/core/shared/src/main/scala/eu/timepit/refined/auto.scala" target="_blank">auto.scala</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Module that provides automatic refinements and automatic conversions
+between refined types (refinement subtyping) at compile-time.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/core/shared/src/main/scala/eu/timepit/refined/auto.scala" target="_blank">auto.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
@@ -181,8 +183,14 @@
       <p class="shortcomment cmt">Implicitly converts (at compile-time) a value of type <code>F[T, A]</code> to
 <code>F[T, B]</code> if there is a valid inference <code>A ==&gt; B</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly converts (at compile-time) a value of type <code>F[T, A]</code> to
 <code>F[T, B]</code> if there is a valid inference <code>A ==&gt; B</code>. If the
-inference is invalid, compilation fails.
-</p></div></div>
+inference is invalid, compilation fails.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api.Refined
+     | <span class="kw">import</span> eu.timepit.refined.auto.{ autoInfer, autoRefineV }
+     | <span class="kw">import</span> eu.timepit.refined.numeric.Greater
+
+scala&gt; <span class="kw">val</span> x: <span class="std">Int</span> Refined Greater[W.`<span class="num">5</span>`.T] = <span class="num">100</span>
+
+scala&gt; x: <span class="std">Int</span> Refined Greater[W.`<span class="num">0</span>`.T]
+res0: <span class="std">Int</span> Refined Greater[W.`<span class="num">0</span>`.T] = <span class="num">100</span></pre></div></div>
     </li><li name="eu.timepit.refined.auto#autoRefineT" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="autoRefineT[T,P](t:T)(implicitrt:eu.timepit.refined.api.RefType[shapeless.tag.@@],implicitv:eu.timepit.refined.api.Validate[T,P]):shapeless.tag.@@[T,P]"></a>
       <a id="autoRefineT[T,P](T)(RefType[@@],Validate[T,P]):@@[T,P]"></a>
