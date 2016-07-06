@@ -30,7 +30,7 @@ val scalaCheckVersion = "1.12.5"
 val scalazVersion = "7.2.4"
 val scodecVersion = "1.9.0"
 
-val allSubprojects = List("core", "scalacheck", "scalaz", "scodec")
+val allSubprojects = List("core", "scalacheck", "scalaz"/*, "scodec"*/)
 val allSubprojectsJVM = allSubprojects.map(_ + "JVM")
 val allSubprojectsJS = allSubprojects.map(_ + "JS")
 
@@ -44,9 +44,9 @@ lazy val root = project.in(file("."))
     scalacheckJVM,
     scalacheckJS,
     scalazJVM,
-    scalazJS,
+    scalazJS/*,
     scodecJVM,
-    scodecJS)
+    scodecJS*/)
   .settings(commonSettings)
   .settings(noPublishSettings)
   .settings(releaseSettings)
@@ -82,12 +82,12 @@ lazy val docs = project
   .settings(moduleName := s"$projectName-docs")
   .settings(commonSettings)
   .settings(noPublishSettings)
-  .settings(tutSettings)
+  /*.settings(tutSettings)
   .settings(
     tutScalacOptions := scalacOptions.value,
     tutSourceDirectory := baseDirectory.value / "src",
     tutTargetDirectory := baseDirectory.value
-  )
+  )*/
   .dependsOn(coreJVM)
 
 lazy val scalacheck = crossProject.in(file("contrib/scalacheck"))
@@ -236,7 +236,7 @@ lazy val projectSettings = Seq(
 
 lazy val compileSettings = Seq(
   scalaVersion := "2.11.8",
-  crossScalaVersions := Seq(scalaVersion.value, "2.10.6"),
+  crossScalaVersions := Seq(scalaVersion.value, "2.10.6", "2.12.0-M5"),
   scalacOptions ++= Seq(
     "-deprecation",
     "-encoding", "UTF-8",
@@ -261,7 +261,7 @@ lazy val compileSettings = Seq(
     "org.typelevel" %%% "macro-compat" % macroCompatVersion,
     "com.chuusai" %%% "shapeless" % shapelessVersion,
     "org.scalacheck" %%% "scalacheck" % scalaCheckVersion % "test"
-  ),
+  )/*,
 
   wartremoverErrors in (Compile, compile) ++= Warts.unsafe diff Seq(
     Wart.Any,
@@ -269,7 +269,7 @@ lazy val compileSettings = Seq(
     Wart.NonUnitStatements,
     Wart.Null,
     Wart.Throw
-  )
+  )*/
 )
 
 lazy val scaladocSettings = Seq(
@@ -390,15 +390,15 @@ addCommandAlias("testJVM", allSubprojectsJVM map (_ + "/test") mkString (";", ";
 
 val validateCommands = List(
   "clean",
-  "mimaReportBinaryIssues",
-  "coverageOff",
+  //"mimaReportBinaryIssues",
+  //"coverageOff",
   "testJS",
-  "coverage",
+  //"coverage",
   "testJVM",
   "scalastyle",
   "test:scalastyle",
-  "doc",
-  "docs/tut"
+  "doc"//,
+  //"docs/tut"
 )
 
 addCommandAlias("validate", validateCommands.mkString(";", ";", ""))
