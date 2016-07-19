@@ -122,7 +122,7 @@ object RefType {
    * which has an `apply` method on it, allowing `applyRef` to be called
    * like in the given example.
    */
-  @deprecated("", "")
+  @deprecated("", "0.6.0")
   def applyRef[FTP]: ApplyRefPartiallyApplied[FTP] =
     new ApplyRefPartiallyApplied
 
@@ -145,7 +145,7 @@ object RefType {
    * which has an `apply` method on it, allowing `applyRefM` to be called
    * like in the given example.
    */
-  @deprecated("", "")
+  @deprecated("", "0.6.0")
   def applyRefM[FTP]: ApplyRefMPartiallyApplied[FTP] =
     new ApplyRefMPartiallyApplied
 

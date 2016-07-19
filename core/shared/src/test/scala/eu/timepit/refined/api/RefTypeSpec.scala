@@ -79,19 +79,6 @@ abstract class RefTypeSpec[F[_, _]](name: String)(implicit rt: RefType[F]) exten
   property("implicit unwrap") = secure {
     rt.refine[Positive](5).right.map(_ + 1) == Right(6)
   }
-
-  property("refine ~= RefType.applyRef") = forAll { (i: Int) =>
-    type PosInt = F[Int, Positive]
-    rt.refine[Positive](i) ?= RefType.applyRef[PosInt](i)
-  }
-
-  property("RefType.applyRef.unsafeFrom success") = secure {
-    RefType.applyRef[F[Int, Positive]].unsafeFrom(5) ?= rt.unsafeWrap[Int, Positive](5)
-  }
-
-  property("RefType.applyRef.unsafeFrom failure") = secure {
-    throws(classOf[IllegalArgumentException])(RefType.applyRef[F[Int, Positive]].unsafeFrom(-5))
-  }
 }
 
 class RefTypeSpecRefined extends RefTypeSpec[Refined]("Refined") {
@@ -115,18 +102,6 @@ class RefTypeSpecRefined extends RefTypeSpec[Refined]("Refined") {
     val z = 1L: Natural
     illTyped("Natural(-1L)", "Predicate.*fail.*")
     illTyped("Natural(1.3)", "type mismatch.*")
-    x == y && y == z
-  }
-
-  property("applyRefM alias") = secure {
-    type Natural = Long Refined NonNegative
-    val Natural = RefType.applyRefM[Natural]
-
-    val x: Natural = Natural(1L)
-    val y: Natural = 1L
-    val z = 1L: Natural
-    illTyped("Natural(-1L)", "Predicate.*fail.*")
-    illTyped("Natural(1.3)", "Cannot prove that.*")
     x == y && y == z
   }
 

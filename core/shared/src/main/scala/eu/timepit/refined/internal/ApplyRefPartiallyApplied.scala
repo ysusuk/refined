@@ -10,17 +10,17 @@ import eu.timepit.refined.api.{ RefType, Validate }
  * See [[http://tpolecat.github.io/2015/07/30/infer.html]] for a detailed
  * explanation of this trick.
  */
-@deprecated("", "")
+@deprecated("", "0.6.0")
 final class ApplyRefPartiallyApplied[FTP] {
 
-  @deprecated("", "")
+  @deprecated("", "0.6.0")
   def apply[F[_, _], T, P](t: T)(
     implicit
     ev: F[T, P] =:= FTP, rt: RefType[F], v: Validate[T, P]
   ): Either[String, FTP] =
     rt.refine[P](t).right.map(ev)
 
-  @deprecated("", "")
+  @deprecated("", "0.6.0")
   def unsafeFrom[F[_, _], T, P](t: T)(
     implicit
     ev: F[T, P] =:= FTP, rt: RefType[F], v: Validate[T, P]
