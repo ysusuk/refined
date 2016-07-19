@@ -104,47 +104,10 @@ object RefType {
   /** Returns a `RefType` for the given type `F` from the implicit scope. */
   def apply[F[_, _]](implicit rt: RefType[F]): RefType[F] = rt
 
-  /**
-   * Returns a value of type `T` refined as `FTP` on the right if it
-   * satisfies the predicate in `FTP`, or an error message on the left
-   * otherwise.
-   *
-   * Example: {{{
-   * scala> import eu.timepit.refined.api.{ Refined, RefType }
-   *      | import eu.timepit.refined.numeric.Positive
-   *
-   * scala> type PosInt = Int Refined Positive
-   * scala> RefType.applyRef[PosInt](10)
-   * res0: Either[String, PosInt] = Right(10)
-   * }}}
-   *
-   * Note: The return type is `[[internal.ApplyRefPartiallyApplied]][FTP]`,
-   * which has an `apply` method on it, allowing `applyRef` to be called
-   * like in the given example.
-   */
   @deprecated("", "0.6.0")
   def applyRef[FTP]: ApplyRefPartiallyApplied[FTP] =
     new ApplyRefPartiallyApplied
 
-  /**
-   * Macro that returns a value of type `T` refined as `FTP` if  it
-   * satisfies the predicate in `FTP`, or fails to compile otherwise.
-   *
-   * Example: {{{
-   * scala> import eu.timepit.refined.api.{ Refined, RefType }
-   *      | import eu.timepit.refined.numeric.Positive
-   *
-   * scala> type PosInt = Int Refined Positive
-   * scala> RefType.applyRefM[PosInt](10)
-   * res0: PosInt = 10
-   * }}}
-   *
-   * Note: `M` stands for '''m'''acro.
-   *
-   * Note: The return type is `[[internal.ApplyRefMPartiallyApplied]][FTP]`,
-   * which has an `apply` method on it, allowing `applyRefM` to be called
-   * like in the given example.
-   */
   @deprecated("", "0.6.0")
   def applyRefM[FTP]: ApplyRefMPartiallyApplied[FTP] =
     new ApplyRefMPartiallyApplied
