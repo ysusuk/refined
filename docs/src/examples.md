@@ -21,11 +21,11 @@ refineV[Positive](-x)
 ```
 
 ```tut:nofail
-val a: Int Refined Greater[W.`5`.T] = 10
+val a: Int Refined Greater[5] = 10
 
-val b: Int Refined Greater[W.`4`.T] = a
+val b: Int Refined Greater[4] = a
 
-val c: Int Refined Greater[W.`6`.T] = a
+val c: Int Refined Greater[6] = a
 ```
 
 ```tut:silent
@@ -41,15 +41,15 @@ refineMV[NonEmpty]("Hello")
 
 refineMV[NonEmpty]("")
 
-type ZeroToOne = Not[Less[W.`0.0`.T]] And Not[Greater[W.`1.0`.T]]
+type ZeroToOne = Not[Less[0.0]] And Not[Greater[1.0]]
 
 refineMV[ZeroToOne](1.8)
 
 refineMV[AnyOf[Digit :: Letter :: Whitespace :: HNil]]('F')
 
-refineMV[MatchesRegex[W.`"[0-9]+"`.T]]("123.")
+refineMV[MatchesRegex["[0-9]+"]]("123.")
 
-val d1: Char Refined Equal[W.`'3'`.T] = '3'
+val d1: Char Refined Equal['3'] = '3'
 
 val d2: Char Refined Digit = d1
 

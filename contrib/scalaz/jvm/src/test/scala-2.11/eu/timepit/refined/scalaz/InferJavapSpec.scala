@@ -14,11 +14,11 @@ class InferAnyValTest {
 
   val r = new RefineAnyValTest
 
-  def Refined: Refined[Int, Greater[W.`0`.T]] = r.Refined
+  def Refined: Refined[Int, Greater[0]] = r.Refined
 
-  def shapeless_tag: shapeless.tag.@@[Int, Greater[W.`0`.T]] = r.shapeless_tag
+  def shapeless_tag: shapeless.tag.@@[Int, Greater[0]] = r.shapeless_tag
 
-  def scalaz_tag: scalaz.@@[Int, Greater[W.`0`.T]] = r.scalaz_tag
+  def scalaz_tag: scalaz.@@[Int, Greater[0]] = r.scalaz_tag
 
   def unrefined: Int = r.unrefined
 }
@@ -27,11 +27,11 @@ class InferAnyRefTest {
 
   val r = new RefineAnyRefTest
 
-  def Refined: Refined[String, StartsWith[W.`"ab"`.T]] = r.Refined
+  def Refined: Refined[String, StartsWith["ab"]] = r.Refined
 
-  def shapeless_tag: shapeless.tag.@@[String, StartsWith[W.`"ab"`.T]] = r.shapeless_tag
+  def shapeless_tag: shapeless.tag.@@[String, StartsWith["ab"]] = r.shapeless_tag
 
-  def scalaz_tag: scalaz.@@[String, StartsWith[W.`"ab"`.T]] = r.scalaz_tag
+  def scalaz_tag: scalaz.@@[String, StartsWith["ab"]] = r.scalaz_tag
 
   def unrefined: String = r.unrefined
 }

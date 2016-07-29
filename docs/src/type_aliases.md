@@ -1,7 +1,6 @@
 # Using type aliases for refined types
 
 ```tut:silent
-import eu.timepit.refined.W
 import eu.timepit.refined.api.Refined
 import eu.timepit.refined.api.RefType.applyRef
 import eu.timepit.refined.auto._
@@ -9,8 +8,8 @@ import eu.timepit.refined.numeric.Interval
 ```
 
 ```tut
-type File = Char Refined Interval.Closed[W.`'a'`.T, W.`'h'`.T]
-type Rank = Int Refined Interval.Closed[W.`1`.T, W.`8`.T]
+type File = Char Refined Interval.Closed['a', 'h']
+type Rank = Int Refined Interval.Closed[1, 8]
 
 case class Square(file: File, rank: Rank)
 ```

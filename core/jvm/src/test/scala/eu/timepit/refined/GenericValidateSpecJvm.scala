@@ -10,7 +10,7 @@ import shapeless.test.illTyped
 
 class GenericValidateSpecJvm extends Properties("GenericValidate") {
 
-  type IsEven = Eval[W.`"(x: Int) => x % 2 == 0"`.T]
+  type IsEven = Eval["(x: Int) => x % 2 == 0"]
 
   property("Eval.isValid") = {
     val v = Validate[Int, IsEven]
@@ -29,7 +29,7 @@ class GenericValidateSpecJvm extends Properties("GenericValidate") {
   }
 
   property("Eval.refineV.no parameter type") = {
-    val v = Validate[List[Int], Eval[W.`"_.headOption.fold(false)(_ > 0)"`.T]]
+    val v = Validate[List[Int], Eval["_.headOption.fold(false)(_ > 0)"]]
     forAll { (l: List[Int]) =>
       v.isValid(l) ?= l.headOption.fold(false)(_ > 0)
     }
@@ -38,13 +38,13 @@ class GenericValidateSpecJvm extends Properties("GenericValidate") {
   property("Eval.refineMV.scope") = wellTyped {
     val two = 2
     illTyped(
-      """refineMV[Eval[W.`"(x: Int) => x >= two"`.T]](2)""",
+      """refineMV[Eval["(x: Int) => x >= two"]](2)""",
       "exception during macro expansion.*"
     )
   }
 
   property("Eval.refineV.scope") = secure {
     val two = 2
-    throws(classOf[ToolBoxError])(refineV[Eval[W.`"(x: Int) => x >= two"`.T]](two))
+    throws(classOf[ToolBoxError])(refineV[Eval["(x: Int) => x >= two"]](two))
   }
 }

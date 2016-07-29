@@ -27,7 +27,6 @@ NameStartChar ::=
 We can translate that to a refined type by using the `AnyOf`, `Equal`,
 and `Interval.Closed` predicates:
 ```scala
-import eu.timepit.refined.W
 import eu.timepit.refined.api.Refined
 import eu.timepit.refined.auto._
 import eu.timepit.refined.boolean.AnyOf
@@ -36,20 +35,20 @@ import eu.timepit.refined.numeric.Interval
 import shapeless.{ ::, HNil }
 
 type NameStartChar = Char Refined AnyOf[
-     Equal[W.`':'`.T]
-  :: Interval.Closed[W.`'A'`.T, W.`'Z'`.T]
-  :: Equal[W.`'_'`.T]
-  :: Interval.Closed[W.`'a'`.T, W.`'z'`.T]
-  :: Interval.Closed[W.`'\u00C0'`.T, W.`'\u00D6'`.T]
-  :: Interval.Closed[W.`'\u00D8'`.T, W.`'\u00F6'`.T]
-  :: Interval.Closed[W.`'\u00F8'`.T, W.`'\u02FF'`.T]
-  :: Interval.Closed[W.`'\u0370'`.T, W.`'\u037D'`.T]
-  :: Interval.Closed[W.`'\u200C'`.T, W.`'\u200D'`.T]
-  :: Interval.Closed[W.`'\u2070'`.T, W.`'\u218F'`.T]
-  :: Interval.Closed[W.`'\u2C00'`.T, W.`'\u2FEF'`.T]
-  :: Interval.Closed[W.`'\u3001'`.T, W.`'\uD7FF'`.T]
-  :: Interval.Closed[W.`'\uF900'`.T, W.`'\uFDCF'`.T]
-  :: Interval.Closed[W.`'\uFDF0'`.T, W.`'\uFFFD'`.T]
+     Equal[':']
+  :: Interval.Closed['A', 'Z']
+  :: Equal['_']
+  :: Interval.Closed['a', 'z']
+  :: Interval.Closed['\u00C0', '\u00D6']
+  :: Interval.Closed['\u00D8', '\u00F6']
+  :: Interval.Closed['\u00F8', '\u02FF']
+  :: Interval.Closed['\u0370', '\u037D']
+  :: Interval.Closed['\u200C', '\u200D']
+  :: Interval.Closed['\u2070', '\u218F']
+  :: Interval.Closed['\u2C00', '\u2FEF']
+  :: Interval.Closed['\u3001', '\uD7FF']
+  :: Interval.Closed['\uF900', '\uFDCF']
+  :: Interval.Closed['\uFDF0', '\uFFFD']
   :: HNil]
 ```
 

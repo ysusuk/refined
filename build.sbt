@@ -193,11 +193,12 @@ lazy val compileSettings = Seq(
     "-language:higherKinds",
     "-language:implicitConversions",
     "-unchecked",
-    "-Xfatal-warnings",
+    //"-Xfatal-warnings",
     "-Xfuture",
     "-Xlint",
     //"-Xlog-implicits",
     "-Yno-adapted-args",
+    "-Yliteral-types",
     "-Ywarn-numeric-widen",
     "-Ywarn-value-discard"
   ),
@@ -208,7 +209,7 @@ lazy val compileSettings = Seq(
     "org.typelevel" %%% "macro-compat" % macroCompatVersion,
     "com.chuusai" %%% "shapeless" % shapelessVersion,
     "org.scalacheck" %%% "scalacheck" % scalaCheckVersion % "test"
-  ),
+  )/*,
 
   wartremoverErrors in (Compile, compile) ++= Warts.unsafe diff Seq(
     Wart.Any,
@@ -216,7 +217,7 @@ lazy val compileSettings = Seq(
     Wart.NonUnitStatements,
     Wart.Null,
     Wart.Throw
-  )
+  )*/
 )
 
 lazy val scaladocSettings = Seq(

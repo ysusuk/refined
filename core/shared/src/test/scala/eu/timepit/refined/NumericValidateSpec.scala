@@ -9,11 +9,11 @@ import shapeless.nat._
 class NumericValidateSpec extends Properties("NumericValidate") {
 
   property("Less.isValid") = forAll { (d: Double) =>
-    isValid[Less[W.`1.0`.T]](d) ?= (d < 1.0)
+    isValid[Less[1.0]](d) ?= (d < 1.0)
   }
 
   property("Less.showExpr") = secure {
-    showExpr[Less[W.`1.1`.T]](0.1) ?= "(0.1 < 1.1)"
+    showExpr[Less[1.1]](0.1) ?= "(0.1 < 1.1)"
   }
 
   property("Less.Nat.isValid") = forAll { (i: Int) =>
@@ -33,15 +33,15 @@ class NumericValidateSpec extends Properties("NumericValidate") {
   }
 
   property("Less.Nat ~= Less.Int") = forAll { (i: Int) =>
-    showResult[Less[_5]](i) ?= showResult[Less[W.`5`.T]](i)
+    showResult[Less[_5]](i) ?= showResult[Less[5]](i)
   }
 
   property("Greater.isValid") = forAll { (d: Double) =>
-    isValid[Greater[W.`1.0`.T]](d) ?= (d > 1.0)
+    isValid[Greater[1.0]](d) ?= (d > 1.0)
   }
 
   property("Greater.showExpr") = secure {
-    showExpr[Greater[W.`1.1`.T]](0.1) ?= "(0.1 > 1.1)"
+    showExpr[Greater[1.1]](0.1) ?= "(0.1 > 1.1)"
   }
 
   property("Greater.Nat.isValid") = forAll { (i: Int) =>
@@ -61,7 +61,7 @@ class NumericValidateSpec extends Properties("NumericValidate") {
   }
 
   property("Greater.Nat ~= Greater.Int") = forAll { (i: Int) =>
-    showResult[Greater[_5]](i) ?= showResult[Greater[W.`5`.T]](i)
+    showResult[Greater[_5]](i) ?= showResult[Greater[5]](i)
   }
 
   property("Interval.Open.isValid") = forAll { (d: Double) =>

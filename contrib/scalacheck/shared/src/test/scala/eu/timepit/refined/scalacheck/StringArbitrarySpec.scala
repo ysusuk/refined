@@ -11,13 +11,13 @@ import org.scalacheck.Properties
 class StringArbitrarySpec extends Properties("StringArbitrary") {
 
   property("EndsWith") =
-    checkArbitraryRefType[Refined, String, EndsWith[W.`"abc"`.T]]
+    checkArbitraryRefType[Refined, String, EndsWith["abc"]]
 
   property("MatchesRegex") =
-    checkArbitraryRefType[Refined, String, MatchesRegex[W.`".{2,}"`.T]]
+    checkArbitraryRefType[Refined, String, MatchesRegex[".{2,}"]]
 
   property("StartsWith") =
-    checkArbitraryRefType[Refined, String, StartsWith[W.`"abc"`.T]]
+    checkArbitraryRefType[Refined, String, StartsWith["abc"]]
 
   // collection predicates
 

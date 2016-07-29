@@ -15,15 +15,15 @@ class StringValidateSpec extends Properties("StringValidate") {
   }
 
   property("EndsWith.showExpr") = secure {
-    showExpr[EndsWith[W.`"cd"`.T]]("abcd") ?= """"abcd".endsWith("cd")"""
+    showExpr[EndsWith["cd"]]("abcd") ?= """"abcd".endsWith("cd")"""
   }
 
   property("MatchesRegex.isValid") = forAll { (s: String) =>
-    isValid[MatchesRegex[W.`".{2,10}"`.T]](s) ?= s.matches(".{2,10}")
+    isValid[MatchesRegex[".{2,10}"]](s) ?= s.matches(".{2,10}")
   }
 
   property("MatchesRegex.showExpr") = secure {
-    showExpr[MatchesRegex[W.`".{2,10}"`.T]]("Hello") ?= """"Hello".matches(".{2,10}")"""
+    showExpr[MatchesRegex[".{2,10}"]]("Hello") ?= """"Hello".matches(".{2,10}")"""
   }
 
   property("Regex.isValid") = secure {
@@ -41,7 +41,7 @@ class StringValidateSpec extends Properties("StringValidate") {
   }
 
   property("StartsWith.showExpr") = secure {
-    showExpr[StartsWith[W.`"ab"`.T]]("abcd") ?= """"abcd".startsWith("ab")"""
+    showExpr[StartsWith["ab"]]("abcd") ?= """"abcd".startsWith("ab")"""
   }
 
   property("Uri.isValid") = secure {

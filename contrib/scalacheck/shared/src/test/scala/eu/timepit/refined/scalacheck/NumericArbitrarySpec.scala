@@ -13,37 +13,37 @@ import shapeless.nat._
 class NumericArbitrarySpec extends Properties("NumericArbitrary") {
 
   property("Less.positive") =
-    checkArbitraryRefType[Refined, Int, Less[W.`100`.T]]
+    checkArbitraryRefType[Refined, Int, Less[100]]
 
   property("Less.negative") =
-    checkArbitraryRefType[Refined, Int, Less[W.`-100`.T]]
+    checkArbitraryRefType[Refined, Int, Less[-100]]
 
   property("Less.Nat") =
     checkArbitraryRefType[Refined, Long, Less[_10]]
 
   property("LessEqual.positive") =
-    checkArbitraryRefType[Refined, Int, LessEqual[W.`42`.T]]
+    checkArbitraryRefType[Refined, Int, LessEqual[42]]
 
   property("LessEqual.negative") =
-    checkArbitraryRefType[Refined, Int, LessEqual[W.`-42`.T]]
+    checkArbitraryRefType[Refined, Int, LessEqual[-42]]
 
   property("LessEqual.Nat") =
     checkArbitraryRefType[Refined, Long, LessEqual[_10]]
 
   property("Greater.positive") =
-    checkArbitraryRefType[Refined, Int, Greater[W.`100`.T]]
+    checkArbitraryRefType[Refined, Int, Greater[100]]
 
   property("Greater.negative") =
-    checkArbitraryRefType[Refined, Int, Greater[W.`-100`.T]]
+    checkArbitraryRefType[Refined, Int, Greater[-100]]
 
   property("Greater.Nat") =
     checkArbitraryRefType[Refined, Long, Greater[_10]]
 
   property("GreaterEqual.positive") =
-    checkArbitraryRefType[Refined, Int, GreaterEqual[W.`123456`.T]]
+    checkArbitraryRefType[Refined, Int, GreaterEqual[123456]]
 
   property("GreaterEqual.negative") =
-    checkArbitraryRefType[Refined, Int, GreaterEqual[W.`-123456`.T]]
+    checkArbitraryRefType[Refined, Int, GreaterEqual[-123456]]
 
   property("GreaterEqual.Nat") =
     checkArbitraryRefType[Refined, Int, GreaterEqual[_10]]
@@ -61,25 +61,25 @@ class NumericArbitrarySpec extends Properties("NumericArbitrary") {
     checkArbitraryRefType[Refined, Long, NonNegative]
 
   property("Interval.Open") =
-    checkArbitraryRefType[Refined, Int, Interval.Open[W.`-23`.T, W.`42`.T]]
+    checkArbitraryRefType[Refined, Int, Interval.Open[-23, 42]]
 
   property("Interval.Open (0.554, 0.556)") =
-    checkArbitraryRefType[Refined, Double, Interval.Open[W.`0.554`.T, W.`0.556`.T]]
+    checkArbitraryRefType[Refined, Double, Interval.Open[0.554, 0.556]]
 
   property("Interval.OpenClosed") =
-    checkArbitraryRefType[Refined, Double, Interval.OpenClosed[W.`2.71828`.T, W.`3.14159`.T]]
+    checkArbitraryRefType[Refined, Double, Interval.OpenClosed[2.71828, 3.14159]]
 
   property("Interval.OpenClosed (0.54, 0.56]") =
-    checkArbitraryRefType[Refined, Float, Interval.OpenClosed[W.`0.54F`.T, W.`0.56F`.T]]
+    checkArbitraryRefType[Refined, Float, Interval.OpenClosed[0.54F, 0.56F]]
 
   property("Interval.ClosedOpen") =
-    checkArbitraryRefType[Refined, Double, Interval.ClosedOpen[W.`-2.71828`.T, W.`3.14159`.T]]
+    checkArbitraryRefType[Refined, Double, Interval.ClosedOpen[-2.71828, 3.14159]]
 
   property("Interval.ClosedOpen [0.4, 0.6)") =
-    checkArbitraryRefType[Refined, Float, Interval.ClosedOpen[W.`0.4F`.T, W.`0.6F`.T]]
+    checkArbitraryRefType[Refined, Float, Interval.ClosedOpen[0.4F, 0.6F]]
 
   property("Interval.Closed") =
-    checkArbitraryRefType[Refined, Int, Interval.Closed[W.`23`.T, W.`42`.T]]
+    checkArbitraryRefType[Refined, Int, Interval.Closed[23, 42]]
 
   property("Interval.alias") =
     forAll { m: Minute => m >= 0 && m <= 59 }

@@ -31,7 +31,7 @@ class CharArbitrarySpec extends Properties("CharArbitrarySpec") {
     checkArbitraryRefType[Refined, Char, LetterOrDigit]
 
   property("HexDigit") = {
-    type HexDigit = Digit Or Interval.Closed[W.`'a'`.T, W.`'f'`.T]
+    type HexDigit = Digit Or Interval.Closed['a', 'f']
     checkArbitraryRefType[Refined, Char, HexDigit]
   }
 }

@@ -13,22 +13,22 @@ import org.scalacheck.Properties
 
 class RefineAnyValTest {
 
-  def Refined: Refined[Int, Greater[W.`1`.T]] = 2
+  def Refined: Refined[Int, Greater[1]] = 2
 
-  def shapeless_tag: shapeless.tag.@@[Int, Greater[W.`1`.T]] = 2
+  def shapeless_tag: shapeless.tag.@@[Int, Greater[1]] = 2
 
-  def scalaz_tag: scalaz.@@[Int, Greater[W.`1`.T]] = 2
+  def scalaz_tag: scalaz.@@[Int, Greater[1]] = 2
 
   def unrefined: Int = 2
 }
 
 class RefineAnyRefTest {
 
-  def Refined: Refined[String, StartsWith[W.`"abc"`.T]] = "abc"
+  def Refined: Refined[String, StartsWith["abc"]] = "abc"
 
-  def shapeless_tag: shapeless.tag.@@[String, StartsWith[W.`"abc"`.T]] = "abc"
+  def shapeless_tag: shapeless.tag.@@[String, StartsWith["abc"]] = "abc"
 
-  def scalaz_tag: scalaz.@@[String, StartsWith[W.`"abc"`.T]] = "abc"
+  def scalaz_tag: scalaz.@@[String, StartsWith["abc"]] = "abc"
 
   def unrefined: String = "abc"
 }

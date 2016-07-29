@@ -11,15 +11,15 @@ import shapeless.test.illTyped
 class GenericValidateSpec extends Properties("GenericValidate") {
 
   property("Equal.isValid") = secure {
-    isValid[Equal[W.`1.4`.T]](1.4)
+    isValid[Equal[1.4]](1.4)
   }
 
   property("Equal.notValid") = secure {
-    notValid[Equal[W.`1.4`.T]](2.4)
+    notValid[Equal[1.4]](2.4)
   }
 
   property("Equal.showExpr") = secure {
-    showExpr[Equal[W.`1.4`.T]](0.4) ?= "(0.4 == 1.4)"
+    showExpr[Equal[1.4]](0.4) ?= "(0.4 == 1.4)"
   }
 
   property("Equal.object.isValid") = secure {
@@ -28,15 +28,15 @@ class GenericValidateSpec extends Properties("GenericValidate") {
   }
 
   property("Equal.Symbol.isValid") = secure {
-    isValid[Equal[W.`'foo`.T]]('foo)
+    isValid[Equal['foo]]('foo)
   }
 
   property("Equal.Symbol.notValid") = secure {
-    notValid[Equal[W.`'foo`.T]]('bar)
+    notValid[Equal['foo]]('bar)
   }
 
   property("Equal.Symbol.showExpr") = secure {
-    showExpr[Equal[W.`'foo`.T]]('bar) ?= "('bar == 'foo)"
+    showExpr[Equal['foo]]('bar) ?= "('bar == 'foo)"
   }
 
   property("Equal.Nat.Int.isValid") = forAll { (i: Int) =>
@@ -52,35 +52,35 @@ class GenericValidateSpec extends Properties("GenericValidate") {
   }
 
   property("Equal.Nat ~= Equal.Int") = forAll { (i: Int) =>
-    showResult[Equal[_1]](i) ?= showResult[Equal[W.`1`.T]](i)
+    showResult[Equal[_1]](i) ?= showResult[Equal[1]](i)
   }
 
   property("ConstructorNames.isValid") = secure {
-    isValid[ConstructorNames[Contains[W.`"Some"`.T]]](Option(0))
+    isValid[ConstructorNames[Contains["Some"]]](Option(0))
   }
 
   property("ConstructorNames.notValid") = secure {
-    notValid[ConstructorNames[Contains[W.`"Just"`.T]]](Option(0))
+    notValid[ConstructorNames[Contains["Just"]]](Option(0))
   }
 
   property("ConstructorNames.showExpr") = secure {
-    showExpr[ConstructorNames[Contains[W.`"Just"`.T]]](Option(0)) ?=
+    showExpr[ConstructorNames[Contains["Just"]]](Option(0)) ?=
       "!(!(None == Just) && !(Some == Just))"
   }
 
   property("FieldNames.isValid") = secure {
     case class A(fst: Any = 1, snd: Any = 2)
-    isValid[FieldNames[Contains[W.`"snd"`.T]]](A())
+    isValid[FieldNames[Contains["snd"]]](A())
   }
 
   property("FieldNames.notValid") = secure {
     case class A(fst: Any = 1, snd: Any = 2)
-    notValid[FieldNames[Contains[W.`"first"`.T]]](A())
+    notValid[FieldNames[Contains["first"]]](A())
   }
 
   property("FieldNames.showExpr") = secure {
     case class A(fst: Any = 1, snd: Any = 2)
-    showExpr[FieldNames[Contains[W.`"third"`.T]]](A()) ?=
+    showExpr[FieldNames[Contains["third"]]](A()) ?=
       "!(!(fst == third) && !(snd == third))"
   }
 

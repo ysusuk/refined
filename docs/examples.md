@@ -29,18 +29,18 @@ res2: Either[String,eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeri
 ```
 
 ```scala
-scala> val a: Int Refined Greater[W.`5`.T] = 10
-a: eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Greater[Int(5)]] = 10
+scala> val a: Int Refined Greater[5] = 10
+a: eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Greater[5]] = 10
 
-scala> val b: Int Refined Greater[W.`4`.T] = a
-b: eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Greater[Int(4)]] = 10
+scala> val b: Int Refined Greater[4] = a
+b: eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Greater[4]] = 10
 
-scala> val c: Int Refined Greater[W.`6`.T] = a
+scala> val c: Int Refined Greater[6] = a
 <console>:23: error: type mismatch (invalid inference):
- eu.timepit.refined.numeric.Greater[Int(5)] does not imply
- eu.timepit.refined.numeric.Greater[Int(6)]
-       val c: Int Refined Greater[W.`6`.T] = a
-                                             ^
+ eu.timepit.refined.numeric.Greater[5] does not imply
+ eu.timepit.refined.numeric.Greater[6]
+       val c: Int Refined Greater[6] = a
+                                       ^
 ```
 
 ```scala
@@ -60,7 +60,7 @@ scala> refineMV[NonEmpty]("")
        refineMV[NonEmpty]("")
                          ^
 
-scala> type ZeroToOne = Not[Less[W.`0.0`.T]] And Not[Greater[W.`1.0`.T]]
+scala> type ZeroToOne = Not[Less[0.0]] And Not[Greater[1.0]]
 defined type alias ZeroToOne
 
 scala> refineMV[ZeroToOne](1.8)
@@ -71,20 +71,20 @@ scala> refineMV[ZeroToOne](1.8)
 scala> refineMV[AnyOf[Digit :: Letter :: Whitespace :: HNil]]('F')
 res6: eu.timepit.refined.api.Refined[Char,eu.timepit.refined.boolean.AnyOf[shapeless.::[eu.timepit.refined.char.Digit,shapeless.::[eu.timepit.refined.char.Letter,shapeless.::[eu.timepit.refined.char.Whitespace,shapeless.HNil]]]]] = F
 
-scala> refineMV[MatchesRegex[W.`"[0-9]+"`.T]]("123.")
+scala> refineMV[MatchesRegex["[0-9]+"]]("123.")
 <console>:39: error: Predicate failed: "123.".matches("[0-9]+").
-       refineMV[MatchesRegex[W.`"[0-9]+"`.T]]("123.")
-                                             ^
+       refineMV[MatchesRegex["[0-9]+"]]("123.")
+                                       ^
 
-scala> val d1: Char Refined Equal[W.`'3'`.T] = '3'
-d1: eu.timepit.refined.api.Refined[Char,eu.timepit.refined.generic.Equal[Char('3')]] = 3
+scala> val d1: Char Refined Equal['3'] = '3'
+d1: eu.timepit.refined.api.Refined[Char,eu.timepit.refined.generic.Equal['3']] = 3
 
 scala> val d2: Char Refined Digit = d1
 d2: eu.timepit.refined.api.Refined[Char,eu.timepit.refined.char.Digit] = 3
 
 scala> val d3: Char Refined Letter = d1
 <console>:39: error: type mismatch (invalid inference):
- eu.timepit.refined.generic.Equal[Char('3')] does not imply
+ eu.timepit.refined.generic.Equal['3'] does not imply
  eu.timepit.refined.char.Letter
        val d3: Char Refined Letter = d1
                                      ^
