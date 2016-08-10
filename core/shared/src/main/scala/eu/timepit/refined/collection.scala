@@ -7,7 +7,6 @@ import eu.timepit.refined.collection._
 import eu.timepit.refined.generic.Equal
 import eu.timepit.refined.internal.Resources
 import eu.timepit.refined.numeric.{ GreaterEqual, LessEqual }
-import shapeless.Witness
 
 /** Module for collection predicates. */
 object collection extends CollectionValidate with CollectionInference {
@@ -178,7 +177,7 @@ private[refined] trait CollectionValidate {
     implicit
     v: Validate.Aux[A, P, R],
     ev: T => PartialFunction[Int, A],
-    wn: Witness.Aux[N]
+    wn: ValueOf[N]
   ): Validate.Aux[T, Index[N, P], Index[N, Option[v.Res]]] =
     new Validate[T, Index[N, P]] {
       override type R = Index[N, Option[v.Res]]

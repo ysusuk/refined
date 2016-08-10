@@ -4,14 +4,13 @@ import eu.timepit.refined.TestUtils._
 import eu.timepit.refined.string._
 import org.scalacheck.Prop._
 import org.scalacheck.Properties
-import shapeless.Witness
 
 class StringValidateSpec extends Properties("StringValidate") {
 
   property("EndsWith.isValid") = secure {
     val s = "abcd"
-    val suffix = Witness("cd")
-    isValid[EndsWith[suffix.T]](s) ?= s.endsWith(suffix.value)
+    val suffix: "cd" = "cd"
+    isValid[EndsWith[suffix.type]](s) ?= s.endsWith(suffix)
   }
 
   property("EndsWith.showExpr") = secure {
@@ -36,8 +35,8 @@ class StringValidateSpec extends Properties("StringValidate") {
 
   property("StartsWith.isValid") = secure {
     val s = "abcd"
-    val prefix = Witness("ab")
-    isValid[StartsWith[prefix.T]](s) ?= s.startsWith(prefix.value)
+    val prefix: "ab" = "ab"
+    isValid[StartsWith[prefix.type]](s) ?= s.startsWith(prefix)
   }
 
   property("StartsWith.showExpr") = secure {

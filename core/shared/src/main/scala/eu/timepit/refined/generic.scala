@@ -37,7 +37,7 @@ private[refined] trait GenericValidate {
 
   implicit def equalValidateWit[T, U <: T](
     implicit
-    wu: Witness.Aux[U]
+    wu: ValueOf[U]
   ): Validate.Plain[T, Equal[U]] =
     Validate.fromPredicate(_ == wu.value, t => s"($t == ${wu.value})", Equal(wu.value))
 
@@ -53,7 +53,7 @@ private[refined] trait GenericValidate {
   implicit def evalValidate[T, S <: String](
     implicit
     mt: Manifest[T],
-    ws: Witness.Aux[S]
+    ws: ValueOf[S]
   ): Validate.Plain[T, Eval[S]] = {
     // The ascription (T => Boolean) allows to omit the parameter
     // type in ws.value (i.e. "x => ..." instead of "(x: T) => ...").
@@ -101,7 +101,7 @@ private[refined] trait GenericInference {
 
   implicit def equalValidateInferenceWit[T, U <: T, P](
     implicit
-    v: Validate[T, P], wu: Witness.Aux[U]
+    v: Validate[T, P], wu: ValueOf[U]
   ): Equal[U] ==> P =
     Inference(v.isValid(wu.value), s"equalValidateInferenceWit(${v.showExpr(wu.value)})")
 
