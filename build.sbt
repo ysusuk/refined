@@ -348,7 +348,7 @@ addCommandsAlias("validate",
                  Seq(
                    "clean",
                    "scalafmtTest",
-                   "mimaReportBinaryIssues",
+                   //"mimaReportBinaryIssues",
                    "testJS",
                    "coverage",
                    "testJVM",
