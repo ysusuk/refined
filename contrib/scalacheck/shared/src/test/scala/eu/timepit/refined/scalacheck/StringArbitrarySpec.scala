@@ -21,6 +21,5 @@ class StringArbitrarySpec extends Properties("StringArbitrary") {
 
   // collection predicates
 
-  property("NonEmpty") =
-    checkArbitraryRefType[Refined, String, NonEmpty]
+  property("NonEmpty") = checkArbitraryRefType[Refined, String, NonEmpty]
 }

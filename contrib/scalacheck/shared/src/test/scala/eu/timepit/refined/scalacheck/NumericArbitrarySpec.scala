@@ -18,8 +18,7 @@ class NumericArbitrarySpec extends Properties("NumericArbitrary") {
   property("Less.negative") =
     checkArbitraryRefType[Refined, Int, Less[-100]]
 
-  property("Less.Nat") =
-    checkArbitraryRefType[Refined, Long, Less[_10]]
+  property("Less.Nat") = checkArbitraryRefType[Refined, Long, Less[_10]]
 
   property("LessEqual.positive") =
     checkArbitraryRefType[Refined, Int, LessEqual[42]]
@@ -27,8 +26,7 @@ class NumericArbitrarySpec extends Properties("NumericArbitrary") {
   property("LessEqual.negative") =
     checkArbitraryRefType[Refined, Int, LessEqual[-42]]
 
-  property("LessEqual.Nat") =
-    checkArbitraryRefType[Refined, Long, LessEqual[_10]]
+  property("LessEqual.Nat") = checkArbitraryRefType[Refined, Long, LessEqual[_10]]
 
   property("Greater.positive") =
     checkArbitraryRefType[Refined, Int, Greater[100]]
@@ -36,8 +34,7 @@ class NumericArbitrarySpec extends Properties("NumericArbitrary") {
   property("Greater.negative") =
     checkArbitraryRefType[Refined, Int, Greater[-100]]
 
-  property("Greater.Nat") =
-    checkArbitraryRefType[Refined, Long, Greater[_10]]
+  property("Greater.Nat") = checkArbitraryRefType[Refined, Long, Greater[_10]]
 
   property("GreaterEqual.positive") =
     checkArbitraryRefType[Refined, Int, GreaterEqual[123456]]
@@ -45,20 +42,15 @@ class NumericArbitrarySpec extends Properties("NumericArbitrary") {
   property("GreaterEqual.negative") =
     checkArbitraryRefType[Refined, Int, GreaterEqual[-123456]]
 
-  property("GreaterEqual.Nat") =
-    checkArbitraryRefType[Refined, Int, GreaterEqual[_10]]
+  property("GreaterEqual.Nat") = checkArbitraryRefType[Refined, Int, GreaterEqual[_10]]
 
-  property("Positive") =
-    checkArbitraryRefType[Refined, Float, Positive]
+  property("Positive") = checkArbitraryRefType[Refined, Float, Positive]
 
-  property("NonPositive") =
-    checkArbitraryRefType[Refined, Short, NonPositive]
+  property("NonPositive") = checkArbitraryRefType[Refined, Short, NonPositive]
 
-  property("Negative") =
-    checkArbitraryRefType[Refined, Double, Negative]
+  property("Negative") = checkArbitraryRefType[Refined, Double, Negative]
 
-  property("NonNegative") =
-    checkArbitraryRefType[Refined, Long, NonNegative]
+  property("NonNegative") = checkArbitraryRefType[Refined, Long, NonNegative]
 
   property("Interval.Open") =
     checkArbitraryRefType[Refined, Int, Interval.Open[-23, 42]]
@@ -81,8 +73,9 @@ class NumericArbitrarySpec extends Properties("NumericArbitrary") {
   property("Interval.Closed") =
     checkArbitraryRefType[Refined, Int, Interval.Closed[23, 42]]
 
-  property("Interval.alias") =
-    forAll { m: Minute => m >= 0 && m <= 59 }
+  property("Interval.alias") = forAll { m: Minute =>
+    m >= 0 && m <= 59
+  }
 
   property("chooseRefinedNum") = {
     type Natural = Int Refined NonNegative
