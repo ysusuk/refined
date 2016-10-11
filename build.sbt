@@ -354,8 +354,8 @@ addCommandsAlias("validate",
                    "testJVM",
                    "coverageReport",
                    "coverageOff",
-                   "scalastyle",
-                   "test:scalastyle",
+                   //"scalastyle",
+                   //"test:scalastyle",
                    "doc",
                    "docs/tut"
                  ))
