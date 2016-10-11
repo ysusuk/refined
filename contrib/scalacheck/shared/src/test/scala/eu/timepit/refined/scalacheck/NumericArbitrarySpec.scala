@@ -12,27 +12,21 @@ import shapeless.nat._
 
 class NumericArbitrarySpec extends Properties("NumericArbitrary") {
 
-  property("Less.positive") =
-    checkArbitraryRefType[Refined, Int, Less[100]]
+  property("Less.positive") = checkArbitraryRefType[Refined, Int, Less[100]]
 
-  property("Less.negative") =
-    checkArbitraryRefType[Refined, Int, Less[-100]]
+  property("Less.negative") = checkArbitraryRefType[Refined, Int, Less[-100]]
 
   property("Less.Nat") = checkArbitraryRefType[Refined, Long, Less[_10]]
 
-  property("LessEqual.positive") =
-    checkArbitraryRefType[Refined, Int, LessEqual[42]]
+  property("LessEqual.positive") = checkArbitraryRefType[Refined, Int, LessEqual[42]]
 
-  property("LessEqual.negative") =
-    checkArbitraryRefType[Refined, Int, LessEqual[-42]]
+  property("LessEqual.negative") = checkArbitraryRefType[Refined, Int, LessEqual[-42]]
 
   property("LessEqual.Nat") = checkArbitraryRefType[Refined, Long, LessEqual[_10]]
 
-  property("Greater.positive") =
-    checkArbitraryRefType[Refined, Int, Greater[100]]
+  property("Greater.positive") = checkArbitraryRefType[Refined, Int, Greater[100]]
 
-  property("Greater.negative") =
-    checkArbitraryRefType[Refined, Int, Greater[-100]]
+  property("Greater.negative") = checkArbitraryRefType[Refined, Int, Greater[-100]]
 
   property("Greater.Nat") = checkArbitraryRefType[Refined, Long, Greater[_10]]
 

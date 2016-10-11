@@ -1,7 +1,6 @@
 package eu.timepit.refined.scalaz
 
 import eu.timepit.refined.TestUtils._
-import eu.timepit.refined.W
 import eu.timepit.refined.api.Refined
 import eu.timepit.refined.auto._
 import eu.timepit.refined.numeric._

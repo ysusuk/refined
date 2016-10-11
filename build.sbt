@@ -199,7 +199,7 @@ lazy val compileSettings = Def.settings(
     "-language:higherKinds",
     "-language:implicitConversions",
     "-unchecked",
-    //"-Xfatal-warnings",
+    "-Xfatal-warnings",
     "-Xfuture",
     "-Xlint",
     //"-Xlog-implicits",
