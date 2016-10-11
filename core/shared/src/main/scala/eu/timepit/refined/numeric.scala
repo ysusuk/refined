@@ -11,9 +11,7 @@ import shapeless.ops.nat.ToInt
 /**
  * Module for numeric predicates. Predicates that take type parameters
  * support both shapeless' natural numbers (`Nat`) and numeric singleton
- * types (which are made available by shapeless' `Witness` - abbreviated
- * as `[[W]]` in refined) which include subtypes of `Int`, `Long`,
- * `Double`, `Char` etc.
+ * types which include subtypes of `Int`, `Long`, `Double`, `Char` etc.
  *
  * Example: {{{
  * scala> import eu.timepit.refined.api.Refined
