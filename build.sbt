@@ -55,7 +55,6 @@ lazy val core = crossProject
   .settings(submoduleSettings: _*)
   .jvmSettings(submoduleJvmSettings: _*)
   .jsSettings(submoduleJsSettings: _*)
-  .settings(siteSettings: _*)
   .settings(
     libraryDependencies ++= Seq(
       "org.scala-lang" % "scala-compiler" % scalaVersion.value,
@@ -76,14 +75,15 @@ lazy val coreJS = core.js
 
 lazy val docs = project
   .dependsOn(coreJVM)
+  .enablePlugins(MicrositesPlugin)
   .settings(moduleName := s"$projectName-docs")
   .settings(commonSettings)
   .settings(noPublishSettings)
-  .settings(tutSettings)
+  .settings(siteSettings)
   .settings(
     tutScalacOptions := scalacOptions.value,
-    tutSourceDirectory := baseDirectory.value / "src",
-    tutTargetDirectory := baseDirectory.value
+    tutSourceDirectory := baseDirectory.value / "src" /*,
+    tutTargetDirectory := baseDirectory.value */
   )
 
 lazy val scalacheck = crossProject
@@ -337,9 +337,8 @@ lazy val releaseSettings = {
 }
 
 lazy val siteSettings = Def.settings(
-  site.settings,
-  site.includeScaladoc(),
-  ghpages.settings,
+  micrositeGithubOwner := gitHubOwner,
+  micrositeGithubRepo := projectName,
   git.remoteRepo := gitDevUrl
 )
 
