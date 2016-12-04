@@ -79,7 +79,7 @@ lazy val docs = project
   .settings(moduleName := s"$projectName-docs")
   .settings(commonSettings)
   .settings(noPublishSettings)
-  .settings(siteSettings)
+  .settings(micrositeSettings)
   .settings(
     tutScalacOptions := scalacOptions.value,
     tutSourceDirectory := baseDirectory.value / "src" /*,
@@ -327,7 +327,7 @@ lazy val releaseSettings = {
       commitReleaseVersion,
       tagRelease,
       publishArtifacts,
-      releaseStepTask(GhPagesKeys.pushSite in "coreJVM"),
+      releaseStepTask(publishMicrosite in "docs"),
       setLatestVersion,
       setNextVersion,
       commitNextVersion,
@@ -336,10 +336,13 @@ lazy val releaseSettings = {
   )
 }
 
-lazy val siteSettings = Def.settings(
+lazy val micrositeSettings = Def.settings(
+  micrositeName := projectName,
+  micrositeBaseUrl := projectName,
+  micrositeDocumentationUrl := "latest/api",
   micrositeGithubOwner := gitHubOwner,
   micrositeGithubRepo := projectName,
-  git.remoteRepo := gitDevUrl
+  organizationName := "Frank S. Thomas"
 )
 
 lazy val myDoctestSettings = Def.settings(
