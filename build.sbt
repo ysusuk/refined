@@ -85,6 +85,13 @@ lazy val docs = project
     tutSourceDirectory := baseDirectory.value / "src" /*,
     tutTargetDirectory := baseDirectory.value */
   )
+  .settings(
+    Def.settings(
+      unidocSettings,
+      UnidocKeys.unidocProjectFilter in (ScalaUnidoc, UnidocKeys.unidoc) :=
+        inAnyProject -- inProjects(allSubprojectsJS.map(LocalProject.apply): _*)
+    )
+  )
 
 lazy val scalacheck = crossProject
   .in(file("contrib/scalacheck"))
@@ -380,6 +387,6 @@ addCommandsAlias("validate",
                    "testJVM",
                    "coverageReport",
                    "coverageOff",
-                   "doc",
+                   "unidoc",
                    "docs/tut"
                  ))
