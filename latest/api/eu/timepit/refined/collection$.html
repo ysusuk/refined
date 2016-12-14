@@ -1,42 +1,261 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>collection - eu.timepit.refined.collection</title>
-          <meta name="description" content="collection - eu.timepit.refined.collection" />
-          <meta name="keywords" content="collection eu.timepit.refined.collection" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title></title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
+      <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../index.js"></script>
+      <script type="text/javascript" src="../../../lib/scheduler.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
       
       <script type="text/javascript">
-         if(top === self) {
-            var url = '../../../index.html';
-            var hash = 'eu.timepit.refined.collection$';
-            var anchor = window.location.hash;
-            var anchor_opt = '';
-            if (anchor.length >= 1)
-              anchor_opt = '@' + anchor.substring(1);
-            window.location.href = url + '#' + hash + anchor_opt;
-         }
-   	  </script>
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../';
+      </script>
     
         </head>
-        <body class="value">
-      <div id="definition">
-        <img alt="Object" src="../../../lib/object_big.png" />
-        <p id="owner"><a href="../../package.html" class="extype" name="eu">eu</a>.<a href="../package.html" class="extype" name="eu.timepit">timepit</a>.<a href="package.html" class="extype" name="eu.timepit.refined">refined</a></p>
-        <h1>collection</h1><h3><span class="morelinks"><div>Related Doc:
-            <a href="package.html" class="extype" name="eu.timepit.refined">package refined</a>
-          </div></span></h3><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+        <body>
+      <div id="search">
+        <span id="doc-title"><span id="doc-version"></span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html">
+              <span class="name">root</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.eu" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eu"></a><a id="eu:eu"></a>
+      <span class="permalink">
+      <a href="index.html#eu" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html">
+              <span class="name">eu</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="eu.timepit" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="timepit"></a><a id="timepit:timepit"></a>
+      <span class="permalink">
+      <a href="../eu/index.html#timepit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html">
+              <span class="name">timepit</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="eu">eu</a></dd></dl></div>
+    </li><li name="eu.timepit.refined" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="refined"></a><a id="refined:refined"></a>
+      <span class="permalink">
+      <a href="../../eu/timepit/index.html#refined" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html">
+              <span class="name">refined</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="eu.timepit">timepit</a></dd></dl></div>
+    </li><li name="eu.timepit.refined.api" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="api"></a><a id="api:api"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/index.html#api" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="api/index.html">
+              <span class="name">api</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="eu.timepit.refined">refined</a></dd></dl></div>
+    </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="auto$.html" title="Module that provides automatic refinements and automatic conversions
+between refined types (refinement subtyping) at compile-time."></a>
+                        <a href="auto$.html" title="Module that provides automatic refinements and automatic conversions
+between refined types (refinement subtyping) at compile-time.">
+                          auto
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="boolean$.html" title="Module for logical predicates."></a>
+                        <a href="boolean$.html" title="Module for logical predicates.">
+                          boolean
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="char$.html" title="Module for Char related predicates."></a>
+                        <a href="char$.html" title="Module for Char related predicates.">
+                          char
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="" title="Module for collection predicates."></a>
+                        <a href="" title="Module for collection predicates.">
+                          collection
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="generic$.html" title="Module for generic predicates."></a>
+                        <a href="generic$.html" title="Module for generic predicates.">
+                          generic
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="numeric$.html" title="Module for numeric predicates."></a>
+                        <a href="numeric$.html" title="Module for numeric predicates.">
+                          numeric
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="string$.html" title="Module for String related predicates."></a>
+                        <a href="string$.html" title="Module for String related predicates.">
+                          string
+                        </a>
+                      </li><li name="eu.timepit.refined.internal" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="internal"></a><a id="internal:internal"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/index.html#internal" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="internal/index.html">
+              <span class="name">internal</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="eu.timepit.refined">refined</a></dd></dl></div>
+    </li><li name="eu.timepit.refined.macros" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="macros"></a><a id="macros:macros"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/index.html#macros" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="macros/index.html">
+              <span class="name">macros</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="eu.timepit.refined">refined</a></dd></dl></div>
+    </li><li name="eu.timepit.refined.util" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="util"></a><a id="util:util"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/index.html#util" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="util/index.html">
+              <span class="name">util</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="eu.timepit.refined">refined</a></dd></dl></div>
+    </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="object value">
+      <div id="definition">
+        <div class="big-circle object">o</div>
+        <p id="owner"><a href="../../index.html" class="extype" name="eu">eu</a>.<a href="../index.html" class="extype" name="eu.timepit">timepit</a>.<a href="index.html" class="extype" name="eu.timepit.refined">refined</a></p>
+        <h1>collection<span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
       </div>
 
       <h4 id="signature" class="signature">
@@ -48,40 +267,52 @@
         <span class="name">collection</span><span class="result"> extends <span class="extype" name="eu.timepit.refined.CollectionValidate">CollectionValidate</span> with <span class="extype" name="eu.timepit.refined.CollectionInference">CollectionInference</span></span>
       </span>
       </h4>
+
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Module for collection predicates.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/core/shared/src/main/scala/eu/timepit/refined/collection.scala" target="_blank">collection.scala</a></dd></dl><div class="toggleContainer block">
-          <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.CollectionInference">CollectionInference</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate">CollectionValidate</span>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.CollectionInference">CollectionInference</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate">CollectionValidate</span>, <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
-        <div id="order">
-              <span class="filtertype">Ordering</span>
-              <ol>
-                
-                <li class="alpha in"><span>Alphabetic</span></li>
-                <li class="inherit out"><span>By Inheritance</span></li>
-              </ol>
-            </div>
-        <div id="ancestors">
-                <span class="filtertype">Inherited<br />
-                </span>
-                <ol id="linearization">
-                  <li class="in" name="eu.timepit.refined.collection"><span>collection</span></li><li class="in" name="eu.timepit.refined.CollectionInference"><span>CollectionInference</span></li><li class="in" name="eu.timepit.refined.CollectionValidate"><span>CollectionValidate</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
-                </ol>
-              </div><div id="ancestors">
-            <span class="filtertype"></span>
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
             <ol>
-              <li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show All</span></li>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
             </ol>
           </div>
-        <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
-          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="eu.timepit.refined.collection"><span>collection</span></li><li class="in" name="eu.timepit.refined.CollectionInference"><span>CollectionInference</span></li><li class="in" name="eu.timepit.refined.CollectionValidate"><span>CollectionValidate</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
       </div>
 
       <div id="template">
@@ -90,255 +321,268 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="eu.timepit.refined.collection.Contains" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Contains[U]=eu.timepit.refined.collection.Exists[eu.timepit.refined.generic.Equal[U]]"></a>
-      <a id="Contains[U]:Contains[U]"></a>
-      <h4 class="signature">
+              <ol><li name="eu.timepit.refined.collection.Contains" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Contains[U]=eu.timepit.refined.collection.Exists[eu.timepit.refined.generic.Equal[U]]"></a><a id="Contains[U]:Contains[U]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#Contains[U]=eu.timepit.refined.collection.Exists[eu.timepit.refined.generic.Equal[U]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Contains</span><span class="tparams">[<span name="U">U</span>]</span><span class="result"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="collection$$Forall.html" class="extype" name="eu.timepit.refined.collection.Forall">Forall</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="generic$$Equal.html" class="extype" name="eu.timepit.refined.generic.Equal">Equal</a>[<span class="extype" name="eu.timepit.refined.collection.Contains.U">U</span>]]]]</span>
+        <span class="name">Contains</span><span class="tparams">[<span name="U">U</span>]</span><span class="result alias"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="collection$$Forall.html" class="extype" name="eu.timepit.refined.collection.Forall">Forall</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="generic$$Equal.html" class="extype" name="eu.timepit.refined.generic.Equal">Equal</a>[<span class="extype" name="eu.timepit.refined.collection.Contains.U">U</span>]]]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@Contains[U]=eu.timepit.refined.collection.Exists[eu.timepit.refined.generic.Equal[U]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if a <code>Traversable</code> contains a value
 equal to <code>U</code>.</p>
-    </li><li name="eu.timepit.refined.collection.Count" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Count[PA,PC]extendsProductwithSerializable"></a>
-      <a id="Count[PA,PC]:Count[PA,PC]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.collection.Count" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Count[PA,PC]extendsProductwithSerializable"></a><a id="Count[PA,PC]:Count[PA,PC]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#Count[PA,PC]extendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="collection$$Count.html"><span class="name">Count</span></a><span class="tparams">[<span name="PA">PA</span>, <span name="PC">PC</span>]</span><span class="params">(<span name="pa">pa: <span class="extype" name="eu.timepit.refined.collection.Count.PA">PA</span></span>, <span name="pc">pc: <span class="extype" name="eu.timepit.refined.collection.Count.PC">PC</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a title="Predicate that counts the number of elements in a Traversable
+which satisfy the predicate PA and passes the result to the numeric
+predicate PC." href="collection$$Count.html">
+              <span class="name">Count</span>
+            </a><span class="tparams">[<span name="PA">PA</span>, <span name="PC">PC</span>]</span><span class="params">(<span name="pa">pa: <span class="extype" name="eu.timepit.refined.collection.Count.PA">PA</span></span>, <span name="pc">pc: <span class="extype" name="eu.timepit.refined.collection.Count.PC">PC</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@Count[PA,PC]extendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that counts the number of elements in a <code>Traversable</code>
 which satisfy the predicate <code>PA</code> and passes the result to the numeric
 predicate <code>PC</code>.</p>
-    </li><li name="eu.timepit.refined.collection.Empty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="EmptyextendsProductwithSerializable"></a>
-      <a id="Empty:Empty"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.collection.Empty" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EmptyextendsProductwithSerializable"></a><a id="Empty:Empty"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#EmptyextendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="collection$$Empty.html"><span class="name">Empty</span></a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a title="Predicate that checks if a Traversable is empty." href="collection$$Empty.html">
+              <span class="name">Empty</span>
+            </a><span class="params">()</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@EmptyextendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <p class="shortcomment cmt">Predicate that checks if a <code>Traversable</code> is empty.</p>
+    </li><li name="eu.timepit.refined.collection.Exists" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]"></a><a id="Exists[P]:Exists[P]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <p class="shortcomment cmt">Predicate that checks if a <code>Traversable</code> is empty.</p>
-    </li><li name="eu.timepit.refined.collection.Exists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]"></a>
-      <a id="Exists[P]:Exists[P]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Exists</span><span class="tparams">[<span name="P">P</span>]</span><span class="result"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="collection$$Forall.html" class="extype" name="eu.timepit.refined.collection.Forall">Forall</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.collection.Exists.P">P</span>]]]</span>
+        <span class="name">Exists</span><span class="tparams">[<span name="P">P</span>]</span><span class="result alias"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="collection$$Forall.html" class="extype" name="eu.timepit.refined.collection.Forall">Forall</a>[<a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<span class="extype" name="eu.timepit.refined.collection.Exists.P">P</span>]]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if the predicate <code>P</code> holds for some elements of a
 <code>Traversable</code>.</p>
-    </li><li name="eu.timepit.refined.collection.Forall" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Forall[P]extendsProductwithSerializable"></a>
-      <a id="Forall[P]:Forall[P]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.collection.Forall" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Forall[P]extendsProductwithSerializable"></a><a id="Forall[P]:Forall[P]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#Forall[P]extendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="collection$$Forall.html"><span class="name">Forall</span></a><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Forall.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a title="Predicate that checks if the predicate P holds for all elements of a
+Traversable." href="collection$$Forall.html">
+              <span class="name">Forall</span>
+            </a><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Forall.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@Forall[P]extendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if the predicate <code>P</code> holds for all elements of a
 <code>Traversable</code>.</p>
-    </li><li name="eu.timepit.refined.collection.Head" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Head[P]extendsProductwithSerializable"></a>
-      <a id="Head[P]:Head[P]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.collection.Head" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Head[P]extendsProductwithSerializable"></a><a id="Head[P]:Head[P]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#Head[P]extendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="collection$$Head.html"><span class="name">Head</span></a><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Head.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a title="Predicate that checks if the predicate P holds for the first element
+of a Traversable." href="collection$$Head.html">
+              <span class="name">Head</span>
+            </a><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Head.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@Head[P]extendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if the predicate <code>P</code> holds for the first element
 of a <code>Traversable</code>.</p>
-    </li><li name="eu.timepit.refined.collection.Index" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Index[N,P]extendsProductwithSerializable"></a>
-      <a id="Index[N,P]:Index[N,P]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.collection.Index" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Index[N,P]extendsProductwithSerializable"></a><a id="Index[N,P]:Index[N,P]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#Index[N,P]extendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="collection$$Index.html"><span class="name">Index</span></a><span class="tparams">[<span name="N">N</span>, <span name="P">P</span>]</span><span class="params">(<span name="n">n: <span class="extype" name="eu.timepit.refined.collection.Index.N">N</span></span>, <span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Index.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a title="Predicate that checks if the predicate P holds for the element at
+index N of a sequence." href="collection$$Index.html">
+              <span class="name">Index</span>
+            </a><span class="tparams">[<span name="N">N</span>, <span name="P">P</span>]</span><span class="params">(<span name="n">n: <span class="extype" name="eu.timepit.refined.collection.Index.N">N</span></span>, <span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Index.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@Index[N,P]extendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if the predicate <code>P</code> holds for the element at
 index <code>N</code> of a sequence.</p>
-    </li><li name="eu.timepit.refined.collection.Init" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Init[P]extendsProductwithSerializable"></a>
-      <a id="Init[P]:Init[P]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.collection.Init" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Init[P]extendsProductwithSerializable"></a><a id="Init[P]:Init[P]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#Init[P]extendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="collection$$Init.html"><span class="name">Init</span></a><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Init.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a title="Predicate that checks if the predicate P holds for all but the last
+element of a Traversable." href="collection$$Init.html">
+              <span class="name">Init</span>
+            </a><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Init.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@Init[P]extendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if the predicate <code>P</code> holds for all but the last
 element of a <code>Traversable</code>.</p>
-    </li><li name="eu.timepit.refined.collection.Last" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Last[P]extendsProductwithSerializable"></a>
-      <a id="Last[P]:Last[P]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.collection.Last" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Last[P]extendsProductwithSerializable"></a><a id="Last[P]:Last[P]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#Last[P]extendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="collection$$Last.html"><span class="name">Last</span></a><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Last.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a title="Predicate that checks if the predicate P holds for the last element
+of a Traversable." href="collection$$Last.html">
+              <span class="name">Last</span>
+            </a><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Last.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@Last[P]extendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if the predicate <code>P</code> holds for the last element
 of a <code>Traversable</code>.</p>
-    </li><li name="eu.timepit.refined.collection.MaxSize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="MaxSize[N]=eu.timepit.refined.collection.Size[eu.timepit.refined.numeric.LessEqual[N]]"></a>
-      <a id="MaxSize[N]:MaxSize[N]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.collection.MaxSize" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MaxSize[N]=eu.timepit.refined.collection.Size[eu.timepit.refined.numeric.LessEqual[N]]"></a><a id="MaxSize[N]:MaxSize[N]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#MaxSize[N]=eu.timepit.refined.collection.Size[eu.timepit.refined.numeric.LessEqual[N]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">MaxSize</span><span class="tparams">[<span name="N">N</span>]</span><span class="result"> = <a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<a href="numeric$.html#LessEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Greater[N]]" class="extmbr" name="eu.timepit.refined.numeric.LessEqual">LessEqual</a>[<span class="extype" name="eu.timepit.refined.collection.MaxSize.N">N</span>]]</span>
+        <span class="name">MaxSize</span><span class="tparams">[<span name="N">N</span>]</span><span class="result alias"> = <a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<a href="numeric$.html#LessEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Greater[N]]" class="extmbr" name="eu.timepit.refined.numeric.LessEqual">LessEqual</a>[<span class="extype" name="eu.timepit.refined.collection.MaxSize.N">N</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@MaxSize[N]=eu.timepit.refined.collection.Size[eu.timepit.refined.numeric.LessEqual[N]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if the size of a <code>Traversable</code> is less than
 or equal to <code>N</code>.</p>
-    </li><li name="eu.timepit.refined.collection.MinSize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="MinSize[N]=eu.timepit.refined.collection.Size[eu.timepit.refined.numeric.GreaterEqual[N]]"></a>
-      <a id="MinSize[N]:MinSize[N]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.collection.MinSize" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MinSize[N]=eu.timepit.refined.collection.Size[eu.timepit.refined.numeric.GreaterEqual[N]]"></a><a id="MinSize[N]:MinSize[N]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#MinSize[N]=eu.timepit.refined.collection.Size[eu.timepit.refined.numeric.GreaterEqual[N]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">MinSize</span><span class="tparams">[<span name="N">N</span>]</span><span class="result"> = <a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<a href="numeric$.html#GreaterEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Less[N]]" class="extmbr" name="eu.timepit.refined.numeric.GreaterEqual">GreaterEqual</a>[<span class="extype" name="eu.timepit.refined.collection.MinSize.N">N</span>]]</span>
+        <span class="name">MinSize</span><span class="tparams">[<span name="N">N</span>]</span><span class="result alias"> = <a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<a href="numeric$.html#GreaterEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Less[N]]" class="extmbr" name="eu.timepit.refined.numeric.GreaterEqual">GreaterEqual</a>[<span class="extype" name="eu.timepit.refined.collection.MinSize.N">N</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@MinSize[N]=eu.timepit.refined.collection.Size[eu.timepit.refined.numeric.GreaterEqual[N]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if the size of a <code>Traversable</code> is greater than
 or equal to <code>N</code>.</p>
-    </li><li name="eu.timepit.refined.collection.NonEmpty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="NonEmpty=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Empty]"></a>
-      <a id="NonEmpty:NonEmpty"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.collection.NonEmpty" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NonEmpty=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Empty]"></a><a id="NonEmpty:NonEmpty"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#NonEmpty=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Empty]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">NonEmpty</span><span class="result"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="collection$$Empty.html" class="extype" name="eu.timepit.refined.collection.Empty">Empty</a>]</span>
+        <span class="name">NonEmpty</span><span class="result alias"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="collection$$Empty.html" class="extype" name="eu.timepit.refined.collection.Empty">Empty</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@NonEmpty=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Empty]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <p class="shortcomment cmt">Predicate that checks if a <code>Traversable</code> is not empty.</p>
+    </li><li name="eu.timepit.refined.collection.Size" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Size[P]extendsProductwithSerializable"></a><a id="Size[P]:Size[P]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#Size[P]extendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <p class="shortcomment cmt">Predicate that checks if a <code>Traversable</code> is not empty.</p>
-    </li><li name="eu.timepit.refined.collection.Size" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Size[P]extendsProductwithSerializable"></a>
-      <a id="Size[P]:Size[P]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="collection$$Size.html"><span class="name">Size</span></a><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Size.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a title="Predicate that checks if the size of a Traversable satisfies the
+predicate P." href="collection$$Size.html">
+              <span class="name">Size</span>
+            </a><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Size.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@Size[P]extendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if the size of a <code>Traversable</code> satisfies the
 predicate <code>P</code>.</p>
-    </li><li name="eu.timepit.refined.collection.Tail" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Tail[P]extendsProductwithSerializable"></a>
-      <a id="Tail[P]:Tail[P]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.collection.Tail" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Tail[P]extendsProductwithSerializable"></a><a id="Tail[P]:Tail[P]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#Tail[P]extendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="collection$$Tail.html"><span class="name">Tail</span></a><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Tail.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a title="Predicate that checks if the predicate P holds for all but the first
+element of a Traversable." href="collection$$Tail.html">
+              <span class="name">Tail</span>
+            </a><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="p">p: <span class="extype" name="eu.timepit.refined.collection.Tail.P">P</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@Tail[P]extendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if the predicate <code>P</code> holds for all but the first
 element of a <code>Traversable</code>.</p>
     </li></ol>
@@ -346,63 +590,64 @@ element of a <code>Traversable</code>.</p>
 
         
 
-        <div id="values" class="values members">
+        <div class="values members">
               <h3>Value Members</h3>
-              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:Any):Boolean"></a>
-      <a id="!=(Any):Boolean"></a>
-      <h4 class="signature">
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
-      <a id="##():Int"></a>
-      <h4 class="signature">
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@##():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:Any):Boolean"></a>
-      <a id="==(Any):Boolean"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="asInstanceOf[T0]:T0"></a>
-      <a id="asInstanceOf[T0]:T0"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -410,28 +655,23 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="clone():Object"></a>
-      <a id="clone():AnyRef"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@clone():Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -439,27 +679,29 @@ element of a <code>Traversable</code>.</p>
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#countValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="countValidate[A,PA,RA,PC,RC,T](implicitva:eu.timepit.refined.api.Validate.Aux[A,PA,RA],implicitvc:eu.timepit.refined.api.Validate.Aux[Int,PC,RC],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Count[PA,PC],eu.timepit.refined.collection.Count[List[va.Res],vc.Res]]"></a>
-      <a id="countValidate[A,PA,RA,PC,RC,T](Aux[A,PA,RA],Aux[Int,PC,RC],(T)⇒Traversable[A]):Aux[T,Count[PA,PC],Count[List[(va)#Res],(vc)#Res]]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.CollectionValidate#countValidate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="countValidate[A,PA,RA,PC,RC,T](implicitva:eu.timepit.refined.api.Validate.Aux[A,PA,RA],implicitvc:eu.timepit.refined.api.Validate.Aux[Int,PC,RC],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Count[PA,PC],eu.timepit.refined.collection.Count[List[va.Res],vc.Res]]"></a><a id="countValidate[A,PA,RA,PC,RC,T](Aux[A,PA,RA],Aux[Int,PC,RC],(T)⇒Traversable[A]):Aux[T,Count[PA,PC],Count[List[(va)#Res],(vc)#Res]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#countValidate[A,PA,RA,PC,RC,T](implicitva:eu.timepit.refined.api.Validate.Aux[A,PA,RA],implicitvc:eu.timepit.refined.api.Validate.Aux[Int,PC,RC],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Count[PA,PC],eu.timepit.refined.collection.Count[List[va.Res],vc.Res]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">countValidate</span><span class="tparams">[<span name="A">A</span>, <span name="PA">PA</span>, <span name="RA">RA</span>, <span name="PC">PC</span>, <span name="RC">RC</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="va">va: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.PA">PA</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.RA">RA</span>]</span>, <span name="vc">vc: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a>, <span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.PC">PC</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.RC">RC</span>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.T">T</span>) ⇒ <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.A">A</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.T">T</span>, <a href="collection$$Count.html" class="extype" name="eu.timepit.refined.collection.Count">Count</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.PA">PA</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.PC">PC</span>], <a href="collection$$Count.html" class="extype" name="eu.timepit.refined.collection.Count">Count</a>[<span class="extype" name="scala.List">List</span>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.va">va</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>], (<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.vc">vc</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]</span>
+        <span class="name">countValidate</span><span class="tparams">[<span name="A">A</span>, <span name="PA">PA</span>, <span name="RA">RA</span>, <span name="PC">PC</span>, <span name="RC">RC</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="va">va: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.PA">PA</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.RA">RA</span>]</span>, <span name="vc">vc: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Int" class="extype" target="_top">Int</a>, <span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.PC">PC</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.RC">RC</span>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.T">T</span>) ⇒ <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.A">A</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.T">T</span>, <a href="collection$$Count.html" class="extype" name="eu.timepit.refined.collection.Count">Count</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.PA">PA</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.PC">PC</span>], <a href="collection$$Count.html" class="extype" name="eu.timepit.refined.collection.Count">Count</a>[<span class="extype" name="scala.List">List</span>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.va">va</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>], (<span class="extype" name="eu.timepit.refined.CollectionValidate.countValidate.vc">vc</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@countValidate[A,PA,RA,PC,RC,T](implicitva:eu.timepit.refined.api.Validate.Aux[A,PA,RA],implicitvc:eu.timepit.refined.api.Validate.Aux[Int,PC,RC],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Count[PA,PC],eu.timepit.refined.collection.Count[List[va.Res],vc.Res]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionValidate#emptyValidate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="emptyValidate[T](implicitev:T=&gt;Traversable[_]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.collection.Empty]"></a><a id="emptyValidate[T]((T)⇒Traversable[_]):Plain[T,Empty]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#emptyValidate[T](implicitev:T=&gt;Traversable[_]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.collection.Empty]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#emptyValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="emptyValidate[T](implicitev:T=&gt;Traversable[_]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.collection.Empty]"></a>
-      <a id="emptyValidate[T]((T)⇒Traversable[_]):Plain[T,Empty]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -467,50 +709,47 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">emptyValidate</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.emptyValidate.T">T</span>) ⇒ <span class="extype" name="scala.Traversable">Traversable</span>[_]</span>)</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.emptyValidate.T">T</span>, <a href="collection$$Empty.html" class="extype" name="eu.timepit.refined.collection.Empty">Empty</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@emptyValidate[T](implicitev:T=&gt;Traversable[_]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.collection.Empty]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="eq(x$1:AnyRef):Boolean"></a>
-      <a id="eq(AnyRef):Boolean"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionInference#existsInference" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="existsInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Exists[A],eu.timepit.refined.collection.Exists[B]]"></a><a id="existsInference[A,B](==&gt;[A,B]):==&gt;[Exists[A],Exists[B]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#existsInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Exists[A],eu.timepit.refined.collection.Exists[B]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionInference#existsInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="existsInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Exists[A],eu.timepit.refined.collection.Exists[B]]"></a>
-      <a id="existsInference[A,B](==&gt;[A,B]):==&gt;[Exists[A],Exists[B]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -518,16 +757,15 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">existsInference</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.existsInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInference.existsInference.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.existsInference.A">A</span>], <a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.existsInference.B">B</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@existsInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Exists[A],eu.timepit.refined.collection.Exists[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionInference#existsNonEmptyInference" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="existsNonEmptyInference[P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Exists[P],eu.timepit.refined.collection.NonEmpty]"></a><a id="existsNonEmptyInference[P]:==&gt;[Exists[P],NonEmpty]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#existsNonEmptyInference[P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Exists[P],eu.timepit.refined.collection.NonEmpty]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionInference#existsNonEmptyInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="existsNonEmptyInference[P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Exists[P],eu.timepit.refined.collection.NonEmpty]"></a>
-      <a id="existsNonEmptyInference[P]:==&gt;[Exists[P],NonEmpty]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -535,28 +773,23 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">existsNonEmptyInference</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.existsNonEmptyInference.P">P</span>], <a href="#NonEmpty=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Empty]" class="extmbr" name="eu.timepit.refined.collection.NonEmpty">NonEmpty</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@existsNonEmptyInference[P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Exists[P],eu.timepit.refined.collection.NonEmpty]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <a id="finalize():Unit"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -564,10 +797,13 @@ element of a <code>Traversable</code>.</p>
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#forallValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="forallValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Forall[P],eu.timepit.refined.collection.Forall[List[v.Res]]]"></a>
-      <a id="forallValidate[A,P,R,T[a]&lt;:Traversable[a]](Aux[A,P,R]):Aux[T[A],Forall[P],Forall[List[(v)#Res]]]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.CollectionValidate#forallValidate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="forallValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Forall[P],eu.timepit.refined.collection.Forall[List[v.Res]]]"></a><a id="forallValidate[A,P,R,T[a]&lt;:Traversable[a]](Aux[A,P,R]):Aux[T[A],Forall[P],Forall[List[(v)#Res]]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#forallValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Forall[P],eu.timepit.refined.collection.Forall[List[v.Res]]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -575,16 +811,15 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">forallValidate</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T<span class="tparams">[<span name="a">a</span>]</span> &lt;: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidate.T.a">a</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidate.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidate.R">R</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidate.T">T</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidate.A">A</span>], <a href="collection$$Forall.html" class="extype" name="eu.timepit.refined.collection.Forall">Forall</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidate.P">P</span>], <a href="collection$$Forall.html" class="extype" name="eu.timepit.refined.collection.Forall">Forall</a>[<span class="extype" name="scala.List">List</span>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidate.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@forallValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Forall[P],eu.timepit.refined.collection.Forall[List[v.Res]]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionValidate#forallValidateView" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="forallValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Forall[P],eu.timepit.refined.collection.Forall[List[v.Res]]]"></a><a id="forallValidateView[A,P,R,T](Aux[A,P,R],(T)⇒Traversable[A]):Aux[T,Forall[P],Forall[List[(v)#Res]]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#forallValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Forall[P],eu.timepit.refined.collection.Forall[List[v.Res]]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#forallValidateView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="forallValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Forall[P],eu.timepit.refined.collection.Forall[List[v.Res]]]"></a>
-      <a id="forallValidateView[A,P,R,T](Aux[A,P,R],(T)⇒Traversable[A]):Aux[T,Forall[P],Forall[List[(v)#Res]]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -592,16 +827,15 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">forallValidateView</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidateView.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidateView.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidateView.R">R</span>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidateView.T">T</span>) ⇒ <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidateView.A">A</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidateView.T">T</span>, <a href="collection$$Forall.html" class="extype" name="eu.timepit.refined.collection.Forall">Forall</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidateView.P">P</span>], <a href="collection$$Forall.html" class="extype" name="eu.timepit.refined.collection.Forall">Forall</a>[<span class="extype" name="scala.List">List</span>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.forallValidateView.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@forallValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Forall[P],eu.timepit.refined.collection.Forall[List[v.Res]]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getClass():Class[_]"></a>
-      <a id="getClass():Class[_]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -609,33 +843,31 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionInference#headExistsInference" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="headExistsInference[P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Exists[P]]"></a><a id="headExistsInference[P]:==&gt;[Head[P],Exists[P]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#headExistsInference[P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Exists[P]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionInference#headExistsInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="headExistsInference[P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Exists[P]]"></a>
-      <a id="headExistsInference[P]:==&gt;[Head[P],Exists[P]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -643,16 +875,15 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">headExistsInference</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.headExistsInference.P">P</span>], <a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.headExistsInference.P">P</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@headExistsInference[P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Exists[P]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionInference#headInference" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="headInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Head[A],eu.timepit.refined.collection.Head[B]]"></a><a id="headInference[A,B](==&gt;[A,B]):==&gt;[Head[A],Head[B]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#headInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Head[A],eu.timepit.refined.collection.Head[B]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionInference#headInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="headInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Head[A],eu.timepit.refined.collection.Head[B]]"></a>
-      <a id="headInference[A,B](==&gt;[A,B]):==&gt;[Head[A],Head[B]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -660,50 +891,47 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">headInference</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.headInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInference.headInference.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.headInference.A">A</span>], <a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.headInference.B">B</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@headInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Head[A],eu.timepit.refined.collection.Head[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#headValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="headValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Head[Option[v.Res]]]"></a>
-      <a id="headValidate[A,P,R,T[a]&lt;:Traversable[a]](Aux[A,P,R]):Aux[T[A],Head[P],Head[Option[(v)#Res]]]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.CollectionValidate#headValidate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="headValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Head[Option[v.Res]]]"></a><a id="headValidate[A,P,R,T[a]&lt;:Traversable[a]](Aux[A,P,R]):Aux[T[A],Head[P],Head[Option[(v)#Res]]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#headValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Head[Option[v.Res]]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">headValidate</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T<span class="tparams">[<span name="a">a</span>]</span> &lt;: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.T.a">a</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.R">R</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.T">T</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.A">A</span>], <a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.P">P</span>], <a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
+        <span class="name">headValidate</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T<span class="tparams">[<span name="a">a</span>]</span> &lt;: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.T.a">a</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.R">R</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.T">T</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.A">A</span>], <a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.P">P</span>], <a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidate.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@headValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Head[Option[v.Res]]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionValidate#headValidateView" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="headValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Head[Option[v.Res]]]"></a><a id="headValidateView[A,P,R,T](Aux[A,P,R],(T)⇒Traversable[A]):Aux[T,Head[P],Head[Option[(v)#Res]]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#headValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Head[Option[v.Res]]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#headValidateView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="headValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Head[Option[v.Res]]]"></a>
-      <a id="headValidateView[A,P,R,T](Aux[A,P,R],(T)⇒Traversable[A]):Aux[T,Head[P],Head[Option[(v)#Res]]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">headValidateView</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.R">R</span>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.T">T</span>) ⇒ <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.A">A</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.T">T</span>, <a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.P">P</span>], <a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
+        <span class="name">headValidateView</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.R">R</span>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.T">T</span>) ⇒ <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.A">A</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.T">T</span>, <a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.P">P</span>], <a href="collection$$Head.html" class="extype" name="eu.timepit.refined.collection.Head">Head</a>[<a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.headValidateView.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@headValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Head[P],eu.timepit.refined.collection.Head[Option[v.Res]]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionInference#indexExistsInference" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="indexExistsInference[N,P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Index[N,P],eu.timepit.refined.collection.Exists[P]]"></a><a id="indexExistsInference[N,P]:==&gt;[Index[N,P],Exists[P]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#indexExistsInference[N,P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Index[N,P],eu.timepit.refined.collection.Exists[P]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionInference#indexExistsInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="indexExistsInference[N,P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Index[N,P],eu.timepit.refined.collection.Exists[P]]"></a>
-      <a id="indexExistsInference[N,P]:==&gt;[Index[N,P],Exists[P]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -711,16 +939,15 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">indexExistsInference</span><span class="tparams">[<span name="N">N</span>, <span name="P">P</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="collection$$Index.html" class="extype" name="eu.timepit.refined.collection.Index">Index</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.indexExistsInference.N">N</span>, <span class="extype" name="eu.timepit.refined.CollectionInference.indexExistsInference.P">P</span>], <a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.indexExistsInference.P">P</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@indexExistsInference[N,P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Index[N,P],eu.timepit.refined.collection.Exists[P]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionInference#indexInference" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="indexInference[N,A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Index[N,A],eu.timepit.refined.collection.Index[N,B]]"></a><a id="indexInference[N,A,B](==&gt;[A,B]):==&gt;[Index[N,A],Index[N,B]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#indexInference[N,A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Index[N,A],eu.timepit.refined.collection.Index[N,B]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionInference#indexInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="indexInference[N,A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Index[N,A],eu.timepit.refined.collection.Index[N,B]]"></a>
-      <a id="indexInference[N,A,B](==&gt;[A,B]):==&gt;[Index[N,A],Index[N,B]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -728,33 +955,31 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">indexInference</span><span class="tparams">[<span name="N">N</span>, <span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.indexInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInference.indexInference.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="collection$$Index.html" class="extype" name="eu.timepit.refined.collection.Index">Index</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.indexInference.N">N</span>, <span class="extype" name="eu.timepit.refined.CollectionInference.indexInference.A">A</span>], <a href="collection$$Index.html" class="extype" name="eu.timepit.refined.collection.Index">Index</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.indexInference.N">N</span>, <span class="extype" name="eu.timepit.refined.CollectionInference.indexInference.B">B</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@indexInference[N,A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Index[N,A],eu.timepit.refined.collection.Index[N,B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionValidate#indexValidate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="indexValidate[A,P,R,N&lt;:Int,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;PartialFunction[Int,A],implicitwn:shapeless.Witness.Aux[N]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Index[N,P],eu.timepit.refined.collection.Index[N,Option[v.Res]]]"></a><a id="indexValidate[A,P,R,N&lt;:Int,T](Aux[A,P,R],(T)⇒PartialFunction[Int,A],Aux[N]):Aux[T,Index[N,P],Index[N,Option[(v)#Res]]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#indexValidate[A,P,R,N&lt;:Int,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;PartialFunction[Int,A],implicitwn:shapeless.Witness.Aux[N]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Index[N,P],eu.timepit.refined.collection.Index[N,Option[v.Res]]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#indexValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="indexValidate[A,P,R,N&lt;:Int,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;PartialFunction[Int,A],implicitwn:shapeless.Witness.Aux[N]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Index[N,P],eu.timepit.refined.collection.Index[N,Option[v.Res]]]"></a>
-      <a id="indexValidate[A,P,R,N&lt;:Int,T](Aux[A,P,R],(T)⇒PartialFunction[Int,A],Aux[N]):Aux[T,Index[N,P],Index[N,Option[(v)#Res]]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">indexValidate</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="N">N &lt;: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.R">R</span>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a>, <span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.A">A</span>]</span>, <span name="wn">wn: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.N">N</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.T">T</span>, <a href="collection$$Index.html" class="extype" name="eu.timepit.refined.collection.Index">Index</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.N">N</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.P">P</span>], <a href="collection$$Index.html" class="extype" name="eu.timepit.refined.collection.Index">Index</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.N">N</span>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
+        <span class="name">indexValidate</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="N">N &lt;: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.R">R</span>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Int" class="extype" target="_top">Int</a>, <span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.A">A</span>]</span>, <span name="wn">wn: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.N">N</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.T">T</span>, <a href="collection$$Index.html" class="extype" name="eu.timepit.refined.collection.Index">Index</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.N">N</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.P">P</span>], <a href="collection$$Index.html" class="extype" name="eu.timepit.refined.collection.Index">Index</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.N">N</span>, <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.indexValidate.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@indexValidate[A,P,R,N&lt;:Int,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;PartialFunction[Int,A],implicitwn:shapeless.Witness.Aux[N]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Index[N,P],eu.timepit.refined.collection.Index[N,Option[v.Res]]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionValidate#initValidate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="initValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Init[P],eu.timepit.refined.collection.Init[List[v.Res]]]"></a><a id="initValidate[A,P,R,T[a]&lt;:Traversable[a]](Aux[A,P,R]):Aux[T[A],Init[P],Init[List[(v)#Res]]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#initValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Init[P],eu.timepit.refined.collection.Init[List[v.Res]]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#initValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="initValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Init[P],eu.timepit.refined.collection.Init[List[v.Res]]]"></a>
-      <a id="initValidate[A,P,R,T[a]&lt;:Traversable[a]](Aux[A,P,R]):Aux[T[A],Init[P],Init[List[(v)#Res]]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -762,16 +987,15 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">initValidate</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T<span class="tparams">[<span name="a">a</span>]</span> &lt;: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.initValidate.T.a">a</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.initValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.initValidate.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.initValidate.R">R</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.initValidate.T">T</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.initValidate.A">A</span>], <a href="collection$$Init.html" class="extype" name="eu.timepit.refined.collection.Init">Init</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.initValidate.P">P</span>], <a href="collection$$Init.html" class="extype" name="eu.timepit.refined.collection.Init">Init</a>[<span class="extype" name="scala.List">List</span>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.initValidate.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@initValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Init[P],eu.timepit.refined.collection.Init[List[v.Res]]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionValidate#initValidateView" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="initValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Init[P],eu.timepit.refined.collection.Init[List[v.Res]]]"></a><a id="initValidateView[A,P,R,T](Aux[A,P,R],(T)⇒Traversable[A]):Aux[T,Init[P],Init[List[(v)#Res]]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#initValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Init[P],eu.timepit.refined.collection.Init[List[v.Res]]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#initValidateView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="initValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Init[P],eu.timepit.refined.collection.Init[List[v.Res]]]"></a>
-      <a id="initValidateView[A,P,R,T](Aux[A,P,R],(T)⇒Traversable[A]):Aux[T,Init[P],Init[List[(v)#Res]]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -779,33 +1003,31 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">initValidateView</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.initValidateView.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.initValidateView.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.initValidateView.R">R</span>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.initValidateView.T">T</span>) ⇒ <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.initValidateView.A">A</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.initValidateView.T">T</span>, <a href="collection$$Init.html" class="extype" name="eu.timepit.refined.collection.Init">Init</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.initValidateView.P">P</span>], <a href="collection$$Init.html" class="extype" name="eu.timepit.refined.collection.Init">Init</a>[<span class="extype" name="scala.List">List</span>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.initValidateView.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@initValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Init[P],eu.timepit.refined.collection.Init[List[v.Res]]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isInstanceOf[T0]:Boolean"></a>
-      <a id="isInstanceOf[T0]:Boolean"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionInference#lastExistsInference" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lastExistsInference[P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Exists[P]]"></a><a id="lastExistsInference[P]:==&gt;[Last[P],Exists[P]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#lastExistsInference[P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Exists[P]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionInference#lastExistsInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lastExistsInference[P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Exists[P]]"></a>
-      <a id="lastExistsInference[P]:==&gt;[Last[P],Exists[P]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -813,16 +1035,15 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">lastExistsInference</span><span class="tparams">[<span name="P">P</span>]</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.lastExistsInference.P">P</span>], <a href="#Exists[P]=eu.timepit.refined.boolean.Not[eu.timepit.refined.collection.Forall[eu.timepit.refined.boolean.Not[P]]]" class="extmbr" name="eu.timepit.refined.collection.Exists">Exists</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.lastExistsInference.P">P</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@lastExistsInference[P]:eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Exists[P]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionInference#lastInference" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lastInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Last[A],eu.timepit.refined.collection.Last[B]]"></a><a id="lastInference[A,B](==&gt;[A,B]):==&gt;[Last[A],Last[B]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#lastInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Last[A],eu.timepit.refined.collection.Last[B]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionInference#lastInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lastInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Last[A],eu.timepit.refined.collection.Last[B]]"></a>
-      <a id="lastInference[A,B](==&gt;[A,B]):==&gt;[Last[A],Last[B]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -830,101 +1051,95 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">lastInference</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.lastInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInference.lastInference.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.lastInference.A">A</span>], <a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.lastInference.B">B</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@lastInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Last[A],eu.timepit.refined.collection.Last[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#lastValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lastValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Last[Option[v.Res]]]"></a>
-      <a id="lastValidate[A,P,R,T[a]&lt;:Traversable[a]](Aux[A,P,R]):Aux[T[A],Last[P],Last[Option[(v)#Res]]]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.CollectionValidate#lastValidate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lastValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Last[Option[v.Res]]]"></a><a id="lastValidate[A,P,R,T[a]&lt;:Traversable[a]](Aux[A,P,R]):Aux[T[A],Last[P],Last[Option[(v)#Res]]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#lastValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Last[Option[v.Res]]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lastValidate</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T<span class="tparams">[<span name="a">a</span>]</span> &lt;: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.T.a">a</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.R">R</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.T">T</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.A">A</span>], <a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.P">P</span>], <a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
+        <span class="name">lastValidate</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T<span class="tparams">[<span name="a">a</span>]</span> &lt;: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.T.a">a</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.R">R</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.T">T</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.A">A</span>], <a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.P">P</span>], <a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidate.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@lastValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Last[Option[v.Res]]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionValidate#lastValidateView" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lastValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Last[Option[v.Res]]]"></a><a id="lastValidateView[A,P,R,T](Aux[A,P,R],(T)⇒Traversable[A]):Aux[T,Last[P],Last[Option[(v)#Res]]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#lastValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Last[Option[v.Res]]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#lastValidateView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lastValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Last[Option[v.Res]]]"></a>
-      <a id="lastValidateView[A,P,R,T](Aux[A,P,R],(T)⇒Traversable[A]):Aux[T,Last[P],Last[Option[(v)#Res]]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lastValidateView</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.R">R</span>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.T">T</span>) ⇒ <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.A">A</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.T">T</span>, <a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.P">P</span>], <a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Option" class="extype" target="_top">Option</a>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
+        <span class="name">lastValidateView</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.R">R</span>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.T">T</span>) ⇒ <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.A">A</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.T">T</span>, <a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.P">P</span>], <a href="collection$$Last.html" class="extype" name="eu.timepit.refined.collection.Last">Last</a>[<a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Option" class="extype" target="_top">Option</a>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.lastValidateView.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@lastValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Last[P],eu.timepit.refined.collection.Last[Option[v.Res]]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ne(x$1:AnyRef):Boolean"></a>
-      <a id="ne(AnyRef):Boolean"></a>
-      <h4 class="signature">
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
-      <a id="notify():Unit"></a>
-      <h4 class="signature">
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="notifyAll():Unit"></a>
-      <a id="notifyAll():Unit"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionInference#sizeInference" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sizeInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Size[A],eu.timepit.refined.collection.Size[B]]"></a><a id="sizeInference[A,B](==&gt;[A,B]):==&gt;[Size[A],Size[B]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#sizeInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Size[A],eu.timepit.refined.collection.Size[B]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionInference#sizeInference" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="sizeInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Size[A],eu.timepit.refined.collection.Size[B]]"></a>
-      <a id="sizeInference[A,B](==&gt;[A,B]):==&gt;[Size[A],Size[B]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -932,33 +1147,31 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">sizeInference</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="p1">p1: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.sizeInference.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionInference.sizeInference.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.sizeInference.A">A</span>], <a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<span class="extype" name="eu.timepit.refined.CollectionInference.sizeInference.B">B</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@sizeInference[A,B](implicitp1:eu.timepit.refined.api.Inference.==&gt;[A,B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.collection.Size[A],eu.timepit.refined.collection.Size[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionValidate#sizeValidate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sizeValidate[T,P,RP](implicitv:eu.timepit.refined.api.Validate.Aux[Int,P,RP],implicitev:T=&gt;Traversable[_]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Size[P],eu.timepit.refined.collection.Size[v.Res]]"></a><a id="sizeValidate[T,P,RP](Aux[Int,P,RP],(T)⇒Traversable[_]):Aux[T,Size[P],Size[(v)#Res]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#sizeValidate[T,P,RP](implicitv:eu.timepit.refined.api.Validate.Aux[Int,P,RP],implicitev:T=&gt;Traversable[_]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Size[P],eu.timepit.refined.collection.Size[v.Res]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#sizeValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="sizeValidate[T,P,RP](implicitv:eu.timepit.refined.api.Validate.Aux[Int,P,RP],implicitev:T=&gt;Traversable[_]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Size[P],eu.timepit.refined.collection.Size[v.Res]]"></a>
-      <a id="sizeValidate[T,P,RP](Aux[Int,P,RP],(T)⇒Traversable[_]):Aux[T,Size[P],Size[(v)#Res]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sizeValidate</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>, <span name="RP">RP</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a>, <span class="extype" name="eu.timepit.refined.CollectionValidate.sizeValidate.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.sizeValidate.RP">RP</span>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.sizeValidate.T">T</span>) ⇒ <span class="extype" name="scala.Traversable">Traversable</span>[_]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.sizeValidate.T">T</span>, <a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.sizeValidate.P">P</span>], <a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.sizeValidate.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]</span>
+        <span class="name">sizeValidate</span><span class="tparams">[<span name="T">T</span>, <span name="P">P</span>, <span name="RP">RP</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Int" class="extype" target="_top">Int</a>, <span class="extype" name="eu.timepit.refined.CollectionValidate.sizeValidate.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.sizeValidate.RP">RP</span>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.sizeValidate.T">T</span>) ⇒ <span class="extype" name="scala.Traversable">Traversable</span>[_]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.sizeValidate.T">T</span>, <a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.sizeValidate.P">P</span>], <a href="collection$$Size.html" class="extype" name="eu.timepit.refined.collection.Size">Size</a>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.sizeValidate.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@sizeValidate[T,P,RP](implicitv:eu.timepit.refined.api.Validate.Aux[Int,P,RP],implicitev:T=&gt;Traversable[_]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Size[P],eu.timepit.refined.collection.Size[v.Res]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
-      <a id="synchronized[T0](⇒T0):T0"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -966,16 +1179,15 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionValidate#tailValidate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tailValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Tail[P],eu.timepit.refined.collection.Tail[List[v.Res]]]"></a><a id="tailValidate[A,P,R,T[a]&lt;:Traversable[a]](Aux[A,P,R]):Aux[T[A],Tail[P],Tail[List[(v)#Res]]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#tailValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Tail[P],eu.timepit.refined.collection.Tail[List[v.Res]]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#tailValidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="tailValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Tail[P],eu.timepit.refined.collection.Tail[List[v.Res]]]"></a>
-      <a id="tailValidate[A,P,R,T[a]&lt;:Traversable[a]](Aux[A,P,R]):Aux[T[A],Tail[P],Tail[List[(v)#Res]]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -983,16 +1195,15 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">tailValidate</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T<span class="tparams">[<span name="a">a</span>]</span> &lt;: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidate.T.a">a</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidate.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidate.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidate.R">R</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidate.T">T</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidate.A">A</span>], <a href="collection$$Tail.html" class="extype" name="eu.timepit.refined.collection.Tail">Tail</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidate.P">P</span>], <a href="collection$$Tail.html" class="extype" name="eu.timepit.refined.collection.Tail">Tail</a>[<span class="extype" name="scala.List">List</span>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidate.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@tailValidate[A,P,R,T[a]&lt;:Traversable[a]](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R]):eu.timepit.refined.api.Validate.Aux[T[A],eu.timepit.refined.collection.Tail[P],eu.timepit.refined.collection.Tail[List[v.Res]]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.CollectionValidate#tailValidateView" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tailValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Tail[P],eu.timepit.refined.collection.Tail[List[v.Res]]]"></a><a id="tailValidateView[A,P,R,T](Aux[A,P,R],(T)⇒Traversable[A]):Aux[T,Tail[P],Tail[List[(v)#Res]]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#tailValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Tail[P],eu.timepit.refined.collection.Tail[List[v.Res]]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="eu.timepit.refined.CollectionValidate#tailValidateView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="tailValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Tail[P],eu.timepit.refined.collection.Tail[List[v.Res]]]"></a>
-      <a id="tailValidateView[A,P,R,T](Aux[A,P,R],(T)⇒Traversable[A]):Aux[T,Tail[P],Tail[List[(v)#Res]]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -1000,16 +1211,15 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">tailValidateView</span><span class="tparams">[<span name="A">A</span>, <span name="P">P</span>, <span name="R">R</span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="v">v: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidateView.A">A</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidateView.P">P</span>, <span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidateView.R">R</span>]</span>, <span name="ev">ev: (<span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidateView.T">T</span>) ⇒ <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidateView.A">A</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Aux[T,P,R0]=eu.timepit.refined.api.Validate[T,P]{typeR=R0}" class="extmbr" name="eu.timepit.refined.api.Validate.Aux">Aux</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidateView.T">T</span>, <a href="collection$$Tail.html" class="extype" name="eu.timepit.refined.collection.Tail">Tail</a>[<span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidateView.P">P</span>], <a href="collection$$Tail.html" class="extype" name="eu.timepit.refined.collection.Tail">Tail</a>[<span class="extype" name="scala.List">List</span>[(<span class="extype" name="eu.timepit.refined.CollectionValidate.tailValidateView.v">v</span>)#<span class="extype" name="eu.timepit.refined.api.Validate.Res">Res</span>]]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@tailValidateView[A,P,R,T](implicitv:eu.timepit.refined.api.Validate.Aux[A,P,R],implicitev:T=&gt;Traversable[A]):eu.timepit.refined.api.Validate.Aux[T,eu.timepit.refined.collection.Tail[P],eu.timepit.refined.collection.Tail[List[v.Res]]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>CollectionValidate</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
@@ -1017,28 +1227,23 @@ element of a <code>Traversable</code>.</p>
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
-      <a id="wait():Unit"></a>
-      <h4 class="signature">
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -1046,22 +1251,21 @@ element of a <code>Traversable</code>.</p>
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
-      <a id="wait(Long,Int):Unit"></a>
-      <h4 class="signature">
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -1069,22 +1273,21 @@ element of a <code>Traversable</code>.</p>
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait(x$1:Long):Unit"></a>
-      <a id="wait(Long):Unit"></a>
-      <h4 class="signature">
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/collection$.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.collection$@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -1092,7 +1295,8 @@ element of a <code>Traversable</code>.</p>
     </span>)</span>
               
         </dd></dl></div>
-    </li></ol>
+    </li>
+              </ol>
             </div>
 
         
@@ -1106,9 +1310,9 @@ element of a <code>Traversable</code>.</p>
             </div><div class="parent" name="eu.timepit.refined.CollectionValidate">
               <h3>Inherited from <span class="extype" name="eu.timepit.refined.CollectionValidate">CollectionValidate</span></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -1125,7 +1329,9 @@ element of a <code>Traversable</code>.</p>
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+    </body>
+          </div>
+        </div>
+      </div>
     </body>
       </html>

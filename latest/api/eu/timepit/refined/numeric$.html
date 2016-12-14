@@ -1,42 +1,261 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>numeric - eu.timepit.refined.numeric</title>
-          <meta name="description" content="numeric - eu.timepit.refined.numeric" />
-          <meta name="keywords" content="numeric eu.timepit.refined.numeric" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title></title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
+      <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../index.js"></script>
+      <script type="text/javascript" src="../../../lib/scheduler.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
       
       <script type="text/javascript">
-         if(top === self) {
-            var url = '../../../index.html';
-            var hash = 'eu.timepit.refined.numeric$';
-            var anchor = window.location.hash;
-            var anchor_opt = '';
-            if (anchor.length >= 1)
-              anchor_opt = '@' + anchor.substring(1);
-            window.location.href = url + '#' + hash + anchor_opt;
-         }
-   	  </script>
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../';
+      </script>
     
         </head>
-        <body class="value">
-      <div id="definition">
-        <img alt="Object" src="../../../lib/object_big.png" />
-        <p id="owner"><a href="../../package.html" class="extype" name="eu">eu</a>.<a href="../package.html" class="extype" name="eu.timepit">timepit</a>.<a href="package.html" class="extype" name="eu.timepit.refined">refined</a></p>
-        <h1>numeric</h1><h3><span class="morelinks"><div>Related Doc:
-            <a href="package.html" class="extype" name="eu.timepit.refined">package refined</a>
-          </div></span></h3><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+        <body>
+      <div id="search">
+        <span id="doc-title"><span id="doc-version"></span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html">
+              <span class="name">root</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.eu" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eu"></a><a id="eu:eu"></a>
+      <span class="permalink">
+      <a href="index.html#eu" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html">
+              <span class="name">eu</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="eu.timepit" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="timepit"></a><a id="timepit:timepit"></a>
+      <span class="permalink">
+      <a href="../eu/index.html#timepit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html">
+              <span class="name">timepit</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="eu">eu</a></dd></dl></div>
+    </li><li name="eu.timepit.refined" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="refined"></a><a id="refined:refined"></a>
+      <span class="permalink">
+      <a href="../../eu/timepit/index.html#refined" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html">
+              <span class="name">refined</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="eu.timepit">timepit</a></dd></dl></div>
+    </li><li name="eu.timepit.refined.api" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="api"></a><a id="api:api"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/index.html#api" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="api/index.html">
+              <span class="name">api</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="eu.timepit.refined">refined</a></dd></dl></div>
+    </li><li name="eu.timepit.refined.internal" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="internal"></a><a id="internal:internal"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/index.html#internal" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="internal/index.html">
+              <span class="name">internal</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="eu.timepit.refined">refined</a></dd></dl></div>
+    </li><li name="eu.timepit.refined.macros" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="macros"></a><a id="macros:macros"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/index.html#macros" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="macros/index.html">
+              <span class="name">macros</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="eu.timepit.refined">refined</a></dd></dl></div>
+    </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="auto$.html" title="Module that provides automatic refinements and automatic conversions
+between refined types (refinement subtyping) at compile-time."></a>
+                        <a href="auto$.html" title="Module that provides automatic refinements and automatic conversions
+between refined types (refinement subtyping) at compile-time.">
+                          auto
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="boolean$.html" title="Module for logical predicates."></a>
+                        <a href="boolean$.html" title="Module for logical predicates.">
+                          boolean
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="char$.html" title="Module for Char related predicates."></a>
+                        <a href="char$.html" title="Module for Char related predicates.">
+                          char
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="collection$.html" title="Module for collection predicates."></a>
+                        <a href="collection$.html" title="Module for collection predicates.">
+                          collection
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="generic$.html" title="Module for generic predicates."></a>
+                        <a href="generic$.html" title="Module for generic predicates.">
+                          generic
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="" title="Module for numeric predicates."></a>
+                        <a href="" title="Module for numeric predicates.">
+                          numeric
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="string$.html" title="Module for String related predicates."></a>
+                        <a href="string$.html" title="Module for String related predicates.">
+                          string
+                        </a>
+                      </li><li name="eu.timepit.refined.util" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="util"></a><a id="util:util"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/index.html#util" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="util/index.html">
+              <span class="name">util</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="eu.timepit.refined">refined</a></dd></dl></div>
+    </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="object value">
+      <div id="definition">
+        <div class="big-circle object">o</div>
+        <p id="owner"><a href="../../index.html" class="extype" name="eu">eu</a>.<a href="../index.html" class="extype" name="eu.timepit">timepit</a>.<a href="index.html" class="extype" name="eu.timepit.refined">refined</a></p>
+        <h1>numeric<span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
       </div>
 
       <h4 id="signature" class="signature">
@@ -48,11 +267,12 @@
         <span class="name">numeric</span><span class="result"> extends <span class="extype" name="eu.timepit.refined.NumericValidate">NumericValidate</span> with <span class="extype" name="eu.timepit.refined.NumericInference">NumericInference</span></span>
       </span>
       </h4>
+
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Module for numeric predicates. Predicates that take type parameters
 support both shapeless' natural numbers (<code>Nat</code>) and numeric singleton
 types (which are made available by shapeless' <code>Witness</code> - abbreviated
-as <code><a href="package.html#W:shapeless.Witness.type" class="extmbr" name="eu.timepit.refined#W">W</a></code> in refined) which include subtypes of <code>Int</code>, <code>Long</code>,
+as <code><a href="index.html#W:shapeless.Witness.type" class="extmbr" name="eu.timepit.refined#W">W</a></code> in refined) which include subtypes of <code>Int</code>, <code>Long</code>,
 <code>Double</code>, <code>Char</code> etc.</p><p>Example: </p><pre>scala&gt; <span class="kw">import</span> eu.timepit.refined.api.Refined
      | <span class="kw">import</span> eu.timepit.refined.numeric.Greater
      | <span class="kw">import</span> shapeless.nat._5
@@ -63,38 +283,49 @@ res1: <span class="std">Int</span> Refined Greater[_5] = <span class="num">10</s
 scala&gt; refineMV[Greater[W.`<span class="num">1.5</span>`.T]](<span class="num">1.6</span>)
 res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</span>`.T] = <span class="num">1.6</span></pre><p>Note: <code><a href="generic$$Equal.html" class="extype" name="eu.timepit.refined.generic.Equal">generic.Equal</a></code> can also be used for numeric types.
 </p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/fthomas/refined/tree/master/core/shared/src/main/scala/eu/timepit/refined/numeric.scala" target="_blank">numeric.scala</a></dd></dl><div class="toggleContainer block">
-          <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.NumericInference">NumericInference</span>, <span class="extype" name="eu.timepit.refined.NumericValidate">NumericValidate</span>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="eu.timepit.refined.NumericInference">NumericInference</span>, <span class="extype" name="eu.timepit.refined.NumericValidate">NumericValidate</span>, <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
-        <div id="order">
-              <span class="filtertype">Ordering</span>
-              <ol>
-                
-                <li class="alpha in"><span>Alphabetic</span></li>
-                <li class="inherit out"><span>By Inheritance</span></li>
-              </ol>
-            </div>
-        <div id="ancestors">
-                <span class="filtertype">Inherited<br />
-                </span>
-                <ol id="linearization">
-                  <li class="in" name="eu.timepit.refined.numeric"><span>numeric</span></li><li class="in" name="eu.timepit.refined.NumericInference"><span>NumericInference</span></li><li class="in" name="eu.timepit.refined.NumericValidate"><span>NumericValidate</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
-                </ol>
-              </div><div id="ancestors">
-            <span class="filtertype"></span>
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
             <ol>
-              <li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show All</span></li>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
             </ol>
           </div>
-        <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
-          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="eu.timepit.refined.numeric"><span>numeric</span></li><li class="in" name="eu.timepit.refined.NumericInference"><span>NumericInference</span></li><li class="in" name="eu.timepit.refined.NumericValidate"><span>NumericValidate</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
       </div>
 
       <div id="template">
@@ -103,221 +334,201 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="eu.timepit.refined.numeric.Greater" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Greater[N]extendsProductwithSerializable"></a>
-      <a id="Greater[N]:Greater[N]"></a>
-      <h4 class="signature">
+              <ol><li name="eu.timepit.refined.numeric.Greater" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Greater[N]extendsProductwithSerializable"></a><a id="Greater[N]:Greater[N]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#Greater[N]extendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="numeric$$Greater.html"><span class="name">Greater</span></a><span class="tparams">[<span name="N">N</span>]</span><span class="params">(<span name="n">n: <span class="extype" name="eu.timepit.refined.numeric.Greater.N">N</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a title="Predicate that checks if a numeric value is greater than N." href="numeric$$Greater.html">
+              <span class="name">Greater</span>
+            </a><span class="tparams">[<span name="N">N</span>]</span><span class="params">(<span name="n">n: <span class="extype" name="eu.timepit.refined.numeric.Greater.N">N</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@Greater[N]extendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if a numeric value is greater than <code>N</code>.</p>
-    </li><li name="eu.timepit.refined.numeric.GreaterEqual" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GreaterEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Less[N]]"></a>
-      <a id="GreaterEqual[N]:GreaterEqual[N]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.numeric.GreaterEqual" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GreaterEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Less[N]]"></a><a id="GreaterEqual[N]:GreaterEqual[N]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#GreaterEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Less[N]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">GreaterEqual</span><span class="tparams">[<span name="N">N</span>]</span><span class="result"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.numeric.GreaterEqual.N">N</span>]]</span>
+        <span class="name">GreaterEqual</span><span class="tparams">[<span name="N">N</span>]</span><span class="result alias"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.numeric.GreaterEqual.N">N</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@GreaterEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Less[N]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <p class="shortcomment cmt">Predicate that checks if a numeric value is greater than or equal to <code>N</code>.</p>
+    </li><li name="eu.timepit.refined.numeric.Less" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Less[N]extendsProductwithSerializable"></a><a id="Less[N]:Less[N]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#Less[N]extendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <p class="shortcomment cmt">Predicate that checks if a numeric value is greater than or equal to <code>N</code>.</p>
-    </li><li name="eu.timepit.refined.numeric.Less" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Less[N]extendsProductwithSerializable"></a>
-      <a id="Less[N]:Less[N]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="numeric$$Less.html"><span class="name">Less</span></a><span class="tparams">[<span name="N">N</span>]</span><span class="params">(<span name="n">n: <span class="extype" name="eu.timepit.refined.numeric.Less.N">N</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a title="Predicate that checks if a numeric value is less than N." href="numeric$$Less.html">
+              <span class="name">Less</span>
+            </a><span class="tparams">[<span name="N">N</span>]</span><span class="params">(<span name="n">n: <span class="extype" name="eu.timepit.refined.numeric.Less.N">N</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@Less[N]extendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if a numeric value is less than <code>N</code>.</p>
-    </li><li name="eu.timepit.refined.numeric.LessEqual" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="LessEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Greater[N]]"></a>
-      <a id="LessEqual[N]:LessEqual[N]"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.numeric.LessEqual" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LessEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Greater[N]]"></a><a id="LessEqual[N]:LessEqual[N]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#LessEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Greater[N]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">LessEqual</span><span class="tparams">[<span name="N">N</span>]</span><span class="result"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.numeric.LessEqual.N">N</span>]]</span>
+        <span class="name">LessEqual</span><span class="tparams">[<span name="N">N</span>]</span><span class="result alias"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.numeric.LessEqual.N">N</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@LessEqual[N]=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Greater[N]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if a numeric value is less than or equal to <code>N</code>.</p>
-    </li><li name="eu.timepit.refined.numeric.Negative" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Negative=eu.timepit.refined.numeric.Less[shapeless.nat._0]"></a>
-      <a id="Negative:Negative"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.numeric.Negative" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Negative=eu.timepit.refined.numeric.Less[shapeless.nat._0]"></a><a id="Negative:Negative"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#Negative=eu.timepit.refined.numeric.Less[shapeless.nat._0]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Negative</span><span class="result"> = <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="shapeless.Nat._0">_0</span>]</span>
+        <span class="name">Negative</span><span class="result alias"> = <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="shapeless.Nat._0">_0</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@Negative=eu.timepit.refined.numeric.Less[shapeless.nat._0]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if a numeric value is negative (&lt; 0).</p>
-    </li><li name="eu.timepit.refined.numeric.NonNegative" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="NonNegative=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Negative]"></a>
-      <a id="NonNegative:NonNegative"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.numeric.NonNegative" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NonNegative=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Negative]"></a><a id="NonNegative:NonNegative"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#NonNegative=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Negative]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">NonNegative</span><span class="result"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="#Negative=eu.timepit.refined.numeric.Less[shapeless.nat._0]" class="extmbr" name="eu.timepit.refined.numeric.Negative">Negative</a>]</span>
+        <span class="name">NonNegative</span><span class="result alias"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="#Negative=eu.timepit.refined.numeric.Less[shapeless.nat._0]" class="extmbr" name="eu.timepit.refined.numeric.Negative">Negative</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@NonNegative=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Negative]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if a numeric value is zero or positive (&gt;= 0).</p>
-    </li><li name="eu.timepit.refined.numeric.NonPositive" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="NonPositive=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Positive]"></a>
-      <a id="NonPositive:NonPositive"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.numeric.NonPositive" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NonPositive=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Positive]"></a><a id="NonPositive:NonPositive"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#NonPositive=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Positive]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">NonPositive</span><span class="result"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="#Positive=eu.timepit.refined.numeric.Greater[shapeless.nat._0]" class="extmbr" name="eu.timepit.refined.numeric.Positive">Positive</a>]</span>
+        <span class="name">NonPositive</span><span class="result alias"> = <a href="boolean$$Not.html" class="extype" name="eu.timepit.refined.boolean.Not">Not</a>[<a href="#Positive=eu.timepit.refined.numeric.Greater[shapeless.nat._0]" class="extmbr" name="eu.timepit.refined.numeric.Positive">Positive</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@NonPositive=eu.timepit.refined.boolean.Not[eu.timepit.refined.numeric.Positive]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if a numeric value is zero or negative (&lt;= 0).</p>
-    </li><li name="eu.timepit.refined.numeric.Positive" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Positive=eu.timepit.refined.numeric.Greater[shapeless.nat._0]"></a>
-      <a id="Positive:Positive"></a>
-      <h4 class="signature">
+    </li><li name="eu.timepit.refined.numeric.Positive" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Positive=eu.timepit.refined.numeric.Greater[shapeless.nat._0]"></a><a id="Positive:Positive"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#Positive=eu.timepit.refined.numeric.Greater[shapeless.nat._0]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Positive</span><span class="result"> = <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="shapeless.Nat._0">_0</span>]</span>
+        <span class="name">Positive</span><span class="result alias"> = <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="shapeless.Nat._0">_0</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@Positive=eu.timepit.refined.numeric.Greater[shapeless.nat._0]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <p class="shortcomment cmt">Predicate that checks if a numeric value is positive (&gt; 0).</p>
     </li></ol>
             </div>
 
         
 
-        <div id="values" class="values members">
+        <div class="values members">
               <h3>Value Members</h3>
-              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:Any):Boolean"></a>
-      <a id="!=(Any):Boolean"></a>
-      <h4 class="signature">
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="##():Int"></a>
-      <a id="##():Int"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@##():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:Any):Boolean"></a>
-      <a id="==(Any):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.numeric.Interval" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Interval"></a>
-      <a id="Interval:Interval"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="numeric$$Interval$.html"><span class="name">Interval</span></a>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@Interval" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
       
-    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
-      <a id="asInstanceOf[T0]:T0"></a>
-      <h4 class="signature">
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -325,28 +536,23 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="clone():Object"></a>
-      <a id="clone():AnyRef"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@clone():Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -354,56 +560,53 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="eq(x$1:AnyRef):Boolean"></a>
-      <a id="eq(AnyRef):Boolean"></a>
-      <h4 class="signature">
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
-      <a id="finalize():Unit"></a>
-      <h4 class="signature">
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -411,10 +614,13 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
-      <a id="getClass():Class[_]"></a>
-      <h4 class="signature">
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -422,16 +628,15 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericInference#greaterInferenceNat" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="greaterInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]"></a><a id="greaterInferenceNat[A&lt;:Nat,B&lt;:Nat](ToInt[A],ToInt[B]):==&gt;[Greater[A],Greater[B]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#greaterInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericInference#greaterInferenceNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="greaterInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]"></a>
-      <a id="greaterInferenceNat[A&lt;:Nat,B&lt;:Nat](ToInt[A],ToInt[B]):==&gt;[Greater[A],Greater[B]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -439,16 +644,15 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">greaterInferenceNat</span><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="B">B &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ta">ta: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceNat.A">A</span>]</span>, <span name="tb">tb: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceNat.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceNat.A">A</span>], <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceNat.B">B</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericInference#greaterInferenceWit" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="greaterInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]"></a><a id="greaterInferenceWit[C,A&lt;:C,B&lt;:C](Aux[A],Aux[B],Numeric[C]):==&gt;[Greater[A],Greater[B]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#greaterInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericInference#greaterInferenceWit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="greaterInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]"></a>
-      <a id="greaterInferenceWit[C,A&lt;:C,B&lt;:C](Aux[A],Aux[B],Numeric[C]):==&gt;[Greater[A],Greater[B]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -456,16 +660,15 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">greaterInferenceWit</span><span class="tparams">[<span name="C">C</span>, <span name="A">A &lt;: <span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.C">C</span></span>, <span name="B">B &lt;: <span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.C">C</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.A">A</span>]</span>, <span name="wb">wb: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.B">B</span>]</span>, <span name="nc">nc: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.C">C</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.A">A</span>], <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWit.B">B</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericInference#greaterInferenceWitNat" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="greaterInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]"></a><a id="greaterInferenceWitNat[C,A&lt;:C,B&lt;:Nat](Aux[A],ToInt[B],Numeric[C]):==&gt;[Greater[A],Greater[B]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#greaterInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericInference#greaterInferenceWitNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="greaterInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]"></a>
-      <a id="greaterInferenceWitNat[C,A&lt;:C,B&lt;:Nat](Aux[A],ToInt[B],Numeric[C]):==&gt;[Greater[A],Greater[B]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -473,16 +676,15 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">greaterInferenceWitNat</span><span class="tparams">[<span name="C">C</span>, <span name="A">A &lt;: <span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWitNat.C">C</span></span>, <span name="B">B &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWitNat.A">A</span>]</span>, <span name="tb">tb: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWitNat.B">B</span>]</span>, <span name="nc">nc: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWitNat.C">C</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWitNat.A">A</span>], <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericInference.greaterInferenceWitNat.B">B</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Greater[A],eu.timepit.refined.numeric.Greater[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericValidate#greaterValidateNat" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="greaterValidateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Greater[N]]"></a><a id="greaterValidateNat[N&lt;:Nat,T](ToInt[N],Aux[N],Numeric[T]):Plain[T,Greater[N]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#greaterValidateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Greater[N]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericValidate#greaterValidateNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="greaterValidateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Greater[N]]"></a>
-      <a id="greaterValidateNat[N&lt;:Nat,T](ToInt[N],Aux[N],Numeric[T]):Plain[T,Greater[N]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -490,16 +692,15 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">greaterValidateNat</span><span class="tparams">[<span name="N">N &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="tn">tn: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateNat.N">N</span>]</span>, <span name="wn">wn: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateNat.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateNat.T">T</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateNat.T">T</span>, <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateNat.N">N</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterValidateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Greater[N]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericValidate#greaterValidateWit" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="greaterValidateWit[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Greater[N]]"></a><a id="greaterValidateWit[T,N&lt;:T](Aux[N],Numeric[T]):Plain[T,Greater[N]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#greaterValidateWit[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Greater[N]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericValidate</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericValidate#greaterValidateWit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="greaterValidateWit[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Greater[N]]"></a>
-      <a id="greaterValidateWit[T,N&lt;:T](Aux[N],Numeric[T]):Plain[T,Greater[N]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -507,50 +708,47 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">greaterValidateWit</span><span class="tparams">[<span name="T">T</span>, <span name="N">N &lt;: <span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateWit.T">T</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wn">wn: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateWit.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateWit.T">T</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateWit.T">T</span>, <a href="numeric$$Greater.html" class="extype" name="eu.timepit.refined.numeric.Greater">Greater</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.greaterValidateWit.N">N</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@greaterValidateWit[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Greater[N]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericValidate</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericValidate</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isInstanceOf[T0]:Boolean"></a>
-      <a id="isInstanceOf[T0]:Boolean"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericInference#lessInferenceNat" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lessInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]"></a><a id="lessInferenceNat[A&lt;:Nat,B&lt;:Nat](ToInt[A],ToInt[B]):==&gt;[Less[A],Less[B]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#lessInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericInference#lessInferenceNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lessInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]"></a>
-      <a id="lessInferenceNat[A&lt;:Nat,B&lt;:Nat](ToInt[A],ToInt[B]):==&gt;[Less[A],Less[B]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -558,16 +756,15 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">lessInferenceNat</span><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="B">B &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ta">ta: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceNat.A">A</span>]</span>, <span name="tb">tb: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceNat.B">B</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceNat.A">A</span>], <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceNat.B">B</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@lessInferenceNat[A&lt;:shapeless.Nat,B&lt;:shapeless.Nat](implicitta:shapeless.ops.nat.ToInt[A],implicittb:shapeless.ops.nat.ToInt[B]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericInference#lessInferenceWit" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lessInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]"></a><a id="lessInferenceWit[C,A&lt;:C,B&lt;:C](Aux[A],Aux[B],Numeric[C]):==&gt;[Less[A],Less[B]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#lessInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericInference#lessInferenceWit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lessInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]"></a>
-      <a id="lessInferenceWit[C,A&lt;:C,B&lt;:C](Aux[A],Aux[B],Numeric[C]):==&gt;[Less[A],Less[B]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -575,16 +772,15 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">lessInferenceWit</span><span class="tparams">[<span name="C">C</span>, <span name="A">A &lt;: <span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.C">C</span></span>, <span name="B">B &lt;: <span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.C">C</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.A">A</span>]</span>, <span name="wb">wb: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.B">B</span>]</span>, <span name="nc">nc: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.C">C</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.A">A</span>], <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWit.B">B</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@lessInferenceWit[C,A&lt;:C,B&lt;:C](implicitwa:shapeless.Witness.Aux[A],implicitwb:shapeless.Witness.Aux[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericInference#lessInferenceWitNat" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lessInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]"></a><a id="lessInferenceWitNat[C,A&lt;:C,B&lt;:Nat](Aux[A],ToInt[B],Numeric[C]):==&gt;[Less[A],Less[B]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#lessInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericInference#lessInferenceWitNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lessInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]"></a>
-      <a id="lessInferenceWitNat[C,A&lt;:C,B&lt;:Nat](Aux[A],ToInt[B],Numeric[C]):==&gt;[Less[A],Less[B]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -592,16 +788,15 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">lessInferenceWitNat</span><span class="tparams">[<span name="C">C</span>, <span name="A">A &lt;: <span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWitNat.C">C</span></span>, <span name="B">B &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wa">wa: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWitNat.A">A</span>]</span>, <span name="tb">tb: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWitNat.B">B</span>]</span>, <span name="nc">nc: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWitNat.C">C</span>]</span>)</span><span class="result">: <a href="api/Inference$.html#==&gt;[P,C]=eu.timepit.refined.api.Inference[P,C]" class="extmbr" name="eu.timepit.refined.api.Inference.==&gt;">==&gt;</a>[<a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWitNat.A">A</span>], <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericInference.lessInferenceWitNat.B">B</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@lessInferenceWitNat[C,A&lt;:C,B&lt;:shapeless.Nat](implicitwa:shapeless.Witness.Aux[A],implicittb:shapeless.ops.nat.ToInt[B],implicitnc:Numeric[C]):eu.timepit.refined.api.Inference.==&gt;[eu.timepit.refined.numeric.Less[A],eu.timepit.refined.numeric.Less[B]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericValidate#lessValidateNat" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lessValidateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Less[N]]"></a><a id="lessValidateNat[N&lt;:Nat,T](ToInt[N],Aux[N],Numeric[T]):Plain[T,Less[N]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#lessValidateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Less[N]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericInference</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericValidate#lessValidateNat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lessValidateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Less[N]]"></a>
-      <a id="lessValidateNat[N&lt;:Nat,T](ToInt[N],Aux[N],Numeric[T]):Plain[T,Less[N]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -609,16 +804,15 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">lessValidateNat</span><span class="tparams">[<span name="N">N &lt;: <span class="extype" name="shapeless.Nat">Nat</span></span>, <span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="tn">tn: <span class="extype" name="shapeless.ops.nat.ToInt">ToInt</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateNat.N">N</span>]</span>, <span name="wn">wn: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateNat.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateNat.T">T</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateNat.T">T</span>, <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateNat.N">N</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@lessValidateNat[N&lt;:shapeless.Nat,T](implicittn:shapeless.ops.nat.ToInt[N],implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Less[N]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericValidate</dd></dl></div>
+    </li><li name="eu.timepit.refined.NumericValidate#lessValidateWit" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lessValidateWit[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Less[N]]"></a><a id="lessValidateWit[T,N&lt;:T](Aux[N],Numeric[T]):Plain[T,Less[N]]"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#lessValidateWit[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Less[N]]" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericValidate</dd></dl></div>
-    </li><li name="eu.timepit.refined.NumericValidate#lessValidateWit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="lessValidateWit[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Less[N]]"></a>
-      <a id="lessValidateWit[T,N&lt;:T](Aux[N],Numeric[T]):Plain[T,Less[N]]"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
@@ -626,67 +820,63 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">lessValidateWit</span><span class="tparams">[<span name="T">T</span>, <span name="N">N &lt;: <span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateWit.T">T</span></span>]</span><span class="params">(<span class="implicit">implicit </span><span name="wn">wn: <span class="extype" name="shapeless.Witness.Aux">Aux</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateWit.N">N</span>]</span>, <span name="nt">nt: <span class="extype" name="scala.Numeric">Numeric</span>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateWit.T">T</span>]</span>)</span><span class="result">: <a href="api/Validate$.html#Plain[T,P]=eu.timepit.refined.api.Validate.Aux[T,P,P]" class="extmbr" name="eu.timepit.refined.api.Validate.Plain">Plain</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateWit.T">T</span>, <a href="numeric$$Less.html" class="extype" name="eu.timepit.refined.numeric.Less">Less</a>[<span class="extype" name="eu.timepit.refined.NumericValidate.lessValidateWit.N">N</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@lessValidateWit[T,N&lt;:T](implicitwn:shapeless.Witness.Aux[N],implicitnt:Numeric[T]):eu.timepit.refined.api.Validate.Plain[T,eu.timepit.refined.numeric.Less[N]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>NumericValidate</dd></dl></div>
-    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ne(x$1:AnyRef):Boolean"></a>
-      <a id="ne(AnyRef):Boolean"></a>
-      <h4 class="signature">
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
-      <a id="notify():Unit"></a>
-      <h4 class="signature">
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="notifyAll():Unit"></a>
-      <a id="notifyAll():Unit"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
-      <a id="synchronized[T0](⇒T0):T0"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -694,16 +884,15 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
-      <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
@@ -711,28 +900,23 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
-      <a id="wait():Unit"></a>
-      <h4 class="signature">
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -740,22 +924,21 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
-      <a id="wait(Long,Int):Unit"></a>
-      <h4 class="signature">
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -763,22 +946,21 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait(x$1:Long):Unit"></a>
-      <a id="wait(Long):Unit"></a>
-      <h4 class="signature">
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#eu.timepit.refined.numeric$@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" alt="Permalink" />
-      </a>
-    </span>
+      
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -786,7 +968,26 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
     </span>)</span>
               
         </dd></dl></div>
-    </li></ol>
+    </li><li name="eu.timepit.refined.numeric.Interval" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Interval"></a><a id="Interval:Interval"></a>
+      <span class="permalink">
+      <a href="../../../eu/timepit/refined/numeric$.html#Interval" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="numeric$$Interval$.html">
+              <span class="name">Interval</span>
+            </a>
+      </span>
+      
+      
+    </li>
+              </ol>
             </div>
 
         
@@ -800,9 +1001,9 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
             </div><div class="parent" name="eu.timepit.refined.NumericValidate">
               <h3>Inherited from <span class="extype" name="eu.timepit.refined.NumericValidate">NumericValidate</span></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.1/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -819,7 +1020,9 @@ res2: <span class="std">Double</span> Refined Greater[W.`<span class="num">1.5</
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+    </body>
+          </div>
+        </div>
+      </div>
     </body>
       </html>
