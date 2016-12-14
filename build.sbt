@@ -85,13 +85,6 @@ lazy val docs = project
     tutSourceDirectory := baseDirectory.value / "src" /*,
     tutTargetDirectory := baseDirectory.value */
   )
-  .settings(
-    Def.settings(
-      unidocSettings,
-      UnidocKeys.unidocProjectFilter in (ScalaUnidoc, UnidocKeys.unidoc) :=
-        inAnyProject -- inProjects(allSubprojectsJS.map(LocalProject.apply): _*)
-    )
-  )
 
 lazy val scalacheck = crossProject
   .in(file("contrib/scalacheck"))
@@ -349,7 +342,8 @@ lazy val micrositeSettings = Def.settings(
   micrositeDocumentationUrl := "latest/api",
   micrositeGithubOwner := gitHubOwner,
   micrositeGithubRepo := projectName,
-  organizationName := "Frank S. Thomas"
+  organizationName := "the refined contributors",
+  addMappingsToSiteDir(mappings in coreJVM in (Compile, packageDoc), micrositeDocumentationUrl)
 )
 
 lazy val myDoctestSettings = Def.settings(
@@ -387,6 +381,6 @@ addCommandsAlias("validate",
                    "testJVM",
                    "coverageReport",
                    "coverageOff",
-                   "unidoc",
+                   "doc",
                    "docs/tut"
                  ))
