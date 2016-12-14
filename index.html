@@ -107,11 +107,13 @@ syntax for <a href="http://docs.scala-lang.org/sips/pending/42.type.html">litera
 <span class="k">import</span> <span class="nn">eu.timepit.refined.generic._</span>
 <span class="k">import</span> <span class="nn">eu.timepit.refined.string._</span>
 <span class="k">import</span> <span class="nn">shapeless.</span><span class="o">{</span> <span class="o">::,</span> <span class="nc">HNil</span> <span class="o">}</span>
-
-<span class="n">scala</span><span class="o">&gt;</span> <span class="n">refineMV</span><span class="o">[</span><span class="kt">NonEmpty</span><span class="o">](</span><span class="s">"Hello"</span><span class="o">)</span>
-<span class="n">res2</span><span class="k">:</span> <span class="kt">String</span> <span class="kt">Refined</span> <span class="kt">NonEmpty</span> <span class="o">=</span> <span class="nc">Hello</span>
-
-<span class="n">scala</span><span class="o">&gt;</span> <span class="n">refineMV</span><span class="o">[</span><span class="kt">NonEmpty</span><span class="o">](</span><span class="s">""</span><span class="o">)</span>
+</code></pre>
+</div>
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="n">scala</span><span class="o">&gt;</span> <span class="n">refineMV</span><span class="o">[</span><span class="kt">NonEmpty</span><span class="o">](</span><span class="s">"Hello"</span><span class="o">)</span>
+<span class="n">res16</span><span class="k">:</span> <span class="kt">eu.timepit.refined.api.Refined</span><span class="o">[</span><span class="kt">String</span>,<span class="kt">eu.timepit.refined.collection.NonEmpty</span><span class="o">]</span> <span class="k">=</span> <span class="nc">Hello</span>
+</code></pre>
+</div>
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="n">scala</span><span class="o">&gt;</span> <span class="n">refineMV</span><span class="o">[</span><span class="kt">NonEmpty</span><span class="o">](</span><span class="s">""</span><span class="o">)</span>
 <span class="o">&lt;</span><span class="n">console</span><span class="k">&gt;:</span><span class="mi">39</span><span class="k">:</span> <span class="kt">error:</span> <span class="kt">Predicate</span> <span class="kt">isEmpty</span><span class="o">()</span> <span class="kt">did</span> <span class="kt">not</span> <span class="kt">fail.</span>
             <span class="kt">refineMV</span><span class="o">[</span><span class="kt">NonEmpty</span><span class="o">](</span><span class="s">""</span><span class="o">)</span>
                               <span class="o">^</span>
@@ -169,13 +171,14 @@ syntax for <a href="http://docs.scala-lang.org/sips/pending/42.type.html">litera
 
 <p>If you’re using sbt, add the following to your build:</p>
 
-<pre><code class="language-sbt">libraryDependencies ++= Seq(
-  "eu.timepit" %% "refined"            % "0.6.0",
-  "eu.timepit" %% "refined-scalaz"     % "0.6.0",         // optional
-  "eu.timepit" %% "refined-scodec"     % "0.6.0",         // optional
-  "eu.timepit" %% "refined-scalacheck" % "0.6.0" % "test" // optional
-)
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="n">libraryDependencies</span> <span class="o">++=</span> <span class="nc">Seq</span><span class="o">(</span>
+  <span class="s">"eu.timepit"</span> <span class="o">%%</span> <span class="s">"refined"</span>            <span class="o">%</span> <span class="s">"0.6.0"</span><span class="o">,</span>
+  <span class="s">"eu.timepit"</span> <span class="o">%%</span> <span class="s">"refined-scalaz"</span>     <span class="o">%</span> <span class="s">"0.6.0"</span><span class="o">,</span>         <span class="c1">// optional
+</span>  <span class="s">"eu.timepit"</span> <span class="o">%%</span> <span class="s">"refined-scodec"</span>     <span class="o">%</span> <span class="s">"0.6.0"</span><span class="o">,</span>         <span class="c1">// optional
+</span>  <span class="s">"eu.timepit"</span> <span class="o">%%</span> <span class="s">"refined-scalacheck"</span> <span class="o">%</span> <span class="s">"0.6.0"</span> <span class="o">%</span> <span class="s">"test"</span> <span class="c1">// optional
+</span><span class="o">)</span>
 </code></pre>
+</div>
 
 <p>For Scala.js just replace <code class="highlighter-rouge">%%</code> with <code class="highlighter-rouge">%%%</code> above.</p>
 
