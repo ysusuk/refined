@@ -7,352 +7,353 @@
 
 <p><strong>refined</strong> is a Scala library for refining types with type-level predicates
 which constrain the set of values described by the refined type. It started
-as a port of the [refined][refined.hs] Haskell library (which also provides
+as a port of the <a href="http://nikita-volkov.github.io/refined">refined</a> Haskell library (which also provides
 an excellent motivation why this kind of library is useful).</p>
 
 <p>A quick example:</p>
 
-<p><code class="highlighter-rouge">scala
-import eu.timepit.refined._
-import eu.timepit.refined.api.Refined
-import eu.timepit.refined.auto._
-import eu.timepit.refined.numeric._
-</code>
-<code class="highlighter-rouge">scala
-scala&gt; // This refines Int with the Positive predicate and checks via an
-     | // implicit macro that the assigned value satisfies it:
-     | val i1: Int Refined Positive = 5
-i1: eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Positive] = 5
-</code>
-```scala
-scala&gt; // If the value does not satisfy the predicate, we get a meaningful
-     | // compile error:
-     | val i2: Int Refined Positive = -5</p>
-<console>:24: error: Predicate failed: (-5 &gt; 0).
-       val i2: Int Refined Positive = -5
-                                       ^
-```
-```scala
-scala&gt; // There is also the explicit refineMV macro that can infer the base
-     | // type from its parameter:
-     | refineMV[Positive](5)
-res6: eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Positive] = 5
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="k">import</span> <span class="nn">eu.timepit.refined._</span>
+<span class="k">import</span> <span class="nn">eu.timepit.refined.api.Refined</span>
+<span class="k">import</span> <span class="nn">eu.timepit.refined.auto._</span>
+<span class="k">import</span> <span class="nn">eu.timepit.refined.numeric._</span>
+</code></pre>
+</div>
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="n">scala</span><span class="o">&gt;</span> <span class="c1">// This refines Int with the Positive predicate and checks via an
+</span>     <span class="o">|</span> <span class="c1">// implicit macro that the assigned value satisfies it:
+</span>     <span class="o">|</span> <span class="k">val</span> <span class="n">i1</span><span class="k">:</span> <span class="kt">Int</span> <span class="kt">Refined</span> <span class="kt">Positive</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">i1</span><span class="k">:</span> <span class="kt">eu.timepit.refined.api.Refined</span><span class="o">[</span><span class="kt">Int</span>,<span class="kt">eu.timepit.refined.numeric.Positive</span><span class="o">]</span> <span class="k">=</span> <span class="mi">5</span>
+</code></pre>
+</div>
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="n">scala</span><span class="o">&gt;</span> <span class="c1">// If the value does not satisfy the predicate, we get a meaningful
+</span>     <span class="o">|</span> <span class="c1">// compile error:
+</span>     <span class="o">|</span> <span class="k">val</span> <span class="n">i2</span><span class="k">:</span> <span class="kt">Int</span> <span class="kt">Refined</span> <span class="kt">Positive</span> <span class="o">=</span> <span class="o">-</span><span class="mi">5</span>
+<span class="o">&lt;</span><span class="n">console</span><span class="k">&gt;:</span><span class="mi">24</span><span class="k">:</span> <span class="kt">error:</span> <span class="kt">Predicate</span> <span class="kt">failed:</span> <span class="o">(</span><span class="kt">-</span><span class="err">5</span> <span class="kt">&gt;</span> <span class="err">0</span><span class="o">)</span><span class="kt">.</span>
+       <span class="kt">val</span> <span class="kt">i2:</span> <span class="kt">Int</span> <span class="kt">Refined</span> <span class="kt">Positive</span> <span class="o">=</span> <span class="o">-</span><span class="mi">5</span>
+                                       <span class="o">^</span>
+</code></pre>
+</div>
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="n">scala</span><span class="o">&gt;</span> <span class="c1">// There is also the explicit refineMV macro that can infer the base
+</span>     <span class="o">|</span> <span class="c1">// type from its parameter:
+</span>     <span class="o">|</span> <span class="n">refineMV</span><span class="o">[</span><span class="kt">Positive</span><span class="o">](</span><span class="mi">5</span><span class="o">)</span>
+<span class="n">res6</span><span class="k">:</span> <span class="kt">eu.timepit.refined.api.Refined</span><span class="o">[</span><span class="kt">Int</span>,<span class="kt">eu.timepit.refined.numeric.Positive</span><span class="o">]</span> <span class="k">=</span> <span class="mi">5</span>
 
-scala&gt; // Macros can only validate literals because their values are known at
-     | // compile-time. To validate arbitrary (runtime) values we can use the
-     | // refineV function:
-     | 
-     | val x = 42 // suppose the value of x is not known at compile-time
-x: Int = 42
+<span class="n">scala</span><span class="o">&gt;</span> <span class="c1">// Macros can only validate literals because their values are known at
+</span>     <span class="o">|</span> <span class="c1">// compile-time. To validate arbitrary (runtime) values we can use the
+</span>     <span class="o">|</span> <span class="c1">// refineV function:
+</span>     <span class="o">|</span> 
+     <span class="o">|</span> <span class="k">val</span> <span class="n">x</span> <span class="k">=</span> <span class="mi">42</span> <span class="c1">// suppose the value of x is not known at compile-time
+</span><span class="n">x</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">42</span>
 
-scala&gt; refineV[Positive](x)
-res11: Either[String,eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Positive]] = Right(42)
+<span class="n">scala</span><span class="o">&gt;</span> <span class="n">refineV</span><span class="o">[</span><span class="kt">Positive</span><span class="o">](</span><span class="n">x</span><span class="o">)</span>
+<span class="n">res11</span><span class="k">:</span> <span class="kt">Either</span><span class="o">[</span><span class="kt">String</span>,<span class="kt">eu.timepit.refined.api.Refined</span><span class="o">[</span><span class="kt">Int</span>,<span class="kt">eu.timepit.refined.numeric.Positive</span><span class="o">]]</span> <span class="k">=</span> <span class="nc">Right</span><span class="o">(</span><span class="mi">42</span><span class="o">)</span>
 
-scala&gt; refineV[Positive](-x)
-res12: Either[String,eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Positive]] = Left(Predicate failed: (-42 &gt; 0).)
-```
+<span class="n">scala</span><span class="o">&gt;</span> <span class="n">refineV</span><span class="o">[</span><span class="kt">Positive</span><span class="o">](-</span><span class="n">x</span><span class="o">)</span>
+<span class="n">res12</span><span class="k">:</span> <span class="kt">Either</span><span class="o">[</span><span class="kt">String</span>,<span class="kt">eu.timepit.refined.api.Refined</span><span class="o">[</span><span class="kt">Int</span>,<span class="kt">eu.timepit.refined.numeric.Positive</span><span class="o">]]</span> <span class="k">=</span> <span class="nc">Left</span><span class="o">(</span><span class="nc">Predicate</span> <span class="n">failed</span><span class="k">:</span> <span class="o">(</span><span class="kt">-</span><span class="err">42</span> <span class="kt">&gt;</span> <span class="err">0</span><span class="o">)</span><span class="kt">.</span><span class="o">)</span>
+</code></pre>
+</div>
 
-**refined** also contains inference rules for converting between different
-refined types. For example, ``Int Refined Greater[W.`10`.T]`` can be safely
-converted to `Int Refined Positive` because all integers greater than ten
+<p><strong>refined</strong> also contains inference rules for converting between different
+refined types. For example, <code class="highlighter-rouge">Int Refined Greater[W.`10`.T]</code> can be safely
+converted to <code class="highlighter-rouge">Int Refined Positive</code> because all integers greater than ten
 are also positive. The type conversion of refined types is a compile-time
-operation that is provided by the library:
+operation that is provided by the library:</p>
 
-```scala
-scala&gt; val a: Int Refined Greater[W.`5`.T] = 10
-a: eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Greater[Int(5)]] = 10
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">a</span><span class="k">:</span> <span class="kt">Int</span> <span class="kt">Refined</span> <span class="kt">Greater</span><span class="o">[</span><span class="kt">W.`</span><span class="err">5</span><span class="kt">`.T</span><span class="o">]</span> <span class="k">=</span> <span class="mi">10</span>
+<span class="n">a</span><span class="k">:</span> <span class="kt">eu.timepit.refined.api.Refined</span><span class="o">[</span><span class="kt">Int</span>,<span class="kt">eu.timepit.refined.numeric.Greater</span><span class="o">[</span><span class="kt">Int</span><span class="o">(</span><span class="err">5</span><span class="o">)]]</span> <span class="k">=</span> <span class="mi">10</span>
 
-scala&gt; // Since every value greater than 5 is also greater than 4, `a` can be
-     | // ascribed the type Int Refined Greater[W.`4`.T]:
-     | val b: Int Refined Greater[W.`4`.T] = a
-b: eu.timepit.refined.api.Refined[Int,eu.timepit.refined.numeric.Greater[Int(4)]] = 10
-```
-```scala
-scala&gt; // An unsound ascription leads to a compile error:
-     | val c: Int Refined Greater[W.`6`.T] = a
-<console>:24: error: type mismatch (invalid inference):
- eu.timepit.refined.numeric.Greater[Int(5)] does not imply
- eu.timepit.refined.numeric.Greater[Int(6)]
-       val c: Int Refined Greater[W.`6`.T] = a
-                                             ^
-```
+<span class="n">scala</span><span class="o">&gt;</span> <span class="c1">// Since every value greater than 5 is also greater than 4, `a` can be
+</span>     <span class="o">|</span> <span class="c1">// ascribed the type Int Refined Greater[W.`4`.T]:
+</span>     <span class="o">|</span> <span class="k">val</span> <span class="n">b</span><span class="k">:</span> <span class="kt">Int</span> <span class="kt">Refined</span> <span class="kt">Greater</span><span class="o">[</span><span class="kt">W.`</span><span class="err">4</span><span class="kt">`.T</span><span class="o">]</span> <span class="k">=</span> <span class="n">a</span>
+<span class="n">b</span><span class="k">:</span> <span class="kt">eu.timepit.refined.api.Refined</span><span class="o">[</span><span class="kt">Int</span>,<span class="kt">eu.timepit.refined.numeric.Greater</span><span class="o">[</span><span class="kt">Int</span><span class="o">(</span><span class="err">4</span><span class="o">)]]</span> <span class="k">=</span> <span class="mi">10</span>
+</code></pre>
+</div>
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="n">scala</span><span class="o">&gt;</span> <span class="c1">// An unsound ascription leads to a compile error:
+</span>     <span class="o">|</span> <span class="k">val</span> <span class="n">c</span><span class="k">:</span> <span class="kt">Int</span> <span class="kt">Refined</span> <span class="kt">Greater</span><span class="o">[</span><span class="kt">W.`</span><span class="err">6</span><span class="kt">`.T</span><span class="o">]</span> <span class="k">=</span> <span class="n">a</span>
+<span class="o">&lt;</span><span class="n">console</span><span class="k">&gt;:</span><span class="mi">24</span><span class="k">:</span> <span class="kt">error:</span> <span class="k">type</span> <span class="kt">mismatch</span> <span class="o">(</span><span class="kt">invalid</span> <span class="kt">inference</span><span class="o">)</span><span class="kt">:</span>
+ <span class="kt">eu.timepit.refined.numeric.Greater</span><span class="o">[</span><span class="kt">Int</span><span class="o">(</span><span class="err">5</span><span class="o">)]</span> <span class="n">does</span> <span class="n">not</span> <span class="n">imply</span>
+ <span class="n">eu</span><span class="o">.</span><span class="n">timepit</span><span class="o">.</span><span class="n">refined</span><span class="o">.</span><span class="n">numeric</span><span class="o">.</span><span class="nc">Greater</span><span class="o">[</span><span class="kt">Int</span><span class="o">(</span><span class="err">6</span><span class="o">)]</span>
+       <span class="k">val</span> <span class="n">c</span><span class="k">:</span> <span class="kt">Int</span> <span class="kt">Refined</span> <span class="kt">Greater</span><span class="o">[</span><span class="kt">W.`</span><span class="err">6</span><span class="kt">`.T</span><span class="o">]</span> <span class="k">=</span> <span class="n">a</span>
+                                             <span class="o">^</span>
+</code></pre>
+</div>
 
-This mechanism allows to pass values of more specific types (e.g.
-``Int Refined Greater[W.`10`.T]``) to functions that take a more general
-type (e.g. `Int Refined Positive`) without manual intervention.
+<p>This mechanism allows to pass values of more specific types (e.g.
+<code class="highlighter-rouge">Int Refined Greater[W.`10`.T]</code>) to functions that take a more general
+type (e.g. <code class="highlighter-rouge">Int Refined Positive</code>) without manual intervention.</p>
 
-Note that [`W`](http://fthomas.github.io/refined/latest/api/index.html#eu.timepit.refined.package@W:shapeless.Witness.type)
-is a shortcut for [`shapeless.Witness`][singleton-types] which provides
-syntax for [literal-based singleton types][sip-23].
+<p>Note that <a href="http://fthomas.github.io/refined/latest/api/index.html#eu.timepit.refined.package@W:shapeless.Witness.type"><code class="highlighter-rouge">W</code></a>
+is a shortcut for <a href="https://github.com/milessabin/shapeless/wiki/Feature-overview:-shapeless-2.0.0#singleton-typed-literals"><code class="highlighter-rouge">shapeless.Witness</code></a> which provides
+syntax for <a href="http://docs.scala-lang.org/sips/pending/42.type.html">literal-based singleton types</a>.</p>
 
-## Table of contents
+<h2 id="table-of-contents">Table of contents</h2>
 
-1. [More examples](#more-examples)
-2. [Using refined](#using-refined)
-3. [Documentation](#documentation)
-4. [Provided predicates](#provided-predicates)
-5. [Contributors and participation](#contributors-and-participation)
-6. [Projects using refined](#projects-using-refined)
-7. [Performance concerns](#performance-concerns)
-8. [Related projects](#related-projects)
-9. [License](#license)
+<ol>
+  <li><a href="#more-examples">More examples</a></li>
+  <li><a href="#using-refined">Using refined</a></li>
+  <li><a href="#documentation">Documentation</a></li>
+  <li><a href="#provided-predicates">Provided predicates</a></li>
+  <li><a href="#contributors-and-participation">Contributors and participation</a></li>
+  <li><a href="#projects-using-refined">Projects using refined</a></li>
+  <li><a href="#performance-concerns">Performance concerns</a></li>
+  <li><a href="#related-projects">Related projects</a></li>
+  <li><a href="#license">License</a></li>
+</ol>
 
-## More examples
+<h2 id="more-examples">More examples</h2>
 
-```scala
-import eu.timepit.refined.boolean._
-import eu.timepit.refined.char._
-import eu.timepit.refined.collection._
-import eu.timepit.refined.generic._
-import eu.timepit.refined.string._
-import shapeless.{ ::, HNil }
+<div class="language-scala highlighter-rouge"><pre class="highlight"><code><span class="k">import</span> <span class="nn">eu.timepit.refined.boolean._</span>
+<span class="k">import</span> <span class="nn">eu.timepit.refined.char._</span>
+<span class="k">import</span> <span class="nn">eu.timepit.refined.collection._</span>
+<span class="k">import</span> <span class="nn">eu.timepit.refined.generic._</span>
+<span class="k">import</span> <span class="nn">eu.timepit.refined.string._</span>
+<span class="k">import</span> <span class="nn">shapeless.</span><span class="o">{</span> <span class="o">::,</span> <span class="nc">HNil</span> <span class="o">}</span>
 
-scala&gt; refineMV[NonEmpty]("Hello")
-res2: String Refined NonEmpty = Hello
+<span class="n">scala</span><span class="o">&gt;</span> <span class="n">refineMV</span><span class="o">[</span><span class="kt">NonEmpty</span><span class="o">](</span><span class="s">"Hello"</span><span class="o">)</span>
+<span class="n">res2</span><span class="k">:</span> <span class="kt">String</span> <span class="kt">Refined</span> <span class="kt">NonEmpty</span> <span class="o">=</span> <span class="nc">Hello</span>
 
-scala&gt; refineMV[NonEmpty]("")
-<console>:39: error: Predicate isEmpty() did not fail.
-            refineMV[NonEmpty]("")
-                              ^
+<span class="n">scala</span><span class="o">&gt;</span> <span class="n">refineMV</span><span class="o">[</span><span class="kt">NonEmpty</span><span class="o">](</span><span class="s">""</span><span class="o">)</span>
+<span class="o">&lt;</span><span class="n">console</span><span class="k">&gt;:</span><span class="mi">39</span><span class="k">:</span> <span class="kt">error:</span> <span class="kt">Predicate</span> <span class="kt">isEmpty</span><span class="o">()</span> <span class="kt">did</span> <span class="kt">not</span> <span class="kt">fail.</span>
+            <span class="kt">refineMV</span><span class="o">[</span><span class="kt">NonEmpty</span><span class="o">](</span><span class="s">""</span><span class="o">)</span>
+                              <span class="o">^</span>
 
-scala&gt; type ZeroToOne = Not[Less[W.`0.0`.T]] And Not[Greater[W.`1.0`.T]]
-defined type alias ZeroToOne
+<span class="n">scala</span><span class="o">&gt;</span> <span class="k">type</span> <span class="kt">ZeroToOne</span> <span class="o">=</span> <span class="nc">Not</span><span class="o">[</span><span class="kt">Less</span><span class="o">[</span><span class="kt">W.`</span><span class="err">0</span><span class="kt">.</span><span class="err">0</span><span class="kt">`.T</span><span class="o">]]</span> <span class="nc">And</span> <span class="nc">Not</span><span class="o">[</span><span class="kt">Greater</span><span class="o">[</span><span class="kt">W.`</span><span class="err">1</span><span class="kt">.</span><span class="err">0</span><span class="kt">`.T</span><span class="o">]]</span>
+<span class="n">defined</span> <span class="k">type</span> <span class="kt">alias</span> <span class="kt">ZeroToOne</span>
 
-scala&gt; refineMV[ZeroToOne](1.8)
-<console>:40: error: Right predicate of (!(1.8 &lt; 0.0) &amp;&amp; !(1.8 &gt; 1.0)) failed: Predicate (1.8 &gt; 1.0) did not fail.
-       refineMV[ZeroToOne](1.8)
-                          ^
+<span class="n">scala</span><span class="o">&gt;</span> <span class="n">refineMV</span><span class="o">[</span><span class="kt">ZeroToOne</span><span class="o">](</span><span class="mf">1.8</span><span class="o">)</span>
+<span class="o">&lt;</span><span class="n">console</span><span class="k">&gt;:</span><span class="mi">40</span><span class="k">:</span> <span class="kt">error:</span> <span class="kt">Right</span> <span class="kt">predicate</span> <span class="kt">of</span> <span class="o">(</span><span class="kt">!</span><span class="o">(</span><span class="err">1</span><span class="kt">.</span><span class="err">8</span> <span class="kt">&lt;</span> <span class="err">0</span><span class="kt">.</span><span class="err">0</span><span class="o">)</span> <span class="kt">&amp;&amp;</span> <span class="kt">!</span><span class="o">(</span><span class="err">1</span><span class="kt">.</span><span class="err">8</span> <span class="kt">&gt;</span> <span class="err">1</span><span class="kt">.</span><span class="err">0</span><span class="o">))</span> <span class="kt">failed:</span> <span class="kt">Predicate</span> <span class="o">(</span><span class="err">1</span><span class="kt">.</span><span class="err">8</span> <span class="kt">&gt;</span> <span class="err">1</span><span class="kt">.</span><span class="err">0</span><span class="o">)</span> <span class="kt">did</span> <span class="kt">not</span> <span class="kt">fail.</span>
+       <span class="kt">refineMV</span><span class="o">[</span><span class="kt">ZeroToOne</span><span class="o">](</span><span class="mf">1.8</span><span class="o">)</span>
+                          <span class="o">^</span>
 
-scala&gt; refineMV[AnyOf[Digit :: Letter :: Whitespace :: HNil]]('F')
-res3: Char Refined AnyOf[Digit :: Letter :: Whitespace :: HNil] = F
+<span class="n">scala</span><span class="o">&gt;</span> <span class="n">refineMV</span><span class="o">[</span><span class="kt">AnyOf</span><span class="o">[</span><span class="kt">Digit</span> <span class="kt">::</span> <span class="kt">Letter</span> <span class="kt">::</span> <span class="kt">Whitespace</span> <span class="kt">::</span> <span class="kt">HNil</span><span class="o">]](</span><span class="sc">'F'</span><span class="o">)</span>
+<span class="n">res3</span><span class="k">:</span> <span class="kt">Char</span> <span class="kt">Refined</span> <span class="kt">AnyOf</span><span class="o">[</span><span class="kt">Digit</span> <span class="kt">::</span> <span class="kt">Letter</span> <span class="kt">::</span> <span class="kt">Whitespace</span> <span class="kt">::</span> <span class="kt">HNil</span><span class="o">]</span> <span class="k">=</span> <span class="n">F</span>
 
-scala&gt; refineMV[MatchesRegex[W.`"[0-9]+"`.T]]("123.")
-<console>:39: error: Predicate failed: "123.".matches("[0-9]+").
-              refineMV[MatchesRegex[W.`"[0-9]+"`.T]]("123.")
-                                                    ^
+<span class="n">scala</span><span class="o">&gt;</span> <span class="n">refineMV</span><span class="o">[</span><span class="kt">MatchesRegex</span><span class="o">[</span><span class="kt">W.`</span><span class="err">"</span><span class="o">[</span><span class="err">0</span><span class="kt">-</span><span class="err">9</span><span class="o">]</span><span class="kt">+</span><span class="err">"</span><span class="kt">`.T</span><span class="o">]](</span><span class="s">"123."</span><span class="o">)</span>
+<span class="o">&lt;</span><span class="n">console</span><span class="k">&gt;:</span><span class="mi">39</span><span class="k">:</span> <span class="kt">error:</span> <span class="kt">Predicate</span> <span class="kt">failed:</span> <span class="err">"123</span><span class="kt">.</span><span class="err">"</span><span class="kt">.matches</span><span class="o">(</span><span class="err">"[0</span><span class="kt">-</span><span class="err">9]</span><span class="kt">+</span><span class="err">"</span><span class="o">)</span><span class="kt">.</span>
+              <span class="kt">refineMV</span><span class="o">[</span><span class="kt">MatchesRegex</span><span class="o">[</span><span class="kt">W.`</span><span class="err">"</span><span class="o">[</span><span class="err">0</span><span class="kt">-</span><span class="err">9</span><span class="o">]</span><span class="kt">+</span><span class="err">"</span><span class="kt">`.T</span><span class="o">]](</span><span class="s">"123."</span><span class="o">)</span>
+                                                    <span class="o">^</span>
 
-scala&gt; val d1: Char Refined Equal[W.`'3'`.T] = '3'
-d1: Char Refined Equal[Char('3')] = 3
+<span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">d1</span><span class="k">:</span> <span class="kt">Char</span> <span class="kt">Refined</span> <span class="kt">Equal</span><span class="o">[</span><span class="kt">W.`'</span><span class="err">3</span><span class="kt">'`.T</span><span class="o">]</span> <span class="k">=</span> <span class="sc">'3'</span>
+<span class="n">d1</span><span class="k">:</span> <span class="kt">Char</span> <span class="kt">Refined</span> <span class="kt">Equal</span><span class="o">[</span><span class="kt">Char</span><span class="o">(</span><span class="kt">'</span><span class="err">3</span><span class="kt">'</span><span class="o">)]</span> <span class="k">=</span> <span class="mi">3</span>
 
-scala&gt; val d2: Char Refined Digit = d1
-d2: Char Refined Digit = 3
+<span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">d2</span><span class="k">:</span> <span class="kt">Char</span> <span class="kt">Refined</span> <span class="kt">Digit</span> <span class="o">=</span> <span class="n">d1</span>
+<span class="n">d2</span><span class="k">:</span> <span class="kt">Char</span> <span class="kt">Refined</span> <span class="kt">Digit</span> <span class="o">=</span> <span class="mi">3</span>
 
-scala&gt; val d3: Char Refined Letter = d1
-<console>:39: error: type mismatch (invalid inference):
- Equal[Char('3')] does not imply
- Letter
-       val d3: Char Refined Letter = d1
-                                     ^
+<span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">d3</span><span class="k">:</span> <span class="kt">Char</span> <span class="kt">Refined</span> <span class="kt">Letter</span> <span class="o">=</span> <span class="n">d1</span>
+<span class="o">&lt;</span><span class="n">console</span><span class="k">&gt;:</span><span class="mi">39</span><span class="k">:</span> <span class="kt">error:</span> <span class="k">type</span> <span class="kt">mismatch</span> <span class="o">(</span><span class="kt">invalid</span> <span class="kt">inference</span><span class="o">)</span><span class="kt">:</span>
+ <span class="kt">Equal</span><span class="o">[</span><span class="kt">Char</span><span class="o">(</span><span class="kt">'</span><span class="err">3</span><span class="kt">'</span><span class="o">)]</span> <span class="n">does</span> <span class="n">not</span> <span class="n">imply</span>
+ <span class="nc">Letter</span>
+       <span class="k">val</span> <span class="n">d3</span><span class="k">:</span> <span class="kt">Char</span> <span class="kt">Refined</span> <span class="kt">Letter</span> <span class="o">=</span> <span class="n">d1</span>
+                                     <span class="o">^</span>
 
-scala&gt; val r1: String Refined Regex = "(a|b)"
-r1: String Refined Regex = (a|b)
+<span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">r1</span><span class="k">:</span> <span class="kt">String</span> <span class="kt">Refined</span> <span class="kt">Regex</span> <span class="o">=</span> <span class="s">"(a|b)"</span>
+<span class="n">r1</span><span class="k">:</span> <span class="kt">String</span> <span class="kt">Refined</span> <span class="kt">Regex</span> <span class="o">=</span> <span class="o">(</span><span class="n">a</span><span class="o">|</span><span class="n">b</span><span class="o">)</span>
 
-scala&gt; val r2: String Refined Regex = "(a|b"
-<console>:38: error: Regex predicate failed: Unclosed group near index 4
-(a|b
-    ^
-       val r2: String Refined Regex = "(a|b"
-                                      ^
+<span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">r2</span><span class="k">:</span> <span class="kt">String</span> <span class="kt">Refined</span> <span class="kt">Regex</span> <span class="o">=</span> <span class="s">"(a|b"</span>
+<span class="o">&lt;</span><span class="n">console</span><span class="k">&gt;:</span><span class="mi">38</span><span class="k">:</span> <span class="kt">error:</span> <span class="kt">Regex</span> <span class="kt">predicate</span> <span class="kt">failed:</span> <span class="kt">Unclosed</span> <span class="kt">group</span> <span class="kt">near</span> <span class="kt">index</span> <span class="err">4</span>
+<span class="o">(</span><span class="kt">a|b</span>
+    <span class="kt">^</span>
+       <span class="kt">val</span> <span class="kt">r2:</span> <span class="kt">String</span> <span class="kt">Refined</span> <span class="kt">Regex</span> <span class="o">=</span> <span class="s">"(a|b"</span>
+                                      <span class="o">^</span>
 
-scala&gt; val u1: String Refined Url = "htp://example.com"
-<console>:38: error: Url predicate failed: unknown protocol: htp
-       val u1: String Refined Url = "htp://example.com"
-                                    ^
-```
+<span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">u1</span><span class="k">:</span> <span class="kt">String</span> <span class="kt">Refined</span> <span class="kt">Url</span> <span class="o">=</span> <span class="s">"htp://example.com"</span>
+<span class="o">&lt;</span><span class="n">console</span><span class="k">&gt;:</span><span class="mi">38</span><span class="k">:</span> <span class="kt">error:</span> <span class="kt">Url</span> <span class="kt">predicate</span> <span class="kt">failed:</span> <span class="kt">unknown</span> <span class="kt">protocol:</span> <span class="kt">htp</span>
+       <span class="k">val</span> <span class="n">u1</span><span class="k">:</span> <span class="kt">String</span> <span class="kt">Refined</span> <span class="kt">Url</span> <span class="o">=</span> <span class="s">"htp://example.com"</span>
+                                    <span class="o">^</span>
+</code></pre>
+</div>
 
-## Using refined
+<h2 id="using-refined">Using refined</h2>
 
-The latest version of the library is 0.6.0, which is available for Scala and
-[Scala.js][scala.js] version 2.10, 2.11, and 2.12.
+<p>The latest version of the library is 0.6.0, which is available for Scala and
+<a href="http://www.scala-js.org">Scala.js</a> version 2.10, 2.11, and 2.12.</p>
 
-If you're using sbt, add the following to your build:
+<p>If you’re using sbt, add the following to your build:</p>
 
-```sbt
-libraryDependencies ++= Seq(
+<pre><code class="language-sbt">libraryDependencies ++= Seq(
   "eu.timepit" %% "refined"            % "0.6.0",
   "eu.timepit" %% "refined-scalaz"     % "0.6.0",         // optional
   "eu.timepit" %% "refined-scodec"     % "0.6.0",         // optional
   "eu.timepit" %% "refined-scalacheck" % "0.6.0" % "test" // optional
 )
-```
+</code></pre>
 
-For Scala.js just replace `%%` with `%%%` above.
+<p>For Scala.js just replace <code class="highlighter-rouge">%%</code> with <code class="highlighter-rouge">%%%</code> above.</p>
 
-Instructions for Maven and other build tools are available at [search.maven.org][search.maven].
+<p>Instructions for Maven and other build tools are available at <a href="http://search.maven.org/#search|ga|1|eu.timepit.refined">search.maven.org</a>.</p>
 
-Release notes for the latest version are available in
-[0.6.0.markdown](https://github.com/fthomas/refined/blob/master/notes/0.6.0.markdown).
+<p>Release notes for the latest version are available in
+<a href="https://github.com/fthomas/refined/blob/master/notes/0.6.0.markdown">0.6.0.markdown</a>.</p>
 
-The optional dependencies are add-on libraries that provide support for
-other tag types or integration of refined types in other libraries:
+<p>The optional dependencies are add-on libraries that provide support for
+other tag types or integration of refined types in other libraries:</p>
 
-* `refined-scalaz` for support of [Scalaz](https://github.com/scalaz/scalaz)'
-  tag type (`scalaz.@@`)
-* `refined-scodec` for integration with [scodec](http://scodec.org/)
-* `refined-scalacheck` for [ScalaCheck](http://scalacheck.org/) type
-  class instances of refined types
+<ul>
+  <li><code class="highlighter-rouge">refined-scalaz</code> for support of <a href="https://github.com/scalaz/scalaz">Scalaz</a>’
+tag type (<code class="highlighter-rouge">scalaz.@@</code>)</li>
+  <li><code class="highlighter-rouge">refined-scodec</code> for integration with <a href="http://scodec.org/">scodec</a></li>
+  <li><code class="highlighter-rouge">refined-scalacheck</code> for <a href="http://scalacheck.org/">ScalaCheck</a> type
+class instances of refined types</li>
+</ul>
 
-See also the list of [projects that use refined][built-with-refined]
-for libraries that directly provide support for **refined**.
+<p>See also the list of <a href="https://github.com/fthomas/refined/wiki/Built-with-refined">projects that use refined</a>
+for libraries that directly provide support for <strong>refined</strong>.</p>
 
-## Documentation
+<h2 id="documentation">Documentation</h2>
 
-API documentation of the latest release is available at:
-[http://fthomas.github.io/refined/latest/api/](http://fthomas.github.io/refined/latest/api/#eu.timepit.refined.package)
+<p>API documentation of the latest release is available at:
+<a href="http://fthomas.github.io/refined/latest/api/#eu.timepit.refined.package">http://fthomas.github.io/refined/latest/api/</a></p>
 
-There are further (type-checked) examples in the [`docs`][docs]
-directory including ones for defining [custom predicates][custom-pred]
-and working with [type aliases][type-aliases]. It also contains a
-[description][design] of **refined's** design and internals.
+<p>There are further (type-checked) examples in the <a href="https://github.com/fthomas/refined/tree/master/docs"><code class="highlighter-rouge">docs</code></a>
+directory including ones for defining <a href="https://github.com/fthomas/refined/blob/master/docs/custom_predicates.md">custom predicates</a>
+and working with <a href="https://github.com/fthomas/refined/blob/master/docs/type_aliases.md">type aliases</a>. It also contains a
+<a href="https://github.com/fthomas/refined/blob/master/docs/design.md">description</a> of <strong>refined’s</strong> design and internals.</p>
 
-Talks and other external resources are listed on the [Resources][resources]
-page in the wiki.
+<p>Talks and other external resources are listed on the <a href="https://github.com/fthomas/refined/wiki/Resources">Resources</a>
+page in the wiki.</p>
 
-[custom-pred]: https://github.com/fthomas/refined/blob/master/docs/custom_predicates.md
-[design]: https://github.com/fthomas/refined/blob/master/docs/design.md
-[docs]: https://github.com/fthomas/refined/tree/master/docs
-[resources]: https://github.com/fthomas/refined/wiki/Resources
-[type-aliases]: https://github.com/fthomas/refined/blob/master/docs/type_aliases.md
+<h2 id="provided-predicates">Provided predicates</h2>
 
-## Provided predicates
+<p>The library comes with these predefined predicates:</p>
 
-The library comes with these predefined predicates:
+<p><a href="https://github.com/fthomas/refined/blob/master/core/shared/src/main/scala/eu/timepit/refined/boolean.scala"><code class="highlighter-rouge">boolean</code></a></p>
 
-[`boolean`](https://github.com/fthomas/refined/blob/master/core/shared/src/main/scala/eu/timepit/refined/boolean.scala)
+<ul>
+  <li><code class="highlighter-rouge">True</code>: constant predicate that is always <code class="highlighter-rouge">true</code></li>
+  <li><code class="highlighter-rouge">False</code>: constant predicate that is always <code class="highlighter-rouge">false</code></li>
+  <li><code class="highlighter-rouge">Not[P]</code>: negation of the predicate <code class="highlighter-rouge">P</code></li>
+  <li><code class="highlighter-rouge">And[A, B]</code>: conjunction of the predicates <code class="highlighter-rouge">A</code> and <code class="highlighter-rouge">B</code></li>
+  <li><code class="highlighter-rouge">Or[A, B]</code>: disjunction of the predicates <code class="highlighter-rouge">A</code> and <code class="highlighter-rouge">B</code></li>
+  <li><code class="highlighter-rouge">Xor[A, B]</code>: exclusive disjunction of the predicates <code class="highlighter-rouge">A</code> and <code class="highlighter-rouge">B</code></li>
+  <li><code class="highlighter-rouge">Nand[A, B]</code>: negated conjunction of the predicates <code class="highlighter-rouge">A</code> and <code class="highlighter-rouge">B</code></li>
+  <li><code class="highlighter-rouge">Nor[A, B]</code>: negated disjunction of the predicates <code class="highlighter-rouge">A</code> and <code class="highlighter-rouge">B</code></li>
+  <li><code class="highlighter-rouge">AllOf[PS]</code>: conjunction of all predicates in <code class="highlighter-rouge">PS</code></li>
+  <li><code class="highlighter-rouge">AnyOf[PS]</code>: disjunction of all predicates in <code class="highlighter-rouge">PS</code></li>
+  <li><code class="highlighter-rouge">OneOf[PS]</code>: exclusive disjunction of all predicates in <code class="highlighter-rouge">PS</code></li>
+</ul>
 
-* `True`: constant predicate that is always `true`
-* `False`: constant predicate that is always `false`
-* `Not[P]`: negation of the predicate `P`
-* `And[A, B]`: conjunction of the predicates `A` and `B`
-* `Or[A, B]`: disjunction of the predicates `A` and `B`
-* `Xor[A, B]`: exclusive disjunction of the predicates `A` and `B`
-* `Nand[A, B]`: negated conjunction of the predicates `A` and `B`
-* `Nor[A, B]`: negated disjunction of the predicates `A` and `B`
-* `AllOf[PS]`: conjunction of all predicates in `PS`
-* `AnyOf[PS]`: disjunction of all predicates in `PS`
-* `OneOf[PS]`: exclusive disjunction of all predicates in `PS`
+<p><a href="https://github.com/fthomas/refined/blob/master/core/shared/src/main/scala/eu/timepit/refined/char.scala"><code class="highlighter-rouge">char</code></a></p>
 
-[`char`](https://github.com/fthomas/refined/blob/master/core/shared/src/main/scala/eu/timepit/refined/char.scala)
+<ul>
+  <li><code class="highlighter-rouge">Digit</code>: checks if a <code class="highlighter-rouge">Char</code> is a digit</li>
+  <li><code class="highlighter-rouge">Letter</code>: checks if a <code class="highlighter-rouge">Char</code> is a letter</li>
+  <li><code class="highlighter-rouge">LetterOrDigit</code>: checks if a <code class="highlighter-rouge">Char</code> is a letter or digit</li>
+  <li><code class="highlighter-rouge">LowerCase</code>: checks if a <code class="highlighter-rouge">Char</code> is a lower case character</li>
+  <li><code class="highlighter-rouge">UpperCase</code>: checks if a <code class="highlighter-rouge">Char</code> is an upper case character</li>
+  <li><code class="highlighter-rouge">Whitespace</code>: checks if a <code class="highlighter-rouge">Char</code> is white space</li>
+</ul>
 
-* `Digit`: checks if a `Char` is a digit
-* `Letter`: checks if a `Char` is a letter
-* `LetterOrDigit`: checks if a `Char` is a letter or digit
-* `LowerCase`: checks if a `Char` is a lower case character
-* `UpperCase`: checks if a `Char` is an upper case character
-* `Whitespace`: checks if a `Char` is white space
+<p><a href="https://github.com/fthomas/refined/blob/master/core/shared/src/main/scala/eu/timepit/refined/collection.scala"><code class="highlighter-rouge">collection</code></a></p>
 
-[`collection`](https://github.com/fthomas/refined/blob/master/core/shared/src/main/scala/eu/timepit/refined/collection.scala)
+<ul>
+  <li><code class="highlighter-rouge">Contains[U]</code>: checks if a <code class="highlighter-rouge">Traversable</code> contains a value equal to <code class="highlighter-rouge">U</code></li>
+  <li><code class="highlighter-rouge">Count[PA, PC]</code>: counts the number of elements in a <code class="highlighter-rouge">Traversable</code> which satisfy the
+predicate <code class="highlighter-rouge">PA</code> and passes the result to the predicate <code class="highlighter-rouge">PC</code></li>
+  <li><code class="highlighter-rouge">Empty</code>: checks if a <code class="highlighter-rouge">Traversable</code> is empty</li>
+  <li><code class="highlighter-rouge">NonEmpty</code>: checks if a <code class="highlighter-rouge">Traversable</code> is not empty</li>
+  <li><code class="highlighter-rouge">Forall[P]</code>: checks if the predicate <code class="highlighter-rouge">P</code> holds for all elements of a <code class="highlighter-rouge">Traversable</code></li>
+  <li><code class="highlighter-rouge">Exists[P]</code>: checks if the predicate <code class="highlighter-rouge">P</code> holds for some elements of a <code class="highlighter-rouge">Traversable</code></li>
+  <li><code class="highlighter-rouge">Head[P]</code>: checks if the predicate <code class="highlighter-rouge">P</code> holds for the first element of a <code class="highlighter-rouge">Traversable</code></li>
+  <li><code class="highlighter-rouge">Index[N, P]</code>: checks if the predicate <code class="highlighter-rouge">P</code> holds for the element at index <code class="highlighter-rouge">N</code> of a sequence</li>
+  <li><code class="highlighter-rouge">Init[P]</code>: checks if the predicate <code class="highlighter-rouge">P</code> holds for all but the last element of a <code class="highlighter-rouge">Traversable</code></li>
+  <li><code class="highlighter-rouge">Last[P]</code>: checks if the predicate <code class="highlighter-rouge">P</code> holds for the last element of a <code class="highlighter-rouge">Traversable</code></li>
+  <li><code class="highlighter-rouge">Tail[P]</code>: checks if the predicate <code class="highlighter-rouge">P</code> holds for all but the first element of a <code class="highlighter-rouge">Traversable</code></li>
+  <li><code class="highlighter-rouge">Size[P]</code>: checks if the size of a <code class="highlighter-rouge">Traversable</code> satisfies the predicate <code class="highlighter-rouge">P</code></li>
+  <li><code class="highlighter-rouge">MinSize[N]</code>: checks if the size of a <code class="highlighter-rouge">Traversable</code> is greater than or equal to <code class="highlighter-rouge">N</code></li>
+  <li><code class="highlighter-rouge">MaxSize[N]</code>: checks if the size of a <code class="highlighter-rouge">Traversable</code> is less than or equal to <code class="highlighter-rouge">N</code></li>
+</ul>
 
-* `Contains[U]`: checks if a `Traversable` contains a value equal to `U`
-* `Count[PA, PC]`: counts the number of elements in a `Traversable` which satisfy the
-  predicate `PA` and passes the result to the predicate `PC`
-* `Empty`: checks if a `Traversable` is empty
-* `NonEmpty`: checks if a `Traversable` is not empty
-* `Forall[P]`: checks if the predicate `P` holds for all elements of a `Traversable`
-* `Exists[P]`: checks if the predicate `P` holds for some elements of a `Traversable`
-* `Head[P]`: checks if the predicate `P` holds for the first element of a `Traversable`
-* `Index[N, P]`: checks if the predicate `P` holds for the element at index `N` of a sequence
-* `Init[P]`: checks if the predicate `P` holds for all but the last element of a `Traversable`
-* `Last[P]`: checks if the predicate `P` holds for the last element of a `Traversable`
-* `Tail[P]`: checks if the predicate `P` holds for all but the first element of a `Traversable`
-* `Size[P]`: checks if the size of a `Traversable` satisfies the predicate `P`
-* `MinSize[N]`: checks if the size of a `Traversable` is greater than or equal to `N`
-* `MaxSize[N]`: checks if the size of a `Traversable` is less than or equal to `N`
+<p><a href="https://github.com/fthomas/refined/blob/master/core/shared/src/main/scala/eu/timepit/refined/generic.scala"><code class="highlighter-rouge">generic</code></a></p>
 
-[`generic`](https://github.com/fthomas/refined/blob/master/core/shared/src/main/scala/eu/timepit/refined/generic.scala)
+<ul>
+  <li><code class="highlighter-rouge">Equal[U]</code>: checks if a value is equal to <code class="highlighter-rouge">U</code></li>
+  <li><code class="highlighter-rouge">Eval[S]</code>: checks if a value applied to the predicate <code class="highlighter-rouge">S</code> yields <code class="highlighter-rouge">true</code></li>
+  <li><code class="highlighter-rouge">ConstructorNames[P]</code>: checks if the constructor names of a sum type satisfy <code class="highlighter-rouge">P</code></li>
+  <li><code class="highlighter-rouge">FieldNames[P]</code>: checks if the field names of a product type satisfy <code class="highlighter-rouge">P</code></li>
+  <li><code class="highlighter-rouge">Subtype[U]</code>: witnesses that the type of a value is a subtype of <code class="highlighter-rouge">U</code></li>
+  <li><code class="highlighter-rouge">Supertype[U]</code>: witnesses that the type of a value is a supertype of <code class="highlighter-rouge">U</code></li>
+</ul>
 
-* `Equal[U]`: checks if a value is equal to `U`
-* `Eval[S]`: checks if a value applied to the predicate `S` yields `true`
-* `ConstructorNames[P]`: checks if the constructor names of a sum type satisfy `P`
-* `FieldNames[P]`: checks if the field names of a product type satisfy `P`
-* `Subtype[U]`: witnesses that the type of a value is a subtype of `U`
-* `Supertype[U]`: witnesses that the type of a value is a supertype of `U`
+<p><a href="https://github.com/fthomas/refined/blob/master/core/shared/src/main/scala/eu/timepit/refined/numeric.scala"><code class="highlighter-rouge">numeric</code></a></p>
 
-[`numeric`](https://github.com/fthomas/refined/blob/master/core/shared/src/main/scala/eu/timepit/refined/numeric.scala)
+<ul>
+  <li><code class="highlighter-rouge">Less[N]</code>: checks if a numeric value is less than <code class="highlighter-rouge">N</code></li>
+  <li><code class="highlighter-rouge">LessEqual[N]</code>: checks if a numeric value is less than or equal to <code class="highlighter-rouge">N</code></li>
+  <li><code class="highlighter-rouge">Greater[N]</code>: checks if a numeric value is greater than <code class="highlighter-rouge">N</code></li>
+  <li><code class="highlighter-rouge">GreaterEqual[N]</code>: checks if a numeric value is greater than or equal to <code class="highlighter-rouge">N</code></li>
+  <li><code class="highlighter-rouge">Positive</code>: checks if a numeric value is greater than zero</li>
+  <li><code class="highlighter-rouge">NonPositive</code>: checks if a numeric value is zero or negative</li>
+  <li><code class="highlighter-rouge">Negative</code>: checks if a numeric value is less than zero</li>
+  <li><code class="highlighter-rouge">NonNegative</code>: checks if a numeric value is zero or positive</li>
+  <li><code class="highlighter-rouge">Interval.Open[L, H]</code>: checks if a numeric value is in the interval (<code class="highlighter-rouge">L</code>, <code class="highlighter-rouge">H</code>)</li>
+  <li><code class="highlighter-rouge">Interval.OpenClosed[L, H]</code>: checks if a numeric value is in the interval (<code class="highlighter-rouge">L</code>, <code class="highlighter-rouge">H</code>]</li>
+  <li><code class="highlighter-rouge">Interval.ClosedOpen[L, H]</code>: checks if a numeric value is in the interval [<code class="highlighter-rouge">L</code>, <code class="highlighter-rouge">H</code>)</li>
+  <li><code class="highlighter-rouge">Interval.Closed[L, H]</code>: checks if a numeric value is in the interval [<code class="highlighter-rouge">L</code>, <code class="highlighter-rouge">H</code>]</li>
+</ul>
 
-* `Less[N]`: checks if a numeric value is less than `N`
-* `LessEqual[N]`: checks if a numeric value is less than or equal to `N`
-* `Greater[N]`: checks if a numeric value is greater than `N`
-* `GreaterEqual[N]`: checks if a numeric value is greater than or equal to `N`
-* `Positive`: checks if a numeric value is greater than zero
-* `NonPositive`: checks if a numeric value is zero or negative
-* `Negative`: checks if a numeric value is less than zero
-* `NonNegative`: checks if a numeric value is zero or positive
-* `Interval.Open[L, H]`: checks if a numeric value is in the interval (`L`, `H`)
-* `Interval.OpenClosed[L, H]`: checks if a numeric value is in the interval (`L`, `H`]
-* `Interval.ClosedOpen[L, H]`: checks if a numeric value is in the interval [`L`, `H`)
-* `Interval.Closed[L, H]`: checks if a numeric value is in the interval [`L`, `H`]
+<p><a href="https://github.com/fthomas/refined/blob/master/core/shared/src/main/scala/eu/timepit/refined/string.scala"><code class="highlighter-rouge">string</code></a></p>
 
-[`string`](https://github.com/fthomas/refined/blob/master/core/shared/src/main/scala/eu/timepit/refined/string.scala)
+<ul>
+  <li><code class="highlighter-rouge">EndsWith[S]</code>: checks if a <code class="highlighter-rouge">String</code> ends with the suffix <code class="highlighter-rouge">S</code></li>
+  <li><code class="highlighter-rouge">MatchesRegex[S]</code>: checks if a <code class="highlighter-rouge">String</code> matches the regular expression <code class="highlighter-rouge">S</code></li>
+  <li><code class="highlighter-rouge">Regex</code>: checks if a <code class="highlighter-rouge">String</code> is a valid regular expression</li>
+  <li><code class="highlighter-rouge">StartsWith[S]</code>: checks if a <code class="highlighter-rouge">String</code> starts with the prefix <code class="highlighter-rouge">S</code></li>
+  <li><code class="highlighter-rouge">Uri</code>: checks if a <code class="highlighter-rouge">String</code> is a valid URI</li>
+  <li><code class="highlighter-rouge">Url</code>: checks if a <code class="highlighter-rouge">String</code> is a valid URL</li>
+  <li><code class="highlighter-rouge">Uuid</code>: checks if a <code class="highlighter-rouge">String</code> is a valid UUID</li>
+  <li><code class="highlighter-rouge">Xml</code>: checks if a <code class="highlighter-rouge">String</code> is well-formed XML</li>
+  <li><code class="highlighter-rouge">XPath</code>: checks if a <code class="highlighter-rouge">String</code> is a valid XPath expression</li>
+</ul>
 
-* `EndsWith[S]`: checks if a `String` ends with the suffix `S`
-* `MatchesRegex[S]`: checks if a `String` matches the regular expression `S`
-* `Regex`: checks if a `String` is a valid regular expression
-* `StartsWith[S]`: checks if a `String` starts with the prefix `S`
-* `Uri`: checks if a `String` is a valid URI
-* `Url`: checks if a `String` is a valid URL
-* `Uuid`: checks if a `String` is a valid UUID
-* `Xml`: checks if a `String` is well-formed XML
-* `XPath`: checks if a `String` is a valid XPath expression
+<h2 id="contributors-and-participation">Contributors and participation</h2>
 
-## Contributors and participation
+<ul>
+  <li><a href="https://github.com/alexarchambault">Alexandre Archambault</a> (<a href="https://twitter.com/alxarchambault">@alxarchambault</a>)</li>
+  <li><a href="https://github.com/dwijnand">Dale Wijnand</a> (<a href="https://twitter.com/dwijnand">@dwijnand</a>)</li>
+  <li><a href="https://github.com/fthomas">Frank S. Thomas</a> (<a href="https://twitter.com/fst9000">@fst9000</a>)</li>
+  <li><a href="https://github.com/jedesah">Jean-Rémi Desjardins</a> (<a href="https://twitter.com/jrdesjardins">@jrdesjardins</a>)</li>
+  <li><a href="https://github.com/JohnReedLOL">John-Michael Reed</a></li>
+  <li><a href="https://github.com/sh0hei">Shohei Shimomura</a> (<a href="https://twitter.com/sm0kym0nkey">@sm0kym0nkey</a>)</li>
+  <li><a href="https://github.com/koshelev">Vladimir Koshelev</a> (<a href="https://twitter.com/vlad_koshelev">@vlad_koshelev</a>)</li>
+  <li>Your name here :-)</li>
+</ul>
 
-* [Alexandre Archambault](https://github.com/alexarchambault) ([@alxarchambault](https://twitter.com/alxarchambault))
-* [Dale Wijnand](https://github.com/dwijnand) ([@dwijnand](https://twitter.com/dwijnand))
-* [Frank S. Thomas](https://github.com/fthomas) ([@fst9000](https://twitter.com/fst9000))
-* [Jean-Rémi Desjardins](https://github.com/jedesah) ([@jrdesjardins](https://twitter.com/jrdesjardins))
-* [John-Michael Reed](https://github.com/JohnReedLOL)
-* [Shohei Shimomura](https://github.com/sh0hei) ([@sm0kym0nkey](https://twitter.com/sm0kym0nkey))
-* [Vladimir Koshelev](https://github.com/koshelev) ([@vlad_koshelev](https://twitter.com/vlad_koshelev))
-* Your name here :-)
-
-**refined** is a [Typelevel][typelevel] project. This means we embrace pure,
+<p><strong>refined</strong> is a <a href="http://typelevel.org">Typelevel</a> project. This means we embrace pure,
 typeful, functional programming, and provide a safe and friendly environment
 for teaching, learning, and contributing as described in the Typelevel
-[code of conduct][code-of-conduct].
+<a href="http://typelevel.org/conduct.html">code of conduct</a>.</p>
 
-## Projects using refined
+<h2 id="projects-using-refined">Projects using refined</h2>
 
-Please see the wiki for an [incomplete list of projects and companies][built-with-refined]
-which use **refined**. If you are using the library and your project isn't
-listed yet, please add it.
+<p>Please see the wiki for an <a href="https://github.com/fthomas/refined/wiki/Built-with-refined">incomplete list of projects and companies</a>
+which use <strong>refined</strong>. If you are using the library and your project isn’t
+listed yet, please add it.</p>
 
-## Performance concerns
+<h2 id="performance-concerns">Performance concerns</h2>
 
-Using **refined's** macros for compile-time refinement has zero runtime
+<p>Using <strong>refined’s</strong> macros for compile-time refinement has zero runtime
 overhead for reference types and only causes boxing for value types.
-Refer to [RefineJavapSpec][RefineJavapSpec] and [InferJavapSpec][InferJavapSpec]
-for a detailed analysis of the runtime component of refinement types on the JVM.
+Refer to <a href="https://github.com/fthomas/refined/blob/master/contrib/scalaz/jvm/src/test/scala-2.11/eu/timepit/refined/scalaz/RefineJavapSpec.scala">RefineJavapSpec</a> and <a href="https://github.com/fthomas/refined/blob/master/contrib/scalaz/jvm/src/test/scala-2.11/eu/timepit/refined/scalaz/InferJavapSpec.scala">InferJavapSpec</a>
+for a detailed analysis of the runtime component of refinement types on the JVM.</p>
 
-[InferJavapSpec]: https://github.com/fthomas/refined/blob/master/contrib/scalaz/jvm/src/test/scala-2.11/eu/timepit/refined/scalaz/InferJavapSpec.scala
-[RefineJavapSpec]: https://github.com/fthomas/refined/blob/master/contrib/scalaz/jvm/src/test/scala-2.11/eu/timepit/refined/scalaz/RefineJavapSpec.scala
+<h2 id="related-projects">Related projects</h2>
 
-## Related projects
+<ul>
+  <li><a href="http://lara.epfl.ch/~kuncak/papers/SchmidKuncak16CheckingPredicate.pdf">SMT-Based Checking of Predicate-Qualified Types for Scala</a></li>
+  <li><a href="https://github.com/fwbrasil/bond">bond</a>: Type-level validation for Scala</li>
+  <li><a href="http://research.microsoft.com/en-us/projects/f7/">F7</a>: Refinement Types for F#</li>
+  <li><a href="http://goto.ucsd.edu/~rjhala/liquid/haskell/blog/about/">LiquidHaskell</a>:
+Refinement Types via SMT and Predicate Abstraction</li>
+  <li><a href="http://nikita-volkov.github.io/refined">refined</a>: Refinement types with static and runtime checking for
+Haskell. <strong>refined</strong> was inspired this library and even stole its name!</li>
+  <li><a href="https://github.com/UCSD-PL/refscript">refscript</a>: Refinement Types for TypeScript</li>
+  <li><a href="https://design.perl6.org/S12.html#Types_and_Subtypes">Subtypes in Perl 6</a></li>
+</ul>
 
-* [SMT-Based Checking of Predicate-Qualified Types for Scala](http://lara.epfl.ch/~kuncak/papers/SchmidKuncak16CheckingPredicate.pdf)
-* [bond](https://github.com/fwbrasil/bond): Type-level validation for Scala
-* [F7](http://research.microsoft.com/en-us/projects/f7/): Refinement Types for F#
-* [LiquidHaskell](http://goto.ucsd.edu/~rjhala/liquid/haskell/blog/about/):
-  Refinement Types via SMT and Predicate Abstraction
-* [refined][refined.hs]: Refinement types with static and runtime checking for
-  Haskell. **refined** was inspired this library and even stole its name!
-* [refscript](https://github.com/UCSD-PL/refscript): Refinement Types for TypeScript
-* [Subtypes in Perl 6](https://design.perl6.org/S12.html#Types_and_Subtypes)
+<h2 id="license">License</h2>
 
-## License
+<p><strong>refined</strong> is licensed under the MIT license, available at http://opensource.org/licenses/MIT
+and also in the <a href="https://github.com/fthomas/refined/blob/master/LICENSE">LICENSE</a> file.</p>
 
-**refined** is licensed under the MIT license, available at http://opensource.org/licenses/MIT
-and also in the [LICENSE](https://github.com/fthomas/refined/blob/master/LICENSE) file.
-
-[built-with-refined]: https://github.com/fthomas/refined/wiki/Built-with-refined
-[code-of-conduct]: http://typelevel.org/conduct.html
-[refined.hs]: http://nikita-volkov.github.io/refined
-[scala.js]: http://www.scala-js.org
-[search.maven]: http://search.maven.org/#search|ga|1|eu.timepit.refined
-[singleton-types]: https://github.com/milessabin/shapeless/wiki/Feature-overview:-shapeless-2.0.0#singleton-typed-literals
-[sip-23]: http://docs.scala-lang.org/sips/pending/42.type.html
-[typelevel]: http://typelevel.org
-</console></console></console></console></console></console></console></console>
 </div></div></section><section class="technologies"><div class="container"><div class="row"></div></div></section></main><footer id="site-footer"><div class="container"><div class="row"><div class="col-xs-6"><p>refined is designed and developed by <a href="https://github.com/fthomas/refined" target="_blank">the refined contributors</a></p></div><div class="col-xs-6"><p class="text-right"><a href="https://github.com/fthomas/refined"><span class="fa fa-github"></span>View on Github</a></p></div></div></div></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="/refined/highlight/highlight.pack.js"></script><script>hljs.configure({
 languages:['scala','java','bash']
 });
