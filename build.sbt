@@ -81,9 +81,7 @@ lazy val docs = project
   .settings(noPublishSettings)
   .settings(micrositeSettings)
   .settings(
-    tutScalacOptions := scalacOptions.value,
-    tutSourceDirectory := baseDirectory.value / "src" /*,
-    tutTargetDirectory := baseDirectory.value */
+    tutScalacOptions := scalacOptions.value
   )
 
 lazy val scalacheck = crossProject
@@ -336,14 +334,18 @@ lazy val releaseSettings = {
   )
 }
 
+lazy val micrositeApiDocumentationUrl = settingKey[String]("")
 lazy val micrositeSettings = Def.settings(
   micrositeName := projectName,
   micrositeBaseUrl := projectName,
-  micrositeDocumentationUrl := "latest/api",
+  micrositeDocumentationUrl := "docs",
+  micrositeApiDocumentationUrl := "latest/api",
   micrositeGithubOwner := gitHubOwner,
   micrositeGithubRepo := projectName,
+  micrositeExtraMdFiles := Map(
+    file("README.md") -> microsites.ExtraMdFileConfig("index.md", "home")),
   organizationName := "the refined contributors",
-  addMappingsToSiteDir(mappings in coreJVM in (Compile, packageDoc), micrositeDocumentationUrl)
+  addMappingsToSiteDir(mappings in coreJVM in (Compile, packageDoc), micrositeApiDocumentationUrl)
 )
 
 lazy val myDoctestSettings = Def.settings(

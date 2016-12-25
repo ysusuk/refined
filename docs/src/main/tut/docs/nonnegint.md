@@ -1,3 +1,9 @@
+---
+layout: docs
+section: docs
+title: Nonnegative Integer
+---
+
 # Nonnegative Integer
 
 [Erik Erlandson][erikerlandson] wrote a very good [introduction about

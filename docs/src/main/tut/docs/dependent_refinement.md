@@ -1,3 +1,9 @@
+---
+layout: docs
+section: docs
+title: Dependent refinement
+---
+
 # Dependent refinement
 
 ```tut:silent
