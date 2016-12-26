@@ -15,7 +15,7 @@ final class Refined[T, P] private (val value: T) extends AnyVal with Serializabl
     value.toString
 }
 
-object Refined {
+object Refined extends AutomaticConversions[Refined] {
 
   /**
    * Wraps `t` in `[[Refined]][T, P]` ''without'' verifying that it satisfies

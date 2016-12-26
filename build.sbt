@@ -156,19 +156,6 @@ lazy val commonSettings = Def.settings(
   scaladocSettings,
   styleSettings,
   initialCommands := s"""
-    import $rootPkg._
-    import $rootPkg.api._
-    import $rootPkg.api.Inference.==>
-    import $rootPkg.api.RefType.ops._
-    import $rootPkg.auto._
-    import $rootPkg.boolean._
-    import $rootPkg.char._
-    import $rootPkg.collection._
-    import $rootPkg.generic._
-    import $rootPkg.numeric._
-    import $rootPkg.string._
-    import shapeless.{ ::, HList, HNil }
-    import shapeless.nat._
   """
 )
 

@@ -80,3 +80,12 @@ object auto {
       v: Validate[T, P]
   ): T @@ P = macro RefineMacro.impl[@@, T, P]
 }
+
+trait AutomaticConversions[F[_, _]] {
+
+  implicit def autoRefine[T, P](t: T)(implicit rt: RefType[F], v: Validate[T, P]): F[T, P] =
+    macro RefineMacro.impl[F, T, P]
+
+  implicit def autoUnwrap[T](tp: F[T, _])(implicit rt: RefType[F]): T =
+    rt.unwrap(tp)
+}
