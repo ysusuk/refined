@@ -71,7 +71,7 @@ lazy val cats = crossProject(JSPlatform, JVMPlatform)
 lazy val catsJVM = cats.jvm
 lazy val catsJS = cats.js
 
-lazy val core = crossProject(JSPlatform, JVMPlatform)
+lazy val core = crossProject(JSPlatform, JVMPlatform, NativePlatform)
   .configureCross(moduleCrossConfig("core"))
   .enablePlugins(BuildInfoPlugin)
   .settings(moduleName := projectName)
@@ -101,6 +101,7 @@ lazy val core = crossProject(JSPlatform, JVMPlatform)
 
 lazy val coreJVM = core.jvm
 lazy val coreJS = core.js
+lazy val coreNative = core.native
 
 lazy val docs = project
   .configure(moduleConfig("docs"))
