@@ -60,6 +60,11 @@ abstract class RefTypeSpec[F[_, _]](name: String)(implicit rt: RefType[F]) exten
     rt.refine[Positive].unsafeFrom(5) ?= rt.unsafeWrap[Int, Positive](5)
   }
 
+  property("refine.unsafeFrom2 success") = secure {
+    val x = 5
+    rt.refine[Positive].unsafeFrom2(x) ?= rt.unsafeWrap[Int, Positive](5)
+  }
+
   property("refine.unsafeFrom failure") = secure {
     throws(classOf[IllegalArgumentException])(rt.refine[Positive].unsafeFrom(-5))
   }

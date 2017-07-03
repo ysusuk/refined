@@ -2,7 +2,7 @@ package eu.timepit.refined
 package macros
 
 import eu.timepit.refined.api.{ RefType, Validate }
-import eu.timepit.refined.internal.{ functions, Resources }
+import eu.timepit.refined.internal.{ RefinePartiallyApplied, Resources }
 import macrocompat.bundle
 import scala.reflect.macros.blackbox
 
@@ -24,12 +24,28 @@ class RefineMacro(val c: blackbox.Context) extends MacroUtils {
   ): c.Expr[FTP] =
     c.Expr(impl(t)(rt, v).tree)
 
-  def unsafeFrom[F[_, _], T, P](t: c.Expr[T])(rt: c.Expr[RefType[F]], v: c.Expr[Validate[T, P]]): c.Expr[F[T, P]] = {
+  def unsafeFrom[F[_, _], T: c.WeakTypeTag, P: c.WeakTypeTag](t: c.Expr[T])(
+    rt: c.Expr[RefType[F]], v: c.Expr[Validate[T, P]]
+  ): c.Expr[F[T, P]] = {
     extractConstant(t) match {
       case Some(tValue) => refineConstant(t, tValue)(rt, v)
-      case None => reify(functions.refineUnsafe(t.splice)(rt.splice, v.splice))
+      case None => unsafeF(t)(rt, v)
     }
   }
+
+  def unsafeF[F[_, _], T: c.WeakTypeTag, P: c.WeakTypeTag](t: c.Expr[T])(
+    rt: c.Expr[RefType[F]], v: c.Expr[Validate[T, P]]
+  ): c.Expr[F[T, P]] = {
+    val refType = eval(rt)
+    val validate: Validate[T, P] = eval(v)
+    val value = eval(t)
+
+    reify(refType.refine[P].unsafeFrom(value)(validate))
+    //    refType.unsafeWrapM(c)(t)
+  }
+
+  //  def unsafeFromX[F[_, _], P, T](t: T)(implicit rt: RefType[F], v: Validate[T, P]): F[T, P] =
+  //    rt.refine(t).fold(err => throw new IllegalArgumentException(err), identity)
 
   def extractConstant[T](t: c.Expr[T]): Option[T] =
     t.tree match {

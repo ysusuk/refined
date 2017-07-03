@@ -2,6 +2,7 @@ package eu.timepit.refined
 package internal
 
 import eu.timepit.refined.api.{ RefType, Validate }
+import eu.timepit.refined.macros.RefineMacro
 
 /**
  * Helper class that allows the type `T` to be inferred from calls like
@@ -21,7 +22,7 @@ final class RefinePartiallyApplied[F[_, _], P](rt: RefType[F]) {
   def unsafeFrom[T](t: T)(implicit v: Validate[T, P]): F[T, P] =
     apply(t).fold(err => throw new IllegalArgumentException(err), identity)
 
-  def unsafeFrom2[T](t: T)(implicit rt: RefType[F], v: Validate[T, P]): F[T, P] = macro macros.RefineMacro.unsafeFrom[F, T, P]
+  def unsafeFrom2[T](t: T)(implicit rt: RefType[F], v: Validate[T, P]): F[T, P] = macro RefineMacro.unsafeFrom[F, T, P]
 
   @deprecated("force has been renamed to unsafeFrom", "0.5.0")
   def force[T](t: T)(implicit v: Validate[T, P]): F[T, P] =
